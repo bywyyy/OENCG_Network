@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form name = "TripleDomain">
+    <parties>
+		<!--这里定义玩家，id通常自增，name：玩家在游戏中的名称，resource：玩家持有的资源数(或者票数)-->
+        <party id = '0' name="Google" resource = '1' />
+        <party id = '1' name="Facebook" resource = '2' />
+        <party id = '2' name="Amazon" resource = '2' />
+    </parties>
+    <requirement>
+		<!--联盟形成的最少资源数（最少票数）-->
+        <majority resource = '3' />
+    </requirement>
+</form>

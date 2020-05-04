@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>negotiation game platform</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link href="../templates/css/bootstrap.min.css" rel="stylesheet">
+	 
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="../templates/js/jquery.min.js"></script>
+	 
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="../templates/js/bootstrap.min.js"></script>
+
+	<!--buttons文件-->
+	<link rel="stylesheet" type="text/css" href="../templates/css/buttons.css">
+	<script type="text/javascript" src="../templates/js/buttons.js"></script>
+
+	<!-- 只有使用字体图标时才需要加载 Font-Awesome -->
+    <link href="../templates/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="../templates/css/design_configure.css">
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $("#addPlayer").click(function(){
+		  	var size = $("#card1").children().length - 1
+		    var content = $('<p><span>id:'+ size + '</span><span>name:<input type="text"></span><span>resource: <input type="text" name=""></span></p>')
+		    $('#card1').append(content)
+		  });
+
+		  $("#addCoaliton").click(function() {
+
+		  	 	var p = $('<p></p>');
+		  	 	p.append('<span>ids:<input type="text" name=""></span>');
+		  	 	p.append('<span>resources:<input type="text" name=""></span>');
+		  	 	p.append('<span>reward:<input type="text" name=""></span>');
+		  	 	$('#card2').append(p);
+		  })
+		});
+
+	</script>
+
+	<div class="container">
+		<div class="row">
+			<div class='col-sm-12'>
+			
+					<legend>Configure</legend>
+					<div class="card">
+						<div id='card1'>
+							<p>Here defines the player, whose ID is usually self-increasing; name: the player's name in the game; resource: the number of resources (or votes) the player holds.</p>
+							<p><span>id:0</span><span>name:<input type="text" name="" value="lucy"></span><span>resource: <input type="text" name="" id="resource1" value="1"></span></p>
+							<p><span>id:1</span><span>name:<input type="text" name="" value="lily"></span><span>resource: <input type="text" name="" id="resource2" value="2"></span></p>
+							<p><span>id:2</span><span>name:<input type="text" name="" value="albert"></span><span>resource: <input type="text" name="" id="resource3" value="2"></span></p>
+						</div>
+
+						<p><button id="addPlayer" class="button button-primary button-circle button-small"><span class="icon-plus">+</span></button></p>
+
+						<p>The Minimum Resource Number for Alliance Formation: <span><input type="text" name="" value="3"></span></p>
+						<p>Total number of stages negotiated (non-negative integers): <span><input type="text" name="" value="5"></span></p>
+						<p>Maximum rounds per game (non-negative integers): <span><input type="text" name="" value="100"></span></p>
+						<p></p>
+					</div>
+
+					<div class="card card-coalitions">
+						<div id="card2">
+							<p>Here is an enumeration of all possible alliance structures and the benefits of alliances under each structure.
+								<br>
+								ids: players'id; resources: the sum of all players' resources in the alliance; reward: the overall benefits of alliance formation
+							</p>
+							<p>
+								<span>ids:<input type="text" name="" value="0,1"></span>
+								<span>resources:<input type="text" name="" value="3"></span>
+								<span>reward:<input type="text" name="" value="100"></span>
+							</p>
+							<p>
+								<span>ids:<input type="text" name="" value="1,2"></span>
+								<span>resources:<input type="text" name="" value="4"></span>
+								<span>reward:<input type="text" name="" value="100"></span>
+							</p>
+							<p>
+								<span>ids:<input type="text" name="" value="0,2"></span>
+								<span>resources:<input type="text" name="" value="3"></span>
+								<span>reward:<input type="text" name="" value="100"></span>
+							</p>
+							<p>
+								<span>ids:<input type="text" name="" value="0,1,2"></span>
+								<span>resources:<input type="text" name="" value="5"></span>
+								<span>reward:<input type="text" name="" value="100"></span>
+							</p>
+					    </div>
+						<p><button id="addCoaliton" class="button button-primary button-circle button-small"><span class="icon-plus">+</span></button></p>
+					</div>
+
+					<p style="text-align: center;">
+						<input type="submit" value="Reset" class="btn btn-warning">
+						<input type="submit" id="ok" value="OK" class="btn btn-success">
+				    </p>
+
+					
+				
+
+				</div>
+			</div>
+			
+		</div>
+
+<script>
+	$('#ok').click(function () {
+        window.opener=null;
+        window.open('','_self');
+        window.close();
+    })
+</script>
+	</div>
+</body>
+</html>

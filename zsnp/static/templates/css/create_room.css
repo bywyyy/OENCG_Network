@@ -1,0 +1,82 @@
+body{
+    font: 14px/1.231 "Lato", sans-serif;
+  /*  color: rgb(96, 101, 104);*/    
+	background-color: #fff;
+	color: #333;
+}
+legend{
+	color: #5f5d5d;
+	font-weight: bold;
+}
+.container{
+	height: 700px;
+	width: 1080px;
+	margin: 100px auto;
+	background-color: #fff;
+	box-shadow: 0px 2px 18px rgb(201, 196, 196);
+	border: 2px solid #cec7c7;
+}
+.room_list, .room_op{
+	min-height: 680px;
+	margin: 10px 0px;
+/*	border:1px solid #969694;*/
+}
+.room_all{
+	height: 600px;
+	overflow: auto;
+}
+.room_block{
+	display: inline-block;
+	width: 350px;
+	background-color: #fff;
+	margin: 10px 10px 10px;
+	box-shadow: 0px 2px 18px rgb(201, 196, 196);
+	padding: 10px;
+	border: 2px dashed transparent;
+}
+.room_block .info_left,.info_right{
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	word-wrap:break-word ;
+}
+.op_content{
+	padding: 10px;
+}
+.room_list .room_block:hover{
+	border-color: #da2825;
+}
+table td p span:first-child{
+	font-weight: bold;
+}
+table{
+	margin-bottom: 0px !important;
+}
+.room_op button{
+	width: 150px;
+	margin: 10px auto;
+	border-radius: 50px;
+}
+
+.scenarios{
+	max-height: 190px;
+	overflow-y: auto;
+	text-align: center;
+}
+.scenarios .btn{
+	margin: 5px auto;
+    display: block;
+    width: 270px;
+}
+.btn-info-new{
+	background-color: #5e6bc9;
+    border-color: #5e6bc9;
+    color: #fff;
+}
+.btn-info-new:hover, .btn-info-new:active, .btn-info-new:visited, .btn-info-new:focus{
+	background-color: #4c60ec;
+	border-color: #4c60ec;
+	color: #fff;
+}
+
+

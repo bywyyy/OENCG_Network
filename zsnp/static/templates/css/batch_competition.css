@@ -1,0 +1,19 @@
+
+.panel-body{
+	display: inline-block;
+}
+.panel {
+	text-align: center;
+}
+.chart{
+	margin: auto;
+	width: 450px;
+	height: 400px;
+}
+.agreed-proposal{
+	    border-right: 2px dotted #337ab7;
+}
+.payoff-proposal .table tr td:first-child{
+	border-right: 2px dotted #337ab7;
+}
+

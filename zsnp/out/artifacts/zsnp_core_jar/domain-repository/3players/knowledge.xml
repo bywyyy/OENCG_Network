@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--描述各方信息隐藏的情况
+    true：知道
+    false：不知道-->
+<knowledge-map>
+	<!--这里描述了每个玩家是否可以看到别的玩家的隐藏信息，id用来标识每个玩家-->
+    <knowledge id="0">
+		<!--如，id为0的玩家是否能够看到其他玩家的隐藏信息，一般来说是能够看到自己的隐藏信息的-->
+        <party id="0">true</party>
+        <party id="1">true</party>
+        <party id="2">true</party>
+    </knowledge>
+    <knowledge id="1">
+		<!--如这里，id为1的玩家无法看到id为0的玩家的隐藏信息，即游戏中看不到id为0的玩家的cost值-->
+        <party id="0">false</party>
+        <party id="1">true</party>
+        <party id="2">true</party>
+    </knowledge>
+    <knowledge id="2">
+        <party id="0">false</party>
+        <party id="1">true</party>
+        <party id="2">true</party>
+    </knowledge>
+</knowledge-map>

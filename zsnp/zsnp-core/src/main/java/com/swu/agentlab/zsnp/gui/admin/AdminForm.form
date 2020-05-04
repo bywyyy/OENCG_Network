@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.swu.agentlab.zsnp.gui.admin.AdminForm">
+  <grid id="27dc6" binding="jp_main" layout-manager="BorderLayout" hgap="5" vgap="5">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <preferredSize width="500" height="300"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="e533b" binding="jp_operations" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="East"/>
+        <properties>
+          <preferredSize width="120" height="24"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="a5160" class="javax.swing.JComboBox" binding="cbb_roomStatue">
+            <constraints/>
+            <properties>
+              <preferredSize width="90" height="24"/>
+            </properties>
+          </component>
+          <component id="6af02" class="javax.swing.JButton" binding="btn_createRoom">
+            <constraints/>
+            <properties>
+              <text value="创建房间"/>
+            </properties>
+          </component>
+          <component id="d1bf2" class="javax.swing.JButton" binding="btn_deleteRoom">
+            <constraints/>
+            <properties>
+              <text value="删除房间"/>
+            </properties>
+          </component>
+          <component id="40def" class="javax.swing.JButton" binding="btn_deleteRoomData">
+            <constraints/>
+            <properties>
+              <text value="删除数据"/>
+            </properties>
+          </component>
+          <component id="743b1" class="javax.swing.JButton" binding="btn_launchClient">
+            <constraints/>
+            <properties>
+              <text value="启动玩家"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="588d4" binding="jsp_rooms">
+        <constraints border-constraint="West"/>
+        <properties>
+          <preferredSize width="390" height="290"/>
+          <requestFocusEnabled value="false"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </scrollpane>
+    </children>
+  </grid>
+</form>

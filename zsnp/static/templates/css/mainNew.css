@@ -1,0 +1,179 @@
+.container{
+    border-radius: 0px;
+    margin: 10px auto;
+    width: 75%;
+}
+.inside-container{
+    width: 100%;
+    background-color: #fff;
+}
+.outside-container{
+    box-shadow: 0px 2px 18px rgb(135, 133, 133);
+    background-color: #bbb9b9;
+    border-top: 10px;
+    width: 1200px;
+    overflow-x: auto;
+
+}
+.topbar h3{
+    color: #fff;
+}
+.topbar div{
+    margin: 10px 0px;
+    border: 2px solid;
+    color: #fff;
+    text-align: center;
+    background: #d88250cf;
+    padding: 7px;
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+}
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+    /*  border-radius: 8px 8px 0px 0px;*/
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+}
+.panel-primary {
+    border-color:#337ab7;
+}
+.panel-title{
+    font-size: 10px;
+}
+.panel{
+    margin-bottom: 4px;
+    /*border-radius: 10px;*/
+}
+
+.current-offer{
+    border:1px solid #4c4a4a;
+    height: 250px;
+    border-radius: 15px;
+    padding: 15px;
+}
+.current-offer-inside{
+    height: 220px;
+    border:1px solid #4c4a4a;
+}
+.clear-padding {
+    padding: 5px;
+}
+
+.dialog-user1 .box{
+    position: relative;
+    display: inline-block;
+    max-width: 85%;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: #f1b954;
+    line-height: 20px;
+    font-size: 14px;
+}
+.dialog-user1 .u-tri:before{
+    position: absolute;
+    left: -15px;
+    top: 6px;
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid #f1b954;
+}
+.dialog-user2 .box{
+    position: relative;
+    display: inline-block;
+    max-width: 85%;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: #d68f5d;
+    line-height: 20px;
+    font-size: 14px;
+}
+.dialog-user2 .u-tri:before{
+    position: absolute;
+    left: -15px;
+    top: 6px;
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid #d68f5d;
+}
+.dialog-user0 .box{
+    position: relative;
+    display: inline-block;
+    max-width: 85%;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: #60ab60;
+    line-height: 20px;
+    font-size: 14px;
+    margin-left: 30%;
+}
+.dialog-user0 .u-tri:before{
+    position: absolute;
+    right: -15px;
+    top: 6px;
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #60ab60;
+    border-right: 8px solid transparent;
+}
+.dialog-part{
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+    margin: auto;
+}
+.interaction-part{
+    height: 420px;
+}
+.select-sentence .btn-group,button{
+    width: 100%;
+    padding: 5px;
+}
+.select-sentence button{
+    padding: 18px;
+}
+.dialog-part img{
+    width: 26px;
+    position: absolute;
+    left: 10px;
+}
+.dialog-part .dialog-user0 img{
+    left: auto;
+    right: 10px;
+}
+.dialog-user1, .dialog-user2 .box{
+    margin-left: 30px;
+}
+.dialog-user0 .box {
+    left: auto;
+    right: -85px;
+}
+.user-part img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.dialog-server-mess{
+    text-align: center;
+    color: #7b6f6f;
+}
+
+/*顶部动态表格的样式*/
+.payoff-body{
+    min-width: 100%;
+    overflow-x: auto;
+    height: 260px;
+}
+.payoff-proposal{
+    display: inline-block;
+    float: left;
+}
+.payoff-proposal-fixed{
+    width: 180px;
+}

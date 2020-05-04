@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="roomDao">
+    <insert id="insertRoom" parameterType="com.swu.agentlab.zsnp.game.coalition.voting.entity.room.Room">
+        INSERT INTO t_room (id, name, description, domain_name, protocol_class) value (#{room.id}, #{room.name}, #{room.description}, #{room.domain_name}, #{room.protocol_class})
+    </insert>
+
+    <select id="selectRoomById" resultType="com.swu.agentlab.zsnp.game.coalition.voting.entity.room.Room">
+        SELECT * FROM t_room
+        <where>
+            id = #{id}
+        </where>
+    </select>
+</mapper>

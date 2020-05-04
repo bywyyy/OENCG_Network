@@ -1,0 +1,80 @@
+body{
+    font: 16px/1.231 "Lato", sans-serif;
+   /* color: rgb(96, 101, 104);*/
+    color: #333;
+    background-color: #fff;
+}
+legend{
+	color: #5f5d5d;
+	font-weight: bold;
+}
+
+.container{
+	width: 930px;
+	margin: 50px auto 0px;
+	background-color: #fff;
+	height: 810px;
+	box-shadow: 0px 2px 18px rgb(201, 196, 196);
+	border: 2px solid #cec7c7;
+}
+.play_info_part, .choose_room_part{
+	min-height: 352px;
+	margin: 10px 0px;
+/*	border:1px solid #969694;*/
+}
+.room_list{
+	overflow-y: scroll;
+	height: 680px;
+}
+.room_block{
+	width: 400px;
+	background-color: #fff;
+	margin: 10px 10px 10px;
+	box-shadow: 0px 2px 18px rgb(201, 196, 196);
+	padding: 10px;
+	border: 2px dashed #fff;
+}
+.room_block .info_left,.info_right{
+	width: 50%;
+	display: inline-block;
+}
+.play_info_part p{
+	text-align: center;
+}
+.play_info_part input{
+	margin: 10px;
+}
+.room_block:hover{
+	border: 2px dashed #286090;
+}
+table td p span:first-child{
+	font-weight: bold;
+}
+table{
+	margin-bottom: 0px !important;
+}
+
+.multi-agents{
+	margin: 5px auto;
+	display: block;
+	width: 200px;
+}
+.agents{
+	height: 190px;
+	overflow-y: auto;
+}
+.setting{
+	text-align: right;
+	margin: 30px 0px;
+}
+.setting input{
+	width: 80px;
+}
+.agents, .setting{
+	padding: 10px;
+}
+#show_room_2{
+	display: inline-block;
+	width: 80px;
+	text-align: left;
+}

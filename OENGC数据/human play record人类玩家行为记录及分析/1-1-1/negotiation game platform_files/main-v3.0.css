@@ -1,0 +1,549 @@
+body{
+    font: 14px/1.231 "Lato", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    border-radius: 0px;
+    margin: 0px auto;
+}
+.inside-container{
+    width: 100%;
+    background-color: #fff;
+}
+.outside-container{
+    border-top: 10px;
+    min-width: 1200px;
+    overflow-x: auto;
+
+}
+.navbar-blue{
+    background: #34495e;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+.navbar-blue a{
+    color: #fff;
+}
+.navbar-blue a:hover,a:focus,a:active{
+    color: #1abc9c;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: transparent;
+    border-color: #337ab7;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+.panel-body {
+    padding: 0px 30px;
+}
+.topbar h3{
+    color: #fff;
+}
+.topbar div{
+    margin: 10px 0px;
+    border: 2px solid;
+    color: #fff;
+    text-align: center;
+    background: #d88250cf;
+    padding: 7px;
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+}
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+  /*  border-radius: 8px 8px 0px 0px;*/
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+}
+.panel-primary {
+    border-color: transparent;
+}
+.panel-title{
+    font-size: 10px;
+}
+.panel{
+    margin-bottom: 4px;
+    /*border-radius: 10px;*/
+    box-shadow: 0px 2px 18px rgb(201, 196, 196);
+    border: 1px solid rgb(201, 196, 196);
+}
+
+.current-offer{
+    border:1px solid #4c4a4a;
+    height: 250px;
+    border-radius: 15px;
+    padding: 15px;
+}
+.current-offer-inside{
+    height: 220px;
+    border:1px solid #4c4a4a;
+}
+.clear-padding {
+    padding: 5px;
+}
+
+/*对话框*/
+.dialog-user1 .box, .dialog-user2 .box, .dialog-user3 .box, .dialog-user4 .box, .dialog-user5 .box{
+    position: relative;
+    display: inline-block;
+    max-width: 85%;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: #f1b954;
+    line-height: 20px;
+    font-size: 14px;
+} 
+.dialog-user1 .u-tri:before, .dialog-user2 .u-tri:before, .dialog-user3 .u-tri:before, .dialog-user4 .u-tri:before, .dialog-user5 .u-tri:before{
+    position: absolute;
+    left: -15px;
+    top: 6px;
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid #f1b954;
+}
+
+
+.dialog-user1 .box, .dialog-user2 .box, .dialog-user3 .box, .dialog-user4 .box, .dialog-user5 .box{
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+.dialog-user2 .box{
+    background-color: #d68f5d;
+} 
+.dialog-user2 .u-tri:before{
+    border-right: 8px solid #d68f5d;
+}
+
+.dialog-user3 .box{
+    background-color: #e68583;
+} 
+.dialog-user3 .u-tri:before{
+    border-right: 8px solid #e68583;
+}
+.dialog-user4 .box{
+    background-color: #499be2;
+} 
+.dialog-user4 .u-tri:before{
+    border-right: 8px solid #499be2;
+}
+.dialog-user5 .box{
+    background-color: #60ab60;
+} 
+.dialog-user5 .u-tri:before{
+    border-right: 8px solid #60ab60;
+}
+
+
+.dialog-user0 .box{
+    position: relative;
+    display: inline-block;
+    max-width: 85%;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: #60ab60;
+    line-height: 20px;
+    font-size: 14px;
+    margin-left: 30%;
+}
+.dialog-user0 .u-tri:before{
+    position: absolute;
+    right: -15px;
+    top: 6px;
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #60ab60;
+    border-right: 8px solid transparent;
+}
+
+.user-system-tips .box{
+    background: transparent;
+}
+.user-system-tips .u-tri:before{
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+.dialog-part .dialog-user0 img{
+    left: auto;
+    right: 10px;
+}
+
+.dialog-user0 .box {
+    right: 40px;
+    float: right;
+    top: 10px;
+    margin-bottom: 25px;
+}
+
+
+.dialog-user0{
+    display: block;
+    overflow: hidden;
+}
+
+.dialog-part{
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+}
+.interaction-part{
+    height: 331px;
+    padding: 0px 0px 0px 30px;
+}
+.select-sentence .btn-group,button{
+    width: 100%;
+    padding: 5px;
+}
+.select-sentence{
+    margin: auto;
+    width: 60%;
+}
+.dialog-part img{
+    width: 50px;
+    position: absolute;
+    left: 10px;
+}
+
+.user-part img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.dialog-server-mess{
+    text-align: center;
+    color: #7b6f6f;
+    margin-top: 10px;
+}
+.dialog-user0 .dialog-proposal{
+    margin:-5px auto 10px;
+}
+
+
+/*顶部动态表格的样式*/
+.payoff-body{
+    min-width: 100%;
+    overflow-x: auto;
+    margin: 20px 0px;
+}
+.payoff-body table{
+    margin-bottom: 0px !important;
+}
+.payoff-proposal{
+    display: inline-block;
+    float: left;
+}
+.payoff-proposal .table th,.payoff-proposal .table td{
+    text-align: center;
+    vertical-align: middle !important;
+/*    border: 1px solid #fff;*/
+}
+.payoff-proposal .table thead tr:first-child th{
+    border-right: 2px dotted #337ab7;
+}
+.agreed-proposal{
+    color: #bf0f0f;
+    font-weight: bolder;
+}
+hr{
+    margin: 20px 60px;
+    border-top: 2px dashed #34495e;
+}
+
+/*利益分配--滑动条样式*/
+/*横条样式*/
+input[type=range] {
+ /* -webkit-appearance: none;*//*清除系统默认样式*/
+  width: 80px;
+  display: inline-block;
+  background: -webkit-linear-gradient(#61bd12, #61bd12) no-repeat, #968686;/*设置左边颜色为#61bd12，右边颜色为#ddd*/
+  background-size: 75% 100%;/*设置左右宽度比例*/
+  height: 3px;/*横条的高度*/
+  border:none;
+}
+input[type=range] .active{
+    border:none;
+}
+/*拖动块的样式*/
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;/*清除系统默认样式*/
+  height: 16px;/*拖动块高度*/
+  width: 16px;/*拖动块宽度*/
+  background: #634d4d;/*拖动块背景*/
+  border-radius: 50%; /*外观设置为圆形*/
+}
+
+.range-input{
+    display: inline-block;
+    width: 50px;
+}
+
+
+/*添加动画*/
+
+@keyframes ani1
+{
+    from{
+    }
+    to{
+        font-weight: bolder;
+
+    }  
+}   
+.ani1{
+    -webkit-animation-name: ani1; /*关键帧名称*/
+        -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
+        -webkit-animation-iteration-count: 1;  /*动画播放的次数*/
+        animation-direction:alternate;
+        -webkit-animation-duration: 0.5s; /*动画所花费的时间*/
+}
+
+@keyframes scaleDraw {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+        from{
+            transform: scale(1);  /*开始为原始大小*/
+        }
+        to{
+            transform: scale(1.05); /*放大1.1倍*/
+            color: red;
+            font-weight: bold;
+        }
+        
+    }
+.ballon{
+        -webkit-animation-name: scaleDraw; /*关键帧名称*/
+        -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
+        -webkit-animation-iteration-count: 5;  /*动画播放的次数*/
+        animation-direction:alternate;
+        -webkit-animation-duration: 5s; /*动画所花费的时间*/
+    }
+
+
+@keyframes ani2{
+    form{
+        text-shadow: none;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+        outline: 1px solid;
+        outline-color: rgba(255, 255, 255, 0.5);
+        outline-offset: 0px;
+    }
+    to{
+        text-shadow: 1px 1px 2px;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 15px;
+    }
+}
+.ani2 {
+    -webkit-animation-name: ani2; /*关键帧名称*/
+        -webkit-animation-timing-function: ease; /*动画的速度曲线*/
+        -webkit-animation-iteration-count: 1;  /*动画播放的次数*/
+        animation-direction:alternate;
+        -webkit-animation-duration: 5s; /*动画所花费的时间*/
+ 
+}
+
+
+
+.agreed-proposal{
+        -webkit-animation-name: ani2; /*关键帧名称*/
+        -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
+        -webkit-animation-iteration-count: 1;  /*动画播放的次数*/
+        animation-direction:alternate;
+        -webkit-animation-duration: 1s; /*动画所花费的时间*/
+}
+
+@keyframes scaleDraw-bigger {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+        0%{
+            transform: scale(1);  /*开始为原始大小*/
+        }
+        25%{
+            transform: scale(2); /*放大1.1倍*/
+            border-radius: 50px;
+            border:1px dashed #286090;
+        }
+        50%{
+            transform: scale(1);
+        }
+        75%{
+            transform: scale(2);
+        }
+    }
+.ballon-bigger{
+        -webkit-animation-name: scaleDraw-bigger; /*关键帧名称*/
+        -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
+        -webkit-animation-iteration-count: 1;  /*动画播放的次数*/
+        animation-direction:alternate;
+        -webkit-animation-duration: 5s; /*动画所花费的时间*/
+    }
+
+.free-sentence{
+    text-align: center;
+    margin: 10px auto 0px;
+    background: #e2e2e4;
+    padding: 10px 0px 3px;
+}
+.free-sentence input{
+    border:none;  
+    border-bottom: #c0c0c0 1px solid;  
+}
+.free-sentence input:focus{
+    border:none;  
+    border-bottom:#c0c0c0 1px solid; 
+}
+.free-sentence p{
+    line-height: 30px;
+}
+.free-sentence p input{
+    margin: 5px 20px;
+}
+#free-text{
+    width: 70%;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.free-sentence button{
+    padding: 0px 5px;
+}
+#predefined-text-show{
+    line-height: 25px;
+    height: 25px;
+    width: 70%;
+    margin: 10px auto;
+    border-bottom: 1px solid #a5aaad;
+}
+.free-sentence .dropdown-menu li{
+    margin: 0px 10px;
+    padding: 10px 0px;
+    border-bottom: 2px dotted #31708f;
+}
+
+
+
+
+.module{
+        border: 2px dotted #31708f;
+        background: #f7f1ea;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: glowing;
+        animation-name: glowing;
+}
+
+/*对话框中间增加的原来的功能显示--显示提案，显示同意或者拒绝，
+显示session-result，game-result*/
+.user-img-name{
+    position: absolute;
+    left: 70px;
+    font-size: 11px;
+    color: #847e7e;
+
+}
+.dialog-proposal{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    border: 2px dashed #cec7c7;
+}
+.session-result{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    box-shadow: 0px 2px 18px rgb(201, 196, 196);
+    border: 2px dashed #337ab7;
+    text-align: center;
+    font-weight: bold;
+    color: #31708f;
+}
+.game-result{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    box-shadow: 0px 2px 18px rgb(201, 196, 196);
+    border: 2px dashed #a94442;
+    text-align: center;
+    font-weight: bold;
+    color: #a94442;
+}
+
+/*对话输入框那里-人物头像*/
+.free-sentence .row img.img-head{
+    width: 46px;
+    border-radius: 50px;
+}
+
+.user-emoticonNOTSelected{
+    width: 46px;
+    border-radius: 50px;
+    margin: 0px 10px;
+}
+.user-emoticonSelected{
+    width: 68px;
+    border-radius: 50%;
+    margin: 0px 10px;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: glowing;
+    animation-name: glowing;
+    border: 5px dashed #9dcdf1;
+}
+
+.user-sentence-group .user-sentenceNOTSelected{
+    background: transparent;
+}
+.user-sentence-group .user-sentenceSelected{
+    background: rgba(76, 176, 249, 0.9);
+    color: rgba(255, 255, 255, 0.9);
+    border: rgba(76, 176, 249, 0.9);
+}
+
+.user-sentence-group {
+    margin-top: 10px;
+}
+.CoalitionsList-part{
+    height: 240px;
+    overflow: auto;
+}
+#module {
+    height: 307px;
+}
+#module-party{
+    height: 249px;
+    overflow: auto;
+}
+.row-free-sentence{
+    padding: 0 15px;
+    height: 210px;
+}
+/*selcet coalition struction*/
+#module img{
+    width: 36px;
+    border-radius: 50px;
+    margin-right: 3px;
+}
+#module td,#module th{
+    vertical-align: middle;
+}
+.interaction-part {
+    height: 331px;
+}
+
+.average-payoff{
+    border:2px solid #d8d3d3;
+}

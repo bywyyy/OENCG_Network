@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="proposalDao">
+    <insert id="insertProposal" parameterType="com.swu.agentlab.zsnp.game.coalition.voting.entity.proposal.Proposal">
+        INSERT INTO t_proposal (id, roomId, playerId, sessionNum, roundNum, coalitionId, time) value (#{proposal.id}, #{proposal.roomId}, #{proposal.playerId}, #{proposal.sessionNum}, #{proposal.roundNum}, #{proposal.coalitionId}, #{proposal.time})
+    </insert>
+
+    <select id="selectProposalById" resultType="com.swu.agentlab.zsnp.game.coalition.voting.entity.proposal.Proposal">
+        SELECT * FROM t_proposal
+        <where>
+            id = #{id}
+        </where>
+    </select>
+</mapper>

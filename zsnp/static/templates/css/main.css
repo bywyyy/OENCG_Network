@@ -1,0 +1,319 @@
+.container{
+	border-radius: 0px;
+	margin: 10px auto;
+	width: 75%;
+}
+.inside-container{
+	width: 100%;
+	background-color: #fff;
+}
+.outside-container{
+	box-shadow: 0px 2px 18px rgb(135, 133, 133);
+	background-color: #bbb9b9;
+	border-top: 10px;
+    width: 1200px;
+    overflow-x: auto;
+
+}
+.topbar h3{
+	color: #fff;
+}
+.topbar div{
+	margin: 10px 0px;
+    border: 2px solid;
+    color: #fff;
+    text-align: center;
+    background: #d88250cf;
+    padding: 7px;
+	background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+	background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+}
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+  /*  border-radius: 8px 8px 0px 0px;*/
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+	background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+}
+.panel-primary {
+    border-color:#337ab7;
+}
+.panel-title{
+	font-size: 10px;
+}
+.panel{
+	margin-bottom: 4px;
+	/*border-radius: 10px;*/
+}
+
+.current-offer{
+	border:1px solid #4c4a4a;
+	height: 250px;
+	border-radius: 15px;
+	padding: 15px;
+}
+.current-offer-inside{
+	height: 220px;
+	border:1px solid #4c4a4a;
+}
+.clear-padding {
+	padding: 5px;
+}
+
+.dialog-user1 .box{
+    position: relative;
+    display: inline-block;
+    max-width: 85%;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: #f1b954;
+    line-height: 20px;
+    font-size: 14px;
+} 
+.dialog-user1 .u-tri:before{
+    position: absolute;
+    left: -15px;
+    top: 6px;
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid #f1b954;
+}
+.dialog-user2 .box{
+    position: relative;
+    display: inline-block;
+    max-width: 85%;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: #d68f5d;
+    line-height: 20px;
+    font-size: 14px;
+} 
+.dialog-user2 .u-tri:before{
+    position: absolute;
+    left: -15px;
+    top: 6px;
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid #d68f5d;
+}
+.dialog-user0 .box{
+	position: relative;
+    display: inline-block;
+    max-width: 85%;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: #60ab60;
+    line-height: 20px;
+    font-size: 14px;
+    margin-left: 30%;
+}
+.dialog-user0 .u-tri:before{
+    position: absolute;
+    right: -15px;
+    top: 6px;
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #60ab60;
+    border-right: 8px solid transparent;
+}
+.dialog-part{
+	height: 100%;
+    overflow-y: auto;
+    position: relative;
+    margin: auto;
+}
+.interaction-part{
+	height: 470px;
+}
+.select-sentence .btn-group,button{
+	width: 100%;
+	padding: 5px;
+}
+.select-sentence{
+    margin: auto;
+    width: 60%;
+}
+.dialog-part img{
+	width: 26px;
+	position: absolute;
+	left: 10px;
+}
+.dialog-part .dialog-user0 img{
+	left: auto;
+    right: 10px;
+}
+.dialog-user1, .dialog-user2 .box{
+	margin-left: 30px;
+}
+.dialog-user0 .box {
+    right: 30px;
+    float: right;
+}
+.user-part img{
+	width: 100%;
+	border-radius: 50%;
+}
+
+.dialog-user0{
+    display: block;
+    height: 38px;
+}
+
+.dialog-server-mess{
+    text-align: center;
+    color: #7b6f6f;
+}
+
+/*顶部动态表格的样式*/
+.payoff-body{
+    min-width: 100%;
+    overflow-x: auto;
+    height: 260px;
+}
+.payoff-proposal{
+    display: inline-block;
+    float: left;
+}
+.payoff-proposal-fixed{
+    width: 180px;
+}
+.agreed-proposal{
+    color: #bf0f0f;
+    font-weight: bolder;
+}
+
+/*利益分配--滑动条样式*/
+/*横条样式*/
+input[type=range] {
+ /* -webkit-appearance: none;*//*清除系统默认样式*/
+  width: 100px;
+  display: inline-block;
+  background: -webkit-linear-gradient(#61bd12, #61bd12) no-repeat, #968686;/*设置左边颜色为#61bd12，右边颜色为#ddd*/
+  background-size: 75% 100%;/*设置左右宽度比例*/
+  height: 3px;/*横条的高度*/
+  border:none;
+}
+input[type=range] .active{
+    border:none;
+}
+/*拖动块的样式*/
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;/*清除系统默认样式*/
+  height: 16px;/*拖动块高度*/
+  width: 16px;/*拖动块宽度*/
+  background: #634d4d;/*拖动块背景*/
+  border-radius: 50%; /*外观设置为圆形*/
+}
+
+.range-input{
+    display: inline-block;
+    width: 50px;
+}
+
+
+/*添加动画*/
+
+@keyframes ani1
+{
+    from{
+    }
+    to{
+        font-weight: bolder;
+
+    }  
+}   
+.ani1{
+    -webkit-animation-name: ani1; /*关键帧名称*/
+        -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
+        -webkit-animation-iteration-count: infinite;  /*动画播放的次数*/
+        animation-direction:alternate;
+        -webkit-animation-duration: 0.5s; /*动画所花费的时间*/
+}
+
+@keyframes scaleDraw {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+        0%{
+            transform: scale(1);  /*开始为原始大小*/
+        }
+        25%{
+            transform: scale(1.05); /*放大1.1倍*/
+        }
+        50%{
+            transform: scale(1);
+        }
+        75%{
+            transform: scale(1.05);
+        }
+    }
+.ballon{
+        -webkit-animation-name: scaleDraw; /*关键帧名称*/
+        -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
+        -webkit-animation-iteration-count: infinite;  /*动画播放的次数*/
+        animation-direction:alternate;
+        -webkit-animation-duration: 5s; /*动画所花费的时间*/
+    }
+
+
+@keyframes ani2{
+    form{
+        text-shadow: none;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+        outline: 1px solid;
+        outline-color: rgba(255, 255, 255, 0.5);
+        outline-offset: 0px;
+    }
+    to{
+        text-shadow: 1px 1px 2px;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 15px;
+    }
+}
+.ani2 {
+    -webkit-animation-name: ani2; /*关键帧名称*/
+        -webkit-animation-timing-function: ease; /*动画的速度曲线*/
+        -webkit-animation-iteration-count: infinite;  /*动画播放的次数*/
+        animation-direction:alternate;
+        -webkit-animation-duration: 5s; /*动画所花费的时间*/
+ 
+}
+
+
+
+.agreed-proposal{
+        -webkit-animation-name: ani2; /*关键帧名称*/
+        -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
+        -webkit-animation-iteration-count: infinite;  /*动画播放的次数*/
+        animation-direction:alternate;
+        -webkit-animation-duration: 1s; /*动画所花费的时间*/
+}
+
+@keyframes scaleDraw-bigger {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+        0%{
+            transform: scale(1);  /*开始为原始大小*/
+        }
+        25%{
+            transform: scale(2); /*放大1.1倍*/
+            border-radius: 50px;
+            border:1px dashed #286090;
+        }
+        50%{
+            transform: scale(1);
+        }
+        75%{
+            transform: scale(2);
+        }
+    }
+.ballon-bigger{
+        -webkit-animation-name: scaleDraw-bigger; /*关键帧名称*/
+        -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
+        -webkit-animation-iteration-count: infinite;  /*动画播放的次数*/
+        animation-direction:alternate;
+        -webkit-animation-duration: 5s; /*动画所花费的时间*/
+    }
+

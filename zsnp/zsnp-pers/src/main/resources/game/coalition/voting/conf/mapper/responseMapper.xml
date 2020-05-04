@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="responseDao">
+    <insert id="insertResponse" parameterType="com.swu.agentlab.zsnp.game.coalition.voting.entity.response.Response">
+        INSERT INTO t_response (id, roomId, playerId, sessionNum, roundNum, agree, time) value (#{response.id}, #{response.roomId}, #{response.playerId}, #{response.sessionNum}, #{response.roundNum}, #{response.agree}, #{response.time})
+    </insert>
+
+    <select id="selectResposeById" resultType="com.swu.agentlab.zsnp.game.coalition.voting.entity.response.Response">
+        SELECT * FROM t_response
+        <where>
+            id = #{id}
+        </where>
+    </select>
+</mapper>

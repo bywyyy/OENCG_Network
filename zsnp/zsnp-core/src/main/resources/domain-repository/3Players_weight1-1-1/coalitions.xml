@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<coalitions>
+	<!--这里枚举了所有可能的联盟结构以及每种结构下联盟可获得的收益，ids：玩家们的id，resources：该联盟中所有玩家的资源之和，reward：该联盟形成可获得的整体收益-->
+    <coalition ids="0, 1" resources="2" reward="100" />
+    <coalition ids="0, 2" resources="2" reward="100" />
+    <coalition ids="1, 2" resources="2" reward="100" />
+    <coalition ids="0, 1, 2" resources="3" reward="100" />
+</coalitions>

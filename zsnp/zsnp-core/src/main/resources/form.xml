@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<domain>
+    <parties>
+        <party id = '0' resource = '30' />
+        <party id = '1' resource = '25' />
+        <party id = '2' resource = '25' />
+        <party id = '3' resource = '40' />
+        <party id = '4' resource = '10' />
+    </parties>
+    <requirement>
+        <majority resource = '60' />
+    </requirement>
+</domain>

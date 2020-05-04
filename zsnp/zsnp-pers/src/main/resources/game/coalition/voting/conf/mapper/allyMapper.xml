@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="allyDao">
+    <insert id="insertAlly" parameterType="com.swu.agentlab.zsnp.game.coalition.voting.entity.ally.Ally">
+        INSERT INTO t_ally (id, coalitionId, playerId, partyNum, reward, comment) value (#{ally.id}, #{ally.coalitionId}, #{ally.playerId}, #{ally.partyNum}, #{ally.reward}, #{ally.comment})
+    </insert>
+
+    <select id="selectAllyById" resultType="com.swu.agentlab.zsnp.game.coalition.voting.entity.ally.Ally">
+        SELECT * FROM t_ally
+        <where>
+            id = #{id}
+        </where>
+    </select>
+</mapper>

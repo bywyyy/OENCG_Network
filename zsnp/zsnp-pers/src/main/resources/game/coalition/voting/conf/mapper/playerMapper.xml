@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="playerDao">
+    <select id="getPlayerById" resultType="com.swu.agentlab.zsnp.game.coalition.voting.entity.player.Player">
+        SELECT * FROM t_player WHERE id = #{id}
+    </select>
+
+    <select id="getPlayerCount" resultType="int">
+        SELECT COUNT(*) FROM t_player
+    </select>
+
+    <insert id="insertPlayer" parameterType="com.swu.agentlab.zsnp.game.coalition.voting.entity.player.Player" flushCache="true" keyProperty="id">
+        INSERT INTO t_player (id, roomId, name, description, partyNum) VALUE (#{player.id}, #{player.roomId}, #{player.name}, #{player.description}, #{player.partyNum})
+    </insert>
+
+</mapper>

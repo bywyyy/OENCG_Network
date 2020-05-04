@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>negotiation game platform</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link href="../templates/css/bootstrap.min.css" rel="stylesheet">
+	 
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="../templates/js/jquery.min.js"></script>
+	 
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="../templates/js/bootstrap.min.js"></script>
+
+	<!--buttons文件-->
+	<link rel="stylesheet" type="text/css" href="../templates/css/buttons.css">
+	<script type="text/javascript" src="../templates/js/buttons.js"></script>
+
+	<script src="../templates/js/echarts.simple.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../templates/css/main-v3.0.css">
+	<link rel="stylesheet" type="text/css" href="../templates/css/batch_competition.css">
+
+	<!--提示框样式css和JS-->
+	<link rel="stylesheet" type="text/css" href="../templates/css/popup_box.css">
+	<script type="text/javascript" src="../templates/js/popup_box.js"></script>
+
+
+
+</head>
+<body>
+
+<div class="container outside-container">
+	<nav class="navbar navbar-blue" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Nego Platform</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Scenario Editor</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Help <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Instructions</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Demonstration</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Version</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+	<div class="container inside-container">
+
+		<!--顶部表格-->
+		<div class="row" style="">
+			<div class="col-sm-12 clear-padding">
+				<div class="panel panel-primary">
+					<div class="panel-body">
+						<div class="payoff-body">
+						<!--竖行表格 开始-->
+						<div class="payoff-proposal">
+							<table class="table">
+								<thead>
+									<tr class="success" id = "game">
+										<th colspan="1">Agent</th>
+										<!--<th colspan="2">Game</th>
+										<th colspan="2">Game</th>
+										<th colspan="2">Game</th>
+										<th colspan="2">Game</th>
+										<th colspan="2">Game</th>
+										<th colspan="2">Game</th>-->
+									</tr>
+									
+								</thead>
+								<tbody id = "agent">
+									<!--<tr class="success" id="payoff1">
+										<td>Agent1</td>
+							
+										<td>role1</td>
+										<td class="agreed-proposal">60</td>
+									
+										<td>role1</td>
+										<td class="agreed-proposal">60</td>
+										
+										<td>role1</td>
+										<td class="agreed-proposal">60</td>
+										
+										<td>role1</td>
+										<td class="agreed-proposal">66</td>
+
+										<td>role1</td>
+										<td class="agreed-proposal">60</td>
+										
+										<td>role1</td>
+										<td class="agreed-proposal">66</td>
+
+									</tr>
+									<tr  class="warning" id="payoff2">
+										<td>Agent2</td>
+										<td>role1222</td>
+										<td class="agreed-proposal">60</td>
+									
+										<td>role122</td>
+										<td class="agreed-proposal">60</td>
+										
+										<td>role12</td>
+										<td class="agreed-proposal">60</td>
+										
+										<td>role12</td>
+										<td class="agreed-proposal">66</td>
+
+										<td>role12222</td>
+										<td class="agreed-proposal">60</td>
+										
+										<td>role12222</td>
+										<td class="agreed-proposal">66</td>
+									</tr>
+									<tr  class="danger" id="payoff3">
+										<td>Agent3</td>
+										<td>role13</td>
+										<td class="agreed-proposal">60</td>
+									
+										<td>role133</td>
+										<td class="agreed-proposal">60</td>
+										
+										<td>role13</td>
+										<td class="agreed-proposal">60</td>
+										
+										<td>role13</td>
+										<td class="agreed-proposal">66</td>
+
+										<td>role13</td>
+										<td class="agreed-proposal">60</td>
+										
+										<td>role13</td>
+										<td class="agreed-proposal">66</td>
+									</tr>-->
+								</tbody>
+							</table>
+						</div>
+						<!--竖行表格 结束-->
+						
+						
+
+						<!--添加提案在此添加 Begin--->
+						<!--添加提案在此添加 End--->
+
+
+
+					    </div>
+					</div>
+
+					<div>
+						<table class="table table-striped average-payoff" style="width: 50%;margin: auto;">
+							<thead>
+								<tr id = "average" >
+									<th>Average Payoff</th>
+									<!--<th>lucy: <span>33.5</span></th>
+									<th>lily: <span>46.5</span></th>
+									<th>albert: <span>20.9</span></th>-->
+								</tr>
+								
+							</thead>
+							
+						</table>
+					</div>
+
+					<div>
+						<div id="ResultBarChart" class="chart"></div>
+					</div>
+
+					
+
+
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+	</div>
+</div>
+
+</body>
+
+
+<script type="text/javascript">
+
+		// 柱状图BEGIN
+        // 基于准备好的dom，初始化echarts实例
+
+        // 柱状图END
+
+
+        function getParameter(param) {
+            var query = window.location.search;
+            var iLen = param.length;
+            var iStart = query.indexOf(param);
+            if (iStart === -1)
+                return "";
+            iStart += iLen + 1;
+            var iEnd = query.indexOf("&", iStart);
+            if (iEnd === -1)
+                return query.substring(iStart);
+
+            return query.substring(iStart, iEnd);
+        }
+
+        function sendBatchMessage() {
+
+            var agentPath1 = getParameter("agentPath1");
+            var agentPath2 = getParameter("agentPath2");
+            var agentPath3 = getParameter("agentPath3");
+            var maxStage = getParameter("maxStage");
+            var maxRound = getParameter("maxRound");
+
+            websocket.send(JSON.stringify({
+                agentPath1: agentPath1,
+				agentPath2: agentPath2,
+				agentPath3: agentPath3,
+				maxStage: maxStage,
+				maxRound: maxRound
+            }));
+
+        }
+
+
+        var websocket = null;
+
+        //判断当前浏览器是否支持WebSocket
+        if ('WebSocket' in window) {
+            websocket = new WebSocket("ws://localhost:8181/batch");
+        } else {
+            alert('Not support websocket')
+        }
+
+
+        //连接发生错误的回调方法
+        websocket.onerror = function () {
+            setMessageInnerHTML("error");
+        };
+
+        //连接成功建立的回调方法
+        websocket.onopen = function (event) {
+            sendBatchMessage();
+        };
+
+        if(sessionRoundNumHistory !== "undefined"){
+
+        }else{
+            var sessionRoundNumHistory;
+        }
+        var playerNum = 0;
+        //接收到消息的回调方法
+        websocket.onmessage = function (event) {
+            var message = JSON.parse(event.data) || {};
+            var batchResultMessages = message.batchResultMessages;
+            $("#game").append("<th colspan=\"2\">Game</th>");
+            var name = [];
+            var payOff = [];
+			for(var p in batchResultMessages)
+			{
+			    if($("#"+batchResultMessages[p].playerName).length<=0){
+                    var item;
+			        if(batchResultMessages[p].partyNum === 0){
+                        item = "<tr class=\"success\" id=\""+batchResultMessages[p].playerName+"\">"
+					}else if(batchResultMessages[p].partyNum === 1){
+			            item = "<tr class=\"warning\" id=\""+batchResultMessages[p].playerName+"\">";
+					}else if(batchResultMessages[p].partyNum === 2){
+			            item = "<tr class=\"danger\" id=\""+batchResultMessages[p].playerName+"\">";
+					}
+                    item = item +  "<td>"+batchResultMessages[p].playerName+"</td></tr>";
+			        $("#agent").append(item);
+			    }
+				$("#"+batchResultMessages[p].playerName).append("<td>"+batchResultMessages[p].roleName+"</td>" +
+                    "<td class=\"agreed-proposal "+batchResultMessages[p].playerName+"\">"+batchResultMessages[p].payOff+"</td>");
+
+
+				var allPayoff = document.getElementsByClassName(batchResultMessages[p].playerName);
+				var total=0;
+
+				var totalNum=0;
+				for(var i = 0;i<allPayoff.length;i++){
+				    total = total + parseInt(allPayoff[i].innerHTML);
+					totalNum = i + 1;
+				}
+				var averageNum = total/totalNum;
+				if($("#"+batchResultMessages[p].playerName+"Average").length<=0){
+				    $("#average").append("<th >"+batchResultMessages[p].playerName+": <span id='"+batchResultMessages[p].playerName+"Average'>"+averageNum+"</span></th>")
+				}else{
+				    $("#"+batchResultMessages[p].playerName+"Average").text(averageNum);
+				}
+				name.push(batchResultMessages[p].playerName);
+				payOff.push(total);
+			}
+
+
+
+
+            var myChart = echarts.init(document.getElementById('ResultBarChart'));
+            // 指定图表的配置项和数据
+            var option = {
+
+                tooltip: {},
+
+                xAxis: {
+                    data: name,
+                    axisLabel: {
+                        interval:0,
+                        rotate:15
+                    },
+                },
+
+
+                yAxis: {},
+                series: [{
+                    type: 'bar',
+                    data: payOff,
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true, //开启显示
+                                position: 'top', //在上方显示
+                                textStyle: { //数值样式
+                                    color: '#e59501',
+                                    fontSize: 14
+                                }
+                            }
+                        }
+                    },
+
+                }]
+            };
+            myChart.setOption(option);
+
+
+
+        };
+
+        //连接关闭的回调方法
+        websocket.onclose = function () {
+        };
+
+        //监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
+        window.onbeforeunload = function () {
+            websocket.close();
+        };
+
+        //将消息显示在网页上
+        function setMessageInnerHTML(innerHTML) {
+        }
+
+        //关闭连接
+        function closeWebSocket() {
+            websocket.close();
+        }
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<game id = "" name="">
+    <player name="" role-name="" type="" path=""/>
+    <session num="">
+        <round num="">
+            <proposal name="" role-name="" reward="">
+                <ally name="" role-name="" reward=""/>
+            </proposal>
+            <response name="" role-name="" agree=""/>
+        </round>
+    </session>
+</game>

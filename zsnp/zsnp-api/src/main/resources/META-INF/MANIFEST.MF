@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Class-Path: lib\annotations-15.0.jar lib\spring-aop-4.3.12.RELEASE.jar
+  lib\log4j-1.2.17.jar lib\lombok-1.16.18.jar lib\xml-apis-1.4.01.jar 
+ lib\spring-context-4.3.12.RELEASE.jar lib\spring-boot-starter-1.5.8.R
+ ELEASE.jar lib\spring-boot-autoconfigure-1.5.8.RELEASE.jar lib\logbac
+ k-core-1.1.11.jar lib\jul-to-slf4j-1.7.25.jar lib\dom4j-1.6.1.jar lib
+ \jcl-over-slf4j-1.7.25.jar spring-beans-4.3.12.RELEASE.jar spring-cor
+ e-4.3.12.RELEASE.jar slf4j-api-1.7.25.jar snakeyaml-1.17.jar spring-b
+ oot-1.5.8.RELEASE.jar spring-expression-4.3.12.RELEASE.jar logback-cl
+ assic-1.1.11.jar jaxen-1.1.6.jar log4j-over-slf4j-1.7.25.jar spring-b
+ oot-starter-logging-1.5.8.RELEASE.jar
+Main-Class: com.swu.agentlab.zsnp.entity.player.server.MyServer
+

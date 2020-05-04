@@ -1,0 +1,1915 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)http://172.24.67.6:8181/main?playerId=3A7C38C11C704D31&roomId=36FD2BBEEA724DBD -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>negotiation game platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="./negotiation game platform_files/jquery.min.js.下载"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript CSS文件 -->
+    <script src="./negotiation game platform_files/bootstrap.min.js.下载"></script>
+    <link rel="stylesheet" href="./negotiation game platform_files/bootstrap.min.css">
+
+    <!--buttons文件-->
+    <link rel="stylesheet" type="text/css" href="./negotiation game platform_files/buttons.css">
+    <script type="text/javascript" src="./negotiation game platform_files/buttons.js.下载"></script>
+
+    <!--弹出框样式-->
+    <script type="text/javascript" src="./negotiation game platform_files/popup_box.js.下载"></script>
+    <link rel="stylesheet" type="text/css" href="./negotiation game platform_files/popup_box.css">
+
+    <!--   echarts -->
+    <script type="text/javascript" src="./negotiation game platform_files/echarts.simple.min.js.下载"></script>
+
+    <link rel="stylesheet" type="text/css" href="./negotiation game platform_files/main-v3.0.css">
+
+
+
+</head>
+<body>
+
+<script type="text/javascript">
+    /*调动滑动条*/
+    $(document).ready(function(){
+        // BEGIN-选择框勾选了的话，给对应的range-bar添加键盘事件
+        $(".range-bar").focus(function(){
+
+            $(this).keyup(function(){
+                var x = $(this).val();
+                $(this).parent().children().eq(1).val(x);
+            });
+            $(this).mousemove(function(){
+                    var x = $(this).val();
+                    $(this).parent().children().eq(1).val(x);
+                });
+
+        });
+        // END-选择框勾选了的话，给对应的range-bar添加键盘事件
+
+
+
+
+        $("input[type=checkbox]").click(function() {
+
+            if ($(this).is(':checked')) {
+                $(this).parent().parent().children().eq(4).children().removeAttr("disabled", "disabled");
+            } else {
+                $(this).parent().parent().children().eq(4).children().attr("disabled", "disabled");
+                $(this).parent().parent().children().eq(4).children().val(0);
+            }
+
+            var size = $("input[type=checkbox]:checked").length;
+
+            var value = 0;
+            if(size != 0) {
+                var value = Math.floor(100 / size);
+            }
+            for(var i = 1; i <= $("input[type=checkbox]").length; i++) {
+                var id = "#range-value" + i
+                setRangeValue(id, value)
+            }
+        })
+
+
+    });
+
+    function setRangeValue(id, value) {
+        if($(id).parent().parent().children().eq(3).children(0).is(":checked")) {
+            $(id).parent().parent().children().eq(4).children().val(value)
+        }
+    }
+
+    // function setLastProposal(){
+    //         var size = $("#payoff1").children().length-1;
+    //         var payoff1 = $('#payoff1').find("td").eq(size).text();
+    //         var payoff2 = $('#payoff2').find("td").eq(size).text();
+    //         var payoff3 = $('#payoff3').find("td").eq(size).text();
+    //
+    //         setLastProposalPayoff(1, payoff1);
+    //         setLastProposalPayoff(2, payoff2);
+    //         setLastProposalPayoff(3, payoff3);
+    //
+    //     }
+    //
+    //     function setLastProposalPayoff(id, value){
+    //         if (value !== "-") {
+    //             $("#checkbox-value"+id).attr("checked","checked");
+    //             $("#range-value"+id).removeAttr("disabled", "disabled");
+    //             $("#range-value"+id).val(value);
+    //             $("#range-text"+id).val(value);
+    //         }
+    //     }
+
+</script>
+
+<div class="container outside-container">
+    <nav class="navbar navbar-blue" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://172.24.67.6:8181/main?playerId=3A7C38C11C704D31&amp;roomId=36FD2BBEEA724DBD#">Nego Platform</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="http://172.24.67.6:8181/main?playerId=3A7C38C11C704D31&amp;roomId=36FD2BBEEA724DBD#">Scenario Editor</a></li>
+                    <li class="dropdown">
+                        <a href="http://172.24.67.6:8181/main?playerId=3A7C38C11C704D31&amp;roomId=36FD2BBEEA724DBD#" class="dropdown-toggle" data-toggle="dropdown">
+                            Help <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://172.24.67.6:8181/main?playerId=3A7C38C11C704D31&amp;roomId=36FD2BBEEA724DBD#">Instructions</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://172.24.67.6:8181/main?playerId=3A7C38C11C704D31&amp;roomId=36FD2BBEEA724DBD#">Demonstration</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://172.24.67.6:8181/main?playerId=3A7C38C11C704D31&amp;roomId=36FD2BBEEA724DBD#">Version</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://172.24.67.6:8181/main?playerId=3A7C38C11C704D31&amp;roomId=36FD2BBEEA724DBD#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container inside-container">
+
+        <!--顶部表格-->
+        <div class="row" style="">
+            <div class="col-sm-12 clear-padding">
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <div class="payoff-body" id="rewardTable">
+                            <!--竖行表格-->
+                            <!--竖行表格 开始-->
+                            <div class="payoff-proposal">
+                                <table class="table">
+                                    <thead>
+                                    <tr class="success" id="stage">
+                                        <th colspan="1">stage</th>
+<!--                                        <th colspan="3">stage1</th>
+                                        <th colspan="3">stage2</th>-->
+                                    <th colspan="1" id="stage1">stage1</th><th colspan="2" id="stage2">stage2</th><th colspan="3" id="stage3">stage3</th><th colspan="1" id="stage4">stage4</th><th colspan="1" id="stage5">stage5</th><th colspan="1" id="stage6">stage6</th><th colspan="1" id="stage7">stage7</th><th colspan="1" id="stage8">stage8</th><th colspan="2" id="stage9">stage9</th><th colspan="2" id="stage10">stage10</th><th colspan="3" id="stage11">stage11</th><th colspan="1" id="stage12">stage12</th><th colspan="1" id="stage13">stage13</th><th colspan="1" id="stage14">stage14</th><th colspan="1" id="stage15">stage15</th><th colspan="1" id="stage16">stage16</th><th colspan="3" id="stage17">stage17</th><th colspan="1" id="stage18">stage18</th><th colspan="1" id="stage19">stage19</th><th colspan="1" id="stage20">stage20</th><th colspan="1" id="stage21">stage21</th></tr>
+                                    <tr class="warning" id="round">
+                                        <th>round</th>
+<!--                                        <th>round1</th>
+                                        <th>round2</th>
+                                        <th>round1</th>
+                                        <th>round2</th>
+                                        <th>round1</th>
+                                        <th>round2</th>
+                                        <th>round1</th>
+                                        <th>round2</th>-->
+
+                                    <th class="agreed-proposal">round1</th><th>round1</th><th class="agreed-proposal">round2</th><th>round1</th><th>round2</th><th class="agreed-proposal">round3</th><th class="agreed-proposal">round1</th><th class="agreed-proposal">round1</th><th class="agreed-proposal">round1</th><th class="agreed-proposal">round1</th><th class="agreed-proposal">round1</th><th>round1</th><th class="agreed-proposal">round2</th><th>round1</th><th class="agreed-proposal">round2</th><th>round1</th><th>round2</th><th class="agreed-proposal">round3</th><th class="agreed-proposal">round1</th><th class="agreed-proposal">round1</th><th class="agreed-proposal">round1</th><th class="agreed-proposal">round1</th><th class="agreed-proposal">round1</th><th>round1</th><th>round2</th><th class="agreed-proposal">round3</th><th class="agreed-proposal">round1</th><th class="agreed-proposal">round1</th><th class="agreed-proposal">round1</th><th class="agreed-proposal">round1</th></tr>
+                                    <tr class="danger" id="proposer">
+                                        <th>proposer</th>
+<!--                                        <th>Google</th>
+                                        <th>Amazon</th>
+                                        <th>Facebook</th>
+                                        <th class="agreed-proposal">Google</th>
+                                        <th>Google</th>
+                                        <th>Amazon</th>
+                                        <th>Facebook</th>
+                                        <th class="agreed-proposal">Google</th>
+                                        <th>Google</th>
+                                        <th>Amazon</th>
+                                        <th>Facebook</th>
+                                        <th class="agreed-proposal">Google</th>
+                                        <th>Google</th>
+                                        <th>Amazon</th>
+                                        <th>Facebook</th>
+                                        <th class="agreed-proposal">Google</th>-->
+                                    <th class="agreed-proposal">Google</th><th>Facebook</th><th class="agreed-proposal">Amazon</th><th>Google</th><th>Facebook</th><th class="agreed-proposal">Amazon</th><th class="agreed-proposal">Google</th><th class="agreed-proposal">Facebook</th><th class="agreed-proposal">Amazon</th><th class="agreed-proposal">Google</th><th class="agreed-proposal">Facebook</th><th>Amazon</th><th class="agreed-proposal">Google</th><th>Facebook</th><th class="agreed-proposal">Amazon</th><th>Google</th><th>Facebook</th><th class="agreed-proposal">Amazon</th><th class="agreed-proposal">Google</th><th class="agreed-proposal">Facebook</th><th class="agreed-proposal">Amazon</th><th class="agreed-proposal">Google</th><th class="agreed-proposal">Facebook</th><th>Amazon</th><th>Google</th><th class="agreed-proposal">Facebook</th><th class="agreed-proposal">Amazon</th><th class="agreed-proposal">Google</th><th class="agreed-proposal">Facebook</th><th class="agreed-proposal">Amazon</th></tr>
+                                    </thead>
+                                    <tbody id="partyPayoff">
+                                    <!--<tr class="success" id="payoff1">
+                                        <td>Google's payoff</td>
+&lt;!&ndash;                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>80</td>
+                                        <td class="agreed-proposal">60</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>80</td>
+                                        <td class="agreed-proposal">60</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>80</td>
+                                        <td class="agreed-proposal">60</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>80</td>
+                                        <td class="agreed-proposal">60</td>&ndash;&gt;
+
+                                    </tr>
+                                    <tr class="warning" id="payoff2">
+                                        <td>Facebook's payoff</td>
+                                        &lt;!&ndash;<td>50</td>
+                                        <td>20</td>
+                                        <td>80</td>
+                                        <td class="agreed-proposal">60</td>&ndash;&gt;
+                                    </tr>
+                                    <tr class="danger" id="payoff3">
+                                        <td>Amazon's payoff</td>
+&lt;!&ndash;                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>80</td>
+                                        <td class="agreed-proposal">60</td>&ndash;&gt;
+                                    </tr>-->
+                                    <tr class="success" id="payoff1">
+                <td>Google's payoff</td>
+            <td class="agreed-proposal">50</td><td>30</td><td class="agreed-proposal">-</td><td>60</td><td>30</td><td class="agreed-proposal">33</td><td class="agreed-proposal">50</td><td class="agreed-proposal">-</td><td class="agreed-proposal">33</td><td class="agreed-proposal">50</td><td class="agreed-proposal">33</td><td>40</td><td class="agreed-proposal">33</td><td>-</td><td class="agreed-proposal">45</td><td>60</td><td>-</td><td class="agreed-proposal">45</td><td class="agreed-proposal">50</td><td class="agreed-proposal">50</td><td class="agreed-proposal">33</td><td class="agreed-proposal">50</td><td class="agreed-proposal">-</td><td>33</td><td>60</td><td class="agreed-proposal">-</td><td class="agreed-proposal">33</td><td class="agreed-proposal">33</td><td class="agreed-proposal">50</td><td class="agreed-proposal">50</td></tr><tr class="warning" id="payoff2">
+<td>Facebook's payoff</td><td class="agreed-proposal">50</td><td>40</td><td class="agreed-proposal">50</td><td>20</td><td>35</td><td class="agreed-proposal">33</td><td class="agreed-proposal">-</td><td class="agreed-proposal">60</td><td class="agreed-proposal">33</td><td class="agreed-proposal">50</td><td class="agreed-proposal">33</td><td>-</td><td class="agreed-proposal">33</td><td>70</td><td class="agreed-proposal">-</td><td>-</td><td>55</td><td class="agreed-proposal">-</td><td class="agreed-proposal">-</td><td class="agreed-proposal">50</td><td class="agreed-proposal">33</td><td class="agreed-proposal">40</td><td class="agreed-proposal">50</td><td>33</td><td>40</td><td class="agreed-proposal">51</td><td class="agreed-proposal">33</td><td class="agreed-proposal">33</td><td class="agreed-proposal">50</td><td class="agreed-proposal">50</td></tr><tr class="danger" id="payoff3">
+<td>Amazon's payoff</td><td class="agreed-proposal">-</td><td>30</td><td class="agreed-proposal">50</td><td>20</td><td>35</td><td class="agreed-proposal">33</td><td class="agreed-proposal">50</td><td class="agreed-proposal">40</td><td class="agreed-proposal">33</td><td class="agreed-proposal">-</td><td class="agreed-proposal">33</td><td>60</td><td class="agreed-proposal">33</td><td>30</td><td class="agreed-proposal">55</td><td>40</td><td>45</td><td class="agreed-proposal">55</td><td class="agreed-proposal">50</td><td class="agreed-proposal">-</td><td class="agreed-proposal">33</td><td class="agreed-proposal">-</td><td class="agreed-proposal">50</td><td>33</td><td>-</td><td class="agreed-proposal">49</td><td class="agreed-proposal">33</td><td class="agreed-proposal">33</td><td class="agreed-proposal">-</td><td class="agreed-proposal">0</td></tr></tbody>
+                                </table>
+                            </div>
+                            <!--竖行表格 结束-->
+                            <!--添加更多提案的信息  -->
+
+
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <table class="table table-striped" style="width: 50%;margin: auto;">
+                            <thead>
+                            <tr id="averagePayoff"><th>Average Payoff</th><th>lily(Google): <span>34.333333333333336</span></th><th>Mark(Amazon): <span>30</span></th><th>hhh(Facebook): <span>34.857142857142854</span></th></tr>
+
+                            </thead>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--主要内容-->
+        <div class="row">
+
+            <div class="col-sm-6 clear-padding">
+                <div class="panel panel-primary">
+                    <div class="panel-body CoalitionsList-part">
+                    <table class="table table-striped">
+                        <caption>Coalitions and Rewards</caption>
+                        <thead>
+                        <tr>
+                            <th>Coalitions</th>
+                            <th>Weights</th>
+                            <th>Resources</th>
+                        </tr>
+                        </thead>
+                        <tbody id="coalition">
+                      <!--  <tr>
+                            <td>Google Amazon</td>
+                            <td>3</td>
+                            <td>100</td>
+                        </tr>
+                        <tr >
+                            <td>Google Facebook</td>
+                            <td>3</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Facebook Amazon</td>
+                            <td>4</td>
+                            <td>100</td>
+                        </tr>-->
+                        <tr id="coalition012" class="ballon"><td>Google,Facebook,Amazon</td><td>3</td><td>100</td></tr><tr id="coalition12" class="ballon"><td>Facebook,Amazon</td><td>2</td><td>100</td></tr><tr id="coalition02" class="ballon"><td>Google,Amazon</td><td>2</td><td>100</td></tr><tr id="coalition01" class="ballon"><td>Google,Facebook</td><td>2</td><td>100</td></tr></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="panel panel-primary" id="module">
+                <div class="panel-body">
+                    <form action="http://172.24.67.6:8181/main?playerId=3A7C38C11C704D31&amp;roomId=36FD2BBEEA724DBD" method="post">
+
+                        <div id="module-party">
+
+                            <table class="table table-striped">
+                                <caption>Select Coalition Struction  (sum of weights should &gt;= <span id="majority">2</span></caption>
+                                <thead>
+                                <tr>
+                                    <th>Party</th>
+                                    <th>Player</th>
+                                    <th>Weight</th>
+                                    <th>Ally</th>
+                                    <th>Allocation</th>
+                                </tr>
+                                </thead>
+                                <tbody id="playerInfo">
+                                
+                                    <!--<tr id="data1">
+                                        <td id="name1"><span><img src="img/user1/1.png"></span>?</td>
+                                        <td id="playerName1">?</td>
+                                        <td id="resource1">?</td>
+                                        <td><input id="checkbox-value1" type="checkbox"></td>
+                                        <td>
+                                            <input id="range-value1" type="range"  disabled="disabled" class="range-bar" value="0">
+                                            <input id="range-text1" type="text" class="range-input form-control" disabled="disabled" id="pre1" value="0">
+                                        </td>
+
+                                    </tr>
+                                    <tr id="data2">
+                                        <td id="name2">?</td>
+                                        <td id="playerName2">?</td>
+                                        <td id="resource2">?</td>
+                                        <td><input id="checkbox-value2" type="checkbox"></td>
+                                        <td>
+                                            <input id="range-value2" type="range" class="range-bar" disabled="disabled" value="0">
+                                            <input id="range-text2" type="text" class="range-input form-control" id="pre2" disabled="disabled" value="0">
+                                        </td>
+                                    </tr>
+                                    <tr id="data3">
+                                        <td id="name3">?</td>
+                                        <td id="playerName3">?</td>
+                                        <td id="resource3">?</td>
+                                        <td><input id="checkbox-value3" type="checkbox"></td>
+                                        <td>
+                                            <input id="range-value3" type="range" class="range-bar" disabled="disabled" value="0">
+                                            <input id="range-text3" type="text" class="range-input form-control" id="pre3" disabled="disabled" value="0">
+                                        </td>
+                                    </tr>-->
+
+                                
+                                <tr id="data1"><td id="name1"><span><img src="./negotiation game platform_files/3.png"></span>Amazon</td><td id="playerName1">Mark</td><td id="resource1">1</td><td><input id="checkbox-value1" type="checkbox"></td><td><input id="range-value1" type="range" class="range-bar" value="0" disabled="disabled"><input id="range-text1" type="text" class="range-input form-control" value="0" disabled="disabled"></td></tr><tr id="data2"><td id="name2"><span><img src="./negotiation game platform_files/3(1).png"></span>Google</td><td id="playerName2">lily</td><td id="resource2">1</td><td><input id="checkbox-value2" type="checkbox"></td><td><input id="range-value2" type="range" class="range-bar" value="0"><input id="range-text2" type="text" class="range-input form-control" value="0"></td></tr><tr id="data3"><td id="name3"><span><img src="./negotiation game platform_files/3(2).png"></span>Facebook</td><td id="playerName3">hhh</td><td id="resource3">1</td><td><input id="checkbox-value3" type="checkbox"></td><td><input id="range-value3" type="range" class="range-bar" value="0"><input id="range-text3" type="text" class="range-input form-control" value="0"></td></tr></tbody>
+                            </table>
+                        </div>
+
+                        <p>
+                            <input id="agree-coalition" type="button" value="Agree" class="btn btn-default" onclick="sendAcceptMsgToServer()" disabled="disabled">
+                            <input id="reject-coalition" type="button" value="Refuse" class="btn btn-default" onclick="sendRejectMsgToServer()" disabled="disabled">
+                        <!--    <input type="button"  id="offer-coalition" onclick="sendMsgToServer()" value="offer"
+                                   class="btn btn-warning">-->
+                        </p>
+
+                        <p id="resourceSum" style="display: none;">2</p>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--最！！右边！！的对话框部分和下面的选项部分-->
+        <div class="col-sm-6 clear-padding">
+            <div class="panel panel-primary">
+
+                <div class="panel-body interaction-part">
+                    <!--人物之间对话部分-->
+                    <div class="panel-body dialog-part" id="communicateList">
+
+
+                        <!-- 添加的样例 以下：：-->
+                        <!-- 在原来人物对话那里加上了名字 -->
+               <!--         <div class="dialog-user1">
+                            <img src="img/user1/2.png" class="">
+                            <span class="user-img-name">GOOglewangwang</span>
+                            <div class="box u-tri">你好，很高兴和你合作！
+                            </div>
+                        </div>-->
+                        <!-- 在原来人物对话那里加上了名字 -->
+
+                        <!-- 提案的显示 -->
+                      <!--  <div style="text-align: center;">
+                        <div style="overflow: hidden;display: inline-block;">
+                        <div class="dialog-proposal">
+                            <p style="color:#e59501;" ><span style="font-weight: bold;">Proposer : </span> <span>Google</span></p>
+                            <p><span>Google:</span> <span>33</span></p>
+                            <p><span>Facebook:</span> <span>33</span></p>
+                            <p><span>Amazon:</span> <span>33</span></p>
+                        </div>
+                        </div>
+                        </div>-->
+                        <!-- 提案的显示 -->
+
+                        <!-- 响应者同意或者拒绝的显示 -->
+                       <!-- 拒绝
+                        <div style="text-align: center;">
+                        <div style="overflow: hidden;display: inline-block;">
+                        <div class="dialog-responser">
+                            <p style="color:#e59501;" > 
+                                <span>asafasdgaGoogle</span>
+                                <span style="font-weight: bold;color: #ec2837;">Refuse</span>
+                            </p>
+                        </div>
+                        </div>
+                        </div>
+                        拒绝
+                        同意
+                        <div style="text-align: center;">
+                        <div style="overflow: hidden;display: inline-block;">
+                        <div class="dialog-responser">
+                            <p style="color:#e59501;" > 
+                                <span>asafasdgaGoogle</span>
+                                <span style="font-weight: bold;color: #42af44;">Agree</span>
+                            </p>
+                        </div>
+                        </div>
+                        </div>
+                        同意-->
+                        <!-- 响应者同意或者拒绝的显示 -->
+
+                        <!-- 本场结果的显示 -->                            
+                        <!--<div style="text-align: center;">
+                        <div style="overflow: hidden;display: inline-block;"> 
+                        <div class="session-result">
+                            <p style="color:#e59501;">Session Result</p>
+                            <p style="color:#e59501;">(succeed)</p>
+                            <p><span>vdzbfGoogle:</span> <span>33</span></p>
+                            <p><span>vdavFacebook:</span> <span>33</span></p>
+                            <p><span>vavAmazon:</span> <span>33</span></p>
+                        </div>
+                        </div>
+                        </div>-->
+                        <!-- 本场结果的显示 -->
+
+                        <!-- 最终游戏结果的显示 -->
+                        <!--<div style="text-align: center;">
+                        <div style="overflow: hidden;display: inline-block;">
+                        <div class="game-result">
+                            <p style="color:#e59501;">Game Result</p>
+                            <p><span>sagfdhdfhGoogle:</span> <span>33</span></p>
+                            <p><span>Facebook:</span> <span>33</span></p>
+                            <p><span>Amazon:</span> <span>33</span></p>
+                        </div>
+                        </div>
+                        </div>-->
+                            <!-- 最终游戏结果的显示 -->
+
+
+<!--                        <div class="dialog-user1">
+                            <img src="img/user1/2.png" class="">
+                            <div class="box u-tri">你好，很高兴和你合作！
+                                <div class="dialog-proposal">
+                                    <p><span>Google:</span> <span>33</span></p >
+                                    <p><span>Facebook:</span> <span>33</span></p >
+                                    <p><span>Amazon:</span> <span>33</span></p >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dialog-result">
+                            <p><span>Google:</span> <span>33</span></p >
+                            <p><span>Facebook:</span> <span>33</span></p >
+                            <p><span>Amazon:</span> <span>33</span></p >
+                        </div>-->
+                        <!--<div class="dialog-user1">
+                            <img src="../templates/img/user1/2.png" class="ballon-bigger">
+                            <p class="box u-tri ballon">你好，很高兴和你合作！</p>
+                        </div>
+                        <p class="dialog-server-mess">Player1 entered this room</p>
+                        <div class="dialog-user2">
+                            <img src="../templates/img/user2/3.png">
+                            <p class="box u-tri">你好，很高兴和你合作哈哈哈哈！你好很高兴和你合作！你好，很高兴和你合作！你好，很高兴和你合作！</p>
+                        </div>
+                        <div class="dialog-user1">
+                            <img src="../templates/img/user1/1.png">
+                            <p class="box u-tri">你好</p>
+                        </div>
+
+                            <img src="../templates/img/user3/2.png">
+                            <p class="box u-tri">你好，很高兴和你合作！</p>
+                        </div>
+
+                        <div class="dialog-user1">
+                            <img src="../templates/img/user1/1.png">
+                            <p class="box u-tri">你好</p>
+                        </div>
+
+                        <p class="dialog-server-mess">Session 1 Begins</p>
+                        <p class="dialog-server-mess">Current proposer is 1(Google).</p>
+
+                        <div class="dialog-user0">
+                            <img src="../templates/img/user3/2.png">
+                            <p class="box u-tri">你好，很高兴和你合作！</p>
+                        </div>
+
+                        <div class="dialog-user0">
+                            <img src="../templates/img/user3/2.png">
+                            <p class="box u-tri">你好</p>
+                        </div>
+
+                        <div class="dialog-user0">
+                            <img src="../templates/img/user3/2.png">
+                            <p class="box u-tri">你好，很高兴和你合作哈哈哈哈！你好很高兴和你合作！你好，很高兴和你合作！你好，很高兴和你合作</p>
+                        </div>-->
+
+                    <p class="dialog-server-mess">Hi,Mark,you are the 3rd player of this room.</p><p></p><p class="dialog-server-mess">Game begins.</p><p></p><p class="dialog-server-mess">Current proposer is lily(Google).</p><p></p><p class="dialog-server-mess">Stage 1 begins.</p><p></p> <div class="dialog-user1"><img src="./negotiation game platform_files/3(1).png"><span class="user-img-name">lily(Google)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/3(1).png" class="">                <span class="user-img-name">lily(Google)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>50</span></p><p><span>lily(Google):</span> <span>50</span></p></div></div></div><div class="dialog-user2 user-system-tips"><img src="./negotiation game platform_files/3(2).png" class=""><span class="user-img-name">hhh(Facebook)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>lily(Google):</span> <span>50.0</span></p><p><span>hhh(Facebook):</span> <span>50.0</span></p><p><span>Mark(Amazon):</span> <span>0.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 2 begins.</p><p></p><p class="dialog-server-mess">The next proposer is hhh(Facebook).</p><p></p> <div class="dialog-user2"><img src="./negotiation game platform_files/3(2).png"><span class="user-img-name">hhh(Facebook)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/3(2).png" class="">                <span class="user-img-name">hhh(Facebook)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>Mark(Amazon):</span> <span>30</span></p><p><span>lily(Google):</span> <span>30</span></p><p><span>hhh(Facebook):</span> <span>40</span></p></div></div></div><div class="dialog-user1 user-system-tips"><img src="./negotiation game platform_files/3(1).png" class=""><span class="user-img-name">lily(Google)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"><span style="font-weight: bold;color: #ec2837;">Refuse</span></p></div></div></div><div class="dialog-user3 user-system-tips"><img src="./negotiation game platform_files/3.png" class=""><span class="user-img-name">Mark(Amazon)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div><p class="dialog-server-mess">The next proposer is Mark(Amazon).
+You are proposer. Propose your coalition please.</p><p></p><div class="dialog-user0"><img src="./negotiation game platform_files/3.png"><p class="box u-tri">.Let's always play as follows</p></div><div class="dialog-user0 user-system-tips">                <img src="./negotiation game platform_files/3.png" class="">                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>50</span></p><p><span>Mark(Amazon):</span> <span>50</span></p></div></div></div><div class="dialog-user2 user-system-tips"><img src="./negotiation game platform_files/3(2).png" class=""><span class="user-img-name">hhh(Facebook)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>lily(Google):</span> <span>0.0</span></p><p><span>Mark(Amazon):</span> <span>50.0</span></p><p><span>hhh(Facebook):</span> <span>50.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 3 begins.</p><p></p><p class="dialog-server-mess">The next proposer is lily(Google).</p><p></p> <div class="dialog-user1"><img src="./negotiation game platform_files/3(1).png"><span class="user-img-name">lily(Google)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/3(1).png" class="">                <span class="user-img-name">lily(Google)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>lily(Google):</span> <span>60</span></p><p><span>Mark(Amazon):</span> <span>20</span></p><p><span>hhh(Facebook):</span> <span>20</span></p></div></div></div><div class="dialog-user2 user-system-tips"><img src="./negotiation game platform_files/3(2).png" class=""><span class="user-img-name">hhh(Facebook)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div><div class="dialog-user3 user-system-tips"><img src="./negotiation game platform_files/3.png" class=""><span class="user-img-name">Mark(Amazon)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"><span style="font-weight: bold;color: #ec2837;">Refuse</span></p></div></div></div><p class="dialog-server-mess">The next proposer is hhh(Facebook).</p><p></p> <div class="dialog-user2"><img src="./negotiation game platform_files/3(2).png"><span class="user-img-name">hhh(Facebook)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/3(2).png" class="">                <span class="user-img-name">hhh(Facebook)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>35</span></p><p><span>Mark(Amazon):</span> <span>35</span></p><p><span>lily(Google):</span> <span>30</span></p></div></div></div><div class="dialog-user1 user-system-tips"><img src="./negotiation game platform_files/3(1).png" class=""><span class="user-img-name">lily(Google)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"><span style="font-weight: bold;color: #ec2837;">Refuse</span></p></div></div></div><div class="dialog-user3 user-system-tips"><img src="./negotiation game platform_files/3.png" class=""><span class="user-img-name">Mark(Amazon)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div><p class="dialog-server-mess">The next proposer is Mark(Amazon).
+You are proposer. Propose your coalition please.</p><p></p><div class="dialog-user0"><img src="./negotiation game platform_files/3.png"><p class="box u-tri">.Let's always play as follows</p></div><div class="dialog-user0 user-system-tips">                <img src="./negotiation game platform_files/3.png" class="">                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>33</span></p><p><span>Mark(Amazon):</span> <span>33</span></p><p><span>lily(Google):</span> <span>33</span></p></div></div></div><div class="dialog-user2 user-system-tips"><img src="./negotiation game platform_files/3(2).png" class=""><span class="user-img-name">hhh(Facebook)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div><div class="dialog-user1 user-system-tips"><img src="./negotiation game platform_files/3(1).png" class=""><span class="user-img-name">lily(Google)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>Mark(Amazon):</span> <span>33.0</span></p><p><span>hhh(Facebook):</span> <span>33.0</span></p><p><span>lily(Google):</span> <span>33.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 4 begins.</p><p></p><p class="dialog-server-mess">The next proposer is lily(Google).</p><p></p> <div class="dialog-user1"><img src="./negotiation game platform_files/3(1).png"><span class="user-img-name">lily(Google)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/3(1).png" class="">                <span class="user-img-name">lily(Google)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>Mark(Amazon):</span> <span>50</span></p><p><span>lily(Google):</span> <span>50</span></p></div></div></div><div class="dialog-user3 user-system-tips"><img src="./negotiation game platform_files/3.png" class=""><span class="user-img-name">Mark(Amazon)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>lily(Google):</span> <span>50.0</span></p><p><span>Mark(Amazon):</span> <span>50.0</span></p><p><span>hhh(Facebook):</span> <span>0.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 5 begins.</p><p></p><p class="dialog-server-mess">The next proposer is hhh(Facebook).</p><p></p> <div class="dialog-user2"><img src="./negotiation game platform_files/3(2).png"><span class="user-img-name">hhh(Facebook)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/3(2).png" class="">                <span class="user-img-name">hhh(Facebook)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>Mark(Amazon):</span> <span>40</span></p><p><span>hhh(Facebook):</span> <span>60</span></p></div></div></div><div class="dialog-user3 user-system-tips"><img src="./negotiation game platform_files/3.png" class=""><span class="user-img-name">Mark(Amazon)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>lily(Google):</span> <span>0.0</span></p><p><span>Mark(Amazon):</span> <span>40.0</span></p><p><span>hhh(Facebook):</span> <span>60.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 6 begins.</p><p></p><p class="dialog-server-mess">The next proposer is Mark(Amazon).
+You are proposer. Propose your coalition please.</p><p></p><div class="dialog-user0"><img src="./negotiation game platform_files/3.png"><p class="box u-tri">.Let's always play as follows</p></div><div class="dialog-user0 user-system-tips">                <img src="./negotiation game platform_files/3.png" class="">                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>33</span></p><p><span>Mark(Amazon):</span> <span>33</span></p><p><span>lily(Google):</span> <span>33</span></p></div></div></div><div class="dialog-user2 user-system-tips"><img src="./negotiation game platform_files/3(2).png" class=""><span class="user-img-name">hhh(Facebook)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div><div class="dialog-user1 user-system-tips"><img src="./negotiation game platform_files/3(1).png" class=""><span class="user-img-name">lily(Google)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>Mark(Amazon):</span> <span>33.0</span></p><p><span>hhh(Facebook):</span> <span>33.0</span></p><p><span>lily(Google):</span> <span>33.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 7 begins.</p><p></p><p class="dialog-server-mess">The next proposer is lily(Google).</p><p></p> <div class="dialog-user1"><img src="./negotiation game platform_files/3(1).png"><span class="user-img-name">lily(Google)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/3(1).png" class="">                <span class="user-img-name">lily(Google)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>50</span></p><p><span>lily(Google):</span> <span>50</span></p></div></div></div><div class="dialog-user2 user-system-tips"><img src="./negotiation game platform_files/3(2).png" class=""><span class="user-img-name">hhh(Facebook)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>lily(Google):</span> <span>50.0</span></p><p><span>hhh(Facebook):</span> <span>50.0</span></p><p><span>Mark(Amazon):</span> <span>0.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 8 begins.</p><p></p><p class="dialog-server-mess">The next proposer is hhh(Facebook).</p><p></p> <div class="dialog-user2"><img src="./negotiation game platform_files/3(2).png"><span class="user-img-name">hhh(Facebook)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/3(2).png" class="">                <span class="user-img-name">hhh(Facebook)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>33</span></p><p><span>Mark(Amazon):</span> <span>33</span></p><p><span>lily(Google):</span> <span>33</span></p></div></div></div><div class="dialog-user1 user-system-tips"><img src="./negotiation game platform_files/3(1).png" class=""><span class="user-img-name">lily(Google)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div><div class="dialog-user3 user-system-tips"><img src="./negotiation game platform_files/3.png" class=""><span class="user-img-name">Mark(Amazon)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>Mark(Amazon):</span> <span>33.0</span></p><p><span>hhh(Facebook):</span> <span>33.0</span></p><p><span>lily(Google):</span> <span>33.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 9 begins.</p><p></p><p class="dialog-server-mess">The next proposer is Mark(Amazon).
+You are proposer. Propose your coalition please.</p><p></p><div class="dialog-user0"><img src="./negotiation game platform_files/3.png"><p class="box u-tri">.Let's always play as follows</p></div><div class="dialog-user0 user-system-tips">                <img src="./negotiation game platform_files/3.png" class="">                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>lily(Google):</span> <span>40</span></p><p><span>Mark(Amazon):</span> <span>60</span></p></div></div></div><div class="dialog-user1 user-system-tips"><img src="./negotiation game platform_files/3(1).png" class=""><span class="user-img-name">lily(Google)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"><span style="font-weight: bold;color: #ec2837;">Refuse</span></p></div></div></div><p class="dialog-server-mess">The next proposer is lily(Google).</p><p></p> <div class="dialog-user1"><img src="./negotiation game platform_files/3(1).png"><span class="user-img-name">lily(Google)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/3(1).png" class="">                <span class="user-img-name">lily(Google)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>33</span></p><p><span>Mark(Amazon):</span> <span>33</span></p><p><span>lily(Google):</span> <span>33</span></p></div></div></div><div class="dialog-user2 user-system-tips"><img src="./negotiation game platform_files/3(2).png" class=""><span class="user-img-name">hhh(Facebook)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div><div class="dialog-user3 user-system-tips"><img src="./negotiation game platform_files/3.png" class=""><span class="user-img-name">Mark(Amazon)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>Mark(Amazon):</span> <span>33.0</span></p><p><span>hhh(Facebook):</span> <span>33.0</span></p><p><span>lily(Google):</span> <span>33.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 10 begins.</p><p></p><p class="dialog-server-mess">The next proposer is hhh(Facebook).</p><p></p> <div class="dialog-user2"><img src="./negotiation game platform_files/3(2).png"><span class="user-img-name">hhh(Facebook)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/3(2).png" class="">                <span class="user-img-name">hhh(Facebook)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>70</span></p><p><span>Mark(Amazon):</span> <span>30</span></p></div></div></div><div class="dialog-user3 user-system-tips"><img src="./negotiation game platform_files/3.png" class=""><span class="user-img-name">Mark(Amazon)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"><span style="font-weight: bold;color: #ec2837;">Refuse</span></p></div></div></div><p class="dialog-server-mess">The next proposer is Mark(Amazon).
+You are proposer. Propose your coalition please.</p><p></p><div class="dialog-user0"><img src="./negotiation game platform_files/3.png"><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user0 user-system-tips">                <img src="./negotiation game platform_files/3.png" class="">                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>Mark(Amazon):</span> <span>55</span></p><p><span>lily(Google):</span> <span>45</span></p></div></div></div><div class="dialog-user1 user-system-tips"><img src="./negotiation game platform_files/3(1).png" class=""><span class="user-img-name">lily(Google)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>Mark(Amazon):</span> <span>55.0</span></p><p><span>lily(Google):</span> <span>45.0</span></p><p><span>hhh(Facebook):</span> <span>0.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 11 begins.</p><p></p><p class="dialog-server-mess">The next proposer is lily(Google).</p><p></p> <div class="dialog-user1"><img src="./negotiation game platform_files/3(1).png"><span class="user-img-name">lily(Google)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/3(1).png" class="">                <span class="user-img-name">lily(Google)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>Mark(Amazon):</span> <span>40</span></p><p><span>lily(Google):</span> <span>60</span></p></div></div></div><div class="dialog-user3 user-system-tips"><img src="./negotiation game platform_files/3.png" class=""><span class="user-img-name">Mark(Amazon)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"><span style="font-weight: bold;color: #ec2837;">Refuse</span></p></div></div></div><p class="dialog-server-mess">The next proposer is hhh(Facebook).</p><p></p> <div class="dialog-user2"><img src="./negotiation game platform_files/3(2).png"><span class="user-img-name">hhh(Facebook)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/3(2).png" class="">                <span class="user-img-name">hhh(Facebook)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>55</span></p><p><span>Mark(Amazon):</span> <span>45</span></p></div></div></div><div class="dialog-user3 user-system-tips"><img src="./negotiation game platform_files/3.png" class=""><span class="user-img-name">Mark(Amazon)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"><span style="font-weight: bold;color: #ec2837;">Refuse</span></p></div></div></div><p class="dialog-server-mess">The next proposer is Mark(Amazon).
+You are proposer. Propose your coalition please.</p><p></p><div class="dialog-user0"><img src="./negotiation game platform_files/3.png"><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user0 user-system-tips">                <img src="./negotiation game platform_files/3.png" class="">                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>Mark(Amazon):</span> <span>55</span></p><p><span>lily(Google):</span> <span>45</span></p></div></div></div><div class="dialog-user1 user-system-tips"><img src="./negotiation game platform_files/3(1).png" class=""><span class="user-img-name">lily(Google)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>Mark(Amazon):</span> <span>55.0</span></p><p><span>lily(Google):</span> <span>45.0</span></p><p><span>hhh(Facebook):</span> <span>0.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 12 begins.</p><p></p><p class="dialog-server-mess">The next proposer is lily(Google).</p><p></p> <div class="dialog-user1"><img src="./negotiation game platform_files/3(1).png"><span class="user-img-name">lily(Google)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/3(1).png" class="">                <span class="user-img-name">lily(Google)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>Mark(Amazon):</span> <span>50</span></p><p><span>lily(Google):</span> <span>50</span></p></div></div></div><div class="dialog-user3 user-system-tips"><img src="./negotiation game platform_files/3.png" class=""><span class="user-img-name">Mark(Amazon)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>lily(Google):</span> <span>50.0</span></p><p><span>Mark(Amazon):</span> <span>50.0</span></p><p><span>hhh(Facebook):</span> <span>0.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 13 begins.</p><p></p><p class="dialog-server-mess">The next proposer is hhh(Facebook).</p><p></p> <div class="dialog-user2"><img src="./negotiation game platform_files/3(2).png"><span class="user-img-name">hhh(Facebook)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/3(2).png" class="">                <span class="user-img-name">hhh(Facebook)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>50</span></p><p><span>lily(Google):</span> <span>50</span></p></div></div></div><div class="dialog-user1 user-system-tips"><img src="./negotiation game platform_files/3(1).png" class=""><span class="user-img-name">lily(Google)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>lily(Google):</span> <span>50.0</span></p><p><span>hhh(Facebook):</span> <span>50.0</span></p><p><span>Mark(Amazon):</span> <span>0.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 14 begins.</p><p></p><p class="dialog-server-mess">The next proposer is Mark(Amazon).
+You are proposer. Propose your coalition please.</p><p></p><div class="dialog-user0"><img src="./negotiation game platform_files/3.png"><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user0 user-system-tips">                <img src="./negotiation game platform_files/3.png" class="">                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>33</span></p><p><span>Mark(Amazon):</span> <span>33</span></p><p><span>lily(Google):</span> <span>33</span></p></div></div></div><div class="dialog-user2 user-system-tips"><img src="./negotiation game platform_files/3(2).png" class=""><span class="user-img-name">hhh(Facebook)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div><div class="dialog-user1 user-system-tips"><img src="./negotiation game platform_files/3(1).png" class=""><span class="user-img-name">lily(Google)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>Mark(Amazon):</span> <span>33.0</span></p><p><span>hhh(Facebook):</span> <span>33.0</span></p><p><span>lily(Google):</span> <span>33.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 15 begins.</p><p></p><p class="dialog-server-mess">The next proposer is lily(Google).</p><p></p> <div class="dialog-user1"><img src="./negotiation game platform_files/5.png"><span class="user-img-name">lily(Google)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/5.png" class="">                <span class="user-img-name">lily(Google)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>lily(Google):</span> <span>50</span></p><p><span>hhh(Facebook):</span> <span>40</span></p></div></div></div><div class="dialog-user2 user-system-tips"><img src="./negotiation game platform_files/5(1).png" class=""><span class="user-img-name">hhh(Facebook)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>hhh(Facebook):</span> <span>40.0</span></p><p><span>lily(Google):</span> <span>50.0</span></p><p><span>Mark(Amazon):</span> <span>0.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 16 begins.</p><p></p><p class="dialog-server-mess">The next proposer is hhh(Facebook).</p><p></p> <div class="dialog-user2"><img src="./negotiation game platform_files/3(2).png"><span class="user-img-name">hhh(Facebook)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/3(2).png" class="">                <span class="user-img-name">hhh(Facebook)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>50</span></p><p><span>Mark(Amazon):</span> <span>50</span></p></div></div></div><div class="dialog-user3 user-system-tips"><img src="./negotiation game platform_files/3.png" class=""><span class="user-img-name">Mark(Amazon)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>lily(Google):</span> <span>0.0</span></p><p><span>Mark(Amazon):</span> <span>50.0</span></p><p><span>hhh(Facebook):</span> <span>50.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 17 begins.</p><p></p><p class="dialog-server-mess">The next proposer is Mark(Amazon).
+You are proposer. Propose your coalition please.</p><p></p><div class="dialog-user0"><img src="./negotiation game platform_files/3.png"><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user0 user-system-tips">                <img src="./negotiation game platform_files/3.png" class="">                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>33</span></p><p><span>Mark(Amazon):</span> <span>33</span></p><p><span>lily(Google):</span> <span>33</span></p></div></div></div><div class="dialog-user2 user-system-tips"><img src="./negotiation game platform_files/3(2).png" class=""><span class="user-img-name">hhh(Facebook)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div><div class="dialog-user1 user-system-tips"><img src="./negotiation game platform_files/3(1).png" class=""><span class="user-img-name">lily(Google)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"><span style="font-weight: bold;color: #ec2837;">Refuse</span></p></div></div></div><p class="dialog-server-mess">The next proposer is lily(Google).</p><p></p> <div class="dialog-user1"><img src="./negotiation game platform_files/5.png"><span class="user-img-name">lily(Google)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/5.png" class="">                <span class="user-img-name">lily(Google)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>lily(Google):</span> <span>60</span></p><p><span>hhh(Facebook):</span> <span>40</span></p></div></div></div><div class="dialog-user2 user-system-tips"><img src="./negotiation game platform_files/5(1).png" class=""><span class="user-img-name">hhh(Facebook)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"><span style="font-weight: bold;color: #ec2837;">Refuse</span></p></div></div></div><p class="dialog-server-mess">The next proposer is hhh(Facebook).</p><p></p> <div class="dialog-user2"><img src="./negotiation game platform_files/3(2).png"><span class="user-img-name">hhh(Facebook)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/3(2).png" class="">                <span class="user-img-name">hhh(Facebook)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>51</span></p><p><span>Mark(Amazon):</span> <span>49</span></p></div></div></div><div class="dialog-user3 user-system-tips"><img src="./negotiation game platform_files/3.png" class=""><span class="user-img-name">Mark(Amazon)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>lily(Google):</span> <span>0.0</span></p><p><span>Mark(Amazon):</span> <span>49.0</span></p><p><span>hhh(Facebook):</span> <span>51.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 18 begins.</p><p></p><p class="dialog-server-mess">The next proposer is Mark(Amazon).
+You are proposer. Propose your coalition please.</p><p></p><div class="dialog-user0"><img src="./negotiation game platform_files/3.png"><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user0 user-system-tips">                <img src="./negotiation game platform_files/3.png" class="">                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>33</span></p><p><span>Mark(Amazon):</span> <span>33</span></p><p><span>lily(Google):</span> <span>33</span></p></div></div></div><div class="dialog-user2 user-system-tips"><img src="./negotiation game platform_files/3(2).png" class=""><span class="user-img-name">hhh(Facebook)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div><div class="dialog-user1 user-system-tips"><img src="./negotiation game platform_files/3(1).png" class=""><span class="user-img-name">lily(Google)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>Mark(Amazon):</span> <span>33.0</span></p><p><span>hhh(Facebook):</span> <span>33.0</span></p><p><span>lily(Google):</span> <span>33.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 19 begins.</p><p></p><p class="dialog-server-mess">The next proposer is lily(Google).</p><p></p> <div class="dialog-user1"><img src="./negotiation game platform_files/5.png"><span class="user-img-name">lily(Google)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/5.png" class="">                <span class="user-img-name">lily(Google)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>33</span></p><p><span>Mark(Amazon):</span> <span>33</span></p><p><span>lily(Google):</span> <span>33</span></p></div></div></div><div class="dialog-user2 user-system-tips"><img src="./negotiation game platform_files/5(1).png" class=""><span class="user-img-name">hhh(Facebook)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div><div class="dialog-user3 user-system-tips"><img src="./negotiation game platform_files/5(2).png" class=""><span class="user-img-name">Mark(Amazon)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>Mark(Amazon):</span> <span>33.0</span></p><p><span>hhh(Facebook):</span> <span>33.0</span></p><p><span>lily(Google):</span> <span>33.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 20 begins.</p><p></p><p class="dialog-server-mess">The next proposer is hhh(Facebook).</p><p></p> <div class="dialog-user2"><img src="./negotiation game platform_files/3(2).png"><span class="user-img-name">hhh(Facebook)</span><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user1 user-system-tips">                <img src="./negotiation game platform_files/3(2).png" class="">                <span class="user-img-name">hhh(Facebook)</span>                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>50</span></p><p><span>lily(Google):</span> <span>50</span></p></div></div></div><div class="dialog-user1 user-system-tips"><img src="./negotiation game platform_files/3(1).png" class=""><span class="user-img-name">lily(Google)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>lily(Google):</span> <span>50.0</span></p><p><span>hhh(Facebook):</span> <span>50.0</span></p><p><span>Mark(Amazon):</span> <span>0.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 21 begins.</p><p></p><p class="dialog-server-mess">The next proposer is Mark(Amazon).
+You are proposer. Propose your coalition please.</p><p></p><div class="dialog-user0"><img src="./negotiation game platform_files/3.png"><p class="box u-tri">.Let's play as follows</p></div><div class="dialog-user0 user-system-tips">                <img src="./negotiation game platform_files/3.png" class="">                <div class="box u-tri ">                <div class="dialog-proposal"><p><span>hhh(Facebook):</span> <span>50</span></p><p><span>lily(Google):</span> <span>50</span></p><p><span>Mark(Amazon):</span> <span>0</span></p></div></div></div><div class="dialog-user2 user-system-tips"><img src="./negotiation game platform_files/3(2).png" class=""><span class="user-img-name">hhh(Facebook)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div><div class="dialog-user1 user-system-tips"><img src="./negotiation game platform_files/3(1).png" class=""><span class="user-img-name">lily(Google)</span><div class="box u-tri "><div class="dialog-responser"><p style="color:#e59501;"> <span style="font-weight: bold;color: #42af44;">Agree</span></p></div></div></div> <div style="text-align: center;">
+                <div style="overflow: hidden;display: inline-block;">
+                <div class="session-result">
+                <p style="color:#e59501;">Stage Result</p>
+            <p style="color:#e59501;">(succeed)</p><p><span>lily(Google):</span> <span>50.0</span></p><p><span>hhh(Facebook):</span> <span>50.0</span></p><p><span>Mark(Amazon):</span> <span>0.0</span></p> </div></div></div><p class="dialog-server-mess">Stage 22 begins.</p><p></p><p class="dialog-server-mess">The next proposer is lily(Google).</p><p></p></div>
+
+                </div>
+
+
+                <div class="row free-sentence row-free-sentence">
+
+                    <div class="col-sm-5 free-sentence user-sentence-group">
+                        <!-- 添加的预定义语言按钮-模块 -->
+                        <div>
+                            <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected user-sentenceSelected" onclick="sentenceSelected(this)">Let's play as follows</button>
+                            <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected" onclick="sentenceSelected(this)">Let's always play as follows</button>
+                            <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected" onclick="sentenceSelected(this)">I like the last proposal</button>
+                            <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected" onclick="sentenceSelected(this)">I dislike the last proposal</button>
+                        </div>
+                        <p id="predefined-text-show" style="display: none;">Let's play as follows</p>
+                    </div>
+                
+
+                    <div class="col-sm-7 free-sentence">
+                        <div class="row">
+                            <img src="./negotiation game platform_files/3.png" id="CurrentEmoticon" class="img-head">
+                            <textarea type="text" name="" placeholder="input here" id="free-text" rows="3" cols="10"></textarea>
+                        </div>
+                        <div class="row user-emoticon-group" id="emotionSelected">
+                            <!--<img src="../templates/img/user3/1.png" onclick="imgSelected(this)" class="user-emoticonNOTSelected">
+                                
+                                <img src="../templates/img/user3/3.png" onclick="imgSelected(this)" class="user-emoticonSelected">
+                    
+                                <img src="../templates/img/user3/5.png" onclick="imgSelected(this)" class="user-emoticonNOTSelected">-->
+                        <img src="./negotiation game platform_files/1.png" onclick="imgSelected(this)" class="user-emoticonNOTSelected">
+
+                    <img src="./negotiation game platform_files/3.png" onclick="imgSelected(this)" class="user-emoticonSelected">
+
+                    <img src="./negotiation game platform_files/5(2).png" onclick="imgSelected(this)" class="user-emoticonNOTSelected">
+</div>
+                        <p id="img-emotionId" style="display: none;">3</p>
+                        <p>
+                            <input type="button" name="" id="send" value="Send" onclick="sendCommunicate();" class="btn btn-default" disabled="disabled">
+                            <input type="button" name="" value="Clear" onclick="clearFree()" class="btn btn-primary">
+                            <!--<input type="submit" name="" id = "silent" value="Silent" class="btn btn-danger" onclick="removeAttrLeft();renewYourActionValue()">-->
+                        </p>
+
+                    </div>
+
+
+
+                </div> <!-- div class="row free-sentence" 结束标签 -->
+
+                <script type="text/javascript">
+                    function clearFree(){
+
+                        $("#free-text").val("");
+
+                    }
+
+                    function sentenceSelected(e){
+                        $(".user-sentence-group button").removeClass("user-sentenceSelected");
+                        $(".user-sentence-group button").addClass("user-sentenceNOTSelected");
+                        $(e).addClass( "user-sentenceSelected");
+                        var text = $(e).text();
+                        $('#predefined-text-show').text(text);
+                    }
+
+                    function imgSelected(e){
+                        $(".user-emoticon-group img").attr("class", "user-emoticonNOTSelected");
+                        $(e).attr("class", "user-emoticonSelected");
+                        // 选中的表情的ID
+                        var a = $(e)[0].src;
+                        var b = a.charAt(a.length-5);
+                        $("#img-emotionId").text(b);
+                        // 当前表情替换成目前选中的表情
+                        $('#CurrentEmoticon').attr('src',a);
+                    }
+
+
+
+                    // function predefinedOffer(){
+
+
+                    //     var a = 0;
+                    //     var b = 0;
+                    //     var c = 0;
+                    //     var a1 = $("#checkbox-value1").parent().parent().children().eq(0).text();
+                    //     var b1 = $("#checkbox-value2").parent().parent().children().eq(0).text();
+                    //     var c1 = $("#checkbox-value3").parent().parent().children().eq(0).text();
+
+                    //     if($("#checkbox-value1").is(':checked')){
+                    //         var a = parseInt($("#range-value1").val());
+                    //     }
+
+                    //     if($("#checkbox-value2").is(':checked')){
+                    //         var b = parseInt($("#range-value2").val());
+                    //     }
+
+                    //     if($("#checkbox-value3").is(':checked')){
+                    //         var c = parseInt($("#range-value3").val());
+                    //     }
+
+                    //     $("#predefined-text-show").text("Proposal to be committed:" + "("+ a1 + ":" + a + "," + b1 + ":" + b + "," + c1 + ":" + c + ")");
+
+                    // }
+
+
+                    $(document).ready(function () {
+
+                        // $("#predefined-offer").click(function () {
+
+                        //     alert("Tips: You can predefine offer in block highlighted in the left of page");
+                        //     $("#module").attr("class", "module");
+
+                        //     $("#offer-coalition").attr("disabled", "disabled");
+                        //     $("#agree-coalition").attr("disabled", "disabled");
+                        //     $("#reject-coalition").attr("disabled", "disabled");
+
+                        // });
+
+
+
+
+                    });
+                </script>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+    // $(document).ready(function () {
+    //
+    //
+    //     $(".range-bar").click(function () {
+    //
+    //         var x = $(this).val();
+    //         // $(this).parent().children().eq(1).text(x);
+    //         $(this).parent().children().eq(1).val(x);
+    //
+    //     });
+    //
+    //     $(".range-input").blur(function () {
+    //
+    //         var x = $(this).val();
+    //         // $(this).parent().children().eq(1).text(x);
+    //         $(this).parent().children().eq(0).val(x);
+    //
+    //     });
+    // });
+
+
+    var websocket = null;
+
+    //判断当前浏览器是否支持WebSocket
+    if ('WebSocket' in window) {
+        websocket = new WebSocket("ws://172.24.67.6:8181/websocket");
+    } else {
+        alert('Not support websocket')
+    }
+
+    function getParameter(param) {
+        var query = window.location.search;
+        var iLen = param.length;
+        var iStart = query.indexOf(param);
+        if (iStart == -1)
+            return "";
+        iStart += iLen + 1;
+        var iEnd = query.indexOf("&", iStart);
+        if (iEnd == -1)
+            return query.substring(iStart);
+
+        return query.substring(iStart, iEnd);
+    }
+
+
+    function sendMsgToServer() {
+        var a = 0;
+        var b = 0;
+        var c = 0;
+        var d = 0;
+        var e = 0;
+        if ($("#checkbox-value1").is(':checked')) {
+            a = parseInt($("#range-value1").val());
+        }
+
+        if ($("#checkbox-value2").is(':checked')) {
+            b = parseInt($("#range-value2").val());
+        }
+
+        if ($("#checkbox-value3").is(':checked')) {
+            c = parseInt($("#range-value3").val());
+        }
+        if($("#checkbox-value4").is(':checked')){
+            d = parseInt($("#range-value4").val());
+        }
+        if($("#checkbox-value5").is(':checked')){
+            e = parseInt($("#range-value5").val());
+        }
+
+        // var sum = a + b + c;
+        
+        // var a1 = 0;
+        // var b1 = 0;
+        // var c1 = 0;
+        // if ($("#checkbox-value1").is(':checked')) {
+        //     var a1 = parseInt($("#resource1").text());
+        // }
+        //
+        // if ($("#checkbox-value2").is(':checked')) {
+        //     var b1 = parseInt($("#resource2").text());
+        // }
+        //
+        // if ($("#checkbox-value3").is(':checked')) {
+        //     var c1 = parseInt($("#resource3").text());
+        // }
+        // var sum1 = a1 + b1 + c1;
+        //
+        // if ((sum <= 100)&&(sum1 >= parseInt($("#resourceSum").text()))) {
+        // } else {
+        //     $("#send").removeAttr("disabled","disabled");
+        //     $("#send").attr("class","btn btn-success");
+        //     mizhu.alert("Tips","Invalid Alliance");
+        //     return false;
+        // }
+        //
+        // if ($('#predefined-text-show').text() === "") {
+        //     mizhu.alert("Tips","Choose your Action!");
+        //
+        //     $("#send").removeAttr("disabled","disabled");
+        //     $("#send").attr("class","btn btn-success");
+        //
+        //
+        //     return false;
+        // } else {
+        // }
+
+
+        var roomId = getParameter("roomId");
+        var playerId = getParameter("playerId");
+        var name1 = $("#playerName1").text();
+        var name2 = $("#playerName2").text();
+        var name3 = $("#playerName3").text();
+        var name4 = $("#playerName4").text();
+        var name5 = $("#playerName5").text();
+        // var name1Value = $("#checkbox-value1").val();
+        // var name2Value = $("#checkbox-value2").val();
+        // var name3Value = $("#checkbox-value3").val();
+        var emotion = $("#img-emotionId").text();
+        websocket.send(JSON.stringify({
+            MyId: playerId,
+            RoomId: roomId,
+            Name1: name1,
+            Name1Value: a,
+            Name2: name2,
+            Name2Value: b,
+            Name3: name3,
+            Name3Value: c,
+            Name4: name4,
+            Name4Value: d,
+            Name5: name5,
+            Name5Value: e,
+            Type: "PROPOSAL",
+            CommunicateFree: "0",
+            CommunicateType: "0",
+            Emotion:emotion
+        }));
+
+    }
+
+    function sendAcceptMsgToServer() {
+
+        var roomId = getParameter("roomId");
+        var playerId = getParameter("playerId");
+        var name1 = $("#playerName1").text();
+        var name2 = $("#playerName2").text();
+        var name3 = $("#playerName3").text();
+        var name4 = $("#playerName4").text();
+        var name5 = $("#playerName5").text();
+        var name1Value = $("#range-text1").text();
+        var name2Value = $("#range-text2").text();
+        var name3Value = $("#range-text3").text();
+        var name4Value = $("#range-text4").text();
+        var name5Value = $("#range-text5").text();
+        var emotion=$("#img-emotionId").text();
+        websocket.send(JSON.stringify({
+            MyId: playerId,
+            RoomId: roomId,
+            Name1: name1,
+            Name1Value: name1Value,
+            Name2: name2,
+            Name2Value: name2Value,
+            Name3: name3,
+            Name3Value: name3Value,
+            Name4: name4,
+            Name4Value: name4Value,
+            Name5: name5,
+            Name5Value: name5Value,
+            Type: "ACCEPT",
+            CommunicateFree: "0",
+            CommunicateType: "0",
+            Emotion:emotion
+        }));
+
+        $("#agree-coalition").attr("disabled","disabled");
+        $("#agree-coalition").attr("class","btn btn-default");
+
+        $("#reject-coalition").attr("disabled","disabled");
+        $("#reject-coalition").attr("class","btn btn-default");
+
+    }
+
+    function sendRejectMsgToServer() {
+
+
+        var roomId = getParameter("roomId");
+        var playerId = getParameter("playerId");
+        var name1 = $("#playerName1").text();
+        var name2 = $("#playerName2").text();
+        var name3 = $("#playerName3").text();
+        var name4 = $("#playerName4").text();
+        var name5 = $("#playerName5").text();
+        var name1Value = $("#range-text1").text();
+        var name2Value = $("#range-text2").text();
+        var name3Value = $("#range-text3").text();
+        var name4Value = $("#range-text4").text();
+        var name5Value = $("#range-text5").text();
+        var emotion=$("#img-emotionId").text();
+        websocket.send(JSON.stringify({
+            MyId: playerId,
+            RoomId: roomId,
+            Name1: name1,
+            Name1Value: name1Value,
+            Name2: name2,
+            Name2Value: name2Value,
+            Name3: name3,
+            Name3Value: name3Value,
+            Name4: name4,
+            Name4Value: name4Value,
+            Name5: name5,
+            Name5Value: name5Value,
+            Type: "REJECT",
+            CommunicateFree: "0",
+            CommunicateType: "0",
+            Emotion: emotion
+        }));
+
+        $("#agree-coalition").attr("disabled","disabled");
+        $("#agree-coalition").attr("class","btn btn-default");
+
+        $("#reject-coalition").attr("disabled","disabled");
+        $("#reject-coalition").attr("class","btn btn-default");
+    }
+
+    function sendPlayerRoom() {
+        var roomId = getParameter("roomId");
+        var playerId = getParameter("playerId");
+        var name1 = $("#name1").text();
+        var name2 = $("#name2").text();
+        var name3 = $("#name3").text();
+        var name4 = $("#name4").text();
+        var name5 = $("#name5").text();
+        var name1Value = $("#range-text1").text();
+        var name2Value = $("#range-text2").text();
+        var name3Value = $("#range-text3").text();
+        var name4Value = $("#range-text4").text();
+        var name5Value = $("#range-text5").text();
+        var emotion=$("#img-emotionId").text();
+        websocket.send(JSON.stringify({
+            MyId: playerId,
+            RoomId: roomId,
+            Name1: name1,
+            Name1Value: name1Value,
+            Name2: name2,
+            Name2Value: name2Value,
+            Name3: name3,
+            Name3Value: name3Value,
+            Name4: name4,
+            Name4Value: name4Value,
+            Name5: name5,
+            Name5Value: name5Value,
+            Type: "UPDATE",
+            CommunicateFree: "0",
+            CommunicateType: "0",
+            Emotion:emotion
+        }));
+
+    }
+
+
+
+    function sendCommunicate() {
+        var a = 0;
+        var b = 0;
+        var c = 0;
+        var d = 0;
+        var e = 0;
+        if ($("#checkbox-value1").is(':checked')) {
+            a = parseInt($("#range-value1").val());
+        }
+
+        if ($("#checkbox-value2").is(':checked')) {
+            b = parseInt($("#range-value2").val());
+        }
+
+        if ($("#checkbox-value3").is(':checked')) {
+            c = parseInt($("#range-value3").val());
+        }
+        if ($("#checkbox-value4").is(':checked')) {
+            d = parseInt($("#range-value4").val());
+        }
+        if ($("#checkbox-value5").is(':checked')) {
+            e = parseInt($("#range-value5").val());
+        }
+
+        var sum = a + b + c + d + e;
+
+
+        var a1 = 0;
+        var b1 = 0;
+        var c1 = 0;
+        var d1 = 0;
+        var e1 = 0;
+        if ($("#checkbox-value1").is(':checked')) {
+            a1 = parseInt($("#resource1").text());
+        }
+
+        if ($("#checkbox-value2").is(':checked')) {
+            b1 = parseInt($("#resource2").text());
+        }
+
+        if ($("#checkbox-value3").is(':checked')) {
+            var c1 = parseInt($("#resource3").text());
+        }
+        if ($("#checkbox-value4").is(':checked')) {
+            d1 = parseInt($("#resource4").text());
+        }
+        if ($("#checkbox-value5").is(':checked')) {
+            e1 = parseInt($("#resource5").text());
+        }
+
+        var sum1 = a1 + b1 + c1+ d1 +e1;
+
+        if ((sum <= 100)&&(sum1 >= parseInt($("#resourceSum").text()))) {
+        } else {
+            mizhu.alert("Tips","Invalid Alliance");
+            return false;
+        }
+
+        if ($('#predefined-text-show').text() === "") {
+            mizhu.alert("Tips","Choose your Action!");
+            return false;
+        } else {
+        }
+
+        var roomId = getParameter("roomId");
+        var playerId = getParameter("playerId");
+        var name1 = $("#playerName1").text();
+        var name2 = $("#playerName2").text();
+        var name3 = $("#playerName3").text();
+        var name4 = $("#playerName4").text();
+        var name5 = $("#playerName5").text();
+        var name1Value = $("#range-text1").text();
+        var name2Value = $("#range-text2").text();
+        var name3Value = $("#range-text3").text();
+        var name4Value = $("#range-text4").text();
+        var name5Value = $("#range-text5").text();
+        var communicateFree = $("#free-text").val();
+        var communicateType = $("#predefined-text-show").text();
+        var emotion=$("#img-emotionId").text();
+        websocket.send(JSON.stringify({
+            MyId: playerId,
+            RoomId: roomId,
+            Name1: name1,
+            Name1Value: name1Value,
+            Name2: name2,
+            Name2Value: name2Value,
+            Name3: name3,
+            Name3Value: name3Value,
+            Name4: name4,
+            Name4Value: name4Value,
+            Name5: name5,
+            Name5Value: name5Value,
+            Type: "Communicate",
+            CommunicateFree: communicateFree,
+            CommunicateType:communicateType,
+            Emotion:emotion
+        }));
+
+        $("#send").attr("disabled","disabled");
+        $("#send").attr("class","btn btn-default");
+
+        // $("#silent").attr("disabled","disabled");
+        // $("#silent").attr("class","btn btn-default");
+
+        sendMsgToServer();
+    }
+
+    //连接发生错误的回调方法
+    websocket.onerror = function () {
+        setMessageInnerHTML("error");
+    };
+
+    //连接成功建立的回调方法
+    websocket.onopen = function (event) {
+        sendPlayerRoom();
+        // $("#offer-coalition").hide();
+        // $("#agree-coalition").hide();
+        // $("#reject-coalition").hide();
+        $("#offer-coalition").attr("disabled","disabled");
+        $("#offer-coalition").attr("class","btn btn-default");
+
+
+        $("#agree-coalition").attr("disabled","disabled");
+        $("#agree-coalition").attr("class","btn btn-default");
+
+
+        $("#reject-coalition").attr("disabled","disabled");
+        $("#reject-coalition").attr("class","btn btn-default");
+    };
+
+    if(sessionRoundNumHistory !== "undefined"){
+
+    }else{
+        var sessionRoundNumHistory;
+    }
+    var playerNum = 0;
+    //接收到消息的回调方法
+    websocket.onmessage = function (event) {
+        var message = JSON.parse(event.data) || {};
+        if (message.type === "UPDATE") {
+            $('#majority').text(message.majority);
+
+            //在这个位置更新页面的majority信息
+
+        } else if (message.type === "PLAYER") {
+            //更改完毕
+            var playerText;
+
+            // if (message.num === 1) {
+            //     // document.getElementById("topName").innerHTML=message.roleName;
+            //     // document.getElementById("name1").innerHTML = message.roleName;
+            //
+            //     document.getElementById("playerName1").innerHTML = message.name;
+            //     document.getElementById("resource1").innerHTML = message.resource;
+// 修改完成
+                playerText = "<tr id=\"data"+message.num+"\">" +
+                    "<td id=\"name"+message.num+"\"><span><img src=\"../templates/img/user1/1.png\"></span>"+message.roleName+"</td>" +
+                    "<td id=\"playerName"+message.num+"\">"+message.name+"</td>" +
+                    "<td id=\"resource"+message.num+"\">"+message.resource+"</td>" +
+                    "<td><input id=\"checkbox-value"+message.num+"\" type=\"checkbox\"></td>" +
+                    "<td>" +
+                    "<input id=\"range-value"+message.num+"\" type=\"range\"  disabled=\"disabled\" class=\"range-bar\" value=\"0\">" +
+                    "<input id=\"range-text"+message.num+"\" type=\"text\" class=\"range-input form-control\" disabled=\"disabled\" id=\"pre"+message.num+"\" value=\"0\">" +
+                    "</td>" +
+                    "</tr>";
+                $('#playerInfo').append(playerText);
+
+                // document.getElementById("talent1").innerHTML=message.talent;
+                // document.getElementById("serverMessage").innerHTML = "您好，" + message.name + "，你是第" + message.size + "个进入该房间的玩家";
+                // var item;
+                var playerNum = message.partyNum + 1;
+                $("#name"+message.num).html("");
+                $("#name"+message.num).append("<span><img src=\"../templates/img/user"+playerNum+"/3.png\"></span>"+message.roleName);
+
+
+
+
+
+
+
+                var size
+                if($('#name1').text()=== message.roleName) {
+                    if(message.size === 1) {
+                        size = "1st";
+                    }else if(message.size === 2){
+                        size = "2nd";
+                    }else if(message.size === 3){
+                        size = "3rd";
+                    }else{
+                        size = message.size+"th";
+                    }
+
+                    var item = "<p class=\"dialog-server-mess\">" + "Hi," + message.name + ",you are the " + size + " player of this room." + "<p/>";
+                    $('#communicateList').append(item);
+                    var emotion ="<img src=\"../templates/img/user"+playerNum+"/1.png\" onclick=\"imgSelected(this)\" class=\"user-emoticonNOTSelected\">\n" +
+                        "\n" +
+                        "                    <img src=\"../templates/img/user"+ playerNum +"/3.png\" onclick=\"imgSelected(this)\" class=\"user-emoticonSelected\">\n" +
+                        "\n" +
+                        "                    <img src=\"../templates/img/user"+ playerNum +"/5.png\" onclick=\"imgSelected(this)\" class=\"user-emoticonNOTSelected\">\n"
+                    $('#emotionSelected').append(emotion);
+                    $('#CurrentEmoticon').attr('src', "../templates/img/user" + playerNum + "/3.png");
+                }
+            $(".range-bar").click(function () {
+
+                var x = $(this).val();
+                // $(this).parent().children().eq(1).text(x);
+                $(this).parent().children().eq(1).val(x);
+
+            });
+
+            $(".range-input").blur(function () {
+
+                var x = $(this).val();
+                // $(this).parent().children().eq(1).text(x);
+                $(this).parent().children().eq(0).val(x);
+
+            });
+
+            $(".range-bar").focus(function(){
+
+                $(this).keyup(function(){
+                    var x = $(this).val();
+                    $(this).parent().children().eq(1).val(x);
+                });
+                $(this).mousemove(function(){
+                    var x = $(this).val();
+                    $(this).parent().children().eq(1).val(x);
+                });
+
+            });
+            // END-选择框勾选了的话，给对应的range-bar添加键盘事件
+
+
+
+
+            $("input[type=checkbox]").click(function() {
+
+                if ($(this).is(':checked')) {
+                    $(this).parent().parent().children().eq(4).children().removeAttr("disabled", "disabled");
+                } else {
+                    $(this).parent().parent().children().eq(4).children().attr("disabled", "disabled");
+                    $(this).parent().parent().children().eq(4).children().val(0);
+                }
+
+                var size = $("input[type=checkbox]:checked").length;
+
+                var value = 0;
+                if(size != 0) {
+                    var value = Math.floor(100 / size);
+                }
+                for(var i = 1; i <= $("input[type=checkbox]").length; i++) {
+                    var id = "#range-value" + i
+                    setRangeValue(id, value)
+                }
+            })
+
+            // } else if (message.num === 2) {
+            //     // alert("22222");
+            //     // document.getElementById("name2").innerHTML = message.roleName;
+            //     $("#name2").html("");
+            //     document.getElementById("playerName2").innerHTML = message.name;
+            //     document.getElementById("resource2").innerHTML = message.resource;
+            //     // item = "<p class=\"dialog-server-mess\">" + "第"+message.size+"个玩家，"+ message.name+"("+message.roleName+")"+"进入该房间。" + "<p/>";
+            //     // $('#communicateList').append(item);
+            //     // document.getElementById("talent2").innerHTML=message.talent;
+            //     var playerNum = message.partyNum + 1;
+            //     $('#name2').append("<span><img src=\"../templates/img/user"+playerNum+"/3.png\"></span>"+message.roleName);
+            // } else if (message.num === 3) {
+            //     // alert("3333");
+            //     // document.getElementById("name3").innerHTML = message.roleName;
+            //     $("#name3").html("");
+            //     document.getElementById("playerName3").innerHTML = message.name;
+            //     document.getElementById("resource3").innerHTML = message.resource;
+            //     // document.getElementById("talent3").innerHTML=message.talent;
+            //     // item = "<p class=\"dialog-server-mess\">" + "第"+message.size+"个玩家，"+ message.name+"("+message.roleName+")"+"进入该房间。" + "<p/>";
+            //     // $('#communicateList').append(item);
+            //     var playerNum = message.partyNum + 1;
+            //     $('#name3').append("<span><img src=\"../templates/img/user"+playerNum+"/3.png\"></span>"+message.roleName);
+            // }
+        } else if (message.type === "SETPROPOSERFALSE") {
+            // alert("2");
+
+            // $("#offer-coalition").attr("disabled","disabled");
+            // $("#offer-coalition").attr("class","btn btn-default");
+
+            $("#send").attr("disabled","disabled");
+            $("#send").attr("class","btn btn-default");
+
+            // $("#offer-coalition").attr("class","btn btn-primary");
+
+            $("#agree-coalition").attr("disabled","disabled");
+            $("#agree-coalition").attr("class","btn btn-default");
+            // $("#agree-coalition").attr("class","btn btn-success");
+
+            $("#reject-coalition").attr("disabled","disabled");
+            $("#reject-coalition").attr("class","btn btn-default");
+            // $("#reject-coalition").attr("class","btn btn-danger");
+
+        } else if (message.type === "SERVERMESSAGE") {
+            // alert("3");
+            var item;
+            // item = "<div class=\"panel-body\">\n" + message.time + "<br/>" + message.serverMessage +
+            //     "                    </div>";
+            // $('#serverMessageAll').append(item);
+            item = "<p class=\"dialog-server-mess\">" + message.serverMessage + "<p/>";
+            $('#communicateList').append(item);
+            $('.dialog-part')[0].scrollTop = $('.dialog-part')[0].scrollHeight;
+        } else if (message.type === "OFFERMESSAGE") {
+            // alert("4");
+            var item;
+
+            // item = "<div class=\"panel-body\">\n" + message.time + "<br/>" +
+            //     message.offer.hint +
+            //     "                </div>";
+            // $('#offerMessage').append(item);
+            item = "<p class=\"dialog-server-mess\">" + message.offer.hint + "<p/>";
+            $('#communicateList').append(item);
+            $('.dialog-part')[0].scrollTop = $('.dialog-part')[0].scrollHeight;
+        } else if (message.type === "PROPOSALMESSAGE") {
+            $(".coalition").removeAttr("class","ballon");
+            var newTable;
+            var roundNum = message.roundNum;
+            var sessionRoundNum = message.sessionRoundNum;
+            var tableName = "#player1Reward" + roundNum;
+            var offer = message.offermessages;
+            var google;
+            var faceBook;
+            var amazon;
+            // alert(roundNum);
+
+
+
+
+
+
+            if ($("#stage"+sessionRoundNum).length>0) {
+                var colspanNum = parseInt(document.getElementById("stage"+sessionRoundNum).getAttribute("colspan"));
+                colspanNum = colspanNum + 1;
+                document.getElementById("stage"+sessionRoundNum).setAttribute("colspan",colspanNum.toString());
+                // alert("11111111111");
+                // colspanNum = colspanNum + 1;
+                // $("#colspanA").attr("colspan", colspanNum);
+                for (var i = 0; i < message.amountOfPlayer; i++) {
+                    var exist = 0;
+                    var playerNum;
+                    for (var p in offer) {
+                        if (i === offer[p].playerNum) {
+                            playerNum = offer[p].playerNum + 1;
+                            $("#payoff" + playerNum).append("<td>" + offer[p].reward + "</td>");
+                            exist = 1;
+                        }
+                    }
+                    if(exist === 0){
+                        playerNum = i + 1;
+                        $("#payoff" + playerNum).append("<td>-</td>");
+                    }
+                }
+
+
+
+
+
+                // for (var p in offer) {//遍历json数组时，这么写p为索引，0,1
+                //     if (offer[p].companyName === "Google") {
+                //         google = "<td>" + offer[p].reward + "</td>";
+                //     } else if (offer[p].companyName === "Facebook") {
+                //         faceBook = "<td>" + offer[p].reward + "</td>";
+                //     } else if (offer[p].companyName === "Amazon") {
+                //         amazon = "<td>" + offer[p].reward + "</td>";
+                //     }
+                //     if (amazon === undefined) {
+                //         amazon = "<td>-</td>";
+                //     }
+                //     if (google === undefined) {
+                //         google = "<td>-</td>";
+                //     }
+                //     if (faceBook === undefined) {
+                //         faceBook = "<td>-</td>";
+                //     }
+                //
+                // }
+                // var companyNameId = "#company" + sessionRoundNum;
+                var companyText = "<th>" + message.proposalCompanyName + "</th>";
+                $('#proposer').append(companyText);
+                // var colspanId = "#colspan" + sessionRoundNum;
+                $('#round').append(  "<th>round"+roundNum+"</th>");
+                // var player1RewardId = "#player1Reward" + sessionRoundNum;
+                // $('#payoff1').append(google);
+                // // var player2RewardId = "#player2Reward" + sessionRoundNum;
+                // $('#payoff2').append(faceBook);
+                // // var player3RewardId = "#player3Reward" + sessionRoundNum;
+                // $('#payoff3').append(amazon);
+            } else {
+                // newTable = "<div class=\"payoff-proposal\">\n" +
+                //     "<table class=\"table\"" + "id=\"table" + sessionRoundNum + "\">" +
+                //     "<caption>stage"+sessionRoundNum+"</caption>" +
+                //     "<thead>" +
+                //     "<tr id='colspan"+sessionRoundNum+"'>" +
+                //     "<th colspan=\"" + colspanNum + "\" >round"+roundNum+"</th>" +
+                //     "</tr>" +
+                //     "<tr id=\"company" + sessionRoundNum + "\">" +
+                //     "</tr>" +
+                //     "</thead>" +
+                //     "<tbody>" +
+                //     "<tr class=\"success\" id=\"player1Reward" + sessionRoundNum + "\">" +
+                //     "</tr>" +
+                //     "<tr  class=\"warning\" id=\"player2Reward" + sessionRoundNum + "\">" +
+                //     "</tr>" +
+                //     "<tr  class=\"danger\" id=\"player3Reward" + sessionRoundNum + "\">" +
+                //     "</tr>" +
+                //     "</tbody>" +
+                //     "</table>" +
+                //     "</div>";
+                // $('#rewardTable').append(newTable);
+                var stageText = "<th colspan=\"1\" id=\"stage"+sessionRoundNum+"\">stage"+sessionRoundNum+"</th>";
+                $('#stage').append(stageText);
+                var proposerText = "<th>"+message.proposalCompanyName + "</th>";
+                $('#proposer').append(proposerText);
+                // for (var p in offer) {//遍历json数组时，这么写p为索引，0,1
+                //     if (offer[p].companyName === "Google") {
+                //         google = "<td>" + offer[p].reward + "</td>";
+                //     } else if (offer[p].companyName === "Facebook") {
+                //         faceBook = "<td>" + offer[p].reward + "</td>";
+                //     } else if (offer[p].companyName === "Amazon") {
+                //         amazon = "<td>" + offer[p].reward + "</td>";
+                //     }
+                //     if (amazon === undefined) {
+                //         amazon = "<td>-</td>";
+                //     }
+                //     if (google === undefined) {
+                //         google = "<td>-</td>";
+                //     }
+                //     if (faceBook === undefined) {
+                //         faceBook = "<td>-</td>";
+                //     }
+                // }
+                $('#round').append(  "<th>round"+roundNum+"</th>");
+                // var player1RewardId = "#player1Reward" + sessionRoundNum;
+                for (var i = 0; i < message.amountOfPlayer; i++) {
+                    var exist = 0;
+                    var playerNum;
+                    for (var p in offer) {
+                        if (i === offer[p].playerNum) {
+                            playerNum = offer[p].playerNum + 1;
+                            $("#payoff" + playerNum).append("<td>" + offer[p].reward + "</td>");
+                            exist = 1;
+                        }
+                    }
+                    if(exist === 0){
+                        playerNum = i + 1;
+                        $("#payoff" + playerNum).append("<td>-</td>");
+                    }
+                }
+                // $('#payoff1').append(google);
+                // // var player2RewardId = "#player2Reward" + sessionRoundNum;
+                // $('#payoff2').append(faceBook);
+                // // var player3RewardId = "#player3Reward" + sessionRoundNum;
+                // $('#payoff3').append(amazon);
+            }
+        // <div style="text-align: center;">
+        //         <div style="overflow: hidden;display: inline-block;">
+        //         <div class="dialog-proposal">
+        //         <p style="color:#e59501;" ><span style="font-weight: bold;">Proposer : </span> <span>Google</span></p>
+        //     <p><span>Google:</span> <span>33</span></p>
+        //     <p><span>Facebook:</span> <span>33</span></p>
+        //     <p><span>Amazon:</span> <span>33</span></p>
+        //     </div>
+        //     </div>
+        //     </div>
+
+
+            /*加入谈判者提交的offer信息*/
+            var item;
+            // var playerNum = message.proposalNum + 1;
+            // if (message.proposalName === $("#playerName1").text()) {
+            //     // item = " <div class=\"dialog-user0"+message.playerNum+"\">\n" +
+            //     item = "<div class=\"dialog-user0\">" +
+            //         "<img src=\"../templates/img/user"+playerNum+"/1.png\" class=\"\">"+
+            //         "<div class=\"box u-tri\">"+
+            //         "<div class=\"dialog-proposal\">";
+            // } else if (message.proposalName === $("#playerName2").text()) {
+            //     item = "<div class=\"dialog-user1\">" +
+            //         "<img src=\"../templates/img/user"+playerNum+"/1.png\" class=\"\">"+
+            //         "<div class=\"box u-tri\">"+
+            //         "<div class=\"dialog-proposal\">";
+            // } else if (message.proposalName === $("#playerName3").text()) {
+            //     item = "<div class=\"dialog-user2\">" +
+            //         "<img src=\"../templates/img/user"+playerNum+"/1.png\" class=\"\">"+
+            //         "<div class=\"box u-tri\">"+
+            //         "<div class=\"dialog-proposal\">";
+            // }
+            var proposalNum = message.proposalNum + 1;
+            if(message.proposalCompanyName === $('#name1').text())
+            {
+                item = "<div class=\"dialog-user0 user-system-tips\">"+
+                    "                <img src=\"../templates/img/user"+proposalNum+"/"+message.emotion+".png\" class=\"\">";
+            }else{
+                item ="<div class=\"dialog-user1 user-system-tips\">" +
+                "                <img src=\"../templates/img/user"+proposalNum+"/"+message.emotion+".png\" class=\"\">" +
+                "                <span class=\"user-img-name\">"+message.proposalName+"("+message.proposalCompanyName+")</span>";
+            }
+
+
+
+            item = item+
+                "                <div class=\"box u-tri \">" +
+                "                <div class=\"dialog-proposal\">";
+
+            // item = "<div style=\"text-align: center;\">" +
+            //     "<div style=\"overflow: hidden;display: inline-block;\">" +
+            //     "<div class=\"dialog-proposal\">" +
+            //     "<p style=\"color:#e59501;\" ><span style=\"font-weight: bold;\">Proposer : </span> <span>"+ message.proposalCompanyName+"</span></p>";
+            for (var p in offer) {//遍历json数组时，这么写p为索引，0,1
+                item = item + "<p><span>"+ offer[p].playerName + "(" + offer[p].companyName + ")"+":</span> <span>"+offer[p].reward+"</span></p>";
+            }
+                item = item +
+                    "</div>" +
+                    "</div>" +
+                    "</div>";
+            $('#communicateList').append(item);
+            // var item;
+            // item = "<div class=\"panel-body\">\n" + message.proposalName + "(" + message.proposalCompanyName + "):" + "<br/>";
+            //
+            // for (var p in offer) {//遍历json数组时，这么写p为索引，0,1
+            //     item = item + offer[p].playerName + "(" + offer[p].companyName + ")&nbsp;&nbsp;" + offer[p].reward + "<br/>";
+            // }
+            // item = item + "</div>";
+            // $('#offerMessage').append(item);
+            $("#coalition"+message.coalition).attr("class","ballon");
+
+
+            $('.dialog-part')[0].scrollTop = $('.dialog-part')[0].scrollHeight;
+        } else if (message.type === "CommunicateMessage") {
+            var item;
+            var playerNum = message.playerNum + 1;
+            if (message.playerName === $("#playerName1").text()) {
+                // item = " <div class=\"dialog-user0"+message.playerNum+"\">\n" +
+                item = "<div class=\"dialog-user0\">" +
+                    "<img src=\"../templates/img/user" + playerNum + "/"+message.emotion+".png\">" +
+                    // "<span class=\"user-img-name\">"+message.playerName+"</span>"+
+                    "<p class=\"box u-tri\">" + message.communicateLanguage + "</p>" +
+                    "</div>";
+                $('#communicateList').append(item);
+            } else if (message.playerName === $("#playerName2").text()) {
+                item = " <div class=\"dialog-user"+playerNum+"\">" +
+                    "<img src=\"../templates/img/user" + playerNum + "/"+message.emotion+".png\">" +
+                    "<span class=\"user-img-name\">"+message.playerName+"("+message.roleName+")</span>"+
+                    "<p class=\"box u-tri\">" + message.communicateLanguage + "</p>" +
+                    "</div>";
+                $('#communicateList').append(item);
+            } else if (message.playerName === $("#playerName3").text()) {
+                item = " <div class=\"dialog-user"+playerNum+"\">" +
+                    "<img src=\"../templates/img/user" + playerNum + "/"+message.emotion+".png\">" +
+                    "<span class=\"user-img-name\">"+message.playerName+"("+message.roleName+")</span>"+
+                    "<p class=\"box u-tri\">" + message.communicateLanguage + "</p>" +
+                    "</div>";
+                $('#communicateList').append(item);
+            }
+
+
+
+
+
+            // $("#send").removeAttr("disable","disable");
+            // $("#send").attr("class","btn btn-success");
+            //
+            // $("#silent").attr("disable","disable");
+            // $("#silent").attr("class","btn btn-danger");
+            // $('.dialog-part')[0].scrollTop = $('.dialog-part')[0].scrollHeight;
+
+        } else if (message.type === "ResponseMessage") {
+            var item;
+// alert("6");
+//             item = "<div class=\"panel-body\">\n" + message.playerName + "(" + message.roleName + "):"
+//                 + message.language + "</div>";
+//             $('#offerMessage').append(item);
+            var playerNum = message.playerNum + 1;
+            var isSelf;
+            if(message.playerName=== $('#name1').text())
+            {
+                isSelf = "0";
+            }else{
+                isSelf = "1";
+            }
+            if(message.specificType==="AGREE")
+            {
+                var agreeText;
+                if(isSelf === "0") {
+                    agreeText = "<div class=\"dialog-user"+isSelf+" user-system-tips\">"
+                }else{
+                    agreeText = "<div class=\"dialog-user"+playerNum+" user-system-tips\">"
+                }
+
+                 agreeText=agreeText+
+                    "<img src=\"../templates/img/user"+playerNum+"/"+message.emotion+".png\" class=\"\">" +
+                    "<span class=\"user-img-name\">"+message.playerName+"("+message.roleName+")</span>" +
+                    "<div class=\"box u-tri \">" +
+                    "<div class=\"dialog-responser\">" +
+                    "<p style=\"color:#e59501;\" > " +
+                    "<span style=\"font-weight: bold;color: #42af44;\">Agree</span>" +
+                    "</p >" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>";
+
+                // var agreeText1 = "<div style=\"text-align: center;\">" +
+                //     "<div style=\"overflow: hidden;display: inline-block;\">" +
+                //     "<div class=\"dialog-responser\">" +
+                //     "<p style=\"color:#e59501;\" >" +
+                //     "<span>"+message.playerName+"("+message.roleName+")"+"</span>" +
+                //     "<span style=\"font-weight: bold;color: #42af44;\">Agree</span>" +
+                //     "</p>" +
+                //     "</div>" +
+                //     "</div>" +
+                //     "</div>";
+                $('#communicateList').append(agreeText);
+            }else if(message.specificType === "REFUSE"){
+                var refuseText;
+                if(isSelf === "0") {
+                    refuseText = "<div class=\"dialog-user"+isSelf+" user-system-tips\">"
+                }else{
+                    refuseText = "<div class=\"dialog-user"+playerNum+" user-system-tips\">"
+                }
+                 refuseText = refuseText +
+                    "<img src=\"../templates/img/user"+playerNum+"/"+message.emotion+".png\" class=\"\">" +
+                    "<span class=\"user-img-name\">"+message.playerName+"("+message.roleName+")</span>" +
+                    "<div class=\"box u-tri \">" +
+                    "<div class=\"dialog-responser\">" +
+                    "<p style=\"color:#e59501;\" >" +
+                    "<span style=\"font-weight: bold;color: #ec2837;\">Refuse</span>" +
+                    "</p >" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>";
+
+
+                // var refuseText="<div style=\"text-align: center;\">" +
+                //     "<div style=\"overflow: hidden;display: inline-block;\">" +
+                //     "<div class=\"dialog-responser\">" +
+                //     "<p style=\"color:#e59501;\" >" +
+                //     " <span>"+message.playerName+"("+message.roleName+")"+"</span>" +
+                //     "<span style=\"font-weight: bold;color: #ec2837;\">Refuse</span>" +
+                //     "</p>" +
+                //     "</div>" +
+                //     "</div>" +
+                //     "</div>";
+                $('#communicateList').append(refuseText)
+            }
+
+            $('.dialog-part')[0].scrollTop = $('.dialog-part')[0].scrollHeight;
+        } else if(message.type === "AveragePayoff"){
+            $("#averagePayoff").html("");
+
+            var averagePayoff = message.averagePayoff;
+            var item = "<th>Average Payoff</th>";
+            for (var p in averagePayoff) {//遍历json数组时，这么写p为索引，0,1
+                item = item + "<th>"+averagePayoff[p].name+": <span>"+averagePayoff[p].payoff+"</span></th>";
+                // if(averagePayoff[p].name === "Google"){
+                //     $("#payoffAverage1").text(averagePayoff[p].payoff);
+                // }else if(averagePayoff[p].name === "Facebook"){
+                //     $("#payoffAverage2").text(averagePayoff[p].payoff);
+                // }else if(averagePayoff[p].name === "Amazon"){
+                //     $("#payoffAverage2").text(averagePayoff[p].payoff);
+                // }
+            }
+            $("#averagePayoff").append(item);
+
+
+
+        }else if(message.type === "GameEnd"){
+        //    此处填写GameEnd将结束信息的cont 和ResultPayoff展示在界面上
+        //    顺序是先展示ResultPayoff 再展示 cont
+        //    ResultPayoff
+        //      变量
+        //     List<ResultPayoff> resultPayoffs;
+        //     String cont;
+        //     String type;
+        // <div style="text-align: center;">
+        //         <div style="overflow: hidden;display: inline-block;">
+        //         <div class="game-result">
+        //         <p style="color:#e59501;">Game Result</p>
+        //     <p><span>sagfdhdfhGoogle:</span> <span>33</span></p>
+        //     <p><span>Facebook:</span> <span>33</span></p>
+        //     <p><span>Amazon:</span> <span>33</span></p>
+        //     </div>
+        //     </div>
+        //     </div>
+            var item;
+            item="<div style=\"text-align: center;\">" +
+                "<div style=\"overflow: hidden;display: inline-block;\">" +
+                "<div class=\"game-result\">" +
+                "<p style=\"color:#e59501;\">Game Result</p>"+
+                "<div id=\"ResultBarChart\" style=\"width: 300px;height: 250px;\"></div>"+
+                "</div>" +
+            "</div>" +
+            "</div>";
+            $('#communicateList').append(item);
+            var resultPayoffs = message.resultPayoffs;
+            var name =[];
+            var payoff = [];
+            for(p in resultPayoffs){
+                name.push(resultPayoffs[p].name);
+                payoff.push(resultPayoffs[p].payoff);
+                // item = item +"<p><span>"+resultPayoffs[p].name+":</span> <span>"+resultPayoffs[p].payoff+"</span></p>";
+            }
+
+            var myChart = echarts.init(document.getElementById('ResultBarChart'));
+            // 指定图表的配置项和数据
+            var option = {
+
+                tooltip: {},
+
+
+
+                xAxis: {
+                    data: name,
+                    axisLabel:{
+                        interval: 0,
+                        rotate:40
+                    }
+                },
+                yAxis: {},
+                series: [{
+                    type: 'bar',
+                    data: payoff,
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true, //开启显示
+                                position: 'top', //在上方显示
+                                textStyle: { //数值样式
+                                    color: '#e59501',
+                                    fontSize: 14
+                                }
+                            }
+                        }
+                    },
+
+                }]
+            };
+            myChart.setOption(option);
+
+
+
+            $('.dialog-part')[0].scrollTop = $('.dialog-part')[0].scrollHeight;
+
+        }else if(message.type === "Coalition"){
+        //    此处填写后台读取的联盟结构信息展示
+        // <tr>
+        //     <td>Google Amazon</td>
+        //     <td>3</td>
+        //     <td>100</td>
+        //     </tr>
+        //     标签id = coalition
+            var coalitionXMLS = message.coalitionXMLS;
+            var item;
+            var parties = message.parties;
+
+
+
+
+
+            var partyPayoff;
+            var partyNum;
+            for (var p in parties) {
+                for (var j in parties) {
+                    if (p === parties[j].partyNum.toString()) {
+                        if (p % 3 === 0) {
+                            partyNum = parties[j].partyNum + 1;
+                            partyPayoff = "<tr class=\"success\" id=\"payoff" + partyNum + "\">\n" +
+                                "                <td>" + parties[j].roleName + "'s payoff</td>\n" +
+                                "            </tr>";
+                            $('#partyPayoff').append(partyPayoff);
+                        } else if (p % 3 === 1) {
+                            partyNum = parties[j].partyNum + 1;
+                            partyPayoff = "<tr class=\"warning\" id=\"payoff" + partyNum + "\">\n" +
+                                "<td>" + parties[j].roleName + "'s payoff</td>" +
+                                "</tr>";
+                            $('#partyPayoff').append(partyPayoff);
+                        } else if (p % 3 === 2) {
+                            partyNum = parties[j].partyNum + 1;
+                            partyPayoff = "<tr class=\"danger\" id=\"payoff" + partyNum + "\">\n" +
+                                "<td>" + parties[j].roleName + "'s payoff</td>" +
+                                "</tr>";
+                            $('#partyPayoff').append(partyPayoff);
+                        }
+                    }
+                }
+            }
+
+
+            for (var p in coalitionXMLS) {//遍历json数组时，这么写p为索引，0,1
+                var partyNumsCoalition="coalition";
+                var partyNums =coalitionXMLS[p].partyNums;
+                for(var n in  partyNums)
+                {
+                    partyNumsCoalition=partyNumsCoalition+partyNums[n].toString();
+                }
+
+                item = "<tr id = "+partyNumsCoalition+" class = \"coalitionShow\">" +
+                    "<td>"+coalitionXMLS[p].corporationsText+"</td>" +
+                    "<td>"+coalitionXMLS[p].resources+"</td>" +
+                    "<td>"+coalitionXMLS[p].rewards +"</td>" +
+                    "</tr>";
+                $('#coalition').append(item);
+            }
+            $('#resourceSum').text(message.majority);
+        } else if (message.type === "SessionResultMessage") {
+            // alert("7");
+            // var item;
+            // item = "<div class=\"panel-body\">\n" + message.language + ":" + "<br/>";
+            // var result = message.resultRewardMessages;
+            // for (var p in result) {//遍历json数组时，这么写p为索引，0,1
+            //     item = item + result[p].name + ":&nbsp;&nbsp;" + result[p].reward + "<br/>";
+            // }
+            // item = item + "                </div>";
+            // $('#offerMessage').append(item);
+            //本场游戏结果展示
+        // <div style="text-align: center;">
+        //         <div style="overflow: hidden;display: inline-block;">
+        //         <div class="session-result">
+        //         <p style="color:#e59501;">Session Result</p>
+        //     <p style="color:#e59501;">(succeed)</p>
+        //         <p><span>vdzbfGoogle:</span> <span>33</span></p>
+        //     <p><span>vdavFacebook:</span> <span>33</span></p>
+        //     <p><span>vavAmazon:</span> <span>33</span></p>
+        //     </div>
+        //     </div>
+        //     </div>
+
+            var item;
+            item  = " <div style=\"text-align: center;\">\n" +
+                "                <div style=\"overflow: hidden;display: inline-block;\">\n" +
+                "                <div class=\"session-result\">\n" +
+                "                <p style=\"color:#e59501;\">Stage Result</p>\n" +
+                "            <p style=\"color:#e59501;\">("+message.language+")</p>" ;
+            var mid;
+            var result = message.resultRewardMessages;
+            for (var p in result) {//遍历json数组时，这么写p为索引，0,1
+                item = item + "<p><span>"+result[p].name+":</span> <span>"+result[p].reward+"</span></p>";
+                mid = result[p].name;
+            }
+
+            item = item + " </div>" +
+                "</div>" +
+                "</div>";
+            if(mid === undefined){
+            }else{
+                $('#communicateList').append(item);
+            }
+            var size = $("#round").children().length-1;
+            $('#round').find("th").eq(size).addClass("agreed-proposal");
+            $('#proposer').find("th").eq(size).addClass("agreed-proposal");
+            for (var i=0;i<message.partyNum;i++){
+                var j = i + 1;
+                $("#payoff"+j).find("td").eq(size).addClass("agreed-proposal");
+            }
+            } else if (message.type === "BUTTONMESSAGE") {
+            // alert("8");
+            if (message.proposal === "TRUE") {
+                // alert("1")
+                // $("#offer-coalition").show();
+                $("#offer-coalition").removeAttr("disabled","disabled");
+                $("#offer-coalition").attr("class","btn btn-primary");
+            } else if (message.proposal === "FALSE") {
+                // $("#offer-coalition").hide();
+                $("#offer-coalition").attr("disabled","disabled");
+                $("#offer-coalition").attr("class","btn btn-default");
+            }
+            if (message.accept === "TRUE") {
+                // $("#agree-coalition").show();
+                $("#agree-coalition").removeAttr("disabled","disabled");
+                $("#agree-coalition").attr("class","btn btn-success");
+
+            } else if (message.accept === "FALSE") {
+                // $("#agree-coalition").hide();
+                $("#agree-coalition").attr("disabled","disabled");
+                $("#agree-coalition").attr("class","btn btn-default");
+            }
+            if (message.reject === "TRUE") {
+                // $("#reject-coalition").show();
+
+                $("#reject-coalition").removeAttr("disabled","disabled");
+                $("#reject-coalition").attr("class","btn btn-danger");
+
+            } else if (message.reject === "FALSE") {
+                // $("#reject-coalition").hide();
+                $("#reject-coalition").attr("disabled","disabled");
+                $("#reject-coalition").attr("class","btn btn-default");
+            }
+            if(message.sendCommunicate==="TRUE"){
+                $("#send").removeAttr("disabled","disabled");
+                $("#send").attr("class","btn btn-success");
+            }else if(message.sendCommunicate==="FALSE"){
+                $("#send").attr("disabled","disabled");
+                $("#send").attr("class","btn btn-default");
+            }
+
+        }
+    };
+
+    //连接关闭的回调方法
+    websocket.onclose = function () {
+    };
+
+    //监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
+    window.onbeforeunload = function () {
+        websocket.close();
+    };
+
+
+    //关闭连接
+    function closeWebSocket() {
+        websocket.close();
+    }
+
+    //发送消息
+    function send() {
+        var message = document.getElementById('text').value;
+        websocket.send(message);
+    }
+
+
+</script>
+
+
+
+</body></html>

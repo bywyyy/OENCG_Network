@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form name = "VotingDomain">
+    <parties>
+        <party id = '0' name="party1" resource = '30' />
+        <party id = '1' name="parry2" resource = '25' />
+        <party id = '2' name="party3" resource = '25' />
+        <party id = '3' name="party4" resource = '40' />
+        <party id = '4' name="party5" resource = '10' />
+    </parties>
+    <requirement>
+        <majority resource = '60' />
+    </requirement>
+</form>

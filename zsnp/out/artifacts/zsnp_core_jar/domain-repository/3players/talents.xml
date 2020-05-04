@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<talents>
+	<!--这里定义了每个玩家的隐藏信息，也即使游戏中的cost，id：玩家id，注意：游戏中玩家的cost不是这里定义的值，而是这个值到0之间的一个随机数-->
+    <talent id="0" gen-mode="random-base">-12</talent>
+    <talent id="1" gen-mode="random-base">-12</talent>
+    <talent id="2" gen-mode="random-base">-12</talent>
+    <talent id="3" gen-mode="random-base">-12</talent>
+    <talent id="4" gen-mode="random-base">-12</talent>
+</talents>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <mappers>
+        <mapper resource="game/coalition/voting/conf/mapper/playerMapper.xml"/>
+        <mapper resource="game/coalition/voting/conf/mapper/roomMapper.xml" />
+        <mapper resource="game/coalition/voting/conf/mapper/proposalMapper.xml" />
+        <mapper resource="game/coalition/voting/conf/mapper/allyMapper.xml" />
+        <mapper resource="game/coalition/voting/conf/mapper/responseMapper.xml" />
+    </mappers>
+</configuration>
