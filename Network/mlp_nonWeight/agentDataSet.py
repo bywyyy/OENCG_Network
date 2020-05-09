@@ -37,5 +37,13 @@ class agentData(Dataset):
 
     def __getitem__(self, index):
         data = torch.Tensor(self.data[index])
-        label = torch.Tensor(self.label[index])
+
+        label = self.label[index].copy()
+        for i in range(0, 3):
+            if label[i] != 0:
+                label.append(1)
+            else:
+                label.append(0)
+
+        label = torch.Tensor(label)       
         return data, label

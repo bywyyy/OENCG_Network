@@ -15,8 +15,8 @@ def _train(model, dl, num_epochs, learning_rate):
         cur_cnt = 0
         total_cnt = 0
         for (item_data, item_label) in dl:
-            batch_x = Variable(item_data)
-            batch_y = Variable(item_label)
+            batch_x = Variable(torch.unsqueeze(item_data, dim=1).float(), requires_grad=False)
+            batch_y = Variable(torch.unsqueeze(item_label, dim=1).float(), requires_grad=False)
 
             outputs = model(batch_x)
 
@@ -44,6 +44,7 @@ def _test(model, dst):
     data, label = dst[rand_idx]
 
     data = torch.Tensor([data.numpy()])
+    data = Variable(torch.unsqueeze(data, dim=1).float(), requires_grad=False)
     outputs = model(data)
     print(outputs)
     outputs = outputs[0]

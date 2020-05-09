@@ -39,11 +39,14 @@ def _test(model, dst):
 
     data = torch.Tensor([data.numpy()])
     outputs = model(data)
-    print(outputs)
+
+    '''
     outputs = outputs[0]
     sum_data = outputs[0] + outputs[1] + outputs[2]
+
     outputs[0] = outputs[0] / sum_data * 100
     outputs[1] = outputs[1] / sum_data * 100
     outputs[2] = outputs[2] / sum_data * 100
+    '''
 
-    print("ground truth: {},  outputs : {}".format(label, outputs))
+    print("ground truth: {},  outputs : {}".format(label, outputs[0]))

@@ -1,5 +1,7 @@
 import xml.sax
 
+
+
 def get_file_data(file_name):
    all_data = []
 
@@ -25,7 +27,7 @@ def get_file_data(file_name):
             player_name = attributes['role-name']
             value = int(attributes['reward'])
             player_id = self.players[player_name]['id']
-            self.piece_data[player_id] = 1.0 * value / 100
+            self.piece_data[player_id] = 1.0 * value
 
          # 元素结束事件处理
       def endElement(self, tag):
