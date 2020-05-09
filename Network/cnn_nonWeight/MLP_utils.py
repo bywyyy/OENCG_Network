@@ -1,33 +1,39 @@
 import torch
 import torch.nn as nn
 import random
+from torch.autograd import Variable
+
 
 def _train(model, dl, num_epochs, learning_rate):
-    #optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate, weight_decay=0.01)
+    # optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate, weight_decay=0.01)
 
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
     criterion = nn.MSELoss()
-    
+
     for epoch in range(num_epochs):
         i = 0
         cur_cnt = 0
         total_cnt = 0
         for (item_data, item_label) in dl:
-            outputs = model(item_data)
+            batch_x = Variable(item_data)
+            batch_y = Variable(item_label)
+
+            outputs = model(batch_x)
 
             optimizer.zero_grad()
 
-            loss = criterion(outputs, item_label)
+            loss = criterion(outputs, batch_y)
             loss.backward()
             optimizer.step()
-            
+
             total_cnt += 1
             i += 1
         if (epoch + 1) % 1 == 0:
-            print ('Epoch [{}/{}], Setp [{}], LOSS: {:.4f}, Total Sample {}'
-               .format(epoch + 1, num_epochs, i, loss.item(), total_cnt))
+            print('Epoch [{}/{}], Setp [{}], LOSS: {:.4f}, Total Sample {}'
+                  .format(epoch + 1, num_epochs, i, loss.item(), total_cnt))
             yield
             model.train()
+
 
 def _test(model, dst):
     cur_cnt = 0
