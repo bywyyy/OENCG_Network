@@ -16,9 +16,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+
 @Controller
 @RequestMapping(value = "")
 public class WebAdminController {
@@ -28,6 +27,9 @@ public class WebAdminController {
 
     @Autowired
     WebVotingArena webVotingArena;
+
+    public WebAdminController() {
+    }
 
     @RequestMapping(value = "/")
     public String index() {
@@ -118,6 +120,16 @@ public class WebAdminController {
     public Set<RoomInfo> getRoomInfos(){
 
         Set<RoomInfo> roominfos = webBridgeToClient.getAllRoomInfos();
+
+//        Iterator<RoomInfo> it = roominfos.iterator();
+//        for(int i=0; i<roominfos.size(); i++){
+//            RoomInfo roominfo = it.next();
+//            String statue = roominfo.statue.toString();
+//            if("GAME_END".equals(statue)){
+//                it.remove();
+//                i--;
+//            }
+//        }
 
         return roominfos;
     }

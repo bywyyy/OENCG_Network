@@ -1,7 +1,5 @@
 import xml.sax
 
-
-
 def get_file_data(file_name):
    all_data = []
 

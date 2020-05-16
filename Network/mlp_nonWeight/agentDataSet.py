@@ -1,10 +1,10 @@
 import torch
 from torch.utils.data import DataLoader, Dataset
-
 from data_provider import get_file_data
 import os
-   
-class agentData(Dataset): 
+
+
+class agentData(Dataset):
     def __init__(self, data_dir, k):
         self.data = []
         self.label = []
@@ -12,13 +12,15 @@ class agentData(Dataset):
 
         files = os.listdir(data_dir)
         for file_name in files:
+            if (file_name[-2:] != 'ml'):
+                continue
+
             file_path = os.path.join(data_dir, file_name)
 
-
             data_list = get_file_data(file_path)
-            
+
             for i in range(0, len(data_list) - 1):
-                
+
                 piece_data = [0] * k * 3
                 for j in range(0, k):
                     ind = k - j
@@ -45,5 +47,5 @@ class agentData(Dataset):
             else:
                 label.append(0)
 
-        label = torch.Tensor(label)       
+        label = torch.Tensor(label)
         return data, label

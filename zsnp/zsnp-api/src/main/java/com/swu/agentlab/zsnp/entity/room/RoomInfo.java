@@ -4,6 +4,7 @@ import com.swu.agentlab.zsnp.entity.player.PlayerInfo;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.Comparator;
 import java.util.Set;
 
 /**
@@ -18,7 +19,7 @@ public class RoomInfo implements Serializable {
 
     private String name;
 
-    private int amountOfPlayers;
+    public int amountOfPlayers;
 
     private Set<PlayerInfo> playerInfos;
 
@@ -28,7 +29,7 @@ public class RoomInfo implements Serializable {
 
     private String description;
 
-    private Statue statue;
+    public Statue statue;
 
     public RoomInfo(String id, String name, int amountOfPlayers, Set playerInfos, int maxAmount, String domainName, String description, Statue statue) {
         this.id = id;
@@ -41,3 +42,14 @@ public class RoomInfo implements Serializable {
         this.statue = statue;
     }
 }
+
+//
+//class RoomInfoComparator implements Comparator<RoomInfo> {
+//
+//    @Override
+//    public int compare(RoomInfo o1, RoomInfo o2) {
+//
+//        return o2.amountOfPlayers - o1.amountOfPlayers;
+//    }
+//
+//}

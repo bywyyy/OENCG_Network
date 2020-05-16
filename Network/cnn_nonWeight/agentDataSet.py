@@ -12,6 +12,9 @@ class agentData(Dataset):
 
         files = os.listdir(data_dir)
         for file_name in files:
+            if (file_name[-2:] == 're'):
+                continue
+
             file_path = os.path.join(data_dir, file_name)
 
 
