@@ -17,5 +17,5 @@ if __name__ == '__main__':
     
     # 50 epoch learning_rate = 0.0001
     
-    for i in _train(cnn_net, train_dl, 200, 0.001):
+    for i in _train(cnn_net, train_dl, 500, 0.0001):
         _test(cnn_net, test_data)

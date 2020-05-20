@@ -17,6 +17,7 @@ def _train(model, dl, num_epochs, learning_rate):
     for epoch in range(num_epochs):
         i = 0
         total_cnt = 0
+        loss_sum = 0
         for (item_data, item_label) in dl:
             batch_x = Variable(torch.unsqueeze(item_data, dim=1).float(), requires_grad=False)
             batch_y = Variable(torch.unsqueeze(item_label, dim=1).float(), requires_grad=False)
@@ -26,14 +27,16 @@ def _train(model, dl, num_epochs, learning_rate):
             optimizer.zero_grad()
 
             loss = criterion(outputs, batch_y.squeeze(1))
+            loss_sum += loss
             loss.backward()
             optimizer.step()
 
             total_cnt += 1
             i += 1
         if (epoch + 1) % 1 == 0:
+            avgloss = loss_sum.item() / total_cnt
             print('Epoch [{}/{}], Setp [{}], LOSS: {:.4f}, Total Sample {}'
-                  .format(epoch + 1, num_epochs, i, loss.item(), total_cnt))
+                  .format(epoch + 1, num_epochs, i, avgloss, total_cnt))
             workbook = xlrd.open_workbook(dataPath)  # 打开工作簿
             sheets = workbook.sheet_names()  # 获取工作簿中的所有表格
             worksheet = workbook.sheet_by_name(sheets[0])  # 获取工作簿中所有表格中的的第一个表格
@@ -42,7 +45,7 @@ def _train(model, dl, num_epochs, learning_rate):
             new_worksheet = new_workbook.get_sheet(0)  # 获取转化后工作簿中的第一个表格
             new_worksheet.write(rows_old, 0, epoch + 1)
             new_worksheet.write(rows_old, 1, i)
-            new_worksheet.write(rows_old, 2, loss.item())
+            new_worksheet.write(rows_old, 2, avgloss)
             new_worksheet.write(rows_old, 3, total_cnt)
             new_workbook.save(dataPath)
             yield

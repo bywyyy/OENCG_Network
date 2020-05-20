@@ -22,33 +22,34 @@ class LinearNet(nn.Module):
         rows_old = worksheet.nrows  # 获取表格中已存在的数据的行数
         new_workbook = copy(workbook)  # 将xlrd对象拷贝转化为xlwt对象
         new_worksheet = new_workbook.get_sheet(0)  # 获取转化后工作簿中的第一个表格
+        new_worksheet.write(rows_old, 0, 'LeakyReLU,α=0.00001')
 
-        fc_list = [18, 28, 46, 28, 16]
-        new_worksheet.write(rows_old, 0, format(fc_list))
+        fc_list = [18, 28, 24, 12]
+        new_worksheet.write(rows_old, 1, format(fc_list))
 
         seq_list = []
         for i in range(len(fc_list) - 1):
             seq_list.append(nn.Linear(fc_list[i], fc_list[i + 1]))
-            seq_list.append(nn.ReLU())
+            seq_list.append(nn.LeakyReLU())
         self.feature = nn.Sequential(*seq_list)
 
 
-        fc_list = [16, 16, 8, 3]
+        fc_list = [12, 12, 8, 3]
         seq_list = []
         for i in range(len(fc_list) - 1):
             seq_list.append(nn.Linear(fc_list[i], fc_list[i + 1]))
-            seq_list.append(nn.ReLU())
+            seq_list.append(nn.LeakyReLU())
         self.union_predict = nn.Sequential(*seq_list)
-        new_worksheet.write(rows_old, 1, format(fc_list))
+        new_worksheet.write(rows_old, 2, format(fc_list))
 
 
-        fc_list = [16, 12, 8, 3]
+        fc_list = [12, 12, 8, 3]
         seq_list = []
         for i in range(len(fc_list) - 1):
             seq_list.append(nn.Linear(fc_list[i], fc_list[i + 1]))
-            seq_list.append(nn.ReLU())
+            seq_list.append(nn.LeakyReLU())
         self.score_predict = nn.Sequential(*seq_list)
-        new_worksheet.write(rows_old, 2, format(fc_list))
+        new_worksheet.write(rows_old, 3, format(fc_list))
 
         new_workbook.save(dataPath)
     
