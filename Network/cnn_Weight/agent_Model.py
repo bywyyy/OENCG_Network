@@ -8,6 +8,12 @@ from xlutils.copy import copy
 timen = time.strftime("%m%d%H%M")
 dataPath = '../saveData/cnn_w' + timen + '.xls'
 
+num = 0
+
+def setnum(int):
+    global num
+    num = int
+
 
 class CNNnet(nn.Module):
     def __init__(self):
@@ -15,6 +21,11 @@ class CNNnet(nn.Module):
 
         w = xlwt.Workbook(encoding='utf-8')  # 新建工作簿
         ws = w.add_sheet('data')  # 新建sheet
+        global timen
+        timen = time.strftime("%m%d%H%M")
+        from main import globalk
+        global dataPath
+        dataPath = '../saveData/cnn_w' + timen + 'k' + globalk.__str__() + '.xls'
         w.save(dataPath)
         workbook = xlrd.open_workbook(dataPath)  # 打开工作簿
         sheets = workbook.sheet_names()  # 获取工作簿中的所有表格
@@ -24,7 +35,6 @@ class CNNnet(nn.Module):
         new_worksheet = new_workbook.get_sheet(0)  # 获取转化后工作簿中的第一个表格
         new_worksheet.write(rows_old, 0, 'LeakyReLU,α=0.0001')
 
-
         in_channels = 1
         out_channels = 16
         kernel_size = 3
@@ -33,7 +43,8 @@ class CNNnet(nn.Module):
         # conv1层，in_channels=2 , out_channels=6 说明使用了6个滤波器/卷积核
         # kernel_size=5卷积核大小5
         setList = [in_channels, out_channels, kernel_size, stride, padding]
-        setData = "in_channels={0[0]},out_channels = {0[1]},kernel_size = {0[2]},stride = {0[3]},padding = {0[4]}".format(setList)
+        setData = "in_channels={0[0]},out_channels = {0[1]},kernel_size = {0[2]},stride = {0[3]},padding = {0[4]}".format(
+            setList)
         new_worksheet.write(rows_old, 1, setData)
         self.conv1 = nn.Conv1d(in_channels=in_channels,
                                out_channels=out_channels,
@@ -47,7 +58,8 @@ class CNNnet(nn.Module):
         stride = 2
         padding = 0
         setList = [in_channels, out_channels, kernel_size, stride, padding]
-        setData = "in_channels={0[0]},out_channels = {0[1]},kernel_size = {0[2]},stride = {0[3]},padding = {0[4]}".format(setList)
+        setData = "in_channels={0[0]},out_channels = {0[1]},kernel_size = {0[2]},stride = {0[3]},padding = {0[4]}".format(
+            setList)
         new_worksheet.write(rows_old, 2, setData)
         # conv2层， 输入通道in_channels 要等于上一层的 out_channels
         self.conv2 = nn.Conv1d(in_channels=in_channels,
@@ -57,7 +69,7 @@ class CNNnet(nn.Module):
                                padding=padding)
         # an affine operarion: y = Wx + b
         # 全连接层fc1,因为输入到fc1层时候，feature map为： 2*2*10
-        in_features = 80
+        in_features = num
         out_features = 64
         setList = [in_features, out_features]
         setData = "in_features={0[0]},out_features = {0[1]}".format(setList)
@@ -70,7 +82,7 @@ class CNNnet(nn.Module):
         new_worksheet.write(rows_old, 4, setData)
         self.fc2 = nn.Linear(in_features=in_features, out_features=out_features)
         in_features = 24
-        out_features = 3
+        out_features = 2
         setList = [in_features, out_features]
         setData = "in_features={0[0]},out_features = {0[1]}".format(setList)
         new_worksheet.write(rows_old, 5, setData)
@@ -92,5 +104,6 @@ class CNNnet(nn.Module):
         x = F.leaky_relu(self.fc1(x))
         x = F.leaky_relu(self.fc2(x))
         x = self.fc3(x)
+        x_prob = F.softmax(x, dim=1)
 
-        return x
+        return x_prob

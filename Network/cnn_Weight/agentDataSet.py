@@ -1,3 +1,5 @@
+import collections
+
 import torch
 from torch.utils.data import DataLoader, Dataset
 
@@ -20,39 +22,53 @@ class agentData(Dataset):
 
             data_list = get_file_data(file_path)
 
-            for i in range(0, len(data_list) - 4):
+            itemdata = collections.deque()
+            num = 0
+            for i in range(0, len(data_list) - k - 1):
 
-                piece_data = [0] * (k + 1) * 3
-                for j in range(0, k):
-                    ind = k - j
-                    if i - ind >= 0:
-                        piece_data[j * 3 + 0] = data_list[ind][0]
-                        piece_data[j * 3 + 1] = data_list[ind][1]
-                        piece_data[j * 3 + 2] = data_list[ind][2]
+                piece_data = []
+                piece_data.clear()
+                while num < k:
+                    itemdata.append(data_list[num][0])
+                    itemdata.append(data_list[num][1])
+                    itemdata.append(data_list[num][2])
+                    num += 1
 
-                piece_data[k * 3] = data_list[0][3]  # 权重添加到最后
-                piece_data[k * 3 + 1] = data_list[0][4]
-                piece_data[k * 3 + 2] = data_list[0][5]
+                if num == k:
+                    itemdata.append(data_list[0][3])  # 权重添加到结尾
+                    itemdata.append(data_list[0][4])
+                    itemdata.append(data_list[0][5])
+                itemdataCopy = itemdata.copy()
+                while itemdataCopy.__len__() > 0:
+                    piece_data.append(itemdataCopy.popleft())
+                itemdata.popleft()  # 去掉前三个数据
+                itemdata.popleft()
+                itemdata.popleft()
+                itemdata.insert(15, data_list[num][0])  # 增加后三个数据
+                itemdata.insert(16, data_list[num][1])
+                itemdata.insert(17, data_list[num][2])
 
-                ind = i + 1
-                # 处理label数据，label只有收益分配，去掉后三位权重
-                label_data = [data_list[ind][0], data_list[ind][1], data_list[ind][2]]
                 self.data.append(piece_data)
-                self.label.append(label_data)
+                self.label.append(data_list[num][6])
                 self.len += 1
+                num += 1
 
     def __len__(self):
         return self.len
 
     def __getitem__(self, index):
-        data = torch.Tensor(self.data[index])
-
-        label = self.label[index].copy()
-        # for i in range(0, 3):
-        #     if label[i] != 0:
-        #         label.append(1)
-        #     else:
-        #         label.append(0)
-
-        label = torch.Tensor(label)
+        # data = torch.Tensor(self.data[index])
+        #
+        # # label = self.label[index].copy()
+        # # # for i in range(0, 3):
+        # # #     if label[i] != 0:
+        # # #         label.append(1)
+        # # #     else:
+        # # #         label.append(0)
+        # #
+        # # label = torch.Tensor(label)
+        dataitem = self.data[index]
+        labelitem = self.label[index]
+        data = torch.Tensor(dataitem)
+        label = torch.Tensor([labelitem])
         return data, label

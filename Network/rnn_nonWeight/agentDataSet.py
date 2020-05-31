@@ -3,8 +3,9 @@ from torch.utils.data import DataLoader, Dataset
 
 from data_provider import get_file_data
 import os
-   
-class agentData(Dataset): 
+
+
+class agentData(Dataset):
     def __init__(self, data_dir, k):
         self.data = []
         self.label = []
@@ -17,20 +18,23 @@ class agentData(Dataset):
 
             file_path = os.path.join(data_dir, file_name)
 
-
             data_list = get_file_data(file_path)
-            
+
             for i in range(0, len(data_list) - 1):
-                
-                piece_data = [0] * k * 3
+
+                piece_data = [0] * k * 4
+                # singleLabel = [0] * 100
                 for j in range(0, k):
                     ind = k - j
                     if i - ind >= 0:
-                        piece_data[j * 3 + 0] = data_list[ind][0]
-                        piece_data[j * 3 + 1] = data_list[ind][1]
-                        piece_data[j * 3 + 2] = data_list[ind][2]
+                        piece_data[j * 4 + 0] = data_list[ind][0]
+                        piece_data[j * 4 + 1] = data_list[ind][1]
+                        piece_data[j * 4 + 2] = data_list[ind][2]
+                        piece_data[j * 4 + 3] = data_list[ind][3]
 
                 ind = i + 1
+
+                # singleLabel[int(data_list[ind][1])] = 1
                 self.data.append(piece_data)
                 self.label.append(data_list[ind])
                 self.len += 1

@@ -13,7 +13,7 @@ if __name__ == '__main__':
     test_data = agentData('../test', 6)
 
     train_dl = DataLoader(train_data, 2, shuffle=False)
-    test_dl = DataLoader(test_data, 1, shuffle=True)
+    test_dl = DataLoader(test_data, 1, shuffle=False)
     
     
     # 50 epoch learning_rate = 0.0001

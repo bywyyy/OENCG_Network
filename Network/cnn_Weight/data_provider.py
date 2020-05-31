@@ -11,7 +11,7 @@ def get_file_data(file_name):
         def __init__(self):
             self.players = {}
             self.players_number = 0
-            self.piece_data = [0] * 6
+            self.piece_data = [0] * 7
 
         # 元素开始事件处理
         def startElement(self, tag, attributes):
@@ -28,14 +28,19 @@ def get_file_data(file_name):
                 player_name = attributes['role-name']
                 value = int(attributes['reward'])
                 player_id = self.players[player_name]['id']
-                self.piece_data[player_id] = 1.0 * value
+                self.piece_data[player_id] = 1.0 * value / 100
+
+            if tag == 'response':
+                player_agree = attributes['agree']
+                if (player_agree == 'false'):
+                    self.piece_data[6] = 1
 
         # 元素结束事件处理
 
         def endElement(self, tag):
             if tag == 'proposal':
                 add_piece(self.piece_data)
-                self.piece_data = [0] * 6
+                self.piece_data = [0] * 7
 
         # 内容事件处理
         def characters(self, content):

@@ -8,6 +8,12 @@ from xlutils.copy import copy
 timen = time.strftime("%m%d%H%M")
 dataPath = '../saveData/cnn_nw' + timen + '.xls'
 
+num = 0
+
+def setnum(int):
+    global num
+    num = int
+
 
 class CNNnet(nn.Module):
     def __init__(self):
@@ -15,6 +21,11 @@ class CNNnet(nn.Module):
 
         w = xlwt.Workbook(encoding='utf-8')  # 新建工作簿
         ws = w.add_sheet('data')  # 新建sheet
+        global timen
+        timen = time.strftime("%m%d%H%M")
+        from main import globalk
+        global dataPath
+        dataPath = '../saveData/cnn_nw' + timen + 'k' + globalk.__str__() + '.xls'
         w.save(dataPath)
         workbook = xlrd.open_workbook(dataPath)  # 打开工作簿
         sheets = workbook.sheet_names()  # 获取工作簿中的所有表格
@@ -58,7 +69,7 @@ class CNNnet(nn.Module):
                                padding=padding)
         # an affine operarion: y = Wx + b
         # 全连接层fc1,因为输入到fc1层时候，feature map为： 2*2*10
-        in_features = 64
+        in_features = num
         out_features = 64
         setList = [in_features, out_features]
         setData = "in_features={0[0]},out_features = {0[1]}".format(setList)
@@ -71,7 +82,7 @@ class CNNnet(nn.Module):
         new_worksheet.write(rows_old, 4, setData)
         self.fc2 = nn.Linear(in_features=in_features, out_features=out_features)
         in_features = 24
-        out_features = 3
+        out_features = 2
         setList = [in_features, out_features]
         setData = "in_features={0[0]},out_features = {0[1]}".format(setList)
         new_worksheet.write(rows_old, 5, setData)
@@ -93,5 +104,6 @@ class CNNnet(nn.Module):
         x = F.leaky_relu(self.fc1(x))
         x = F.leaky_relu(self.fc2(x))
         x = self.fc3(x)
+        x_prob = F.softmax(x, dim=1)
 
-        return x
+        return x_prob

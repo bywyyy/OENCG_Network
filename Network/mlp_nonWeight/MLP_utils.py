@@ -1,8 +1,8 @@
+import numpy as np
 import torch
 import torch.nn as nn
-import random
 import xlrd
-from torch.autograd import Variable
+import random
 from xlutils.copy import copy
 
 from agent_Model import dataPath
@@ -52,27 +52,23 @@ def _train(model, dl, num_epochs, learning_rate):
 
 def _test(model, dst):
     model.eval()
+    params = list(model.named_parameters())
 
-    dstlen = dst.__len__()
-    if (dstlen > 30):
-        dstlen = 30
-    for i in range(dstlen):
-        data, label = dst[i]
+    for i in range(0, 4):
+        rand_idx = random.randint(0, dst.__len__())
+        # dstlen = dst.__len__()
+        # if (dstlen > 10):
+        #     dstlen = 10
+
+        data, label = dst[rand_idx]
 
         data = torch.Tensor([data.numpy()])
 
-        outputs = model(data)
+        outputs = model(data).squeeze(0)
+        outputs2 = outputs.detach().numpy()
+        np.set_printoptions(precision=3, suppress=True)
 
-        '''
-        outputs = outputs[0]
-        sum_data = outputs[0] + outputs[1] + outputs[2]
-    
-        outputs[0] = outputs[0] / sum_data * 100
-        outputs[1] = outputs[1] / sum_data * 100
-        outputs[2] = outputs[2] / sum_data * 100
-        '''
-
-        print("ground truth: {},  outputs : {}".format(label, outputs[0]))
+        print("ground truth: {},  outputs : {}".format(label, outputs2))
         workbook = xlrd.open_workbook(dataPath)  # 打开工作簿
         sheets = workbook.sheet_names()  # 获取工作簿中的所有表格
         worksheet = workbook.sheet_by_name(sheets[0])  # 获取工作簿中所有表格中的的第一个表格
