@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<game id="D2B277095B7B445A" name="Scene5" majority="3">
+  <knowledge party-num="0" role-name="Google" resource="1" talent="0.0">true, true, true</knowledge>
+  <knowledge party-num="1" role-name="Facebook" resource="1" talent="0.0">true, true, true</knowledge>
+  <knowledge party-num="2" role-name="Amazon" resource="2" talent="0.0">true, true, true</knowledge>
+  <player name="cxdftc" desc="" role-name="Facebook" type="REMOTE_AGENT" path="AgentProsocialA"/>
+  <player name="cfch" desc="" role-name="Google" type="REMOTE_AGENT" path="AgentProsocialA"/>
+  <player name="bjkbghv" desc="" role-name="Amazon" type="REMOTE_AGENT" path="AgentProsocialA"/>
+  <session num="1">
+    <round num="1">
+      <proposal name="cfch" role-name="Google" reward="16">
+        <ally name="cxdftc" role-name="Facebook" reward="16"/>
+        <ally name="bjkbghv" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="cxdftc" role-name="Facebook" agree="true"/>
+      <response name="bjkbghv" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="2">
+    <round num="2">
+      <proposal name="cxdftc" role-name="Facebook" reward="16">
+        <ally name="bjkbghv" role-name="Amazon" reward="66"/>
+        <ally name="cfch" role-name="Google" reward="16"/>
+      </proposal>
+      <response name="bjkbghv" role-name="Amazon" agree="true"/>
+      <response name="cfch" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="3">
+    <round num="3">
+      <proposal name="bjkbghv" role-name="Amazon" reward="50">
+        <ally name="cxdftc" role-name="Facebook" reward="25"/>
+        <ally name="cfch" role-name="Google" reward="25"/>
+      </proposal>
+      <response name="cxdftc" role-name="Facebook" agree="true"/>
+      <response name="cfch" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="4">
+    <round num="4">
+      <proposal name="cfch" role-name="Google" reward="16">
+        <ally name="cxdftc" role-name="Facebook" reward="16"/>
+        <ally name="bjkbghv" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="cxdftc" role-name="Facebook" agree="true"/>
+      <response name="bjkbghv" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="5">
+    <round num="5">
+      <proposal name="cxdftc" role-name="Facebook" reward="16">
+        <ally name="bjkbghv" role-name="Amazon" reward="66"/>
+        <ally name="cfch" role-name="Google" reward="16"/>
+      </proposal>
+      <response name="bjkbghv" role-name="Amazon" agree="true"/>
+      <response name="cfch" role-name="Google" agree="true"/>
+    </round>
+  </session>
+</game>

@@ -45,14 +45,12 @@ class agentData(Dataset):
                 itemdata.append(data_list[num][2])
 
                 self.data.append(piece_data)
-                self.label.append(data_list[num][3])
+                self.label.append(data_list[num - 1][3])
                 self.len += 1
                 num += 1
 
-
     def __len__(self):
         return self.len
-
 
     def __getitem__(self, index):
         dataitem = self.data[index]

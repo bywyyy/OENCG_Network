@@ -24,7 +24,7 @@ class agentData(Dataset):
 
             itemdata = collections.deque()
             num = 0
-            for i in range(0, len(data_list) - k - 1):
+            for i in range(0, len(data_list) - k):
 
                 piece_data = []
                 piece_data.clear()
@@ -49,7 +49,7 @@ class agentData(Dataset):
                 itemdata.insert(17, data_list[num][2])
 
                 self.data.append(piece_data)
-                self.label.append(data_list[num][6])
+                self.label.append(data_list[num - 1][6])
                 self.len += 1
                 num += 1
 

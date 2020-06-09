@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<game id="EEA41DEC216643B5" name="Scene4" majority="3">
+  <knowledge party-num="0" role-name="Google" resource="1" talent="0.0">true, true, true</knowledge>
+  <knowledge party-num="1" role-name="Facebook" resource="1" talent="0.0">true, true, true</knowledge>
+  <knowledge party-num="2" role-name="Amazon" resource="2" talent="0.0">true, true, true</knowledge>
+  <player name="PopIQ" desc="" role-name="Google" type="REMOTE_AGENT" path="Human"/>
+  <player name="3NFGP" desc="" role-name="Amazon" type="REMOTE_AGENT" path="AgentProselfA"/>
+  <player name="0ak6u" desc="" role-name="Facebook" type="REMOTE_AGENT" path="AgentProsocialB"/>
+  <session num="1">
+    <round num="1">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="2">
+    <round num="2">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="3">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="0ak6u" role-name="Facebook" reward="20"/>
+      </proposal>
+      <response name="0ak6u" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="4">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="3">
+    <round num="5">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="6">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="4">
+    <round num="7">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="5">
+    <round num="8">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="9">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="6">
+    <round num="10">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="7">
+    <round num="11">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="12">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="8">
+    <round num="13">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="9">
+    <round num="14">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="15">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="10">
+    <round num="16">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="11">
+    <round num="17">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="18">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="0ak6u" role-name="Facebook" reward="20"/>
+      </proposal>
+      <response name="0ak6u" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="19">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="12">
+    <round num="20">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="21">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="0ak6u" role-name="Facebook" reward="20"/>
+      </proposal>
+      <response name="0ak6u" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="22">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="13">
+    <round num="23">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="24">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="14">
+    <round num="25">
+      <proposal name="PopIQ" role-name="Google" reward="16">
+        <ally name="0ak6u" role-name="Facebook" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="0ak6u" role-name="Facebook" agree="true"/>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="26">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="27">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="0ak6u" role-name="Facebook" reward="20"/>
+      </proposal>
+      <response name="0ak6u" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="28">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="15">
+    <round num="29">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="30">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="16">
+    <round num="31">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="17">
+    <round num="32">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="33">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="0ak6u" role-name="Facebook" reward="20"/>
+      </proposal>
+      <response name="0ak6u" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="34">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="18">
+    <round num="35">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="36">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="19">
+    <round num="37">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="20">
+    <round num="38">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="39">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="0ak6u" role-name="Facebook" reward="20"/>
+      </proposal>
+      <response name="0ak6u" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="40">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="21">
+    <round num="41">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="42">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="0ak6u" role-name="Facebook" reward="20"/>
+      </proposal>
+      <response name="0ak6u" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="43">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="22">
+    <round num="44">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="45">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="23">
+    <round num="46">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="24">
+    <round num="47">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="48">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="0ak6u" role-name="Facebook" reward="20"/>
+      </proposal>
+      <response name="0ak6u" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="49">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="25">
+    <round num="50">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="51">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="26">
+    <round num="52">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="27">
+    <round num="53">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="54">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="28">
+    <round num="55">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="29">
+    <round num="56">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="57">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="30">
+    <round num="58">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="31">
+    <round num="59">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="60">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="0ak6u" role-name="Facebook" reward="20"/>
+      </proposal>
+      <response name="0ak6u" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="61">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="32">
+    <round num="62">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="63">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="0ak6u" role-name="Facebook" reward="20"/>
+      </proposal>
+      <response name="0ak6u" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="64">
+      <proposal name="PopIQ" role-name="Google" reward="16">
+        <ally name="0ak6u" role-name="Facebook" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="0ak6u" role-name="Facebook" agree="true"/>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="65">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="66">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="0ak6u" role-name="Facebook" reward="20"/>
+      </proposal>
+      <response name="0ak6u" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="67">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="33">
+    <round num="68">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="69">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="34">
+    <round num="70">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="35">
+    <round num="71">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="72">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="36">
+    <round num="73">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="37">
+    <round num="74">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="75">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="38">
+    <round num="76">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="39">
+    <round num="77">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="78">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="0ak6u" role-name="Facebook" reward="20"/>
+      </proposal>
+      <response name="0ak6u" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="79">
+      <proposal name="PopIQ" role-name="Google" reward="16">
+        <ally name="0ak6u" role-name="Facebook" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="0ak6u" role-name="Facebook" agree="true"/>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="80">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="81">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="40">
+    <round num="82">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="41">
+    <round num="83">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="84">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="0ak6u" role-name="Facebook" reward="20"/>
+      </proposal>
+      <response name="0ak6u" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="85">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="42">
+    <round num="86">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="87">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="0ak6u" role-name="Facebook" reward="20"/>
+      </proposal>
+      <response name="0ak6u" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="88">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="43">
+    <round num="89">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="90">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="44">
+    <round num="91">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="45">
+    <round num="92">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="93">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="46">
+    <round num="94">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="47">
+    <round num="95">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="96">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="48">
+    <round num="97">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="49">
+    <round num="98">
+      <proposal name="0ak6u" role-name="Facebook" reward="16">
+        <ally name="PopIQ" role-name="Google" reward="16"/>
+        <ally name="3NFGP" role-name="Amazon" reward="66"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="false"/>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+    <round num="99">
+      <proposal name="3NFGP" role-name="Amazon" reward="80">
+        <ally name="PopIQ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="PopIQ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="50">
+    <round num="100">
+      <proposal name="PopIQ" role-name="Google" reward="20">
+        <ally name="3NFGP" role-name="Amazon" reward="80"/>
+      </proposal>
+      <response name="3NFGP" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+</game>
