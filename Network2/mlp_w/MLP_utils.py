@@ -45,7 +45,7 @@ def _train(model, dl, num_epochs, learning_rate):
             avgloss = loss_sum.item() / total_cnt
             print('Epoch [{}/{}], Setp [{}], LOSS: {:.4f}, Total Sample {}'
                   .format(epoch + 1, num_epochs, i, avgloss, total_cnt))
-            from agent_Model import dataPath
+            from agent_Modelmlpw import dataPath
             workbook = xlrd.open_workbook(dataPath)  # 打开工作簿
             sheets = workbook.sheet_names()  # 获取工作簿中的所有表格
             worksheet = workbook.sheet_by_name(sheets[0])  # 获取工作簿中所有表格中的的第一个表格
@@ -87,7 +87,7 @@ def _test(model, dst):
 
     print("payoff: {}, ground truth: {},  outputs : {}, accuracy : {:.4f}".format(payoff3, label, outputs2,
                                                                                   accuracyRate))
-    from agent_Model import dataPath
+    from agent_Modelmlpw import dataPath
     workbook = xlrd.open_workbook(dataPath)  # 打开工作簿
     sheets = workbook.sheet_names()  # 获取工作簿中的所有表格
     worksheet = workbook.sheet_by_name(sheets[0])  # 获取工作簿中所有表格中的的第一个表格
@@ -114,3 +114,5 @@ def _test(model, dst):
         epoch_list.clear()
         accuracy_list.clear()
         plt.close()
+
+    return accuracyRate

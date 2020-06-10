@@ -1,7 +1,7 @@
-from agent_Model import LinearNet, setnum
+from agent_Modelmlpnw import LinearNet, setnum
 from agentDataSet import agentData
 from MLP_utils import _test, _train
-
+from save_Model import saveModel
 from torch.utils.data import DataLoader
 
 se = [1, 3, 6, 10, 15, 20]
@@ -26,9 +26,13 @@ if __name__ == '__main__':
         test_dl = DataLoader(test_data, 1, shuffle=False)
 
         jishu = 0
+        accuracyRateMax = 0.0
         for i in _train(linear_net, train_dl, 100, 0.002):
             jishu += 1
             if jishu % 1 == 0:
-                _test(linear_net, test_data)
+                accuracyRate = _test(linear_net, test_data)
+                if accuracyRate > accuracyRateMax:
+                    accuracyRateMax = accuracyRate
+                    saveModel(linear_net)
 
         print('=============================================================================')

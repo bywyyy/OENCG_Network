@@ -1,12 +1,15 @@
-from agent_Model import CNNnet
-from agent_Model import setnum
-from agent_Model import setk
+from agent_Modelcnnnw import CNNnet
+from agent_Modelcnnnw import setnum
+from agent_Modelcnnnw import setk
 from agentDataSet import agentData
 from MLP_utils import _test, _train
 from torch.utils.data import DataLoader
+from save_Model import saveModel
 
+# se = [1, 3, 6, 10, 15, 20]
+# point = [64, 256, 576, 960, 1408, 1920]
 se = [1, 3, 6, 10, 15, 20]
-point = [64, 256, 576, 960, 1408, 1920]
+point = [64, 128, 320, 512, 704, 960]
 
 # se = [1]
 # point = [64]
@@ -21,7 +24,6 @@ if __name__ == '__main__':
 
         setnum(point[cnt])
         setk(se[cnt])
-        cnt += 1
         cnn_net = CNNnet()
 
         train_data = agentData('../allData/data', k)
@@ -31,13 +33,18 @@ if __name__ == '__main__':
         test_dl = DataLoader(test_data, 1, shuffle=False)
 
         jishu = 0
+        accuracyRateMax = 0.0
         for i in _train(cnn_net, train_dl, 100, 0.0001):
             jishu += 1
             if jishu % 1 == 0:
-                _test(cnn_net, test_data)
-
+                accuracyRate = _test(cnn_net, test_data)
+                if accuracyRate > accuracyRateMax:
+                    accuracyRateMax = accuracyRate
+                    saveModel(cnn_net)
         print('=============================================================================')
+
         # for i in range(50):
         #     _train(cnn_net, train_dl, 1, 0.0001)
         #     _test(cnn_net, test_data)
         #     print('===============================================================================================')
+        cnt += 1
