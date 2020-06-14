@@ -2,49 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5723983-3192-4de8-982b-2be27301f44f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../loadModel/.idea/loadModel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/testTest/125646772_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/testTest/125717764_Scene33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/testTest/125734445_Scene34.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/testTest/125738218_Scene39.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Network2.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cnn_nw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_nw/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/MLP_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_nw/agent_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/agent_Modelcnnnw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_nw/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_nw/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLP_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent_Modelcnnw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../loadModel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../loadModel/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mlp_nw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mlp_nw/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/MLP_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mlp_nw/agent_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/agent_Modelmlpnw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mlp_nw/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mlp_w/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_w/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mlp_w/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_w/MLP_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mlp_w/agent_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_w/agent_Modelmlpw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mlp_w/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_w/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609222744k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609222849k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609222859k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609222924k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609222934k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609222944k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223103k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223113k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223128k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223147k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223509k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223520k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223534k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223554k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223623k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_w0609193807k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06092308k1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../saveData/cnn_nw06092308k1.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06092308k1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../saveData/cnn_w06092308k1.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw06092359k1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../saveData/mlp_nw06092359k1.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w06100000k1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../saveData/mlp_w06100000k1.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_nwParams0611010129.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_wParams0611010131.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/mlp_nw0610035332k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/mlp_w0610035612k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw0611010136k1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../saveData/cnn_nw0611010136k1.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w0611010137k1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../saveData/cnn_w0611010137k1.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw0611010129k1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../saveData/mlp_nw0611010129k1.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w0611010131k1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../saveData/mlp_w0611010131k1.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/java/com/swu/agentlab/zsnp/game/coalition/voting/room/MessageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/java/com/swu/agentlab/zsnp/game/coalition/voting/room/MessageManager.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,11 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="252">
+              <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -69,11 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/save_Model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="150">
               <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-              <folding>
-                <element signature="e#1#23#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -81,7 +47,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
+            <state relative-caret-position="540">
               <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -93,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agent_Modelcnnw.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
+            <state relative-caret-position="360">
               <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -105,7 +71,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file:///opt/anaconda3/envs/pytorch-py36/lib/python3.6/site-packages/torch/nn/functional.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
+            <state relative-caret-position="20880">
               <caret line="1405" selection-start-line="1405" selection-end-line="1405" />
             </state>
           </provider>
@@ -114,7 +80,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MLP_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
+            <state relative-caret-position="627">
               <caret line="112" column="34" selection-start-line="112" selection-start-column="34" selection-end-line="112" selection-end-column="34" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -126,7 +92,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_provider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
+            <state relative-caret-position="285">
               <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
             </state>
           </provider>
@@ -135,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agentDataSet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+            <state relative-caret-position="120">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -169,8 +135,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1051" />
-    <option name="y" value="23" />
+    <option name="x" value="172" />
+    <option name="y" value="48" />
     <option name="width" value="1018" />
     <option name="height" value="796" />
   </component>
@@ -257,23 +223,24 @@
       <workItem from="1591200712607" duration="7127000" />
       <workItem from="1591324261607" duration="766000" />
       <workItem from="1591460244864" duration="19608000" />
-      <workItem from="1591706270424" duration="9980000" />
+      <workItem from="1591706270424" duration="10573000" />
+      <workItem from="1591958712478" duration="2830000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48516000" />
+    <option name="totallyTimeSpent" value="51939000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1051" y="23" width="1018" height="796" extended-state="0" />
+    <frame x="172" y="48" width="1018" height="796" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18135247" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18442623" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4161932" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4161932" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5348485" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -307,17 +274,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/save_Model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="150">
           <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding>
-            <element signature="e#1#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
+        <state relative-caret-position="540">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -325,33 +289,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///opt/anaconda3/envs/pytorch-py36/lib/python3.6/site-packages/torch/nn/functional.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="1405" selection-start-line="1405" selection-end-line="1405" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agentDataSet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_provider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/agent_Modelcnnw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
+        <state relative-caret-position="360">
           <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -359,9 +299,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///opt/anaconda3/envs/pytorch-py36/lib/python3.6/site-packages/torch/nn/functional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20880">
+          <caret line="1405" selection-start-line="1405" selection-end-line="1405" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_provider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agentDataSet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MLP_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
+        <state relative-caret-position="627">
           <caret line="112" column="34" selection-start-line="112" selection-start-column="34" selection-end-line="112" selection-end-column="34" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -371,11 +335,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
         </state>
       </provider>
     </entry>

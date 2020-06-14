@@ -1,14 +1,12 @@
 import numpy as np
 import torch
 from torch.autograd import Variable
+import sys
+
+print(sys.path)
 
 
-# if __name__ == '__main__':
-# #     learn_data = agentData('data', 3)
-# #     print(learn_data.__len__)
-# #     print(learn_data[1])
-
-def _testCNN(model, dst):
+def testCNN(model, dst):
     # for name, param in model.named_parameters():
     #     print('测试前', name, param)
 
@@ -37,14 +35,14 @@ def _testCNN(model, dst):
                                                                                   accuracyRate))
     return accuracyRate
 
-def _testMLP(model, dst):
+
+def testMLP(model, dst, playerNum):
     model.eval()
 
-    accuracy = 0.0
-    accuracyRate = 0.0
+    maxPayoff = 0.0
+    recpayoff = [0]*3
     for i in range(0, dst.__len__()):
-
-        data, label = dst[i]
+        data = dst[i]
         data = torch.Tensor([data.numpy()])
 
         with torch.no_grad():
@@ -56,12 +54,17 @@ def _testMLP(model, dst):
         payoff2 = payoff[0]
         payoff3 = list(map(int, payoff2[-3:] * 100))
 
-        if outputs2[int(label[0])] > 0.5:
-            accuracy += 1
+        # print("payoff: {}, outputs : {},".format(payoff3, outputs2))
 
-        accuracyRate = accuracy / (i + 1)
+        asp = payoff3[playerNum] * outputs2[1]
+        # 选择提议者收益*被接受概率更高的收益（乘积相同，但提议者收益更高时也更新）
+        if asp == maxPayoff and payoff3[playerNum] > recpayoff[playerNum]:
+            recpayoff = payoff3[:]
+            maxPayoff = asp
 
-    print("payoff: {}, ground truth: {},  outputs : {}, accuracy : {:.4f}".format(payoff3, label, outputs2,
-                                                                                  accuracyRate))
+        elif asp > maxPayoff:
+            recpayoff = payoff3[:]
+            maxPayoff = asp
 
-    return accuracyRate
+        # print("recommand payoff: {}, aspiration : {},".format(recpayoff, maxPayoff))
+    print(recpayoff[0].__str__()+','+recpayoff[1].__str__()+','+recpayoff[2].__str__())

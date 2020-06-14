@@ -6,69 +6,57 @@ import os
 
 
 class agentDatamnw(Dataset):
-    def __init__(self, data_dir, k):
+    def __init__(self, data_dir, k, playerNum):
         self.data = []
         self.label = []
         self.len = 0
 
-        files = os.listdir(data_dir)
-        for file_name in files:
-            if (file_name[-2:] == 're'):
-                continue
+        preProvider = [0] * 3  # 当前待预测offer的提议者
+        preProvider[playerNum] = 1
 
-            file_path = os.path.join(data_dir, file_name)
-            data_list = get_file_data(file_path)
+        files = os.listdir(data_dir)  # 列出目录的下所有文件和文件夹保存到lists
+        print(list)
+        files.sort(key=lambda fn: os.path.getmtime(data_dir + "/" + fn))  # 按时间排序
 
-            providerData = collections.deque()
-            # payoffData = collections.deque()
-            # stateData = collections.deque()
-            num = 0
-            for i in range(0, len(data_list) - k):
-                piece_provider = []
-                piece_payoff = []
-                piece_state = []
-                piece_provider.clear()
-                piece_payoff.clear()
-                piece_state.clear()
-                while num < k:
-                    providerData.append(data_list[num][0])
-                    providerData.append(data_list[num][1])
-                    providerData.append(data_list[num][2])
-                    providerData.append(data_list[num][3])
-                    providerData.append(data_list[num][4])
-                    providerData.append(data_list[num][5])
-                    num += 1
+        file_name = os.path.join(data_dir, files[-1])
+        if (file_name[-2:] == 're'):
+            file_name = os.path.join(data_dir, files[-2])
+        data_list = get_file_data(file_name)
+        datalistLen = len(data_list)
 
-                providerCopy = providerData.copy()
-                while providerCopy.__len__() > 0:
-                    piece_provider.append(providerCopy.popleft())
-                for p in range(6):
-                    providerData.popleft()
-                    providerData.append(data_list[num][p])
-                self.data.append(piece_provider)
-                self.label.append(data_list[num - 1][-1])
+        piece_data = []
+
+        for i in range(datalistLen - k + 1, datalistLen):
+            piece_data.append(data_list[i][0])
+            piece_data.append(data_list[i][1])
+            piece_data.append(data_list[i][2])
+            piece_data.append(data_list[i][3])
+            piece_data.append(data_list[i][4])
+            piece_data.append(data_list[i][5])
+
+        piece_data.append(preProvider[0])
+        piece_data.append(preProvider[1])
+        piece_data.append(preProvider[2])
+
+        for player1 in range(0, 100, 2):
+            for player2 in range(0, 100 - player1 + 1, 2):
+                player3 = 100 - player1 - player2
+                if player3 == 100 or player2 == 100:
+                    continue
+                hbdata = piece_data[:]
+                itemdata = []
+                itemdata.append(player1 / 100)
+                itemdata.append(player2 / 100)
+                itemdata.append(player3 / 100)
+                hbdata.extend(itemdata)
+                self.data.append(hbdata)
                 self.len += 1
-                num += 1
+                itemdata.clear()
 
     def __len__(self):
         return self.len
 
     def __getitem__(self, index):
         dataitem = self.data[index]
-        labelitem = self.label[index]
         data = torch.Tensor(dataitem)
-        label = torch.Tensor([labelitem])
-        return data, label
-
-    # def __getitem__(self, index):
-    #     data = torch.Tensor(self.data[index])
-    #
-    #     label = self.label[index].copy()
-    #     for i in range(0, 3):
-    #         if label[i] != 0:
-    #             label.append(1)
-    #         else:
-    #             label.append(0)
-    #
-    #     label = torch.Tensor(label)
-    #     return data, label
+        return data

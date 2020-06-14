@@ -2,49 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb7833bd-099c-4b57-917d-1f34a621f68f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../loadModel/.idea/loadModel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/testTest/125646772_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/testTest/125717764_Scene33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/testTest/125734445_Scene34.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/testTest/125738218_Scene39.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_nw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_nw/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/MLP_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_nw/agent_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/agent_Modelcnnnw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_nw/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_nw/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_w/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_w/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_w/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_w/MLP_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_w/agent_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_w/agent_Modelcnnw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_w/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_w/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_w/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_w/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mlp_nw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mlp_nw/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/MLP_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mlp_nw/agent_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/agent_Modelmlpnw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mlp_nw/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLP_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent_Modelmlpw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609222744k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609222849k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609222859k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609222924k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609222934k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609222944k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223103k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223113k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223128k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223147k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223509k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223520k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223534k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223554k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609223623k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_w0609193807k1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06092308k1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../saveData/cnn_nw06092308k1.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06092308k1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../saveData/cnn_w06092308k1.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw06092359k1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../saveData/mlp_nw06092359k1.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w06100000k1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../saveData/mlp_w06100000k1.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_nwParams0611010129.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/mlp_nwParams0611010129.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_wParams0611010131.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/mlp_wParams0611010131.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw0611010136k1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../saveData/cnn_nw0611010136k1.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w0611010137k1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../saveData/cnn_w0611010137k1.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw0611010129k1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../saveData/mlp_nw0611010129k1.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w0611010131k1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../saveData/mlp_w0611010131k1.xls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +20,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="225">
               <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
@@ -237,12 +200,12 @@
       <updated>1591548338584</updated>
       <workItem from="1591548339694" duration="11043000" />
       <workItem from="1591714182897" duration="2714000" />
-      <workItem from="1591807965789" duration="533000" />
+      <workItem from="1591807965789" duration="1120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14290000" />
+    <option name="totallyTimeSpent" value="14877000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1038" y="23" width="1019" height="842" extended-state="0" />
@@ -253,7 +216,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23733333" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23733333" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41869918" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -334,7 +297,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="225">
           <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />

@@ -52,4 +52,7 @@ public class GameRecController {
     public void save(){
         gameRec.save();
     }
+    public void save(int abc){
+        gameRec.save(abc);
+    }
 }
