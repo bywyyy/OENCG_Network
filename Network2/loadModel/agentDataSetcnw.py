@@ -6,71 +6,69 @@ import os
 
 
 class agentDatacnw(Dataset):
-    def __init__(self, data_dir, k):
+    def __init__(self, data_dir, k, playerNum):
         self.data = []
         self.label = []
         self.len = 0
 
-        files = os.listdir(data_dir)
-        for file_name in files:
-            if (file_name[-2:] == 're'):
-                continue
+        preProvider = [0] * 3  # 当前待预测offer的提议者
+        preProvider[playerNum] = 1
 
-            file_path = os.path.join(data_dir, file_name)
-            data_list = get_file_data(file_path)
+        files = os.listdir(data_dir)  # 列出目录的下所有文件和文件夹保存到lists
+        # print(list)
+        files.sort(key=lambda fn: os.path.getmtime(data_dir + "/" + fn))  # 按时间排序
 
-            providerData = collections.deque()
-            payoffData = collections.deque()
-            # stateData = collections.deque()
-            num = 0
-            for i in range(0, len(data_list) - k):
-                piece_provider = []
-                piece_payoff = []
-                piece_state = []
-                piece_provider.clear()
-                piece_payoff.clear()
-                piece_state.clear()
-                while num < k:
-                    providerData.append(data_list[num][0])
-                    providerData.append(data_list[num][1])
-                    providerData.append(data_list[num][2])
-                    payoffData.append(data_list[num][3])
-                    payoffData.append(data_list[num][4])
-                    payoffData.append(data_list[num][5])
-                    # stateData.append(data_list[num][6])
-                    # stateData.append(data_list[num][7])
-                    # stateData.append(data_list[num][8])
-                    num += 1
+        file_name = os.path.join(data_dir, files[-1])
+        if (file_name[-2:] == 're'):
+            file_name = os.path.join(data_dir, files[-2])
+        data_list = get_file_data(file_name)
+        datalistLen = len(data_list)
+        majority = data_list[0][10]
 
-                providerCopy = providerData.copy()
-                payoffCopy = payoffData.copy()
-                # stateCopy = stateData.copy()
-                while providerCopy.__len__() > 0:
-                    piece_provider.append(providerCopy.popleft())
-                    piece_payoff.append(payoffCopy.popleft())
-                    # piece_state.append(stateCopy.popleft())
+        piece_provider = []
+        piece_payoff = []
 
-                # 去掉前三个数据，增加后三个数据，对数据进行更新
-                for p in range(3):
-                    providerData.popleft()
-                    providerData.append(data_list[num][p])
-                    payoffData.popleft()
-                    payoffData.append(data_list[num][p + 3])
-                    # stateData.popleft()
-                    # stateData.append(data_list[num][p + 6])
+        for i in range(datalistLen - k + 1, datalistLen):
+            piece_provider.append(data_list[i][0])
+            piece_provider.append(data_list[i][1])
+            piece_provider.append(data_list[i][2])
+            piece_payoff.append(data_list[i][3])
+            piece_payoff.append(data_list[i][4])
+            piece_payoff.append(data_list[i][5])
 
-                # self.data.append([piece_provider, piece_payoff, piece_state])
-                self.data.append([piece_provider, piece_payoff])
-                self.label.append(data_list[num - 1][6])
-                self.len += 1
-                num += 1
+        piece_provider.append(preProvider[0])
+        piece_provider.append(preProvider[1])
+        piece_provider.append(preProvider[2])
+
+        for player1 in range(0, 100, 5):
+            for player2 in range(0, 100 - player1 + 1, 5):
+                player3 = 100 - player1 - player2
+                if player3 == 100 or player2 == 100:
+                    continue
+
+                hbdata = piece_payoff[:]
+                itemdata = []
+                itemdata.append(player1 / 100)
+                itemdata.append(player2 / 100)
+                itemdata.append(player3 / 100)
+                hbdata.extend(itemdata)
+
+                majoSum = 0
+                for index in range(0, 3):
+                    if (itemdata[index] > 0):
+                        majoSum += data_list[0][6 + index]
+                if majoSum >= majority:
+                    self.data.append([piece_provider, hbdata])
+                    self.len += 1
+                    itemdata.clear()
+                else:
+                    continue
 
     def __len__(self):
         return self.len
 
     def __getitem__(self, index):
         dataitem = self.data[index]
-        labelitem = self.label[index]
         data = torch.Tensor(dataitem)
-        label = torch.Tensor([labelitem])
-        return data, label
+        return data
+

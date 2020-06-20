@@ -6,11 +6,9 @@ from save_Model import saveModel
 from torch.utils.data import DataLoader
 
 # se = [1, 3, 6, 10, 15, 20]
-# point = [64, 256, 512, 896, 1408, 1856]
-# se = [ 6, 10, 15, 20]
-# point = [512, 896, 1408, 1856]
-se = [1, 3, 6, 10, 15, 20]
-point = [64, 128, 320, 512, 704, 960]
+# point = [64, 128, 320, 512, 704, 960]
+se = [1, 2, 4, 7, 11, 16, 21]
+point = [64, 128, 192, 320, 512, 768, 1024]
 # se = [1]
 # point = [64]
 
@@ -34,7 +32,7 @@ if __name__ == '__main__':
 
         jishu = 0
         accuracyRateMax = 0.0
-        for i in _train(cnn_net, train_dl, 100, 0.00005):
+        for i in _train(cnn_net, train_dl, 100, 0.0001):
             jishu += 1
             if jishu % 1 == 0:
                 accuracyRate = _test(cnn_net, test_data)

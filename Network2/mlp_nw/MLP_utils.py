@@ -62,6 +62,8 @@ def _train(model, dl, num_epochs, learning_rate):
 
 
 def _test(model, dst):
+    # model = torch.load('/Users/linjie/PycharmProjects/OENCG_Network/Network2/params/mlp_nwParams21.pth')
+
     model.eval()
 
     accuracy = 0.0

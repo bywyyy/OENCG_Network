@@ -7,9 +7,9 @@ from torch.utils.data import DataLoader
 from save_Model import saveModel
 
 # se = [1, 3, 6, 10, 15, 20]
-# point = [64, 256, 576, 960, 1408, 1920]
-se = [1, 3, 6, 10, 15, 20]
-point = [64, 128, 320, 512, 704, 960]
+# point = [64, 128, 320, 512, 704, 960]
+se = [1, 2, 4, 7, 11, 16, 21]
+point = [64, 128, 192, 320, 512, 768, 1024]
 
 # se = [1]
 # point = [64]

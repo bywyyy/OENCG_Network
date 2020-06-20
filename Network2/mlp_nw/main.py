@@ -4,8 +4,8 @@ from MLP_utils import _test, _train
 from save_Model import saveModel
 from torch.utils.data import DataLoader
 
-se = [1, 3, 6, 10, 15, 20]
-# point = [16, 32, 64, 112, 176, 240]
+se = [1, 2, 4, 7, 11, 16, 21]
+# se = [2]
 
 global globalk
 globalk = se[0]

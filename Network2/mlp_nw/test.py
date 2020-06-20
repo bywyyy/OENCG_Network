@@ -3,11 +3,6 @@ import torch
 from torch.autograd import Variable
 
 
-# if __name__ == '__main__':
-# #     learn_data = agentData('data', 3)
-# #     print(learn_data.__len__)
-# #     print(learn_data[1])
-
 def _test(model, dst):
     model.eval()
 

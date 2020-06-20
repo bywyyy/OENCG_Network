@@ -41,7 +41,7 @@ class CNNnet(nn.Module):
         rows_old = worksheet.nrows  # 获取表格中已存在的数据的行数
         new_workbook = copy(workbook)  # 将xlrd对象拷贝转化为xlwt对象
         new_worksheet = new_workbook.get_sheet(0)  # 获取转化后工作簿中的第一个表格
-        new_worksheet.write(rows_old, 0, 'LeakyReLU,α=0.00001')
+        new_worksheet.write(rows_old, 0, 'LeakyReLU,α=0.0001')
 
         in_channels = 2
         out_channels = 16

@@ -27,8 +27,6 @@ import static calculate.FindMerge.PowerIndex;
  * 注意：这个示例agent是一个随机策略Agent，并没有用到对手的信息以及玩家发送的提案和响应的相关信息，
  * 它只是一个示例。制定自己的策略的时候可能会用到这些信息。
  *
- * @author JJ.Wu
- * @date 2018/1/19
  */
 public class AgentNetwork extends VotingAgent {
 
@@ -201,14 +199,16 @@ public class AgentNetwork extends VotingAgent {
         Map<Integer, Integer> map = new HashMap<>();
 
 
-        int k = 20;
+        int k = 4;
         int a = own.getNum();
+        int network = 1; //网络类型。1:MLP无权重,2:MLP有权重,3:CNN无权重,4:CNN有权重
+//        int m = game.getMajority();
         System.out.println(a);
         String offer = "";
         int offerList[] = new int[3];
         if (sum_round > k - 1) {
             try {
-                String[] args = new String[]{"python", "/Users/linjie/PycharmProjects/OENCG_Network/Network2/loadModel/main.py", String.valueOf(k), String.valueOf(a)};
+                String[] args = new String[]{"python", "/Users/linjie/PycharmProjects/OENCG_Network/Network2/loadModel/main.py", String.valueOf(k), String.valueOf(a), String.valueOf(network)};
                 Process proc = Runtime.getRuntime().exec(args);// 执行py文件
 
                 BufferedReader in = new BufferedReader(new InputStreamReader(proc.getInputStream()));
