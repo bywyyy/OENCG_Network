@@ -3,9 +3,9 @@ import random
 import time
 import string
 
-for k in range(0, 13):
+for k in range(0, 1):
     browser = webdriver.Chrome()
-    game = 12
+    game = 1
 
     url = "http://localhost:8181"
     browser.get(url)
@@ -55,14 +55,14 @@ for k in range(0, 13):
         agent = browser.find_element_by_xpath('//*[@id="agent"]')
         agent.click()
         agentChoose = browser.find_elements_by_xpath('//*[@id="choose_agent"]/option')
-        # if i == 0:
-        b = 0
+        # if i == 1:
+        # b = 1
         # else:
-        #     b = random.randint(1, 5)
+        b = random.randint(0, 1)
         agentChoose[b].click()
 
         buttonOK = browser.find_element_by_xpath('//*[@id="input"]/p[6]/input[2]')
         buttonOK.click()
 
-    time.sleep(10)
+    time.sleep(1000)
     browser.quit()  # 关闭浏览器

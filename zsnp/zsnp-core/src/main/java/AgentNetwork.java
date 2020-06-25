@@ -199,9 +199,9 @@ public class AgentNetwork extends VotingAgent {
         Map<Integer, Integer> map = new HashMap<>();
 
 
-        int k = 4;
+        int k = 21;
         int a = own.getNum();
-        int network = 1; //网络类型。1:MLP无权重,2:MLP有权重,3:CNN无权重,4:CNN有权重
+        int network = 4; //网络类型。1:MLP无权重,2:MLP有权重,3:CNN无权重,4:CNN有权重
 //        int m = game.getMajority();
         System.out.println(a);
         String offer = "";
