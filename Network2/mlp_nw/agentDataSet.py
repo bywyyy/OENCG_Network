@@ -37,6 +37,9 @@ class agentData(Dataset):
                     providerData.append(data_list[num][3])
                     providerData.append(data_list[num][4])
                     providerData.append(data_list[num][5])
+                    providerData.append(data_list[num][6])
+                    providerData.append(data_list[num][7])
+                    providerData.append(data_list[num][8])
                     # providerData.append(data_list[num][0])
                     # providerData.append(data_list[num][1])
                     # providerData.append(data_list[num][2])
@@ -57,7 +60,7 @@ class agentData(Dataset):
                     # piece_state.append(stateCopy.popleft())
 
                 # 去掉前三个数据，增加后三个数据，对数据进行更新
-                for p in range(6):
+                for p in range(9):
                     providerData.popleft()
                     providerData.append(data_list[num][p])
                     # payoffData.popleft()
@@ -66,8 +69,9 @@ class agentData(Dataset):
                     # stateData.append(data_list[num][p + 6])
                 # piece_provider.extend(piece_payoff)
                 # self.data.append([piece_provider, piece_payoff, piece_state])
+                piece_provider = piece_provider[0:-3]
                 self.data.append(piece_provider)
-                self.label.append(data_list[num - 1][6])
+                self.label.append(data_list[num - 1][9])
                 self.len += 1
                 num += 1
 

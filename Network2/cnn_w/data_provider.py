@@ -11,8 +11,8 @@ def get_file_data(file_name):
         def __init__(self):
             self.players = {}
             self.players_number = 0
-            # self.piece_data = [0] * 13
-            self.piece_data = [0] * 10
+            self.piece_data = [0] * 13
+            # self.piece_data = [0] * 10
             '''数据为13位
             [0-2]:提议者id置1
             [3-5]:payoff,
@@ -30,8 +30,8 @@ def get_file_data(file_name):
                 self.players[player_name]['resources'] = int(attributes['resource'])
                 weight = int(attributes['resource'])
                 player_id = self.players[player_name]['id']
-                # self.piece_data[player_id + 9] = 1.0 * weight #读取权重信息
-                self.piece_data[player_id + 6] = 1.0 * weight  # 读取权重信息
+                self.piece_data[player_id + 9] = 1.0 * weight #读取权重信息
+                # self.piece_data[player_id + 6] = 1.0 * weight  # 读取权重信息
 
             if tag == 'proposal':
                 player_name = attributes['role-name']
@@ -39,7 +39,7 @@ def get_file_data(file_name):
                 player_id = self.players[player_name]['id']
                 self.piece_data[player_id] = 1  # 提议者置1
                 self.piece_data[player_id + 3] = 1.0 * value / 100
-                # self.piece_data[player_id + 6] = 1  # 提议者视为接收联盟，state置为1
+                self.piece_data[player_id + 6] = 1  # 提议者视为接收联盟，state置为1
 
             if tag == 'ally':
                 player_name = attributes['role-name']
@@ -51,19 +51,19 @@ def get_file_data(file_name):
                 player_name = attributes['role-name']
                 player_id = self.players[player_name]['id']
                 player_agree = attributes['agree']
-                # if (player_agree == 'true'):
-                #     self.piece_data[player_id + 6] = 1  # player接受联盟，state置为1
+                if (player_agree == 'true'):
+                    self.piece_data[player_id + 6] = 1  # player接受联盟，state置为1
                 if (player_agree == 'false'):
-                    # self.piece_data[player_id + 6] = 2  # player拒绝联盟，state置为2
-                    self.piece_data[9] = 1  # proposal的label
+                    self.piece_data[player_id + 6] = 2  # player拒绝联盟，state置为2
+                    self.piece_data[12] = 1  # proposal的label
 
         # 元素结束事件处理
 
         def endElement(self, tag):
             if tag == 'round':
                 add_piece(self.piece_data)
-                # self.piece_data = [0] * 13
-                self.piece_data = [0] * 10
+                self.piece_data = [0] * 13
+                # self.piece_data = [0] * 10
 
         # 内容事件处理
         def characters(self, content):

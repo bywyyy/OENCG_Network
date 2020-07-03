@@ -23,10 +23,11 @@ class agentDatacnw(Dataset):
             file_name = os.path.join(data_dir, files[-2])
         data_list = get_file_data(file_name)
         datalistLen = len(data_list)
-        majority = data_list[0][10]
+        majority = data_list[0][13]
 
         piece_provider = []
         piece_payoff = []
+        piece_state = []
 
         for i in range(datalistLen - k + 1, datalistLen):
             piece_provider.append(data_list[i][0])
@@ -35,10 +36,16 @@ class agentDatacnw(Dataset):
             piece_payoff.append(data_list[i][3])
             piece_payoff.append(data_list[i][4])
             piece_payoff.append(data_list[i][5])
+            piece_state.append(data_list[i][6])
+            piece_state.append(data_list[i][7])
+            piece_state.append(data_list[i][8])
 
         piece_provider.append(preProvider[0])
         piece_provider.append(preProvider[1])
         piece_provider.append(preProvider[2])
+        piece_state.append(0)
+        piece_state.append(0)
+        piece_state.append(0)
 
         for player1 in range(0, 100, 5):
             for player2 in range(0, 100 - player1 + 1, 5):
@@ -56,9 +63,9 @@ class agentDatacnw(Dataset):
                 majoSum = 0
                 for index in range(0, 3):
                     if (itemdata[index] > 0):
-                        majoSum += data_list[0][6 + index]
+                        majoSum += data_list[0][9 + index]
                 if majoSum >= majority:
-                    self.data.append([piece_provider, hbdata])
+                    self.data.append([piece_provider, hbdata, piece_state])
                     self.len += 1
                     itemdata.clear()
                 else:
@@ -71,4 +78,3 @@ class agentDatacnw(Dataset):
         dataitem = self.data[index]
         data = torch.Tensor(dataitem)
         return data
-

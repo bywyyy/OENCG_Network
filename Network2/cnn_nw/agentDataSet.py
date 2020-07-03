@@ -21,7 +21,7 @@ class agentData(Dataset):
 
             providerData = collections.deque()
             payoffData = collections.deque()
-            # stateData = collections.deque()
+            stateData = collections.deque()
             num = 0
             for i in range(0, len(data_list) - k):
                 piece_provider = []
@@ -37,18 +37,18 @@ class agentData(Dataset):
                     payoffData.append(data_list[num][3])
                     payoffData.append(data_list[num][4])
                     payoffData.append(data_list[num][5])
-                    # stateData.append(data_list[num][6])
-                    # stateData.append(data_list[num][7])
-                    # stateData.append(data_list[num][8])
+                    stateData.append(data_list[num][6])
+                    stateData.append(data_list[num][7])
+                    stateData.append(data_list[num][8])
                     num += 1
 
                 providerCopy = providerData.copy()
                 payoffCopy = payoffData.copy()
-                # stateCopy = stateData.copy()
+                stateCopy = stateData.copy()
                 while providerCopy.__len__() > 0:
                     piece_provider.append(providerCopy.popleft())
                     piece_payoff.append(payoffCopy.popleft())
-                    # piece_state.append(stateCopy.popleft())
+                    piece_state.append(stateCopy.popleft())
 
                 # 去掉前三个数据，增加后三个数据，对数据进行更新
                 for p in range(3):
@@ -56,12 +56,16 @@ class agentData(Dataset):
                     providerData.append(data_list[num][p])
                     payoffData.popleft()
                     payoffData.append(data_list[num][p + 3])
-                    # stateData.popleft()
-                    # stateData.append(data_list[num][p + 6])
+                    stateData.popleft()
+                    stateData.append(data_list[num][p + 6])
 
-                # self.data.append([piece_provider, piece_payoff, piece_state])
-                self.data.append([piece_provider, piece_payoff])
-                self.label.append(data_list[num - 1][6])
+                piece_state[-1] = 0
+                piece_state[-2] = 0
+                piece_state[-3] = 0
+
+                self.data.append([piece_provider, piece_payoff, piece_state])
+                # self.data.append([piece_provider, piece_payoff])
+                self.label.append(data_list[num - 1][9])
                 self.len += 1
                 num += 1
 

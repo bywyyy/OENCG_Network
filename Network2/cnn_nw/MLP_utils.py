@@ -21,8 +21,6 @@ def _train(model, dl, num_epochs, learning_rate):
     criterion = nn.CrossEntropyLoss()
 
     for epoch in range(num_epochs):
-        # for name, param in model.named_parameters():
-        #     print('训练前', name, param)
         model.train()
         if (epoch + 1) % 1 == 0:
             epoch_list.append(epoch + 1)
@@ -118,7 +116,7 @@ def _test(model, dst):
     plt.plot(epoch_list, accuracy_list, c=color, ls='-', marker='o', mec='b', mfc='w')  ## 保存历史数据
     plt.ylim((0, 1))
     plt.pause(0.3)
-    if epoch_list.__len__() == 100:
+    if epoch_list.__len__() == 80:
         timen = time.strftime("%m%d%H%M%S")
         from main import globalk
         plt.savefig('../pic/cnn_nw' + timen + 'k' + globalk.__str__() + '.png')

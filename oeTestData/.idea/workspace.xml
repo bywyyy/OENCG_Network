@@ -2,12 +2,232 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d0a971a-2f84-434d-b733-4a2cbe264ed5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Network2/cnn_nw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/cnn_nw/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/cnn_nw/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/cnn_nw/MLP_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/cnn_nw/agentDataSet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/cnn_nw/agentDataSet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/cnn_nw/agent_Modelcnnnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/cnn_nw/agent_Modelcnnnw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/cnn_nw/data_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/cnn_nw/data_provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/cnn_nw/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/cnn_nw/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/cnn_w/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/cnn_w/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/cnn_w/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/cnn_w/MLP_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/cnn_w/agentDataSet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/cnn_w/agentDataSet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/cnn_w/agent_Modelcnnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/cnn_w/agent_Modelcnnw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/cnn_w/data_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/cnn_w/data_provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/cnn_w/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/cnn_w/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Network2/loadModel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/loadModel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/loadModel/agentDataSetcnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/loadModel/agentDataSetcnw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/loadModel/agentDataSetcw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/loadModel/agentDataSetcw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/loadModel/agentDataSetmnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/loadModel/agentDataSetmnw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/loadModel/agentDataSetmw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/loadModel/agentDataSetmw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/loadModel/agent_Modelcnnnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/loadModel/agent_Modelcnnnw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/loadModel/agent_Modelcnnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/loadModel/agent_Modelcnnw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/loadModel/agent_Modelmlpnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/loadModel/agent_Modelmlpnw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/loadModel/agent_Modelmlpw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/loadModel/agent_Modelmlpw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/loadModel/data_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/loadModel/data_provider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Network2/loadModel/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/loadModel/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/mlp_nw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/mlp_nw/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/mlp_nw/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/mlp_nw/MLP_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/mlp_nw/agentDataSet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/mlp_nw/agentDataSet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/mlp_nw/agent_Modelmlpnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/mlp_nw/agent_Modelmlpnw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/mlp_nw/data_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/mlp_nw/data_provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/mlp_nw/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/mlp_nw/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/mlp_w/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/mlp_w/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/mlp_w/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/mlp_w/MLP_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/mlp_w/agentDataSet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/mlp_w/agentDataSet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/mlp_w/agent_Modelmlpw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/mlp_w/agent_Modelmlpw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/mlp_w/data_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/mlp_w/data_provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/mlp_w/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/mlp_w/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/cnn_nwParams1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/cnn_nwParams1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/cnn_nwParams11.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/cnn_nwParams11.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/cnn_nwParams16.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/cnn_nwParams16.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/cnn_nwParams2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/cnn_nwParams2.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/cnn_nwParams21.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/cnn_nwParams21.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/cnn_nwParams4.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/cnn_nwParams4.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/cnn_nwParams7.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/cnn_nwParams7.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/cnn_wParams1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/cnn_wParams1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/cnn_wParams11.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/cnn_wParams11.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/cnn_wParams16.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/cnn_wParams16.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/cnn_wParams2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/cnn_wParams2.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/cnn_wParams21.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/cnn_wParams21.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/cnn_wParams4.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/cnn_wParams4.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/cnn_wParams7.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/cnn_wParams7.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/mlp_nwParams1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/mlp_nwParams1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/mlp_nwParams11.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/mlp_nwParams11.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/mlp_nwParams16.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/mlp_nwParams16.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/mlp_nwParams2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/mlp_nwParams2.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/mlp_nwParams21.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/mlp_nwParams21.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/mlp_nwParams4.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/mlp_nwParams4.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/mlp_nwParams7.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/mlp_nwParams7.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/mlp_wParams1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/mlp_wParams1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/mlp_wParams11.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/mlp_wParams11.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/mlp_wParams16.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/mlp_wParams16.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/mlp_wParams2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/mlp_wParams2.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/mlp_wParams21.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/mlp_wParams21.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/mlp_wParams4.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/mlp_wParams4.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/params/mlp_wParams7.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/params/mlp_wParams7.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/paramsPre/cnn_nwParams1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/paramsPre/cnn_nwParams1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/paramsPre/cnn_wParams1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/paramsPre/cnn_wParams1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/paramsPre/mlp_nwParams1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/paramsPre/mlp_nwParams1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/paramsPre/mlp_nwParams11.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/paramsPre/mlp_nwParams11.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/paramsPre/mlp_nwParams16.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/paramsPre/mlp_nwParams16.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/paramsPre/mlp_nwParams2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/paramsPre/mlp_nwParams2.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/paramsPre/mlp_nwParams21.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/paramsPre/mlp_nwParams21.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/paramsPre/mlp_nwParams4.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/paramsPre/mlp_nwParams4.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/paramsPre/mlp_nwParams7.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/paramsPre/mlp_nwParams7.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/paramsPre/mlp_wParams1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../Network2/paramsPre/mlp_wParams1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/cnn_nw0608054310k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/cnn_nw0608173040k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/cnn_nw0609014607k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/cnn_nw0620030026k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/cnn_nw0620050313k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/cnn_nw0620065536k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/cnn_nw0620083349k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/cnn_nw0620101225k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/cnn_nw0620115047k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/cnn_nw0620132848k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/cnn_w0620025850k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/cnn_w0620050014k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/cnn_w0620065228k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/cnn_w0620082946k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/cnn_w0620100644k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/cnn_w0620114447k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/cnn_w0620132400k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/mlp_nw0620014415k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/mlp_nw0620022609k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/mlp_nw0620030743k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/mlp_nw0620034943k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/mlp_nw0620043242k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/mlp_nw0620051715k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/mlp_nw0620060547k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/mlp_w0620014523k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/mlp_w0620022732k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/mlp_w0620030932k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/mlp_w0620035150k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/mlp_w0620043501k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/mlp_w0620052039k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/pic/mlp_w0620060953k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw06070643k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw06070743k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw06070841k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw06070940k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw06071039k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw06071140k20.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw06080058k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw06081455k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw06082240k1---.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw06091532k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw06091641k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw06091821k1----.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw06092308k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw06100121k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw06100400k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw06100756k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw06101450k1---.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw0611010136k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw0611030634k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw0611051255k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw0611065741k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw0611083534k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw0611101334k20----.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw0620005910k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw0620030027k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw0620050314k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw0620065537k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw0620083349k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw0620101226k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_nw0620115047k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w06070644k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w06070742k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w06070839k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w06070936k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w06071036k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w06071137k20.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w06080058k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w06081455k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w06082239k1---.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w06091544k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w06091642k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w06091819k1----.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w06092308k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w06100121k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w06101046k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w06101417k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w06102012k6---.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w0611010137k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w0611030543k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w0611051057k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w0611065603k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w0611083410k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w0611101109k20-----.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w0620005907k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w0620025851k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w0620050014k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w0620065228k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w0620082947k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w0620100645k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/cnn_w0620114447k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw06090034k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw06090156k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw06090301k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw06090406k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw06090512k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw06090621k20.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw06092308k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw06092359k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw06100043k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw06100127k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw06100213k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw06100302k1---.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw0611010129k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw0611014634k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw0611023048k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw0611031523k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw0611040112k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw0611044913k20.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw0614232530k2----.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw0620005857k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw0620010109k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw0620014415k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw0620022610k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw0620030744k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw0620034944k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw0620043243k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_nw0620051715k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w06090034k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w06090157k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w06090302k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w06090407k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w06090513k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w06090622k20.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w06092308k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w06100000k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w06100043k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w06100127k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w06100214k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w06100303k1---.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w0611010131k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w0611014702k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w0611023139k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w0611031645k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w0611040309k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w0611045234k20--.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w0620005903k4.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w0620010005k4.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w0620010206k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w0620014523k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w0620022732k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w0620030932k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w0620035150k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w0620043501k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Network2/saveData/mlp_w0620052040k1.xls" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zhuaData.py" beforeDir="false" afterPath="$PROJECT_DIR$/zhuaData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zsnp/static/templates/start_playerNew1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../zsnp/static/templates/start_playerNew1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zsnp/zsnp-core/src/main/java/AgentNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/../zsnp/zsnp-core/src/main/java/AgentNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight1-1-1/form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight1-1-1/form.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight1-1-2/form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight1-1-2/form.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight1-2-2/form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight1-2-2/form.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight2-2-3/form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight2-2-3/form.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight3-3-5/form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight3-3-5/form.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +254,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zhuaData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
-              <caret line="61" column="10" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
+            <state relative-caret-position="990">
+              <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -86,7 +306,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -98,6 +317,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,11 +420,13 @@
       <workItem from="1592664122886" duration="2565000" />
       <workItem from="1592838456971" duration="1585000" />
       <workItem from="1592991193292" duration="4263000" />
+      <workItem from="1593411378487" duration="432000" />
+      <workItem from="1593742989467" duration="3352000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63740000" />
+    <option name="totallyTimeSpent" value="67524000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -219,7 +441,7 @@
     <frame x="359" y="25" width="967" height="796" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22486487" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23351352" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -257,7 +479,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/oeTestData$zhuaData.coverage" NAME="zhuaData Coverage Results" MODIFIED="1593083020885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/oeTestData$zhuaData.coverage" NAME="zhuaData Coverage Results" MODIFIED="1593750308151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py">
@@ -283,8 +505,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zhuaData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="61" column="10" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
+        <state relative-caret-position="990">
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>

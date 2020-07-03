@@ -2,12 +2,231 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2edf494-f43e-4610-a212-381fe47cca4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_nw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_nw/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/MLP_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_nw/agentDataSet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/agentDataSet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_nw/agent_Modelcnnnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/agent_Modelcnnnw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_nw/data_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/data_provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_nw/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_w/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_w/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_w/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_w/MLP_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_w/agentDataSet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_w/agentDataSet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_w/agent_Modelcnnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_w/agent_Modelcnnw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_w/data_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_w/data_provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_w/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_w/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentDataSetcnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/agentDataSetcnw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentDataSetcw.py" beforeDir="false" afterPath="$PROJECT_DIR$/agentDataSetcw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentDataSetmnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/agentDataSetmnw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentDataSetmw.py" beforeDir="false" afterPath="$PROJECT_DIR$/agentDataSetmw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent_Modelcnnnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent_Modelcnnnw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent_Modelcnnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent_Modelcnnw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent_Modelmlpnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent_Modelmlpnw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent_Modelmlpw.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent_Modelmlpw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_provider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mlp_nw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mlp_nw/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/MLP_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mlp_nw/agentDataSet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/agentDataSet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mlp_nw/agent_Modelmlpnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/agent_Modelmlpnw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mlp_nw/data_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/data_provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mlp_nw/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mlp_w/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_w/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mlp_w/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_w/MLP_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mlp_w/agentDataSet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_w/agentDataSet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mlp_w/agent_Modelmlpw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_w/agent_Modelmlpw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mlp_w/data_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_w/data_provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mlp_w/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_w/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/cnn_nwParams1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/cnn_nwParams1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/cnn_nwParams11.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/cnn_nwParams11.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/cnn_nwParams16.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/cnn_nwParams16.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/cnn_nwParams2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/cnn_nwParams2.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/cnn_nwParams21.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/cnn_nwParams21.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/cnn_nwParams4.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/cnn_nwParams4.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/cnn_nwParams7.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/cnn_nwParams7.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/cnn_wParams1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/cnn_wParams1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/cnn_wParams11.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/cnn_wParams11.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/cnn_wParams16.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/cnn_wParams16.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/cnn_wParams2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/cnn_wParams2.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/cnn_wParams21.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/cnn_wParams21.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/cnn_wParams4.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/cnn_wParams4.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/cnn_wParams7.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/cnn_wParams7.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_nwParams1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/mlp_nwParams1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_nwParams11.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/mlp_nwParams11.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_nwParams16.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/mlp_nwParams16.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_nwParams2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/mlp_nwParams2.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_nwParams21.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/mlp_nwParams21.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_nwParams4.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/mlp_nwParams4.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_nwParams7.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/mlp_nwParams7.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_wParams1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/mlp_wParams1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_wParams11.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/mlp_wParams11.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_wParams16.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/mlp_wParams16.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_wParams2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/mlp_wParams2.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_wParams21.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/mlp_wParams21.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_wParams4.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/mlp_wParams4.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../params/mlp_wParams7.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../params/mlp_wParams7.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../paramsPre/cnn_nwParams1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../paramsPre/cnn_nwParams1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../paramsPre/cnn_wParams1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../paramsPre/cnn_wParams1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../paramsPre/mlp_nwParams1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../paramsPre/mlp_nwParams1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../paramsPre/mlp_nwParams11.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../paramsPre/mlp_nwParams11.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../paramsPre/mlp_nwParams16.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../paramsPre/mlp_nwParams16.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../paramsPre/mlp_nwParams2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../paramsPre/mlp_nwParams2.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../paramsPre/mlp_nwParams21.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../paramsPre/mlp_nwParams21.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../paramsPre/mlp_nwParams4.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../paramsPre/mlp_nwParams4.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../paramsPre/mlp_nwParams7.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../paramsPre/mlp_nwParams7.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../paramsPre/mlp_wParams1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../paramsPre/mlp_wParams1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0608054310k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0608173040k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0609014607k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0620030026k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0620050313k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0620065536k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0620083349k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0620101225k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0620115047k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/cnn_nw0620132848k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/cnn_w0620025850k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/cnn_w0620050014k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/cnn_w0620065228k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/cnn_w0620082946k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/cnn_w0620100644k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/cnn_w0620114447k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/cnn_w0620132400k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/mlp_nw0620014415k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/mlp_nw0620022609k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/mlp_nw0620030743k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/mlp_nw0620034943k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/mlp_nw0620043242k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/mlp_nw0620051715k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/mlp_nw0620060547k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/mlp_w0620014523k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/mlp_w0620022732k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/mlp_w0620030932k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/mlp_w0620035150k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/mlp_w0620043501k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/mlp_w0620052039k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pic/mlp_w0620060953k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06070643k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06070743k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06070841k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06070940k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06071039k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06071140k20.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06080058k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06081455k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06082240k1---.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06091532k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06091641k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06091821k1----.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06092308k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06100121k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06100400k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06100756k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw06101450k1---.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw0611010136k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw0611030634k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw0611051255k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw0611065741k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw0611083534k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw0611101334k20----.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw0620005910k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw0620030027k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw0620050314k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw0620065537k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw0620083349k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw0620101226k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_nw0620115047k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06070644k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06070742k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06070839k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06070936k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06071036k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06071137k20.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06080058k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06081455k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06082239k1---.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06091544k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06091642k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06091819k1----.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06092308k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06100121k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06101046k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06101417k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w06102012k6---.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w0611010137k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w0611030543k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w0611051057k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w0611065603k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w0611083410k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w0611101109k20-----.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w0620005907k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w0620025851k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w0620050014k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w0620065228k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w0620082947k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w0620100645k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/cnn_w0620114447k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw06090034k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw06090156k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw06090301k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw06090406k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw06090512k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw06090621k20.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw06092308k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw06092359k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw06100043k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw06100127k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw06100213k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw06100302k1---.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw0611010129k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw0611014634k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw0611023048k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw0611031523k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw0611040112k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw0611044913k20.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw0614232530k2----.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw0620005857k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw0620010109k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw0620014415k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw0620022610k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw0620030744k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw0620034944k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw0620043243k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nw0620051715k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w06090034k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w06090157k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w06090302k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w06090407k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w06090513k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w06090622k20.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w06092308k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w06100000k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w06100043k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w06100127k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w06100214k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w06100303k1---.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w0611010131k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w0611014702k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w0611023139k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w0611031645k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w0611040309k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w0611045234k20--.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w0620005903k4.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w0620010005k4.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w0620010206k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w0620014523k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w0620022732k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w0620030932k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w0620035150k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w0620043501k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_w0620052040k1.xls" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../oeTestData/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../oeTestData/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../oeTestData/zhuaData.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../oeTestData/zhuaData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../zsnp/static/templates/start_playerNew1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../zsnp/static/templates/start_playerNew1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/java/AgentNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/java/AgentNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight1-1-1/form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight1-1-1/form.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight1-1-2/form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight1-1-2/form.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight1-2-2/form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight1-2-2/form.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight2-2-3/form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight2-2-3/form.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight3-3-5/form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/resources/domain-repository/3Players_weight3-3-5/form.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +239,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/load_Model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="148">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -30,15 +249,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/agent_Modelcnnw.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="61" column="49" lean-forward="true" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agentDataSetmw.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agentDataSetcnw.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="734">
+              <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -46,20 +284,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///opt/anaconda3/envs/pytorch-py36/lib/python3.6/genericpath.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="51" selection-start-line="14" selection-start-column="4" selection-end-line="18" selection-end-column="51" />
+            <state relative-caret-position="155">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -68,10 +297,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/agent_Modelmlpnw.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="67">
+              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_provider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+            <state relative-caret-position="891">
+              <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -79,8 +320,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agentDataSetmnw.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+            <state relative-caret-position="118">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
@@ -88,20 +329,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agentDataSetcw.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="654">
+              <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -112,7 +341,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agent_Modelmlpw.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="66">
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="16" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -130,24 +360,25 @@
       <list>
         <option value="$PROJECT_DIR$/agentDataSetnw.py" />
         <option value="$PROJECT_DIR$/agentDataSetw.py" />
-        <option value="$PROJECT_DIR$/agent_Modelmlpnw.py" />
+        <option value="$PROJECT_DIR$/load_Model.py" />
+        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/agent_Modelcnnnw.py" />
         <option value="$PROJECT_DIR$/agent_Modelcnnw.py" />
+        <option value="$PROJECT_DIR$/agent_Modelmlpnw.py" />
+        <option value="$PROJECT_DIR$/agent_Modelmlpw.py" />
+        <option value="$PROJECT_DIR$/data_provider.py" />
         <option value="$PROJECT_DIR$/agentDataSetmw.py" />
         <option value="$PROJECT_DIR$/agentDataSetcnw.py" />
         <option value="$PROJECT_DIR$/agentDataSetcw.py" />
-        <option value="$PROJECT_DIR$/data_provider.py" />
-        <option value="$PROJECT_DIR$/load_Model.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/agentDataSetmnw.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-975" />
-    <option name="y" value="24" />
-    <option name="width" value="975" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-1372" />
+    <option name="y" value="41" />
+    <option name="width" value="1224" />
     <option name="height" value="821" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -263,23 +494,23 @@
       <workItem from="1592571582072" duration="4265000" />
       <workItem from="1592622350167" duration="7207000" />
       <workItem from="1592838451299" duration="3000" />
+      <workItem from="1593495159716" duration="10571000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58174000" />
+    <option name="totallyTimeSpent" value="68745000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-975" y="24" width="975" height="821" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1372" y="41" width="1224" height="821" extended-state="1" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21329047" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17174281" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31138545" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.43484226" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.55829906" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41975307" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -308,40 +539,25 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/agentDataSetmnw.py</url>
-          <line>55</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/load_Model.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/agentDataSetmnw.py</url>
-          <line>56</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/load_Model.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/agentDataSetmnw.py</url>
-          <line>54</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/agentDataSetmnw.py</url>
-          <line>58</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/agentDataSetmnw.py</url>
-          <line>59</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/agentDataSetmnw.py</url>
-          <line>61</line>
-          <option name="timeStamp" value="19" />
+          <url>file://$PROJECT_DIR$/load_Model.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/loadModel$main.coverage" NAME="main Coverage Results" MODIFIED="1592664617546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/loadModel$main.coverage" NAME="main Coverage Results" MODIFIED="1593697514869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///opt/anaconda3/envs/pytorch-py36/lib/python3.6/site-packages/torch/nn/modules/container.py">
@@ -355,23 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5505">
           <caret line="381" selection-start-line="381" selection-end-line="381" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agent_Modelcnnnw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agent_Modelcnnw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -389,39 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/agent_Modelmlpnw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/load_Model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agentDataSetmw.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agentDataSetcnw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///opt/anaconda3/envs/pytorch-py36/lib/python3.6/genericpath.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
@@ -429,53 +595,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_provider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agentDataSetmnw.py">
+    <entry file="file://$PROJECT_DIR$/agent_Modelcnnnw.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agentDataSetcw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="222">
+          <caret line="77" column="57" lean-forward="true" selection-start-line="77" selection-start-column="57" selection-end-line="77" selection-end-column="57" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/agent_Modelcnnw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="61" column="49" lean-forward="true" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_provider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/agent_Modelmlpw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="66">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="16" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/agent_Modelmlpnw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agentDataSetcw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agentDataSetcnw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agentDataSetmw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agentDataSetmnw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/load_Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="51" selection-start-line="14" selection-start-column="4" selection-end-line="18" selection-end-column="51" />
+        <state relative-caret-position="155">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

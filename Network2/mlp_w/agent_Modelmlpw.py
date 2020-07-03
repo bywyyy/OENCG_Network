@@ -36,7 +36,7 @@ class LinearNet(nn.Module):
         new_worksheet = new_workbook.get_sheet(0)  # 获取转化后工作簿中的第一个表格
         new_worksheet.write(rows_old, 0, 'LeakyReLU,α=0.002')
 
-        inputNum = num * 6 + 3
+        inputNum = num * 9
         fc_list = [inputNum, inputNum + 12, inputNum]
         new_worksheet.write(rows_old, 1, format(fc_list))
 

@@ -43,7 +43,7 @@ class CNNnet(nn.Module):
         new_worksheet = new_workbook.get_sheet(0)  # 获取转化后工作簿中的第一个表格
         new_worksheet.write(rows_old, 0, 'LeakyReLU,α=0.0001')
 
-        in_channels = 2
+        in_channels = 3
         out_channels = 16
         kernel_size = 2
         stride = 1

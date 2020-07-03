@@ -20,7 +20,7 @@ class CNNnet(nn.Module):
         super(CNNnet, self).__init__()
 
 
-        in_channels = 3
+        in_channels = 4
         out_channels = 16
         kernel_size = 2
         stride = 1

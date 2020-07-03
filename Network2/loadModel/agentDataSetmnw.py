@@ -22,7 +22,7 @@ class agentDatamnw(Dataset):
             file_name = os.path.join(data_dir, files[-2])
         data_list = get_file_data(file_name)
         datalistLen = len(data_list)
-        majority = data_list[0][10]
+        majority = data_list[0][13]
 
         piece_data = []
 
@@ -33,6 +33,9 @@ class agentDatamnw(Dataset):
             piece_data.append(data_list[i][3])
             piece_data.append(data_list[i][4])
             piece_data.append(data_list[i][5])
+            piece_data.append(data_list[i][6])
+            piece_data.append(data_list[i][7])
+            piece_data.append(data_list[i][8])
 
         piece_data.append(preProvider[0])
         piece_data.append(preProvider[1])
@@ -54,7 +57,7 @@ class agentDatamnw(Dataset):
                 majoSum = 0
                 for index in range(0, 3):
                     if (itemdata[index] > 0):
-                        majoSum += data_list[0][6 + index]
+                        majoSum += data_list[0][9 + index]
                 if majoSum >= majority:
                     self.data.append(hbdata)
                     self.len += 1

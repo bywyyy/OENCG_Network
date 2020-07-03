@@ -17,7 +17,7 @@ class LinearNet(nn.Module):
     def __init__(self):
         super(LinearNet, self).__init__()
 
-        inputNum = num * 6
+        inputNum = num * 9 - 3
         fc_list = [inputNum, inputNum + 12, inputNum]
 
         seq_list = []

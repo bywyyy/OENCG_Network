@@ -107,7 +107,7 @@ def _test(model, dst):
     plt.plot(epoch_list, accuracy_list, c=color, ls='-', marker='o', mec='b', mfc='w')  ## 保存历史数据
     plt.ylim((0, 1))
     plt.pause(0.3)
-    if epoch_list.__len__() == 100:
+    if epoch_list.__len__() == 80:
         timen = time.strftime("%m%d%H%M%S")
         from main import globalk
         plt.savefig('../pic/mlp_w' + timen + 'k' + globalk.__str__() + '.png')
