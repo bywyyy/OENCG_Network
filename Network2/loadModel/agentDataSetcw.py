@@ -25,24 +25,58 @@ class agentDatacw(Dataset):
         datalistLen = len(data_list)
         majority = data_list[0][13]
 
-        piece_provider = []
-        piece_payoff = []
-        piece_state = []
         piece_weight = []
 
-        for i in range(datalistLen - k + 1, datalistLen):
-            piece_provider.append(data_list[i][0])
-            piece_provider.append(data_list[i][1])
-            piece_provider.append(data_list[i][2])
-            piece_payoff.append(data_list[i][3])
-            piece_payoff.append(data_list[i][4])
-            piece_payoff.append(data_list[i][5])
-            piece_state.append(data_list[i][6])
-            piece_state.append(data_list[i][7])
-            piece_state.append(data_list[i][8])
+        for w in range(0, k):
             piece_weight.append(data_list[0][9])
             piece_weight.append(data_list[0][10])
             piece_weight.append(data_list[0][11])
+
+
+        if (datalistLen < k - 1):
+            piece_provider = [0] * (k - datalistLen - 1) * 3
+            piece_payoff = [0] * (k - datalistLen - 1) * 3
+            piece_state = [0] * (k - datalistLen - 1) * 3
+            for i in range(0, datalistLen):
+                piece_provider.append(data_list[i][0])
+                piece_provider.append(data_list[i][1])
+                piece_provider.append(data_list[i][2])
+                piece_payoff.append(data_list[i][3])
+                piece_payoff.append(data_list[i][4])
+                piece_payoff.append(data_list[i][5])
+                piece_state.append(data_list[i][6])
+                piece_state.append(data_list[i][7])
+                piece_state.append(data_list[i][8])
+
+
+        else:
+            piece_provider = []
+            piece_payoff = []
+            piece_state = []
+            for i in range(datalistLen - k + 1, datalistLen):
+                piece_provider.append(data_list[i][0])
+                piece_provider.append(data_list[i][1])
+                piece_provider.append(data_list[i][2])
+                piece_payoff.append(data_list[i][3])
+                piece_payoff.append(data_list[i][4])
+                piece_payoff.append(data_list[i][5])
+                piece_state.append(data_list[i][6])
+                piece_state.append(data_list[i][7])
+                piece_state.append(data_list[i][8])
+
+        # for i in range(datalistLen - k + 1, datalistLen):
+        #     piece_provider.append(data_list[i][0])
+        #     piece_provider.append(data_list[i][1])
+        #     piece_provider.append(data_list[i][2])
+        #     piece_payoff.append(data_list[i][3])
+        #     piece_payoff.append(data_list[i][4])
+        #     piece_payoff.append(data_list[i][5])
+        #     piece_state.append(data_list[i][6])
+        #     piece_state.append(data_list[i][7])
+        #     piece_state.append(data_list[i][8])
+        #     piece_weight.append(data_list[0][9])
+        #     piece_weight.append(data_list[0][10])
+        #     piece_weight.append(data_list[0][11])
 
         piece_provider.append(preProvider[0])
         piece_provider.append(preProvider[1])
@@ -50,14 +84,16 @@ class agentDatacw(Dataset):
         piece_state.append(0)
         piece_state.append(0)
         piece_state.append(0)
-        piece_weight.append(data_list[0][9])
-        piece_weight.append(data_list[0][10])
-        piece_weight.append(data_list[0][11])
+
+        weightSum = data_list[0][9] + data_list[0][10] + data_list[0][11]
+        player1Ts = (data_list[0][9] / weightSum + 0.2) * 100
+        player2Ts = (data_list[0][10] / weightSum + 0.2) * 100
+        player3Ts = (data_list[0][11] / weightSum + 0.2) * 100
 
         for player1 in range(0, 100, 5):
             for player2 in range(0, 100 - player1 + 1, 5):
                 player3 = 100 - player1 - player2
-                if player3 == 100 or player2 == 100:
+                if player3 > player3Ts or player2 > player2Ts or player1 > player1Ts:
                     continue
 
                 hbdata = piece_payoff[:]

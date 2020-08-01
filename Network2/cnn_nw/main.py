@@ -8,11 +8,11 @@ from save_Model import saveModel
 
 # se = [1, 3, 6, 10, 15, 20]
 # point = [64, 128, 320, 512, 704, 960]
-se = [1, 2, 4, 7, 11, 16, 21]
-point = [64, 128, 192, 320, 512, 768, 1024]
+# se = [1, 2, 4, 7, 11, 16, 21]
+# point = [64, 128, 192, 320, 512, 768, 1024]
 
-# se = [1]
-# point = [64]
+se = [21]
+point = [1024]
 global globalk
 globalk = se[0]
 

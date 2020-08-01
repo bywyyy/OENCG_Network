@@ -37,7 +37,7 @@ class LinearNet(nn.Module):
         new_worksheet.write(rows_old, 0, 'LeakyReLU,α=0.002')
 
         inputNum = num * 9 - 3
-        fc_list = [inputNum, inputNum + 12, inputNum]
+        fc_list = [inputNum, inputNum, int(inputNum / 2)]
         new_worksheet.write(rows_old, 1, format(fc_list))
 
         seq_list = []
@@ -55,7 +55,7 @@ class LinearNet(nn.Module):
         # self.union_predict = nn.Sequential(*seq_list)
         # new_worksheet.write(rows_old, 2, format(fc_list))
 
-        fc_list = [inputNum, 8, 2]
+        fc_list = [int(inputNum / 2), int(inputNum / 8), 2]
         seq_list = []
         for i in range(len(fc_list) - 1):
             seq_list.append(nn.Linear(fc_list[i], fc_list[i + 1]))

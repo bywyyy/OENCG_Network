@@ -96,24 +96,24 @@ class CNNnet(nn.Module):
         # an affine operarion: y = Wx + b
         # 全连接层fc1
         in_features = num
-        out_features = int(math.log(num, 2))  # 64
+        out_features = int(num / 2)  # 64
         setList = [in_features, out_features]
         setData = "in_features={0[0]},out_features = {0[1]}".format(setList)
         new_worksheet.write(rows_old, 3, setData)
         self.fc1 = nn.Linear(in_features=in_features, out_features=out_features)
-        in_features = int(math.log(num, 2))  # 64
-        out_features = int(math.log(num, 4))  # 24
+        in_features = int(num / 2)  # 64
+        out_features = int(num / 8)  # 24
         setList = [in_features, out_features]
         setData = "in_features={0[0]},out_features = {0[1]}".format(setList)
         new_worksheet.write(rows_old, 4, setData)
         self.fc2 = nn.Linear(in_features=in_features, out_features=out_features)
-        in_features = int(math.log(num, 4))  # 24
-        out_features = int(math.log(num, 8))
+        in_features = int(num / 8)  # 24
+        out_features = int(num / 64)
         setList = [in_features, out_features]
         setData = "in_features={0[0]},out_features = {0[1]}".format(setList)
         new_worksheet.write(rows_old, 5, setData)
         self.fc3 = nn.Linear(in_features=in_features, out_features=out_features)
-        in_features = int(math.log(num, 8))
+        in_features = int(num / 64)
         out_features = 2
         setList = [in_features, out_features]
         setData = "in_features={0[0]},out_features = {0[1]}".format(setList)

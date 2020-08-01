@@ -59,15 +59,15 @@ class CNNnet(nn.Module):
         # an affine operarion: y = Wx + b
         # 全连接层fc1
         in_features = num
-        out_features = int(math.log(num, 2))  # 64
+        out_features = int(num / 2)  # 64
         self.fc1 = nn.Linear(in_features=in_features, out_features=out_features)
-        in_features = int(math.log(num, 2))  # 64
-        out_features = int(math.log(num, 4))  # 24
+        out_features = int(num / 2)  # 64
+        out_features = int(num / 8)  # 64
         self.fc2 = nn.Linear(in_features=in_features, out_features=out_features)
-        in_features = int(math.log(num, 4))  # 24
-        out_features = int(math.log(num, 8))
+        out_features = int(num / 8)  # 64
+        out_features = int(num / 64)  # 64
         self.fc3 = nn.Linear(in_features=in_features, out_features=out_features)
-        in_features = int(math.log(num, 8))
+        out_features = int(num / 64)  # 64
         out_features = 2
         self.fc4 = nn.Linear(in_features=in_features, out_features=out_features)
 

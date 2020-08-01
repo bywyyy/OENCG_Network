@@ -1,7 +1,8 @@
 import xml.sax
 
-agentArray = ['AgentTS', 'AgentTS2', 'AgentTraverse', 'Agent', 'Human', 'AgentTraverse2', 'ReinforceAgent',
-              'AgentProselfA', 'AgentProselfB']
+agentArray = ['AgentTS', 'AgentTS2', 'AgentNetwork', 'AgentTraverse', 'Agent', 'Human', 'AgentTraverse2',
+              'ReinforceAgent', 'AgentProselfA', 'AgentProselfB']
+
 
 def get_file_data(file_name):
     all_data = []

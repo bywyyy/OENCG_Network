@@ -1,0 +1,1732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<game id="905A4AE1254B4E63" name="Scene16" majority="8">
+  <knowledge party-num="0" role-name="Google" resource="4" talent="0.0">true, true, true</knowledge>
+  <knowledge party-num="1" role-name="Facebook" resource="4" talent="0.0">true, true, true</knowledge>
+  <knowledge party-num="2" role-name="Amazon" resource="5" talent="0.0">true, true, true</knowledge>
+  <player name="GW1DJ" desc="" role-name="Google" type="REMOTE_AGENT" path="AgentTS"/>
+  <player name="8OiTv" desc="" role-name="Facebook" type="REMOTE_AGENT" path="AgentTS2"/>
+  <player name="IRsnE" desc="" role-name="Amazon" type="REMOTE_AGENT" path="AgentTraverse2"/>
+  <session num="1">
+    <round num="1">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="2">
+    <round num="2">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="3">
+      <proposal name="IRsnE" role-name="Amazon" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="4">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="5">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="6">
+      <proposal name="IRsnE" role-name="Amazon" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="30"/>
+        <ally name="GW1DJ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="7">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="3">
+    <round num="8">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="9">
+      <proposal name="IRsnE" role-name="Amazon" reward="40">
+        <ally name="8OiTv" role-name="Facebook" reward="55"/>
+        <ally name="GW1DJ" role-name="Google" reward="5"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="10">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="4">
+    <round num="11">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="12">
+      <proposal name="IRsnE" role-name="Amazon" reward="15">
+        <ally name="8OiTv" role-name="Facebook" reward="20"/>
+        <ally name="GW1DJ" role-name="Google" reward="65"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="13">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="5">
+    <round num="14">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="15">
+      <proposal name="IRsnE" role-name="Amazon" reward="70">
+        <ally name="8OiTv" role-name="Facebook" reward="30"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="16">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="17">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="18">
+      <proposal name="IRsnE" role-name="Amazon" reward="5">
+        <ally name="8OiTv" role-name="Facebook" reward="90"/>
+        <ally name="GW1DJ" role-name="Google" reward="5"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="true"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="19">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="6">
+    <round num="20">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="21">
+      <proposal name="IRsnE" role-name="Amazon" reward="80">
+        <ally name="8OiTv" role-name="Facebook" reward="5"/>
+        <ally name="GW1DJ" role-name="Google" reward="15"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="22">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="7">
+    <round num="23">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="24">
+      <proposal name="IRsnE" role-name="Amazon" reward="20">
+        <ally name="8OiTv" role-name="Facebook" reward="30"/>
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="25">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="8">
+    <round num="26">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="27">
+      <proposal name="IRsnE" role-name="Amazon" reward="55">
+        <ally name="8OiTv" role-name="Facebook" reward="25"/>
+        <ally name="GW1DJ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="28">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="29">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="30">
+      <proposal name="IRsnE" role-name="Amazon" reward="5">
+        <ally name="8OiTv" role-name="Facebook" reward="35"/>
+        <ally name="GW1DJ" role-name="Google" reward="60"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="31">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="9">
+    <round num="32">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="33">
+      <proposal name="IRsnE" role-name="Amazon" reward="20">
+        <ally name="8OiTv" role-name="Facebook" reward="70"/>
+        <ally name="GW1DJ" role-name="Google" reward="10"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="true"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="34">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="10">
+    <round num="35">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="36">
+      <proposal name="IRsnE" role-name="Amazon" reward="10">
+        <ally name="8OiTv" role-name="Facebook" reward="35"/>
+        <ally name="GW1DJ" role-name="Google" reward="55"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="37">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="11">
+    <round num="38">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="39">
+      <proposal name="IRsnE" role-name="Amazon" reward="20">
+        <ally name="8OiTv" role-name="Facebook" reward="15"/>
+        <ally name="GW1DJ" role-name="Google" reward="65"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="40">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="12">
+    <round num="41">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="42">
+      <proposal name="IRsnE" role-name="Amazon" reward="40">
+        <ally name="8OiTv" role-name="Facebook" reward="60"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="43">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="13">
+    <round num="44">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="45">
+      <proposal name="IRsnE" role-name="Amazon" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="40"/>
+        <ally name="GW1DJ" role-name="Google" reward="10"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="46">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="14">
+    <round num="47">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="48">
+      <proposal name="IRsnE" role-name="Amazon" reward="5">
+        <ally name="8OiTv" role-name="Facebook" reward="60"/>
+        <ally name="GW1DJ" role-name="Google" reward="35"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="49">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="50">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="51">
+      <proposal name="IRsnE" role-name="Amazon" reward="55">
+        <ally name="8OiTv" role-name="Facebook" reward="35"/>
+        <ally name="GW1DJ" role-name="Google" reward="10"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="52">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="53">
+      <proposal name="8OiTv" role-name="Facebook" reward="33">
+        <ally name="IRsnE" role-name="Amazon" reward="33"/>
+        <ally name="GW1DJ" role-name="Google" reward="33"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="54">
+      <proposal name="IRsnE" role-name="Amazon" reward="5">
+        <ally name="8OiTv" role-name="Facebook" reward="20"/>
+        <ally name="GW1DJ" role-name="Google" reward="75"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="true"/>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="55">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="15">
+    <round num="56">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="57">
+      <proposal name="IRsnE" role-name="Amazon" reward="80">
+        <ally name="8OiTv" role-name="Facebook" reward="20"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="58">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="16">
+    <round num="59">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="60">
+      <proposal name="IRsnE" role-name="Amazon" reward="60">
+        <ally name="8OiTv" role-name="Facebook" reward="20"/>
+        <ally name="GW1DJ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="61">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="62">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="63">
+      <proposal name="IRsnE" role-name="Amazon" reward="60">
+        <ally name="8OiTv" role-name="Facebook" reward="40"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="64">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="65">
+      <proposal name="8OiTv" role-name="Facebook" reward="33">
+        <ally name="IRsnE" role-name="Amazon" reward="33"/>
+        <ally name="GW1DJ" role-name="Google" reward="33"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="66">
+      <proposal name="IRsnE" role-name="Amazon" reward="45">
+        <ally name="8OiTv" role-name="Facebook" reward="20"/>
+        <ally name="GW1DJ" role-name="Google" reward="35"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="67">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="17">
+    <round num="68">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="69">
+      <proposal name="IRsnE" role-name="Amazon" reward="20">
+        <ally name="8OiTv" role-name="Facebook" reward="40"/>
+        <ally name="GW1DJ" role-name="Google" reward="40"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="70">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="18">
+    <round num="71">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="72">
+      <proposal name="IRsnE" role-name="Amazon" reward="15">
+        <ally name="8OiTv" role-name="Facebook" reward="10"/>
+        <ally name="GW1DJ" role-name="Google" reward="75"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="true"/>
+    </round>
+    <round num="73">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="74">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="75">
+      <proposal name="IRsnE" role-name="Amazon" reward="80">
+        <ally name="8OiTv" role-name="Facebook" reward="5"/>
+        <ally name="GW1DJ" role-name="Google" reward="15"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="76">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="19">
+    <round num="77">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="78">
+      <proposal name="IRsnE" role-name="Amazon" reward="20">
+        <ally name="8OiTv" role-name="Facebook" reward="35"/>
+        <ally name="GW1DJ" role-name="Google" reward="45"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="79">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="80">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="81">
+      <proposal name="IRsnE" role-name="Amazon" reward="45">
+        <ally name="8OiTv" role-name="Facebook" reward="40"/>
+        <ally name="GW1DJ" role-name="Google" reward="15"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="82">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="83">
+      <proposal name="8OiTv" role-name="Facebook" reward="33">
+        <ally name="IRsnE" role-name="Amazon" reward="33"/>
+        <ally name="GW1DJ" role-name="Google" reward="33"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="84">
+      <proposal name="IRsnE" role-name="Amazon" reward="60">
+        <ally name="8OiTv" role-name="Facebook" reward="30"/>
+        <ally name="GW1DJ" role-name="Google" reward="10"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="85">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="86">
+      <proposal name="8OiTv" role-name="Facebook" reward="33">
+        <ally name="IRsnE" role-name="Amazon" reward="33"/>
+        <ally name="GW1DJ" role-name="Google" reward="33"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="87">
+      <proposal name="IRsnE" role-name="Amazon" reward="55">
+        <ally name="8OiTv" role-name="Facebook" reward="20"/>
+        <ally name="GW1DJ" role-name="Google" reward="25"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="88">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="89">
+      <proposal name="8OiTv" role-name="Facebook" reward="33">
+        <ally name="IRsnE" role-name="Amazon" reward="33"/>
+        <ally name="GW1DJ" role-name="Google" reward="33"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="90">
+      <proposal name="IRsnE" role-name="Amazon" reward="35">
+        <ally name="8OiTv" role-name="Facebook" reward="55"/>
+        <ally name="GW1DJ" role-name="Google" reward="10"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="true"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="91">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="20">
+    <round num="92">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="93">
+      <proposal name="IRsnE" role-name="Amazon" reward="70">
+        <ally name="8OiTv" role-name="Facebook" reward="10"/>
+        <ally name="GW1DJ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="94">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="95">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="96">
+      <proposal name="IRsnE" role-name="Amazon" reward="60">
+        <ally name="8OiTv" role-name="Facebook" reward="40"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="97">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="98">
+      <proposal name="8OiTv" role-name="Facebook" reward="33">
+        <ally name="IRsnE" role-name="Amazon" reward="33"/>
+        <ally name="GW1DJ" role-name="Google" reward="33"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+    <round num="99">
+      <proposal name="IRsnE" role-name="Amazon" reward="45">
+        <ally name="8OiTv" role-name="Facebook" reward="45"/>
+        <ally name="GW1DJ" role-name="Google" reward="10"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="100">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="21">
+    <round num="101">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="102">
+      <proposal name="IRsnE" role-name="Amazon" reward="80">
+        <ally name="8OiTv" role-name="Facebook" reward="15"/>
+        <ally name="GW1DJ" role-name="Google" reward="5"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="103">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="22">
+    <round num="104">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="105">
+      <proposal name="IRsnE" role-name="Amazon" reward="15">
+        <ally name="8OiTv" role-name="Facebook" reward="55"/>
+        <ally name="GW1DJ" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="106">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="107">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="108">
+      <proposal name="IRsnE" role-name="Amazon" reward="35">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+        <ally name="GW1DJ" role-name="Google" reward="15"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="109">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="110">
+      <proposal name="8OiTv" role-name="Facebook" reward="33">
+        <ally name="IRsnE" role-name="Amazon" reward="33"/>
+        <ally name="GW1DJ" role-name="Google" reward="33"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+    <round num="111">
+      <proposal name="IRsnE" role-name="Amazon" reward="30">
+        <ally name="8OiTv" role-name="Facebook" reward="5"/>
+        <ally name="GW1DJ" role-name="Google" reward="65"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="true"/>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="112">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="23">
+    <round num="113">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="114">
+      <proposal name="IRsnE" role-name="Amazon" reward="70">
+        <ally name="8OiTv" role-name="Facebook" reward="30"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="115">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="116">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="117">
+      <proposal name="IRsnE" role-name="Amazon" reward="70">
+        <ally name="8OiTv" role-name="Facebook" reward="25"/>
+        <ally name="GW1DJ" role-name="Google" reward="5"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="118">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="119">
+      <proposal name="8OiTv" role-name="Facebook" reward="33">
+        <ally name="IRsnE" role-name="Amazon" reward="33"/>
+        <ally name="GW1DJ" role-name="Google" reward="33"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+    <round num="120">
+      <proposal name="IRsnE" role-name="Amazon" reward="5">
+        <ally name="8OiTv" role-name="Facebook" reward="25"/>
+        <ally name="GW1DJ" role-name="Google" reward="70"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="true"/>
+    </round>
+    <round num="121">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="24">
+    <round num="122">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="123">
+      <proposal name="IRsnE" role-name="Amazon" reward="5">
+        <ally name="8OiTv" role-name="Facebook" reward="70"/>
+        <ally name="GW1DJ" role-name="Google" reward="25"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="true"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="124">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="25">
+    <round num="125">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="126">
+      <proposal name="IRsnE" role-name="Amazon" reward="10">
+        <ally name="8OiTv" role-name="Facebook" reward="80"/>
+        <ally name="GW1DJ" role-name="Google" reward="10"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="true"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="127">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="26">
+    <round num="128">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="129">
+      <proposal name="IRsnE" role-name="Amazon" reward="10">
+        <ally name="8OiTv" role-name="Facebook" reward="60"/>
+        <ally name="GW1DJ" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="true"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="130">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="27">
+    <round num="131">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="132">
+      <proposal name="IRsnE" role-name="Amazon" reward="5">
+        <ally name="8OiTv" role-name="Facebook" reward="45"/>
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="133">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="134">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="135">
+      <proposal name="IRsnE" role-name="Amazon" reward="5">
+        <ally name="8OiTv" role-name="Facebook" reward="75"/>
+        <ally name="GW1DJ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="true"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="136">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="137">
+      <proposal name="8OiTv" role-name="Facebook" reward="33">
+        <ally name="IRsnE" role-name="Amazon" reward="33"/>
+        <ally name="GW1DJ" role-name="Google" reward="33"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="138">
+      <proposal name="IRsnE" role-name="Amazon" reward="70">
+        <ally name="8OiTv" role-name="Facebook" reward="15"/>
+        <ally name="GW1DJ" role-name="Google" reward="15"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="139">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="28">
+    <round num="140">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="141">
+      <proposal name="IRsnE" role-name="Amazon" reward="35">
+        <ally name="8OiTv" role-name="Facebook" reward="40"/>
+        <ally name="GW1DJ" role-name="Google" reward="25"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="142">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="143">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="144">
+      <proposal name="IRsnE" role-name="Amazon" reward="40">
+        <ally name="8OiTv" role-name="Facebook" reward="55"/>
+        <ally name="GW1DJ" role-name="Google" reward="5"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="145">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="29">
+    <round num="146">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="147">
+      <proposal name="IRsnE" role-name="Amazon" reward="75">
+        <ally name="8OiTv" role-name="Facebook" reward="15"/>
+        <ally name="GW1DJ" role-name="Google" reward="10"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="148">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="149">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="150">
+      <proposal name="IRsnE" role-name="Amazon" reward="20">
+        <ally name="8OiTv" role-name="Facebook" reward="20"/>
+        <ally name="GW1DJ" role-name="Google" reward="60"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="151">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="30">
+    <round num="152">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="153">
+      <proposal name="IRsnE" role-name="Amazon" reward="30">
+        <ally name="8OiTv" role-name="Facebook" reward="40"/>
+        <ally name="GW1DJ" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="154">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="155">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="156">
+      <proposal name="IRsnE" role-name="Amazon" reward="45">
+        <ally name="8OiTv" role-name="Facebook" reward="30"/>
+        <ally name="GW1DJ" role-name="Google" reward="25"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="157">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="158">
+      <proposal name="8OiTv" role-name="Facebook" reward="33">
+        <ally name="IRsnE" role-name="Amazon" reward="33"/>
+        <ally name="GW1DJ" role-name="Google" reward="33"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+    <round num="159">
+      <proposal name="IRsnE" role-name="Amazon" reward="10">
+        <ally name="8OiTv" role-name="Facebook" reward="35"/>
+        <ally name="GW1DJ" role-name="Google" reward="55"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="160">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="161">
+      <proposal name="8OiTv" role-name="Facebook" reward="33">
+        <ally name="IRsnE" role-name="Amazon" reward="33"/>
+        <ally name="GW1DJ" role-name="Google" reward="33"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="162">
+      <proposal name="IRsnE" role-name="Amazon" reward="20">
+        <ally name="8OiTv" role-name="Facebook" reward="25"/>
+        <ally name="GW1DJ" role-name="Google" reward="55"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="163">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="164">
+      <proposal name="8OiTv" role-name="Facebook" reward="33">
+        <ally name="IRsnE" role-name="Amazon" reward="33"/>
+        <ally name="GW1DJ" role-name="Google" reward="33"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+    <round num="165">
+      <proposal name="IRsnE" role-name="Amazon" reward="5">
+        <ally name="8OiTv" role-name="Facebook" reward="35"/>
+        <ally name="GW1DJ" role-name="Google" reward="60"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="true"/>
+    </round>
+    <round num="166">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="31">
+    <round num="167">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="168">
+      <proposal name="IRsnE" role-name="Amazon" reward="5">
+        <ally name="8OiTv" role-name="Facebook" reward="65"/>
+        <ally name="GW1DJ" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="169">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="32">
+    <round num="170">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="171">
+      <proposal name="IRsnE" role-name="Amazon" reward="15">
+        <ally name="8OiTv" role-name="Facebook" reward="85"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="33">
+    <round num="172">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="34">
+    <round num="173">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="174">
+      <proposal name="IRsnE" role-name="Amazon" reward="20">
+        <ally name="8OiTv" role-name="Facebook" reward="30"/>
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="175">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="35">
+    <round num="176">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="177">
+      <proposal name="IRsnE" role-name="Amazon" reward="55">
+        <ally name="8OiTv" role-name="Facebook" reward="40"/>
+        <ally name="GW1DJ" role-name="Google" reward="5"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="178">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="179">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="180">
+      <proposal name="IRsnE" role-name="Amazon" reward="15">
+        <ally name="8OiTv" role-name="Facebook" reward="5"/>
+        <ally name="GW1DJ" role-name="Google" reward="80"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="true"/>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="181">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="36">
+    <round num="182">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="183">
+      <proposal name="IRsnE" role-name="Amazon" reward="15">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+        <ally name="GW1DJ" role-name="Google" reward="35"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="184">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="185">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="186">
+      <proposal name="IRsnE" role-name="Amazon" reward="65">
+        <ally name="8OiTv" role-name="Facebook" reward="25"/>
+        <ally name="GW1DJ" role-name="Google" reward="10"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="187">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="188">
+      <proposal name="8OiTv" role-name="Facebook" reward="33">
+        <ally name="IRsnE" role-name="Amazon" reward="33"/>
+        <ally name="GW1DJ" role-name="Google" reward="33"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="189">
+      <proposal name="IRsnE" role-name="Amazon" reward="55">
+        <ally name="8OiTv" role-name="Facebook" reward="45"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="190">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="191">
+      <proposal name="8OiTv" role-name="Facebook" reward="33">
+        <ally name="IRsnE" role-name="Amazon" reward="33"/>
+        <ally name="GW1DJ" role-name="Google" reward="33"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+    <round num="192">
+      <proposal name="IRsnE" role-name="Amazon" reward="35">
+        <ally name="8OiTv" role-name="Facebook" reward="25"/>
+        <ally name="GW1DJ" role-name="Google" reward="40"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="193">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="37">
+    <round num="194">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="195">
+      <proposal name="IRsnE" role-name="Amazon" reward="15">
+        <ally name="8OiTv" role-name="Facebook" reward="35"/>
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="196">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="38">
+    <round num="197">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="198">
+      <proposal name="IRsnE" role-name="Amazon" reward="80">
+        <ally name="GW1DJ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="199">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="39">
+    <round num="200">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="201">
+      <proposal name="IRsnE" role-name="Amazon" reward="40">
+        <ally name="8OiTv" role-name="Facebook" reward="5"/>
+        <ally name="GW1DJ" role-name="Google" reward="55"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="202">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="40">
+    <round num="203">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="204">
+      <proposal name="IRsnE" role-name="Amazon" reward="60">
+        <ally name="8OiTv" role-name="Facebook" reward="15"/>
+        <ally name="GW1DJ" role-name="Google" reward="25"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="205">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="206">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="207">
+      <proposal name="IRsnE" role-name="Amazon" reward="20">
+        <ally name="8OiTv" role-name="Facebook" reward="80"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="41">
+    <round num="208">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="42">
+    <round num="209">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="210">
+      <proposal name="IRsnE" role-name="Amazon" reward="10">
+        <ally name="8OiTv" role-name="Facebook" reward="35"/>
+        <ally name="GW1DJ" role-name="Google" reward="55"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="211">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="212">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="213">
+      <proposal name="IRsnE" role-name="Amazon" reward="55">
+        <ally name="8OiTv" role-name="Facebook" reward="25"/>
+        <ally name="GW1DJ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="214">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="43">
+    <round num="215">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="216">
+      <proposal name="IRsnE" role-name="Amazon" reward="10">
+        <ally name="8OiTv" role-name="Facebook" reward="70"/>
+        <ally name="GW1DJ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="8OiTv" role-name="Facebook" agree="true"/>
+    </round>
+    <round num="217">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="44">
+    <round num="218">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="219">
+      <proposal name="IRsnE" role-name="Amazon" reward="20">
+        <ally name="8OiTv" role-name="Facebook" reward="60"/>
+        <ally name="GW1DJ" role-name="Google" reward="20"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="true"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="220">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="221">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="222">
+      <proposal name="IRsnE" role-name="Amazon" reward="15">
+        <ally name="8OiTv" role-name="Facebook" reward="5"/>
+        <ally name="GW1DJ" role-name="Google" reward="80"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="true"/>
+    </round>
+    <round num="223">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="45">
+    <round num="224">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="225">
+      <proposal name="IRsnE" role-name="Amazon" reward="55">
+        <ally name="8OiTv" role-name="Facebook" reward="30"/>
+        <ally name="GW1DJ" role-name="Google" reward="15"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="226">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="46">
+    <round num="227">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="228">
+      <proposal name="IRsnE" role-name="Amazon" reward="10">
+        <ally name="8OiTv" role-name="Facebook" reward="30"/>
+        <ally name="GW1DJ" role-name="Google" reward="60"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="229">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="47">
+    <round num="230">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="231">
+      <proposal name="IRsnE" role-name="Amazon" reward="15">
+        <ally name="GW1DJ" role-name="Google" reward="85"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="48">
+    <round num="232">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="233">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="234">
+      <proposal name="IRsnE" role-name="Amazon" reward="45">
+        <ally name="8OiTv" role-name="Facebook" reward="25"/>
+        <ally name="GW1DJ" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="235">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="49">
+    <round num="236">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="237">
+      <proposal name="IRsnE" role-name="Amazon" reward="15">
+        <ally name="8OiTv" role-name="Facebook" reward="60"/>
+        <ally name="GW1DJ" role-name="Google" reward="25"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="true"/>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="238">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="IRsnE" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="IRsnE" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="50">
+    <round num="239">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="240">
+      <proposal name="IRsnE" role-name="Amazon" reward="15">
+        <ally name="8OiTv" role-name="Facebook" reward="15"/>
+        <ally name="GW1DJ" role-name="Google" reward="70"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="true"/>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="241">
+      <proposal name="GW1DJ" role-name="Google" reward="50">
+        <ally name="8OiTv" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="242">
+      <proposal name="8OiTv" role-name="Facebook" reward="50">
+        <ally name="GW1DJ" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="GW1DJ" role-name="Google" agree="false"/>
+    </round>
+    <round num="243">
+      <proposal name="IRsnE" role-name="Amazon" reward="25">
+        <ally name="8OiTv" role-name="Facebook" reward="75"/>
+      </proposal>
+      <response name="8OiTv" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+</game>

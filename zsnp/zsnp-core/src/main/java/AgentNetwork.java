@@ -26,7 +26,6 @@ import static calculate.FindMerge.PowerIndex;
  * 制定自己的响应策略在response方法中
  * 注意：这个示例agent是一个随机策略Agent，并没有用到对手的信息以及玩家发送的提案和响应的相关信息，
  * 它只是一个示例。制定自己的策略的时候可能会用到这些信息。
- *
  */
 public class AgentNetwork extends VotingAgent {
 
@@ -206,260 +205,260 @@ public class AgentNetwork extends VotingAgent {
         System.out.println(a);
         String offer = "";
         int offerList[] = new int[3];
-        if (sum_round > k - 1) {
-            try {
-                String[] args = new String[]{"python", "/Users/linjie/PycharmProjects/OENCG_Network/Network2/loadModel/main.py", String.valueOf(k), String.valueOf(a), String.valueOf(network)};
-                Process proc = Runtime.getRuntime().exec(args);// 执行py文件
+//        if (sum_round > k - 1) {
+        try {
+            String[] args = new String[]{"python", "/Users/linjie/PycharmProjects/OENCG_Network/Network2/loadModel/main.py", String.valueOf(k), String.valueOf(a), String.valueOf(network)};
+            Process proc = Runtime.getRuntime().exec(args);// 执行py文件
 
-                BufferedReader in = new BufferedReader(new InputStreamReader(proc.getInputStream()));
-                String line = null;
-                while ((line = in.readLine()) != null) {
-                    System.out.println(line);
-                    offer = line;
-                }
-                in.close();
-                proc.waitFor();
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            BufferedReader in = new BufferedReader(new InputStreamReader(proc.getInputStream()));
+            String line = null;
+            while ((line = in.readLine()) != null) {
+                System.out.println(line);
+                offer = line;
             }
-            int offer_i = 0;
-            for (String retval : offer.split(",", 0)) {
-                System.out.println(retval);
-                offerList[offer_i] = Integer.parseInt(retval);
-                if (offerList[offer_i] > 0) {
-                    map.put(offer_i, offerList[offer_i]);
-                }
-                offer_i++;
-            }
-
-
-        } else {
-            /**a. choose coalition sets*/
-
-            ArrayList<Set<Integer>> sets = new ArrayList<>();
-            if (merge_partner != -1 & Math.random() <= alpha) {
-
-                // in some probability, choose the mini size coalition
-                //else ， randomly chooose the winning coalition
-                if (Math.random() <= beta) {
-                    //选择小联盟
-                    //find the mini size of fitness coalition
-                    Integer min_size = game.getAmountOfPlayers();
-                    for (Coalition coa : game.getCoalitions()) {
-                        if (coa.getPartyNums().contains(own.getNum()) & coa.getPartyNums().contains(merge_partner)) {
-                            int temp_size = coa.getPartyNums().size();
-                            if (temp_size < min_size) {
-                                min_size = temp_size;
-                            }
-                        }
-                    }
-                    //put the coalitions into sets
-                    for (Coalition coa : game.getCoalitions()) {
-                        if (coa.getPartyNums().contains(own.getNum()) &
-                                coa.getPartyNums().contains(merge_partner) & coa.getPartyNums().size() == min_size) {
-                            sets.add(coa.getPartyNums());
-                        }
-                    }
-                } else {
-                    //随便选择一个有两个人的联盟（或者可以理解为失误，计算不精确
-                    //put the coalitions into sets
-                    for (Coalition coa : game.getCoalitions()) {
-                        if (coa.getPartyNums().contains(own.getNum()) &
-                                coa.getPartyNums().contains(merge_partner)) {
-                            sets.add(coa.getPartyNums());
-                        }
-                    }
-                }
-
-            }
-            //if the player doesn't have merge partner
-            // or in some probability(betray or forget the partner
-            else {
-                // in some probability ,choose the mini size (according to DP index
-                if (Math.random() <= beta) {
-                    //选择小联盟
-                    //find the mini size of fitness coalition
-                    Integer min_size = game.getAmountOfPlayers();
-                    for (Coalition coa : game.getCoalitions()) {
-                        //仅包含自己的最小的获胜联盟
-                        if (coa.getPartyNums().contains(own.getNum())) {
-                            int temp_size = coa.getPartyNums().size();
-                            if (temp_size < min_size) {
-                                min_size = temp_size;
-                            }
-                        }
-                    }
-                    //put the coalitions into sets
-                    for (Coalition coa : game.getCoalitions()) {
-                        if (coa.getPartyNums().contains(own.getNum()) & coa.getPartyNums().size() == min_size) {
-                            sets.add(coa.getPartyNums());
-                        }
-                    }
-                }
-                //else randomly choose
-                else {
-                    for (Coalition coa : game.getCoalitions()) {
-                        if (coa.getPartyNums().contains(own.getNum())) {
-                            sets.add(coa.getPartyNums());
-                        }
-                    }
-                }
-
-            }
-            /** b. randomly choose one set*/
-            Set<Integer> set = new HashSet<>();
-            if (sets.size() >= 1) {
-                Random random = new Random();
-                int random_set_index = random.nextInt(sets.size());
-                set = sets.get(random_set_index);
-            } else {
-                System.out.println("Error <<randomly choose the highest-payoff coalition set>> error!!!!");
-            }
-
-            /**思路：calculate the powers:
-             //calculate the normal power
-             // if the coalition contain merge partner
-             //calculate the new power , exchange*/
-
-            /** c. calculate the resources division*/
-            /** c1 . calculate the power (consider the merge operation*/
-            // if the coalition contain merge partner
-            //calculate the new power and divide payoff
-            Map<Integer, Float> weight_map = new HashMap<>();
-            for (Integer player : players_set) {
-                weight_map.put(player, PowerIndex(players_map, quota, player, index_type));
-            }
-            // change weight_map when they achieve the merge
-            if (merge_partner != -1 & set.contains(merge_partner)) {
-                /**进行merge，重新形成Game,players_map改变；
-                 * 具体操作：重新定义一组map, 并且assign原来players_map中的值（除了self和当前player）；
-                 * id 为self 的字典中，weight填入self和player的weight之和；*/
-                Map<Integer, Integer> players_map_new = new HashMap<>();
-                for (Integer p : players_map.keySet()) {
-                    if (p != own.getNum() & p != merge_partner) {
-                        players_map_new.put(p, players_map.get(p));
-                    }
-                }
-                players_map_new.put(own.getNum(), players_map.get(own.getNum()) + players_map.get(merge_partner));
-                //calculate the new power , change weight_map
-                float power_self_new = PowerIndex(players_map_new, quota, own.getNum(), index_type);
-                float add_benefit = power_self_new - (weight_map.get(own.getNum()) + weight_map.get(merge_partner));
-                for (Integer p : players_set) {
-                    if (p != own.getNum() & p != merge_partner) {
-                        weight_map.put(p, PowerIndex(players_map_new, quota, p, index_type));
-                    }
-                }
-                weight_map.put(own.getNum(), weight_map.get(own.getNum()) + (1 / 2) * add_benefit);
-                weight_map.put(merge_partner, weight_map.get(merge_partner) + (1 / 2) * add_benefit);
-            }
-
-
-            /**c2. give the offer*/
-            float sum_weight = 0.0f;
-            for (Integer p : set) {
-                sum_weight += weight_map.get(p);
-            }
-            for (Integer p : set) {
-                map.put(p, (int) Math.floor((weight_map.get(p) / sum_weight) * game.getRewards(set)));
-            }
-
+            in.close();
+            proc.waitFor();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+        int offer_i = 0;
+        for (String retval : offer.split(",", 0)) {
+            System.out.println(retval);
+            offerList[offer_i] = Integer.parseInt(retval);
+            if (offerList[offer_i] > 0) {
+                map.put(offer_i, offerList[offer_i]);
+            }
+            offer_i++;
+            }
 
-        //tips : can consider to use history achieved offer
-        // (can update the newest or highest offer in history
 
+//        } else {
+//            /**a. choose coalition sets*/
+//
+//            ArrayList<Set<Integer>> sets = new ArrayList<>();
+//            if (merge_partner != -1 & Math.random() <= alpha) {
+//
+//                // in some probability, choose the mini size coalition
+//                //else ， randomly chooose the winning coalition
+//                if (Math.random() <= beta) {
+//                    //选择小联盟
+//                    //find the mini size of fitness coalition
+//                    Integer min_size = game.getAmountOfPlayers();
+//                    for (Coalition coa : game.getCoalitions()) {
+//                        if (coa.getPartyNums().contains(own.getNum()) & coa.getPartyNums().contains(merge_partner)) {
+//                            int temp_size = coa.getPartyNums().size();
+//                            if (temp_size < min_size) {
+//                                min_size = temp_size;
+//                            }
+//                        }
+//                    }
+//                    //put the coalitions into sets
+//                    for (Coalition coa : game.getCoalitions()) {
+//                        if (coa.getPartyNums().contains(own.getNum()) &
+//                                coa.getPartyNums().contains(merge_partner) & coa.getPartyNums().size() == min_size) {
+//                            sets.add(coa.getPartyNums());
+//                        }
+//                    }
+//                } else {
+//                    //随便选择一个有两个人的联盟（或者可以理解为失误，计算不精确
+//                    //put the coalitions into sets
+//                    for (Coalition coa : game.getCoalitions()) {
+//                        if (coa.getPartyNums().contains(own.getNum()) &
+//                                coa.getPartyNums().contains(merge_partner)) {
+//                            sets.add(coa.getPartyNums());
+//                        }
+//                    }
+//                }
+//
+//            }
+//            //if the player doesn't have merge partner
+//            // or in some probability(betray or forget the partner
+//            else {
+//                // in some probability ,choose the mini size (according to DP index
+//                if (Math.random() <= beta) {
+//                    //选择小联盟
+//                    //find the mini size of fitness coalition
+//                    Integer min_size = game.getAmountOfPlayers();
+//                    for (Coalition coa : game.getCoalitions()) {
+//                        //仅包含自己的最小的获胜联盟
+//                        if (coa.getPartyNums().contains(own.getNum())) {
+//                            int temp_size = coa.getPartyNums().size();
+//                            if (temp_size < min_size) {
+//                                min_size = temp_size;
+//                            }
+//                        }
+//                    }
+//                    //put the coalitions into sets
+//                    for (Coalition coa : game.getCoalitions()) {
+//                        if (coa.getPartyNums().contains(own.getNum()) & coa.getPartyNums().size() == min_size) {
+//                            sets.add(coa.getPartyNums());
+//                        }
+//                    }
+//                }
+//                //else randomly choose
+//                else {
+//                    for (Coalition coa : game.getCoalitions()) {
+//                        if (coa.getPartyNums().contains(own.getNum())) {
+//                            sets.add(coa.getPartyNums());
+//                        }
+//                    }
+//                }
+//
+//            }
+//            /** b. randomly choose one set*/
+//            Set<Integer> set = new HashSet<>();
+//            if (sets.size() >= 1) {
+//                Random random = new Random();
+//                int random_set_index = random.nextInt(sets.size());
+//                set = sets.get(random_set_index);
+//            } else {
+//                System.out.println("Error <<randomly choose the highest-payoff coalition set>> error!!!!");
+//            }
+//
+//            /**思路：calculate the powers:
+//             //calculate the normal power
+//             // if the coalition contain merge partner
+//             //calculate the new power , exchange*/
+//
+//            /** c. calculate the resources division*/
+//            /** c1 . calculate the power (consider the merge operation*/
+//            // if the coalition contain merge partner
+//            //calculate the new power and divide payoff
+//            Map<Integer, Float> weight_map = new HashMap<>();
+//            for (Integer player : players_set) {
+//                weight_map.put(player, PowerIndex(players_map, quota, player, index_type));
+//            }
+//            // change weight_map when they achieve the merge
+//            if (merge_partner != -1 & set.contains(merge_partner)) {
+//                /**进行merge，重新形成Game,players_map改变；
+//                 * 具体操作：重新定义一组map, 并且assign原来players_map中的值（除了self和当前player）；
+//                 * id 为self 的字典中，weight填入self和player的weight之和；*/
+//                Map<Integer, Integer> players_map_new = new HashMap<>();
+//                for (Integer p : players_map.keySet()) {
+//                    if (p != own.getNum() & p != merge_partner) {
+//                        players_map_new.put(p, players_map.get(p));
+//                    }
+//                }
+//                players_map_new.put(own.getNum(), players_map.get(own.getNum()) + players_map.get(merge_partner));
+//                //calculate the new power , change weight_map
+//                float power_self_new = PowerIndex(players_map_new, quota, own.getNum(), index_type);
+//                float add_benefit = power_self_new - (weight_map.get(own.getNum()) + weight_map.get(merge_partner));
+//                for (Integer p : players_set) {
+//                    if (p != own.getNum() & p != merge_partner) {
+//                        weight_map.put(p, PowerIndex(players_map_new, quota, p, index_type));
+//                    }
+//                }
+//                weight_map.put(own.getNum(), weight_map.get(own.getNum()) + (1 / 2) * add_benefit);
+//                weight_map.put(merge_partner, weight_map.get(merge_partner) + (1 / 2) * add_benefit);
+//            }
+//
+//
+//            /**c2. give the offer*/
+//            float sum_weight = 0.0f;
+//            for (Integer p : set) {
+//                sum_weight += weight_map.get(p);
+//            }
+//            for (Integer p : set) {
+//                map.put(p, (int) Math.floor((weight_map.get(p) / sum_weight) * game.getRewards(set)));
+//            }
+//
+//        }
+
+            //tips : can consider to use history achieved offer
+            // (can update the newest or highest offer in history
+
+
+            /**
+             *返回map对象
+             */
+            return map;
+        }
 
         /**
-         *返回map对象
+         * 制定自己的响应策略
+         * 该策略，返回随机同意或者不同意
+         *
+         * @return 同意（true）；不同意（false）
          */
-        return map;
-    }
+        @Override
+        public boolean response () {
 
-    /**
-     * 制定自己的响应策略
-     * 该策略，返回随机同意或者不同意
-     *
-     * @return 同意（true）；不同意（false）
-     */
-    @Override
-    public boolean response() {
-
-        /**a . 处理merge请求, update merge_partner*/
-        // if <have merge_request>
-        //tips : 设置一个achieved payoff record，记录下达成的offer
-        // ( 可以把历史的都记下来，也可以记住一段回合区域的，也可以记住最高的，也可以记住最新的
-        //if <have merge_partner> 如果更高就更换（可加概率）
-        // else <no merge_partner> 高了，就接受 update merge_partner
-        if (!merge_request.isEmpty()) {
-            for (Integer key : merge_request.keySet()) {
-                if (merge_request.get(key) >= Collections.max(history_achieved_bonus)) {
-                    merge_partner = key;
+            /**a . 处理merge请求, update merge_partner*/
+            // if <have merge_request>
+            //tips : 设置一个achieved payoff record，记录下达成的offer
+            // ( 可以把历史的都记下来，也可以记住一段回合区域的，也可以记住最高的，也可以记住最新的
+            //if <have merge_partner> 如果更高就更换（可加概率）
+            // else <no merge_partner> 高了，就接受 update merge_partner
+            if (!merge_request.isEmpty()) {
+                for (Integer key : merge_request.keySet()) {
+                    if (merge_request.get(key) >= Collections.max(history_achieved_bonus)) {
+                        merge_partner = key;
+                    }
                 }
             }
-        }
 
 
-        /**b . 正常处理offer*/
-        if (lastProposal.get(own.getNum()) != null) {
-            if (merge_partner != -1 & Math.random() <= 0.9) {
-                if (lastProposal.get(merge_partner) != null & lastProposal.get(own.getNum()) >= aspiration) {
-                    return true;
+            /**b . 正常处理offer*/
+            if (lastProposal.get(own.getNum()) != null) {
+                if (merge_partner != -1 & Math.random() <= 0.9) {
+                    if (lastProposal.get(merge_partner) != null & lastProposal.get(own.getNum()) >= aspiration) {
+                        return true;
+                    } else {
+                        return false;
+                    }
                 } else {
-                    return false;
+                    if (lastProposal.get(own.getNum()) >= aspiration) {
+                        return true;
+                    } else {
+                        return false;
+                    }
                 }
             } else {
-                if (lastProposal.get(own.getNum()) >= aspiration) {
-                    return true;
-                } else {
-                    return false;
-                }
+                return false;
             }
-        } else {
-            return false;
+
         }
 
-    }
+        @Override
+        public void receiveCommunicate ( int proposer, String communicateFree, String communicateType){
+            merge_request = new HashMap<>();
+            /** mame obtain */
+            PlayerInfo playerInfo = this.getPlayerInfo();
 
-    @Override
-    public void receiveCommunicate(int proposer, String communicateFree, String communicateType) {
-        merge_request = new HashMap<>();
-        /** mame obtain */
-        PlayerInfo playerInfo = this.getPlayerInfo();
-
-        String name = "";
+            String name = "";
 
 //        if( ((PartyInfo)playerInfo.getRoleInfo()).getPartyNum() == own.getNum() ){
 //            name = ((PartyInfo)playerInfo.getRoleInfo()).getRoleName();
 //        }
 
-        name = ((PartyInfo) playerInfo.getRoleInfo()).getRoleName();
+            name = ((PartyInfo) playerInfo.getRoleInfo()).getRoleName();
 
 
-        if (communicateFree.contains("merge")
-                & communicateFree.contains(name)
-                & offer_price != 0) {
-            merge_request.put(proposer, offer_price);
-            System.out.println("DEBUG:: proposer is" + proposer);
-            System.out.println("DEBUG:: name is" + name);
-            System.out.println("DEBUG:: offer_price is" + offer_price);
+            if (communicateFree.contains("merge")
+                    & communicateFree.contains(name)
+                    & offer_price != 0) {
+                merge_request.put(proposer, offer_price);
+                System.out.println("DEBUG:: proposer is" + proposer);
+                System.out.println("DEBUG:: name is" + name);
+                System.out.println("DEBUG:: offer_price is" + offer_price);
+            }
         }
-    }
 
-    @Override
-    public Communicate Communicate() {
-        Communicate communicate = new Communicate();
-        communicate.setPlayerInfo(this.getPlayerInfo());
+        @Override
+        public Communicate Communicate () {
+            Communicate communicate = new Communicate();
+            communicate.setPlayerInfo(this.getPlayerInfo());
 
 //        平台中的自由语言模块
-        communicate.setCommunicateType("hi");
+            communicate.setCommunicateType("hi");
 //        平台中的固定语言模块
-        communicate.setCommunicateFree("hei");
+            communicate.setCommunicateFree("hei");
 //        平台中的表情模块
 //        不高兴 1  正常 3  高兴 5
-        communicate.setEmotion("1");
-        return communicate;
-    }
+            communicate.setEmotion("1");
+            return communicate;
+        }
 
-}
+    }

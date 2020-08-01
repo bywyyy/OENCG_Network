@@ -33,24 +33,45 @@ class agentData(Dataset):
                 piece_provider.clear()
                 piece_payoff.clear()
                 piece_state.clear()
+
                 while num < k:
-                    providerData.append(data_list[num][0])
-                    providerData.append(data_list[num][1])
-                    providerData.append(data_list[num][2])
-                    payoffData.append(data_list[num][3])
-                    payoffData.append(data_list[num][4])
-                    payoffData.append(data_list[num][5])
-                    # piece_weight.append(data_list[0][6])
-                    # piece_weight.append(data_list[0][7])
-                    # piece_weight.append(data_list[0][8])
-                    stateData.append(data_list[num][6])
-                    stateData.append(data_list[num][7])
-                    stateData.append(data_list[num][8])
+                    providerData.append(0)
+                    providerData.append(0)
+                    providerData.append(0)
+                    payoffData.append(0)
+                    payoffData.append(0)
+                    payoffData.append(0)
+                    stateData.append(0)
+                    stateData.append(0)
+                    stateData.append(0)
                     piece_weight.append(data_list[0][9])
                     piece_weight.append(data_list[0][10])
                     piece_weight.append(data_list[0][11])
-
                     num += 1
+
+                # while num < k:
+                #     providerData.append(data_list[num][0])
+                #     providerData.append(data_list[num][1])
+                #     providerData.append(data_list[num][2])
+                #     payoffData.append(data_list[num][3])
+                #     payoffData.append(data_list[num][4])
+                #     payoffData.append(data_list[num][5])
+                #     stateData.append(data_list[num][6])
+                #     stateData.append(data_list[num][7])
+                #     stateData.append(data_list[num][8])
+                #     piece_weight.append(data_list[0][9])
+                #     piece_weight.append(data_list[0][10])
+                #     piece_weight.append(data_list[0][11])
+                #     num += 1
+
+                # 去掉前三个数据，增加后三个数据，对数据进行更新
+                for p in range(3):
+                    providerData.popleft()
+                    providerData.append(data_list[i][p])
+                    payoffData.popleft()
+                    payoffData.append(data_list[i][p + 3])
+                    stateData.popleft()
+                    stateData.append(data_list[i][p + 6])
 
                 providerCopy = providerData.copy()
                 payoffCopy = payoffData.copy()
@@ -60,22 +81,13 @@ class agentData(Dataset):
                     piece_payoff.append(payoffCopy.popleft())
                     piece_state.append(stateCopy.popleft())
 
-                # 去掉前三个数据，增加后三个数据，对数据进行更新
-                for p in range(3):
-                    providerData.popleft()
-                    providerData.append(data_list[num][p])
-                    payoffData.popleft()
-                    payoffData.append(data_list[num][p + 3])
-                    stateData.popleft()
-                    stateData.append(data_list[num][p + 6])
-
-                #当前round的state置零
+                # 当前round的state置零
                 piece_state[-1] = 0
                 piece_state[-2] = 0
                 piece_state[-3] = 0
 
                 self.data.append([piece_provider, piece_payoff, piece_state, piece_weight])
-                self.label.append(data_list[num - 1][12])
+                self.label.append(data_list[i][12])
                 # self.data.append([piece_provider, piece_payoff, piece_weight])
                 # self.label.append(data_list[num - 1][9])
                 self.len += 1

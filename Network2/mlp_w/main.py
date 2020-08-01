@@ -1,13 +1,11 @@
-from agent_Modelmlpw import LinearNet,setnum
+from agent_Modelmlpw import LinearNet, setnum
 from agentDataSet import agentData
 from MLP_utils import _test, _train
 from save_Model import saveModel
 from torch.utils.data import DataLoader
 
-se = [1, 2, 4, 7, 11, 16, 21]
-# se = [4, 7, 11, 16, 21]
-# point = [16, 32, 64, 112, 176, 240]
-
+# se = [1, 2, 4, 7, 11, 16, 21]
+se = [21]
 global globalk
 globalk = se[0]
 if __name__ == '__main__':

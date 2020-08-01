@@ -16,8 +16,8 @@ for k in range(0, 3):
 
         weightArray = browser.find_elements_by_css_selector('.multi-scenarios')
 
-        a = random.randint(0, 4)
-        time.sleep(0.2)
+        a = random.randint(5, 14)
+        time.sleep(0.3)
         weightArray[a].click()
 
         buttonSubbmit = browser.find_element_by_id('createChoose')
@@ -55,10 +55,10 @@ for k in range(0, 3):
         agent = browser.find_element_by_xpath('//*[@id="agent"]')
         agent.click()
         agentChoose = browser.find_elements_by_xpath('//*[@id="choose_agent"]/option')
-        # if i == 1:
-        # b = 1
-        # else:
-        b = random.randint(0, 8)
+        if i == 1:
+            b = 2
+        else:
+            b = random.randint(0, 8)
         agentChoose[b].click()
 
         buttonOK = browser.find_element_by_xpath('//*[@id="input"]/p[6]/input[2]')

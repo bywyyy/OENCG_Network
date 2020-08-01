@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<game id="BD22E0CA12FD4B31" name="Scene1" majority="6">
+  <knowledge party-num="0" role-name="Google" resource="3" talent="0.0">true, true, true</knowledge>
+  <knowledge party-num="1" role-name="Facebook" resource="3" talent="0.0">true, true, true</knowledge>
+  <knowledge party-num="2" role-name="Amazon" resource="4" talent="0.0">true, true, true</knowledge>
+  <player name="CbUEy" desc="" role-name="Amazon" type="REMOTE_AGENT" path="AgentTS2"/>
+  <player name="LxEBC" desc="" role-name="Google" type="REMOTE_AGENT" path="Human"/>
+  <player name="O516q" desc="" role-name="Facebook" type="REMOTE_AGENT" path="Agent"/>
+  <session num="1">
+    <round num="1">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="2">
+    <round num="2">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="3">
+    <round num="3">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="4">
+    <round num="4">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="CbUEy" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="CbUEy" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="5">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="5">
+    <round num="6">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="6">
+    <round num="7">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="CbUEy" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="CbUEy" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="8">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="7">
+    <round num="9">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="8">
+    <round num="10">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="CbUEy" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="CbUEy" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="11">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="9">
+    <round num="12">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="10">
+    <round num="13">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="11">
+    <round num="14">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="12">
+    <round num="15">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="13">
+    <round num="16">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="CbUEy" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="CbUEy" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="17">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="14">
+    <round num="18">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="15">
+    <round num="19">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="16">
+    <round num="20">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="17">
+    <round num="21">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="18">
+    <round num="22">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="CbUEy" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="CbUEy" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="23">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="19">
+    <round num="24">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="20">
+    <round num="25">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="CbUEy" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="CbUEy" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="26">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="21">
+    <round num="27">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="22">
+    <round num="28">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="23">
+    <round num="29">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="24">
+    <round num="30">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="25">
+    <round num="31">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="CbUEy" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="CbUEy" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="32">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="26">
+    <round num="33">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="27">
+    <round num="34">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="28">
+    <round num="35">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="29">
+    <round num="36">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="30">
+    <round num="37">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="31">
+    <round num="38">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="32">
+    <round num="39">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="33">
+    <round num="40">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="34">
+    <round num="41">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="35">
+    <round num="42">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="36">
+    <round num="43">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="37">
+    <round num="44">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="38">
+    <round num="45">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="39">
+    <round num="46">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="CbUEy" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="CbUEy" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="47">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="40">
+    <round num="48">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="41">
+    <round num="49">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="CbUEy" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="CbUEy" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="50">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="42">
+    <round num="51">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="43">
+    <round num="52">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="44">
+    <round num="53">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="45">
+    <round num="54">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="46">
+    <round num="55">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="47">
+    <round num="56">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="48">
+    <round num="57">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="49">
+    <round num="58">
+      <proposal name="LxEBC" role-name="Google" reward="50">
+        <ally name="CbUEy" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="CbUEy" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="59">
+      <proposal name="O516q" role-name="Facebook" reward="50">
+        <ally name="LxEBC" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LxEBC" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="50">
+    <round num="60">
+      <proposal name="CbUEy" role-name="Amazon" reward="50">
+        <ally name="O516q" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="O516q" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+</game>

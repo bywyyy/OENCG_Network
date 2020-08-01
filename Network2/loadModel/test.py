@@ -35,7 +35,7 @@ def testCNN(model, dst, playerNum):
             recpayoff = payoff3[:]
             maxPayoff = asp
 
-        print("recommand payoff: {}, aspiration : {},".format(recpayoff, maxPayoff))
+        # print("recommand payoff: {}, aspiration : {},".format(recpayoff, maxPayoff))
 
     print(recpayoff[0].__str__() + ',' + recpayoff[1].__str__() + ',' + recpayoff[2].__str__())
 
@@ -73,6 +73,6 @@ def testMLP(model, dst, playerNum):
             recpayoff = payoff3[:]
             maxPayoff = asp
 
-        print("recommand payoff: {}, aspiration : {},".format(recpayoff, maxPayoff))
+        # print("recommand payoff: {}, aspiration : {},".format(recpayoff, maxPayoff))
 
     print(recpayoff[0].__str__() + ',' + recpayoff[1].__str__() + ',' + recpayoff[2].__str__())
