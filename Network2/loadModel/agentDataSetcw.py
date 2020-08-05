@@ -32,7 +32,6 @@ class agentDatacw(Dataset):
             piece_weight.append(data_list[0][10])
             piece_weight.append(data_list[0][11])
 
-
         if (datalistLen < k - 1):
             piece_provider = [0] * (k - datalistLen - 1) * 3
             piece_payoff = [0] * (k - datalistLen - 1) * 3
@@ -90,10 +89,20 @@ class agentDatacw(Dataset):
         player2Ts = (data_list[0][10] / weightSum + 0.2) * 100
         player3Ts = (data_list[0][11] / weightSum + 0.2) * 100
 
+        player1Tslow = (data_list[0][9] / weightSum - 0.15) * 100
+        player2Tslow = (data_list[0][10] / weightSum - 0.15) * 100
+        player3Tslow = (data_list[0][11] / weightSum - 0.15) * 100
+
         for player1 in range(0, 100, 5):
             for player2 in range(0, 100 - player1 + 1, 5):
                 player3 = 100 - player1 - player2
                 if player3 > player3Ts or player2 > player2Ts or player1 > player1Ts:
+                    continue
+                elif player1 != 0 and player1 < player1Tslow:
+                    continue
+                elif player2 != 0 and player2 < player2Tslow:
+                    continue
+                elif player3 != 0 and player3 < player3Tslow:
                     continue
 
                 hbdata = piece_payoff[:]

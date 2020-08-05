@@ -1,13 +1,10 @@
 import calculate.Calculate_proself_aspiration;
-import calculate.Index_Banzhaf;
 import calculate.Index_DP;
-import calculate.Index_SS;
 import com.swu.agentlab.zsnp.game.coalition.voting.Coalition;
 import com.swu.agentlab.zsnp.game.coalition.voting.Message.body.Communicate;
 import com.swu.agentlab.zsnp.game.coalition.voting.agent.Game;
 import com.swu.agentlab.zsnp.game.coalition.voting.agent.Infos;
 import com.swu.agentlab.zsnp.game.coalition.voting.agent.VotingAgent;
-
 
 import java.util.*;
 
@@ -20,7 +17,7 @@ import java.util.*;
  * 注意：这个示例agent是一个随机策略Agent，并没有用到对手的信息以及玩家发送的提案和响应的相关信息，
  * 它只是一个示例。制定自己的策略的时候可能会用到这些信息。
  */
-public class AgentBanzhaf extends VotingAgent {
+public class AgentDPIndex extends VotingAgent {
 
     private Game game;
 
@@ -157,7 +154,7 @@ public class AgentBanzhaf extends VotingAgent {
             aspiration -= 10;
         }
 
-        float[] index_types = Index_Banzhaf.banzhaf_index(game, own, opponents);
+        float[] index_types = Index_DP.dp_index(game, own, opponents);
 
         /**
          * 申明并初始化一个Map对象，作为这个方法的返回值
@@ -237,7 +234,7 @@ public class AgentBanzhaf extends VotingAgent {
                     } else {
                         map.put(num, (int) Math.floor(game.getRewards(set) * (index_types[num] / set_sum_weight - 0.1)));
                     }
-                }else {
+                } else {
                     map.put(num, (int) Math.floor(game.getRewards(set) * (index_types[num] / set_sum_weight)));
 
                 }
