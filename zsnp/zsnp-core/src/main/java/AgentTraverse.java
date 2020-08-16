@@ -53,7 +53,8 @@ public class AgentTraverse extends VotingAgent {
     private List<Integer> history_achieved_bonus = new ArrayList<>();
     private Integer offer_price = 0;
     private List<int[]> offerListInit = new ArrayList<>();
-    private Integer sum_round = 0;
+    private double weightSum = 0;
+//    private Integer sum_round = 0;
 
 
     /**
@@ -72,6 +73,7 @@ public class AgentTraverse extends VotingAgent {
         this.game = game;
         this.own = own;
         this.opponents = opponents;
+        this.weightSum = 0;
         /**
          * （示例用的，不是必须的对象）
          * 随机对象
@@ -84,18 +86,35 @@ public class AgentTraverse extends VotingAgent {
         this.quota = game.getMajority();
         players_map = new HashMap<>();
         players_map.put(own.getNum(), own.getWeight());
+        weightSum += own.getWeight();
         players_set.add(own.getNum());
         for (Integer p : opponents.keySet()) {
             players_map.put(p, opponents.get(p).getWeight());
+            weightSum += opponents.get(p).getWeight();
             players_set.add(p);
         }
+
+        double player1Ts = (players_map.get(0) / weightSum + 0.2) * 100;
+        double player2Ts = (players_map.get(1) / weightSum + 0.2) * 100;
+        double player3Ts = (players_map.get(2) / weightSum + 0.2) * 100;
+
+        double player1Tslow = (players_map.get(0) / weightSum - 0.15) * 100;
+        double player2Tslow = (players_map.get(1) / weightSum - 0.15) * 100;
+        double player3Tslow = (players_map.get(2) / weightSum - 0.15) * 100;
 
         //offerlist初始化
         for (int player1 = 0; player1 < 100; player1 += 5) {
             for (int player2 = 0; player2 < 100 - player1 + 1; player2 += 5) {
                 int player3 = 100 - player1 - player2;
-                if (player2 == 100 || player3 == 100)
+                if (player3 > player3Ts || player2 > player2Ts || player1 > player1Ts)
                     continue;
+                else if (player1 != 0 && player1 < player1Tslow)
+                    continue;
+                else if (player2 != 0 && player2 < player2Tslow)
+                    continue;
+                else if (player3 != 0 && player3 < player3Tslow)
+                    continue;
+
                 int[] offer = {player1, player2, player3};
                 if (offer[own.getNum()] == 0) //联盟不包括自己
                     continue;
@@ -155,7 +174,7 @@ public class AgentTraverse extends VotingAgent {
             System.out.print("\r\n" + own.getNum() + "@@@接收提议的相关信息：：：*****：：：包括的成员：" + m + "分的资金：" + lastProposal.get(m));
         }
 
-        sum_round += 1;
+//        sum_round += 1;
     }
 
     /**

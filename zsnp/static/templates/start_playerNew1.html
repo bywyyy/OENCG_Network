@@ -2,473 +2,479 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>negotiation game platform</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- 新 Bootstrap 核心 CSS 文件 -->
-	<link href="../templates/css/bootstrap.min.css" rel="stylesheet">
-	 
-	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-	<script src="../templates/js/jquery.min.js"></script>
-	 
-	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-	<script src="../templates/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>negotiation game platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="../templates/css/bootstrap.min.css" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="../templates/css/start_player.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="../templates/js/jquery.min.js"></script>
 
-	<!-- 提示框css和js -->
-	<script type="text/javascript" src="../templates/js/popup_box.js"></script>
-	<link rel="stylesheet" type="text/css" href="../templates/css/popup_box.css">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="../templates/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../templates/css/start_player.css">
+
+    <!-- 提示框css和js -->
+    <script type="text/javascript" src="../templates/js/popup_box.js"></script>
+    <link rel="stylesheet" type="text/css" href="../templates/css/popup_box.css">
 
 
 </head>
 <body>
 
-    <script type="text/javascript">
+<script type="text/javascript">
 
-        $(document).ready(function(){
-            $(".choose_room_status").click(function(){
-                var status = $(this).text();
-                $(".now_room_status").text(status);
-            });
-
-
-            $("#agent").click(function(){
-                $("#choose_agent").show();
-            });
-
-            $("#human").click(function(){
-                $("#choose_agent").hide();
-            });
-
-            // 选择多个agent进行批量竞赛部分-点击事件
-            $(".multi-agents").click(function(){
-                if ($(this).hasClass("btn-default")) {
-                    if ($(".btn-warning").length >= 3){
-                        mizhu.alert("Tips", "Up to three agents");
-                        return;
-                    }
-                    $(this).removeClass("btn-default");
-                    $(this).addClass("btn-warning");
-                }
-                else{
-                    $(this).removeClass("btn-warning");
-                    $(this).addClass("btn-default");
-                }
-                var agentPath= "";
-                $(".btn-warning").each(function(){
-                    agentPath = agentPath + $(this).text()+",";
-
-
-                });
-                $("#agentsID").val(agentPath);
-            });
-
-            
-        });
-
-        // 批量竞赛BEGIN按钮函数
-        function begin(){
-            if ($(".btn-warning").length != 3) {
-                mizhu.alert("Tips","Check agents chosen.");
-                return false;
-            }
-            else{
-                $("#agentsID").text("");
-                $(".btn-warning").each(function(){
-                    var id = $(this).text();
-                    $("#agentsID").append(id+",");
-                });
-            }
-            if ($("#show_room_2").text() === "") {
-                mizhu.alert("Tips","choose the room.");
-                return false;
-            }
-            if ($("#stageNum").val() === "") {
-                mizhu.alert("Tips","Input total number of stages.");
-                return false;
-            }
-            if ($("#roundNum").val() === "") {
-                mizhu.alert("Tips","Input maximum rounds per stage.");
-                return false;
-            }
-            return true;
-            // alert("abc");
-            // $.ajax({
-            //     type : "post",
-            //     url : "/mulitAgent",
-            //     data : {'agentPath': $("#agentsID").text(),
-			// 		'maxStage': $('#stageNum').val(),
-			// 		'maxRound': $('#roundNum').val()},
-            //     success : function(msg){
-            //         alert("yes")
-            //     },
-            //     error : function(msg){
-            //         alert(m);
-            //     }
-            // });
-        }
-
-    </script> 
-
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6">
-				<div class="play_info_part">
-					<form id = "input" name="input" action="/test" method="post" onsubmit="return formAppendSubmit()">
-						<legend>Nego Session</legend>
-						<p>Name <input type="text" name="name"></p>
-						<p>Desc <textarea rows="3" cols="30" name="desc"></textarea></p>
-						<p><input type="radio" name="humanORagent" value="remote_human" id="human" >Human<input type="radio" name="humanORagent" value="agent" id="agent">Agent</p>
-
-						<!-- <input type="file" name="agent_file" accept=".java" id="choose_agent" style="display: none;    margin: 20px 100px;" /> -->
-						<!--<form role="form">-->
-							<div class="form-group">
-								<select class="form-control" id="choose_agent"
-														 style="display: none;width: 250px; margin: auto;"  name="agentName">
-
-									<option>AgentBanzhaf</option>
-									<option>AgentSSIndex</option>
-									<option>AgentDPIndex</option>
-									<option>AgentTS</option>
-									<option>AgentTS2</option>
-<!--									<option>AgentNetwork</option>-->
-									<option>AgentTraverse</option>
-									<option>AgentTraverse2</option>
-									<option>Agent</option>
-									<option>Human</option>
-									<option>ReinforceAgent</option>
-									<option>AgentProselfA</option>
-									<option>AgentProselfB</option>
-<!--									<option>AgentProsocialA</option>-->
-<!--									<option>AgentProsocialB</option>-->
-								</select>
-						    </div>
-						<!--</form>-->
-
-						<p style="display: none;">The Scene chosen is ：<span name="roomId" id="roomId"></span></p>
-                        <p>The Scene chosen is ：<span id="show_room"></span></p>
-
-						<p>
-							<input type="submit" value="Reset" class="btn btn-danger">
-							<input type="submit" value="OK" class="btn btn-success">
-						</p>
-
-					</form>
-				</div>
-                <div class="">
-                    <legend>Tournament</legend>
-            
-                    <div style="text-align: center;" class="agents">                            
-                        <button class="btn btn-default multi-agents">Agent</button>
-                        <button class="btn btn-default multi-agents">Human</button>
-                        <button class="btn btn-default multi-agents">Human</button>
-                    </div>
-            
-
-                    <div class="setting">
-						<form action="/mulitAgent" onsubmit="return begin()" method="post">
-                        <p style="display: none;">The agents chosen are:<input id="agentsID" type="text"  name="agentPath"></p>
-                        <p>The scene chosen is : <span id="show_room_2" ></span></p>
-
-                        <p>Total number of stages : <span><input type="text" id="stageNum" name = "maxStage" value="3"></span></p>
-                        <p>Maximum rounds per stage : <span><input type="text" id="roundNum" name="maxRound"  value="20"></span></p>
-
-                        <p style="text-align: center;"><button type="submit" class="btn btn-success" >BEGIN</button></p>
-						</form>
-					</div>
-                </div>
-			</div>
-			<div class="col-sm-6">
-				<div class="choose_room_part">
-					<legend>Scenes</legend>
-					<span>Scene Status</span>
-					<div class="btn-group-vertical">
-						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"  style="width: 150px;">
-							<span class="now_room_status">ALL</span>
-							<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" id = "statueList">
-							<li><a class="choose_room_status">ALL STATE</a></li>
-							<li><a class="choose_room_status">PRE_GAME</a></li>
-							<li><a class="choose_room_status">ON_GAME</a></li>
-							<li><a class="choose_room_status">GAME_PAUSE</a></li>
-							<li><a class="choose_room_status">GAME_END</a></li>
-						</ul>
-				    </div>
-				    <div class="room_list" id = "room_list">
-
-
-					</div>				
-				</div>
-			</div>
-			
-		</div>
-
-
-		
-	</div>
-
-	<script>
-        var itemli = document.getElementsByTagName("li");
-
-        for(var i = 0; i<itemli.length; i++){
-
-            itemli[i].index = i; //给每个li定义一个属性索引值，赋
-            // var queryStatue= this.children().text();
-            itemli[i].onclick = function(){
-                var queryStatue = $(this).children("a").html();
-                websocket.send(JSON.stringify({
-                    Statue: queryStatue
-                }));
-            }
-        }
-
-
-
-        function getParameter(param) {
-            var query = window.location.search;
-            var iLen = param.length;
-            var iStart = query.indexOf(param);
-            if (iStart == -1)
-                return "";
-            iStart += iLen + 1;
-            var iEnd = query.indexOf("&", iStart);
-            if (iEnd == -1)
-                return query.substring(iStart);
-
-            return query.substring(iStart, iEnd);
-        }
-
-
-
-        function formAppendSubmit(){
-        	// BEGIN-前端验证
-        	if (input.name.value === "") {
-				mizhu.alert( "Tips",'Please input your name!');
-                return false;
-            }
-            if (input.humanORagent.value === "") {
-                mizhu.alert( "Tips","Please choose human OR agent!");
-                return false;
-            }
-            // if(input.humanORagent.value === "agent" && input.agent_file.value === ""){
-            //         mizhu.alert("Tips","Please choose agent!");
-            //         return false;
-            // }
-            if ($('#show_room').text() === "") {
-                mizhu.alert("Tips","Please choose the room!");
-                return false;
-            }
-
-            // END-前端验证
-
-            var myform=$('#input'); //得到form对象
-            var tmpInput=$("<input type='text' name='playerId' style=\"display: none;\"/>");
-            tmpInput.attr("value", getParameter("playerId"));
-            console.log(getParameter("playerId"));
-            myform.append(tmpInput);
-            var f = document.getElementById("choose_agent").files;
-            // var s = document.input.agent_file.value;
-            var room = $('#roomId').text();
-            var roomAdd=$("<input type='text' name='roomId' style=\"display: none;\" />");
-            roomAdd.attr("value",room);
-            myform.append(roomAdd);
-
-            if(input.humanORagent.value === "agent"){
-                var agentPath= $("<input type='text' name='agentPath' style=\"display: none;\"/>");
-                agentPath.attr("value",input.agentName.value)
-                // agentPath.attr("value",f[0].name);
-                // var file = document.createElement("agent_file");
-                // //设置 div 属性，如 id
-                // file.setAttribute("disable", "true");
-                // myform.append(file);
-                myform.append(agentPath);
-            }else{
-                var agentPath= $("<input type='text' name='agentPath' style=\"display: none;\"/>");
-                agentPath.attr("value","0");
-                myform.append(agentPath);
-            }
-            return true;
-        }
-
-
-
-
-        $.ajax({
-            type: 'post',
-            url: '/getRoomInfos',
-            dataType: 'json',
-            success:function(data){
-                var item;
-                $.each(data,function(i,result){
-                    item = "<div class=\"room_block\" id= " + result['id'] + ">" +
-                        "<table class=\"table\">" +
-                        "<tbody>" +
-                        "<tr class=\"active\">" +
-                        "<td><p><span class=\"info_left\">Name</span><span class=\"info_right room_id\">"+result['name']+"</span></p></td>" +
-                        "</tr>" +
-                        "<tr class=\"success\">" +
-                        "<td><p><span class=\"info_left\">Players</span><span class=\"info_right\">"+result['amountOfPlayers']+"/"+result['amountOfRoles']+"</span></p></td>" +
-                        "</tr>" +
-                        "<tr  class=\"warning\">" +
-                        "<td><p><span class=\"info_left\">Domain</span><span class=\"info_right\">"+ result["domainName"]+"</span></p></td>" +
-                        "</tr>" +
-                        "<tr  class=\"danger\">" +
-                        "<td><p><span class=\"info_left\">Desc</span><span class=\"info_right\">" + result["description"]+"</span></p></td>" +
-                        "</tr>" +
-                        "<tr class=\"success\">" +
-                        "<td><p><span class=\"info_left\">Status</span><span class=\"info_right\">" + result["statue"]+"</span></p></td>" +
-                        "</tr>" +
-                        "</tbody>" +
-                        "</table>" +
-                        "</div>";
-                    $('#room_list').append(item);
-                });
-                $(".room_block").click(function(){
-
-                    $(".room_block").css("border-color","transparent");
-                    $(this).css("border-color","#a94442");
-
-                    var which_room;
-                    which_room = $(this).attr('id');
-                    $("#roomId").text(which_room);
-
-                    var show_room;
-                    show_room = $(this).find(".room_id").text();
-                    $("#show_room").text(show_room);
-                    $("#show_room_2").text(show_room);
-                });
-            },
-
+    $(document).ready(function () {
+        $(".choose_room_status").click(function () {
+            var status = $(this).text();
+            $(".now_room_status").text(status);
         });
 
 
+        $("#agent").click(function () {
+            $("#choose_agent").show();
+        });
 
-        var websocket = null;
+        $("#human").click(function () {
+            $("#choose_agent").hide();
+        });
 
-        //判断当前浏览器是否支持WebSocket
-        if ('WebSocket' in window) {
-            websocket = new WebSocket("ws://localhost:8181/room");
+        // 选择多个agent进行批量竞赛部分-点击事件
+        $(".multi-agents").click(function () {
+            if ($(this).hasClass("btn-default")) {
+                if ($(".btn-warning").length >= 3) {
+                    mizhu.alert("Tips", "Up to three agents");
+                    return;
+                }
+                $(this).removeClass("btn-default");
+                $(this).addClass("btn-warning");
+            } else {
+                $(this).removeClass("btn-warning");
+                $(this).addClass("btn-default");
+            }
+            var agentPath = "";
+            $(".btn-warning").each(function () {
+                agentPath = agentPath + $(this).text() + ",";
+
+
+            });
+            $("#agentsID").val(agentPath);
+        });
+
+
+    });
+
+    // 批量竞赛BEGIN按钮函数
+    function begin() {
+        if ($(".btn-warning").length != 3) {
+            mizhu.alert("Tips", "Check agents chosen.");
+            return false;
         } else {
-            alert('Not support websocket')
+            $("#agentsID").text("");
+            $(".btn-warning").each(function () {
+                var id = $(this).text();
+                $("#agentsID").append(id + ",");
+            });
+        }
+        if ($("#show_room_2").text() === "") {
+            mizhu.alert("Tips", "choose the room.");
+            return false;
+        }
+        if ($("#stageNum").val() === "") {
+            mizhu.alert("Tips", "Input total number of stages.");
+            return false;
+        }
+        if ($("#roundNum").val() === "") {
+            mizhu.alert("Tips", "Input maximum rounds per stage.");
+            return false;
+        }
+        return true;
+        // alert("abc");
+        // $.ajax({
+        //     type : "post",
+        //     url : "/mulitAgent",
+        //     data : {'agentPath': $("#agentsID").text(),
+        // 		'maxStage': $('#stageNum').val(),
+        // 		'maxRound': $('#roundNum').val()},
+        //     success : function(msg){
+        //         alert("yes")
+        //     },
+        //     error : function(msg){
+        //         alert(m);
+        //     }
+        // });
+    }
+
+</script>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="play_info_part">
+                <form id="input" name="input" action="/test" method="post" onsubmit="return formAppendSubmit()">
+                    <legend>Nego Session</legend>
+                    <p>Name <input type="text" name="name"></p>
+                    <p>Desc <textarea rows="3" cols="30" name="desc"></textarea></p>
+                    <p><input type="radio" name="humanORagent" value="remote_human" id="human">Human<input type="radio"
+                                                                                                           name="humanORagent"
+                                                                                                           value="agent"
+                                                                                                           id="agent">Agent
+                    </p>
+
+                    <!-- <input type="file" name="agent_file" accept=".java" id="choose_agent" style="display: none;    margin: 20px 100px;" /> -->
+                    <!--<form role="form">-->
+                    <div class="form-group">
+                        <select class="form-control" id="choose_agent"
+                                style="display: none;width: 250px; margin: auto;" name="agentName">
+                            <option>AgentTraverse</option>
+                            <option>AgentTraverseStrong</option>
+                            <option>AgentBanzhaf</option>
+                            <option>AgentEDP</option>
+                            <option>AgentSSIndex</option>
+                            <option>AgentDPIndex</option>
+                            <option>AgentTS</option>
+                            <option>AgentTS2</option>
+                            <option>AgentBanzhafStub</option>
+                            <option>AgentEDPStub</option>
+                            <option>AgentSSIndexStub</option>
+                            <option>AgentDPIndexStub</option>
+                            <!--									<option>AgentNetwork</option>-->
+                            <!--                            <option>Agent</option>-->
+                            <!--                            <option>Human</option>-->
+                            <!--                            <option>ReinforceAgent</option>-->
+                            <!--                            <option>AgentProselfA</option>-->
+                            <!--                            <option>AgentProselfB</option>-->
+                            <!--									<option>AgentProsocialA</option>-->
+                            <!--									<option>AgentProsocialB</option>-->
+                        </select>
+                    </div>
+                    <!--</form>-->
+
+                    <p style="display: none;">The Scene chosen is ：<span name="roomId" id="roomId"></span></p>
+                    <p>The Scene chosen is ：<span id="show_room"></span></p>
+
+                    <p>
+                        <input type="submit" value="Reset" class="btn btn-danger">
+                        <input type="submit" value="OK" class="btn btn-success">
+                    </p>
+
+                </form>
+            </div>
+            <div class="">
+                <legend>Tournament</legend>
+
+                <div style="text-align: center;" class="agents">
+                    <button class="btn btn-default multi-agents">Agent</button>
+                    <button class="btn btn-default multi-agents">Human</button>
+                    <button class="btn btn-default multi-agents">Human</button>
+                </div>
+
+
+                <div class="setting">
+                    <form action="/mulitAgent" onsubmit="return begin()" method="post">
+                        <p style="display: none;">The agents chosen are:<input id="agentsID" type="text"
+                                                                               name="agentPath"></p>
+                        <p>The scene chosen is : <span id="show_room_2"></span></p>
+
+                        <p>Total number of stages : <span><input type="text" id="stageNum" name="maxStage"
+                                                                 value="3"></span></p>
+                        <p>Maximum rounds per stage : <span><input type="text" id="roundNum" name="maxRound" value="20"></span>
+                        </p>
+
+                        <p style="text-align: center;">
+                            <button type="submit" class="btn btn-success">BEGIN</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="choose_room_part">
+                <legend>Scenes</legend>
+                <span>Scene Status</span>
+                <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            style="width: 150px;">
+                        <span class="now_room_status">ALL</span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" id="statueList">
+                        <li><a class="choose_room_status">ALL STATE</a></li>
+                        <li><a class="choose_room_status">PRE_GAME</a></li>
+                        <li><a class="choose_room_status">ON_GAME</a></li>
+                        <li><a class="choose_room_status">GAME_PAUSE</a></li>
+                        <li><a class="choose_room_status">GAME_END</a></li>
+                    </ul>
+                </div>
+                <div class="room_list" id="room_list">
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<script>
+    var itemli = document.getElementsByTagName("li");
+
+    for (var i = 0; i < itemli.length; i++) {
+
+        itemli[i].index = i; //给每个li定义一个属性索引值，赋
+        // var queryStatue= this.children().text();
+        itemli[i].onclick = function () {
+            var queryStatue = $(this).children("a").html();
+            websocket.send(JSON.stringify({
+                Statue: queryStatue
+            }));
+        }
+    }
+
+
+    function getParameter(param) {
+        var query = window.location.search;
+        var iLen = param.length;
+        var iStart = query.indexOf(param);
+        if (iStart == -1)
+            return "";
+        iStart += iLen + 1;
+        var iEnd = query.indexOf("&", iStart);
+        if (iEnd == -1)
+            return query.substring(iStart);
+
+        return query.substring(iStart, iEnd);
+    }
+
+
+    function formAppendSubmit() {
+        // BEGIN-前端验证
+        if (input.name.value === "") {
+            mizhu.alert("Tips", 'Please input your name!');
+            return false;
+        }
+        if (input.humanORagent.value === "") {
+            mizhu.alert("Tips", "Please choose human OR agent!");
+            return false;
+        }
+        // if(input.humanORagent.value === "agent" && input.agent_file.value === ""){
+        //         mizhu.alert("Tips","Please choose agent!");
+        //         return false;
+        // }
+        if ($('#show_room').text() === "") {
+            mizhu.alert("Tips", "Please choose the room!");
+            return false;
         }
 
+        // END-前端验证
 
-        //连接发生错误的回调方法
-        websocket.onerror = function () {
-            setMessageInnerHTML("error");
-        };
+        var myform = $('#input'); //得到form对象
+        var tmpInput = $("<input type='text' name='playerId' style=\"display: none;\"/>");
+        tmpInput.attr("value", getParameter("playerId"));
+        console.log(getParameter("playerId"));
+        myform.append(tmpInput);
+        var f = document.getElementById("choose_agent").files;
+        // var s = document.input.agent_file.value;
+        var room = $('#roomId').text();
+        var roomAdd = $("<input type='text' name='roomId' style=\"display: none;\" />");
+        roomAdd.attr("value", room);
+        myform.append(roomAdd);
 
-        //连接成功建立的回调方法
-        websocket.onopen = function (event) {
-            sendBeginMessage();
-        };
-
-        if(sessionRoundNumHistory !== "undefined"){
-
-        }else{
-            var sessionRoundNumHistory;
+        if (input.humanORagent.value === "agent") {
+            var agentPath = $("<input type='text' name='agentPath' style=\"display: none;\"/>");
+            agentPath.attr("value", input.agentName.value)
+            // agentPath.attr("value",f[0].name);
+            // var file = document.createElement("agent_file");
+            // //设置 div 属性，如 id
+            // file.setAttribute("disable", "true");
+            // myform.append(file);
+            myform.append(agentPath);
+        } else {
+            var agentPath = $("<input type='text' name='agentPath' style=\"display: none;\"/>");
+            agentPath.attr("value", "0");
+            myform.append(agentPath);
         }
-        var playerNum = 0;
-        //接收到消息的回调方法
-        websocket.onmessage = function (event) {
-            var message = JSON.parse(event.data) || {};
-            if(message.type === "AddRoom"){
-                var roomInfo = message.roomInfo;
-                item = "<div class=\"room_block\" id= " + roomInfo.id + ">" +
+        return true;
+    }
+
+
+    $.ajax({
+        type: 'post',
+        url: '/getRoomInfos',
+        dataType: 'json',
+        success: function (data) {
+            var item;
+            $.each(data, function (i, result) {
+                item = "<div class=\"room_block\" id= " + result['id'] + ">" +
                     "<table class=\"table\">" +
                     "<tbody>" +
                     "<tr class=\"active\">" +
-                    "<td><p><span class=\"info_left\">Name</span><span class=\"info_right room_id\">"+roomInfo.name+"</span></p></td>" +
+                    "<td><p><span class=\"info_left\">Name</span><span class=\"info_right room_id\">" + result['name'] + "</span></p></td>" +
                     "</tr>" +
                     "<tr class=\"success\">" +
-                    "<td><p><span class=\"info_left\">Players</span><span class=\"info_right\">"+ roomInfo.amountOfPlayers+"/"+roomInfo.amountOfRoles+"</span></p></td>" +
+                    "<td><p><span class=\"info_left\">Players</span><span class=\"info_right\">" + result['amountOfPlayers'] + "/" + result['amountOfRoles'] + "</span></p></td>" +
                     "</tr>" +
                     "<tr  class=\"warning\">" +
-                    "<td><p><span class=\"info_left\">Domain</span><span class=\"info_right\">"+ roomInfo.domainName+"</span></p></td>" +
+                    "<td><p><span class=\"info_left\">Domain</span><span class=\"info_right\">" + result["domainName"] + "</span></p></td>" +
                     "</tr>" +
                     "<tr  class=\"danger\">" +
-                    "<td><p><span class=\"info_left\">Desc</span><span class=\"info_right\">" + roomInfo.description+"</span></p></td>" +
+                    "<td><p><span class=\"info_left\">Desc</span><span class=\"info_right\">" + result["description"] + "</span></p></td>" +
                     "</tr>" +
                     "<tr class=\"success\">" +
-                    "<td><p><span class=\"info_left\">Status</span><span class=\"info_right\">" + roomInfo.statue+"</span></p></td>" +
+                    "<td><p><span class=\"info_left\">Status</span><span class=\"info_right\">" + result["statue"] + "</span></p></td>" +
                     "</tr>" +
                     "</tbody>" +
                     "</table>" +
                     "</div>";
                 $('#room_list').append(item);
-			}else if(message.type === "UpdateRoom"){
-                var roomInfos = message.roomInfos;
-                $('#room_list').html("");
-                for(var p in roomInfos){
-                    item = "<div class=\"room_block\" id= " + roomInfos[p].id + ">" +
-                        "<table class=\"table\">" +
-                        "<tbody>" +
-                        "<tr class=\"active\">" +
-                        "<td><p><span class=\"info_left\">Name</span><span class=\"info_right room_id\">"+roomInfos[p].name+"</span></p></td>" +
-                        "</tr>" +
-                        "<tr class=\"success\">" +
-                        "<td><p><span class=\"info_left\">Players</span><span class=\"info_right\">"+ roomInfos[p].amountOfPlayers+"/"+roomInfos[p].amountOfRoles+"</span></p></td>" +
-                        "</tr>" +
-                        "<tr  class=\"warning\">" +
-                        "<td><p><span class=\"info_left\">Domain</span><span class=\"info_right\">"+ roomInfos[p].domainName+"</span></p></td>" +
-                        "</tr>" +
-                        "<tr  class=\"danger\">" +
-                        "<td><p><span class=\"info_left\">Desc</span><span class=\"info_right\">" + roomInfos[p].description+"</span></p></td>" +
-                        "</tr>" +
-                        "<tr class=\"success\">" +
-                        "<td><p><span class=\"info_left\">Status</span><span class=\"info_right\">" + roomInfos[p].statue+"</span></p></td>" +
-                        "</tr>" +
-                        "</tbody>" +
-                        "</table>" +
-                        "</div>";
-                    $('#room_list').append(item);
-				}
-                $(".room_block").click(function(){
+            });
+            $(".room_block").click(function () {
 
-                    $(".room_block").css("border-color","transparent");
-                    $(this).css("border-color","#a94442");
+                $(".room_block").css("border-color", "transparent");
+                $(this).css("border-color", "#a94442");
 
-                    var which_room;
-                    which_room = $(this).attr('id');
-                    $("#roomId").text(which_room);
+                var which_room;
+                which_room = $(this).attr('id');
+                $("#roomId").text(which_room);
 
-                    var show_room;
-                    show_room = $(this).find(".room_id").text();
-                    $("#show_room").text(show_room);
-                     $("#show_room_2").text(show_room);
-                });
-			}
+                var show_room;
+                show_room = $(this).find(".room_id").text();
+                $("#show_room").text(show_room);
+                $("#show_room_2").text(show_room);
+            });
+        },
 
-        };
+    });
 
-        //连接关闭的回调方法
-        websocket.onclose = function () {
-        };
 
-        //监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
-        window.onbeforeunload = function () {
-            websocket.close();
-        };
+    var websocket = null;
 
-        //将消息显示在网页上
-        function setMessageInnerHTML(innerHTML) {
+    //判断当前浏览器是否支持WebSocket
+    if ('WebSocket' in window) {
+        websocket = new WebSocket("ws://localhost:8181/room");
+    } else {
+        alert('Not support websocket')
+    }
+
+
+    //连接发生错误的回调方法
+    websocket.onerror = function () {
+        setMessageInnerHTML("error");
+    };
+
+    //连接成功建立的回调方法
+    websocket.onopen = function (event) {
+        sendBeginMessage();
+    };
+
+    if (sessionRoundNumHistory !== "undefined") {
+
+    } else {
+        var sessionRoundNumHistory;
+    }
+    var playerNum = 0;
+    //接收到消息的回调方法
+    websocket.onmessage = function (event) {
+        var message = JSON.parse(event.data) || {};
+        if (message.type === "AddRoom") {
+            var roomInfo = message.roomInfo;
+            item = "<div class=\"room_block\" id= " + roomInfo.id + ">" +
+                "<table class=\"table\">" +
+                "<tbody>" +
+                "<tr class=\"active\">" +
+                "<td><p><span class=\"info_left\">Name</span><span class=\"info_right room_id\">" + roomInfo.name + "</span></p></td>" +
+                "</tr>" +
+                "<tr class=\"success\">" +
+                "<td><p><span class=\"info_left\">Players</span><span class=\"info_right\">" + roomInfo.amountOfPlayers + "/" + roomInfo.amountOfRoles + "</span></p></td>" +
+                "</tr>" +
+                "<tr  class=\"warning\">" +
+                "<td><p><span class=\"info_left\">Domain</span><span class=\"info_right\">" + roomInfo.domainName + "</span></p></td>" +
+                "</tr>" +
+                "<tr  class=\"danger\">" +
+                "<td><p><span class=\"info_left\">Desc</span><span class=\"info_right\">" + roomInfo.description + "</span></p></td>" +
+                "</tr>" +
+                "<tr class=\"success\">" +
+                "<td><p><span class=\"info_left\">Status</span><span class=\"info_right\">" + roomInfo.statue + "</span></p></td>" +
+                "</tr>" +
+                "</tbody>" +
+                "</table>" +
+                "</div>";
+            $('#room_list').append(item);
+        } else if (message.type === "UpdateRoom") {
+            var roomInfos = message.roomInfos;
+            $('#room_list').html("");
+            for (var p in roomInfos) {
+                item = "<div class=\"room_block\" id= " + roomInfos[p].id + ">" +
+                    "<table class=\"table\">" +
+                    "<tbody>" +
+                    "<tr class=\"active\">" +
+                    "<td><p><span class=\"info_left\">Name</span><span class=\"info_right room_id\">" + roomInfos[p].name + "</span></p></td>" +
+                    "</tr>" +
+                    "<tr class=\"success\">" +
+                    "<td><p><span class=\"info_left\">Players</span><span class=\"info_right\">" + roomInfos[p].amountOfPlayers + "/" + roomInfos[p].amountOfRoles + "</span></p></td>" +
+                    "</tr>" +
+                    "<tr  class=\"warning\">" +
+                    "<td><p><span class=\"info_left\">Domain</span><span class=\"info_right\">" + roomInfos[p].domainName + "</span></p></td>" +
+                    "</tr>" +
+                    "<tr  class=\"danger\">" +
+                    "<td><p><span class=\"info_left\">Desc</span><span class=\"info_right\">" + roomInfos[p].description + "</span></p></td>" +
+                    "</tr>" +
+                    "<tr class=\"success\">" +
+                    "<td><p><span class=\"info_left\">Status</span><span class=\"info_right\">" + roomInfos[p].statue + "</span></p></td>" +
+                    "</tr>" +
+                    "</tbody>" +
+                    "</table>" +
+                    "</div>";
+                $('#room_list').append(item);
+            }
+            $(".room_block").click(function () {
+
+                $(".room_block").css("border-color", "transparent");
+                $(this).css("border-color", "#a94442");
+
+                var which_room;
+                which_room = $(this).attr('id');
+                $("#roomId").text(which_room);
+
+                var show_room;
+                show_room = $(this).find(".room_id").text();
+                $("#show_room").text(show_room);
+                $("#show_room_2").text(show_room);
+            });
         }
 
-        //关闭连接
-        function closeWebSocket() {
-            websocket.close();
-        }
+    };
 
-        //发送消息
-        function send() {
-            var message = document.getElementById('text').value;
-            websocket.send(message);
-        }
+    //连接关闭的回调方法
+    websocket.onclose = function () {
+    };
+
+    //监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
+    window.onbeforeunload = function () {
+        websocket.close();
+    };
+
+    //将消息显示在网页上
+    function setMessageInnerHTML(innerHTML) {
+    }
+
+    //关闭连接
+    function closeWebSocket() {
+        websocket.close();
+    }
+
+    //发送消息
+    function send() {
+        var message = document.getElementById('text').value;
+        websocket.send(message);
+    }
 
 
-	</script>
+</script>
 
 
 </body>

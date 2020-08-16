@@ -85,7 +85,7 @@ def _test(model, dst):
 
         accuracyRate = accuracy / (i + 1)
 
-    print("payoff: {}, ground truth: {},  outputs : {}, accuracy : {:.4f}".format(payoff3, label, outputs2,
+        print("payoff: {}, ground truth: {},  outputs : {}, accuracy : {:.4f}".format(payoff3, label, outputs2,
                                                                                   accuracyRate))
     from agent_Modelmlpw import dataPath
     workbook = xlrd.open_workbook(dataPath)  # 打开工作簿

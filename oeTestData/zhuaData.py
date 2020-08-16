@@ -3,9 +3,9 @@ import random
 import time
 import string
 
-for k in range(0, 1):
+for k in range(0, 4):
     browser = webdriver.Chrome()
-    game = 1
+    game = 10
 
     url = "http://localhost:8181"
     browser.get(url)
@@ -16,7 +16,9 @@ for k in range(0, 1):
 
         weightArray = browser.find_elements_by_css_selector('.multi-scenarios')
 
-        a = random.randint(5, 14)
+        # a = random.randint(5, 14)
+        a = random.randint(0, 9)
+        # a = 10
         time.sleep(0.3)
         weightArray[a].click()
 
@@ -58,11 +60,12 @@ for k in range(0, 1):
         # if i == 1:
         #     b = 0
         # else:
-        b = random.randint(0, 2)
+        b = random.randint(0, 11)
+        # b = 9
         agentChoose[b].click()
 
         buttonOK = browser.find_element_by_xpath('//*[@id="input"]/p[6]/input[2]')
         buttonOK.click()
 
-    time.sleep(10000)
+    time.sleep(7)
     browser.quit()  # 关闭浏览器

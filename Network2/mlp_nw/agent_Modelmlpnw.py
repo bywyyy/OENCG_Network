@@ -3,6 +3,7 @@ import torch.nn as nn
 import xlrd
 import time
 import xlwt
+import math
 from xlutils.copy import copy
 
 timen = time.strftime("%m%d%H%M%S")
@@ -55,7 +56,7 @@ class LinearNet(nn.Module):
         # self.union_predict = nn.Sequential(*seq_list)
         # new_worksheet.write(rows_old, 2, format(fc_list))
 
-        fc_list = [int(inputNum / 2), int(inputNum / 8), 2]
+        fc_list = [int(inputNum / 2), math.ceil(inputNum / 8), 2]
         seq_list = []
         for i in range(len(fc_list) - 1):
             seq_list.append(nn.Linear(fc_list[i], fc_list[i + 1]))

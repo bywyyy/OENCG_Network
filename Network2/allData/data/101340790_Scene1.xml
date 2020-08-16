@@ -1,0 +1,1230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<game id="64F8AA93FD1448BA" name="Scene1" majority="2">
+  <knowledge party-num="0" role-name="lucy" resource="1" talent="0.0">true, true, true</knowledge>
+  <knowledge party-num="1" role-name="lily" resource="1" talent="0.0">true, true, true</knowledge>
+  <knowledge party-num="2" role-name="albert" resource="1" talent="0.0">true, true, true</knowledge>
+  <player name="jJl1M" desc="" role-name="lily" type="REMOTE_AGENT" path="AgentTS"/>
+  <player name="RvmHr" desc="" role-name="albert" type="REMOTE_AGENT" path="AgentTS"/>
+  <player name="frUhs" desc="" role-name="lucy" type="REMOTE_AGENT" path="AgentDPIndexStub"/>
+  <session num="1">
+    <round num="1">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="2">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="2">
+    <round num="3">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="4">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="5">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="3">
+    <round num="6">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="7">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="8">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="4">
+    <round num="9">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="5">
+    <round num="10">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="11">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="6">
+    <round num="12">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="13">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="14">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="7">
+    <round num="15">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="8">
+    <round num="16">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="17">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="18">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="19">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="20">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="21">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="22">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="23">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="24">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="25">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="26">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="27">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="9">
+    <round num="28">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="29">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="10">
+    <round num="30">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="11">
+    <round num="31">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="32">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="33">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="34">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="35">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="12">
+    <round num="36">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="13">
+    <round num="37">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="38">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="14">
+    <round num="39">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="15">
+    <round num="40">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="41">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="16">
+    <round num="42">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="43">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="44">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="45">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="17">
+    <round num="46">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="47">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="48">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="18">
+    <round num="49">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="50">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="51">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="52">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="53">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="19">
+    <round num="54">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="20">
+    <round num="55">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="56">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="57">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="58">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="59">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="21">
+    <round num="60">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="61">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="62">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="22">
+    <round num="63">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="23">
+    <round num="64">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="65">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="66">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="24">
+    <round num="67">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="68">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="69">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="25">
+    <round num="70">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="71">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="26">
+    <round num="72">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="73">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="74">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="27">
+    <round num="75">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="76">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="77">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="78">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="79">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="80">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="28">
+    <round num="81">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="82">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="83">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="29">
+    <round num="84">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="85">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="86">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="87">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="88">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="89">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="30">
+    <round num="90">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="91">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="92">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="31">
+    <round num="93">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="94">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="95">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="32">
+    <round num="96">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="97">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="98">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="99">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="33">
+    <round num="100">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="101">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="102">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="103">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="104">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="34">
+    <round num="105">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="106">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="107">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="108">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="35">
+    <round num="109">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="110">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="111">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="36">
+    <round num="112">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="113">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="37">
+    <round num="114">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="38">
+    <round num="115">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="116">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="117">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="39">
+    <round num="118">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="119">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="120">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="121">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="122">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="40">
+    <round num="123">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="41">
+    <round num="124">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="125">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="42">
+    <round num="126">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="127">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="128">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="129">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="130">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="131">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="132">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="133">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="134">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="135">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="43">
+    <round num="136">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="137">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="138">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="139">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="140">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="141">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="142">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="143">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="144">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="44">
+    <round num="145">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="146">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="147">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="148">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="149">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="45">
+    <round num="150">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="151">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="152">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="46">
+    <round num="153">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="154">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="155">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="47">
+    <round num="156">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="157">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="158">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="159">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="48">
+    <round num="160">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="161">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="49">
+    <round num="162">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="163">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="164">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+  <session num="50">
+    <round num="165">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="jJl1M" role-name="lily" reward="50"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+    </round>
+    <round num="166">
+      <proposal name="frUhs" role-name="lucy" reward="33">
+        <ally name="jJl1M" role-name="lily" reward="33"/>
+        <ally name="RvmHr" role-name="albert" reward="33"/>
+      </proposal>
+      <response name="jJl1M" role-name="lily" agree="false"/>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="167">
+      <proposal name="jJl1M" role-name="lily" reward="50">
+        <ally name="RvmHr" role-name="albert" reward="50"/>
+      </proposal>
+      <response name="RvmHr" role-name="albert" agree="false"/>
+    </round>
+    <round num="168">
+      <proposal name="RvmHr" role-name="albert" reward="50">
+        <ally name="frUhs" role-name="lucy" reward="50"/>
+      </proposal>
+      <response name="frUhs" role-name="lucy" agree="true"/>
+    </round>
+  </session>
+</game>
