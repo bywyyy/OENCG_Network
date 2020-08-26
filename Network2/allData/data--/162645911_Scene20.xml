@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<game id="67C38DB95FD84380" name="Scene20" majority="8">
+  <knowledge party-num="0" role-name="Google" resource="4" talent="0.0">true, true, true</knowledge>
+  <knowledge party-num="1" role-name="Facebook" resource="4" talent="0.0">true, true, true</knowledge>
+  <knowledge party-num="2" role-name="Amazon" resource="6" talent="0.0">true, true, true</knowledge>
+  <player name="WOf4B" desc="" role-name="Facebook" type="REMOTE_AGENT" path="AgentDPIndex"/>
+  <player name="LUObP" desc="" role-name="Google" type="REMOTE_AGENT" path="AgentEDP"/>
+  <player name="KIfN3" desc="" role-name="Amazon" type="REMOTE_AGENT" path="AgentTS"/>
+  <session num="1">
+    <round num="1">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="2">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="3">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="4">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="5">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="6">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="7">
+      <proposal name="LUObP" role-name="Google" reward="60">
+        <ally name="KIfN3" role-name="Amazon" reward="40"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="8">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="9">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="10">
+      <proposal name="LUObP" role-name="Google" reward="60">
+        <ally name="KIfN3" role-name="Amazon" reward="40"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="11">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="12">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="13">
+      <proposal name="LUObP" role-name="Google" reward="64">
+        <ally name="WOf4B" role-name="Facebook" reward="35"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="14">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="2">
+    <round num="15">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="16">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="17">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="18">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="19">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="20">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="21">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="22">
+      <proposal name="LUObP" role-name="Google" reward="60">
+        <ally name="KIfN3" role-name="Amazon" reward="40"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="23">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="KIfN3" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="24">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="25">
+      <proposal name="LUObP" role-name="Google" reward="64">
+        <ally name="WOf4B" role-name="Facebook" reward="35"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="26">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="27">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="28">
+      <proposal name="LUObP" role-name="Google" reward="64">
+        <ally name="WOf4B" role-name="Facebook" reward="35"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="29">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="KIfN3" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="3">
+    <round num="30">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="31">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="32">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="33">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="34">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="35">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="36">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="37">
+      <proposal name="LUObP" role-name="Google" reward="60">
+        <ally name="KIfN3" role-name="Amazon" reward="40"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="38">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="KIfN3" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="39">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="40">
+      <proposal name="LUObP" role-name="Google" reward="64">
+        <ally name="WOf4B" role-name="Facebook" reward="35"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="41">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="42">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="43">
+      <proposal name="LUObP" role-name="Google" reward="64">
+        <ally name="WOf4B" role-name="Facebook" reward="35"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="44">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="KIfN3" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="4">
+    <round num="45">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="46">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="47">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="48">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="49">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="50">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="51">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="52">
+      <proposal name="LUObP" role-name="Google" reward="60">
+        <ally name="KIfN3" role-name="Amazon" reward="40"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="53">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="54">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="55">
+      <proposal name="LUObP" role-name="Google" reward="64">
+        <ally name="WOf4B" role-name="Facebook" reward="35"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="56">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="57">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="5">
+    <round num="58">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="59">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="60">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="61">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="62">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="63">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="64">
+      <proposal name="LUObP" role-name="Google" reward="60">
+        <ally name="KIfN3" role-name="Amazon" reward="40"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="65">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="6">
+    <round num="66">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="67">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="68">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="69">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="70">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="71">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="KIfN3" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="72">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="73">
+      <proposal name="LUObP" role-name="Google" reward="60">
+        <ally name="KIfN3" role-name="Amazon" reward="40"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="74">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="KIfN3" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="75">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="7">
+    <round num="76">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="77">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="78">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="79">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="80">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="81">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="82">
+      <proposal name="LUObP" role-name="Google" reward="60">
+        <ally name="KIfN3" role-name="Amazon" reward="40"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="83">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="KIfN3" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="84">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="85">
+      <proposal name="LUObP" role-name="Google" reward="60">
+        <ally name="KIfN3" role-name="Amazon" reward="40"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="86">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="KIfN3" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="true"/>
+    </round>
+  </session>
+  <session num="8">
+    <round num="87">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="88">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="89">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="90">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="91">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="92">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="KIfN3" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="93">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="94">
+      <proposal name="LUObP" role-name="Google" reward="60">
+        <ally name="KIfN3" role-name="Amazon" reward="40"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="95">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="KIfN3" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="96">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="97">
+      <proposal name="LUObP" role-name="Google" reward="64">
+        <ally name="WOf4B" role-name="Facebook" reward="35"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="98">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="KIfN3" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="99">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="9">
+    <round num="100">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="101">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="102">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="10">
+    <round num="103">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="104">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="105">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="11">
+    <round num="106">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="107">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="108">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="109">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="110">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="111">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="12">
+    <round num="112">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="113">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="114">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="13">
+    <round num="115">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="116">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="117">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="118">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="119">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="120">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="14">
+    <round num="121">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="122">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="123">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="15">
+    <round num="124">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="125">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="126">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="127">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="128">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="129">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="130">
+      <proposal name="LUObP" role-name="Google" reward="60">
+        <ally name="KIfN3" role-name="Amazon" reward="40"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="131">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="16">
+    <round num="132">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="133">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="134">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="135">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="136">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="137">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="138">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="17">
+    <round num="139">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="140">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="141">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="142">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="143">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="144">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="145">
+      <proposal name="LUObP" role-name="Google" reward="60">
+        <ally name="KIfN3" role-name="Amazon" reward="40"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="146">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="KIfN3" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="147">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="18">
+    <round num="148">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="149">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="150">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="151">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="152">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="153">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="19">
+    <round num="154">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="155">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="156">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="157">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="158">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="159">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="160">
+      <proposal name="LUObP" role-name="Google" reward="60">
+        <ally name="KIfN3" role-name="Amazon" reward="40"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="161">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="KIfN3" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="162">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="20">
+    <round num="163">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="164">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="165">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="21">
+    <round num="166">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="167">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="168">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="169">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="170">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="171">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="172">
+      <proposal name="LUObP" role-name="Google" reward="60">
+        <ally name="KIfN3" role-name="Amazon" reward="40"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="173">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="KIfN3" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="174">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="22">
+    <round num="175">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="176">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="177">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="178">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="179">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="180">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="23">
+    <round num="181">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="182">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="183">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="184">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="185">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="186">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="187">
+      <proposal name="LUObP" role-name="Google" reward="60">
+        <ally name="KIfN3" role-name="Amazon" reward="40"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="188">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="KIfN3" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="189">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="true"/>
+    </round>
+  </session>
+  <session num="24">
+    <round num="190">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="191">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="192">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="193">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="false"/>
+    </round>
+    <round num="194">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="195">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="196">
+      <proposal name="LUObP" role-name="Google" reward="60">
+        <ally name="KIfN3" role-name="Amazon" reward="40"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="197">
+      <proposal name="WOf4B" role-name="Facebook" reward="50">
+        <ally name="KIfN3" role-name="Amazon" reward="50"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="198">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="25">
+    <round num="199">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="26">
+    <round num="200">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="201">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="202">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="27">
+    <round num="203">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="204">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="28">
+    <round num="205">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="29">
+    <round num="206">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="207">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="208">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="30">
+    <round num="209">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="210">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="31">
+    <round num="211">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="32">
+    <round num="212">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="213">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="33">
+    <round num="214">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="34">
+    <round num="215">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="216">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="217">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="35">
+    <round num="218">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="219">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="36">
+    <round num="220">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="37">
+    <round num="221">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="222">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="223">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="38">
+    <round num="224">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="225">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="39">
+    <round num="226">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="40">
+    <round num="227">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="228">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="229">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="41">
+    <round num="230">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="231">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="42">
+    <round num="232">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="43">
+    <round num="233">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="234">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="44">
+    <round num="235">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="45">
+    <round num="236">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="237">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="238">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="46">
+    <round num="239">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="KIfN3" role-name="Amazon" reward="30"/>
+      </proposal>
+      <response name="KIfN3" role-name="Amazon" agree="false"/>
+    </round>
+    <round num="240">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="47">
+    <round num="241">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="48">
+    <round num="242">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="243">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="LUObP" role-name="Google" reward="50"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="244">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="49">
+    <round num="245">
+      <proposal name="WOf4B" role-name="Facebook" reward="70">
+        <ally name="LUObP" role-name="Google" reward="30"/>
+      </proposal>
+      <response name="LUObP" role-name="Google" agree="false"/>
+    </round>
+    <round num="246">
+      <proposal name="KIfN3" role-name="Amazon" reward="50">
+        <ally name="WOf4B" role-name="Facebook" reward="50"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+  <session num="50">
+    <round num="247">
+      <proposal name="LUObP" role-name="Google" reward="84">
+        <ally name="WOf4B" role-name="Facebook" reward="15"/>
+      </proposal>
+      <response name="WOf4B" role-name="Facebook" agree="true"/>
+    </round>
+  </session>
+</game>

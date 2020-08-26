@@ -148,9 +148,9 @@ public class AgentEDP extends VotingAgent {
         int ts6 = (int) (game.getMaxRoundNum() / 3 * 2) + 3;
 
         if (proRound <= 3 && aspiration == asp) {
-            aspiration += 20;
+            aspiration += 10;
         } else if (proRound == ts1 || proRound == ts2 || proRound == ts3 || proRound == ts4 || proRound == ts5 || proRound == ts6) {
-            aspiration -= 10;
+            aspiration -= 5;
         }
 
         int[] index_types = Index_EDP.edp_index(game, own, opponents);
@@ -333,7 +333,7 @@ public class AgentEDP extends VotingAgent {
     @Override
     public boolean response() {
         if (super.roundNum <= 3 && aspiration == asp) {
-            aspiration += 20;
+            aspiration += 10;
         }
 
         if (lastProposal.get(own.getNum()) != null) {

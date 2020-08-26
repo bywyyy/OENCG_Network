@@ -3,7 +3,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 import xlrd
 import xlwt
-import math
 from xlutils.copy import copy
 
 timen = time.strftime("%m%d%H%M%S")
@@ -17,22 +16,16 @@ def setnum(int):
     global num
     num = int
 
-# def setk(int):
-#     global globalk
-#     globalk = int
-
-
 class CNNnet(nn.Module):
-    def __init__(self):
+    def __init__(self,k):
         super(CNNnet, self).__init__()
 
         w = xlwt.Workbook(encoding='utf-8')  # 新建工作簿
         ws = w.add_sheet('data')  # 新建sheet
         global timen
         timen = time.strftime("%m%d%H%M%S")
-        from main import globalk
         global dataPath
-        dataPath = '../saveData/cnn_w' + timen + 'k' + globalk.__str__() + '.xls'
+        dataPath = '../saveData/cnn_w' + timen + 'k' + k.__str__() + '.xls'
         w.save(dataPath)
         workbook = xlrd.open_workbook(dataPath)  # 打开工作簿
         sheets = workbook.sheet_names()  # 获取工作簿中的所有表格
@@ -52,12 +45,12 @@ class CNNnet(nn.Module):
             setList)
         new_worksheet.write(rows_old, 1, setData)
         self.conv1 = nn.Sequential(
+            nn.BatchNorm1d(in_channels),
             nn.Conv1d(in_channels=in_channels,
                       out_channels=out_channels,
                       kernel_size=kernel_size,
                       stride=stride,
                       padding=padding),
-            nn.BatchNorm1d(16),
             nn.ReLU()
         )
 

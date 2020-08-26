@@ -7,7 +7,7 @@ from torch.utils.data import DataLoader
 
 if __name__ == '__main__':
     # linear_net = LinearNet([18, 32, 64, 32, 3])
-    rnn_net = RNNnet(3, 64, 2, 2)
+    rnn_net = RNNnet(3, 64, 2, 1)
 
     train_data = agentData('../allData/data')
     test_data = agentData('../allData/test')
@@ -17,7 +17,7 @@ if __name__ == '__main__':
 
     jishu = 0
     accuracyRateMax = 0.0
-    for i in _train(rnn_net, train_dl, 80, 0.001):
+    for i in _train(rnn_net, train_dl, 30, 0.0001):
         jishu += 1
         if jishu % 1 == 0:
             accuracyRate = _test(rnn_net, test_data)

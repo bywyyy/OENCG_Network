@@ -61,7 +61,7 @@ def _train(model, dl, num_epochs, learning_rate):
             yield
 
 
-def _test(model, dst):
+def _test(model, dst,k):
     # model = torch.load('/Users/linjie/PycharmProjects/OENCG_Network/Network2/params/mlp_nwParams21.pth')
 
     model.eval()
@@ -109,10 +109,9 @@ def _test(model, dst):
     plt.plot(epoch_list, accuracy_list, c=color, ls='-', marker='o', mec='b', mfc='w')  ## 保存历史数据
     plt.ylim((0, 1))
     plt.pause(0.3)
-    if epoch_list.__len__() == 80:
+    if epoch_list.__len__() == 30:
         timen = time.strftime("%m%d%H%M%S")
-        from main import globalk
-        plt.savefig('../pic/mlp_nw' + timen + 'k' + globalk.__str__() + '.png')
+        plt.savefig('../pic/mlp_nw' + timen + 'k' + k.__str__() + '.png')
         epoch_list.clear()
         accuracy_list.clear()
         plt.close()

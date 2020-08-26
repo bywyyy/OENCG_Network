@@ -61,7 +61,7 @@ def _train(model, dl, num_epochs, learning_rate):
             yield
 
 
-def _test(model, dst):
+def _test(model, dst, k):
     model.eval()
 
     accuracy = 0.0
@@ -85,7 +85,7 @@ def _test(model, dst):
 
         accuracyRate = accuracy / (i + 1)
 
-        print("payoff: {}, ground truth: {},  outputs : {}, accuracy : {:.4f}".format(payoff3, label, outputs2,
+    print("payoff: {}, ground truth: {},  outputs : {}, accuracy : {:.4f}".format(payoff3, label, outputs2,
                                                                                   accuracyRate))
     from agent_Modelmlpw import dataPath
     workbook = xlrd.open_workbook(dataPath)  # 打开工作簿
@@ -107,10 +107,9 @@ def _test(model, dst):
     plt.plot(epoch_list, accuracy_list, c=color, ls='-', marker='o', mec='b', mfc='w')  ## 保存历史数据
     plt.ylim((0, 1))
     plt.pause(0.3)
-    if epoch_list.__len__() == 80:
+    if epoch_list.__len__() == 20:
         timen = time.strftime("%m%d%H%M%S")
-        from main import globalk
-        plt.savefig('../pic/mlp_w' + timen + 'k' + globalk.__str__() + '.png')
+        plt.savefig('../pic/mlp_w' + timen + 'k' + k.__str__() + '.png')
         epoch_list.clear()
         accuracy_list.clear()
         plt.close()

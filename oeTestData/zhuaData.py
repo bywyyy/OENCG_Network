@@ -67,5 +67,5 @@ for k in range(0, 4):
         buttonOK = browser.find_element_by_xpath('//*[@id="input"]/p[6]/input[2]')
         buttonOK.click()
 
-    time.sleep(7)
+    time.sleep(10)
     browser.quit()  # 关闭浏览器

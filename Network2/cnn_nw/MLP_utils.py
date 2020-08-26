@@ -65,7 +65,7 @@ def _train(model, dl, num_epochs, learning_rate):
             yield
 
 
-def _test(model, dst):
+def _test(model, dst,k):
     # for name, param in model.named_parameters():
     #     print('测试前', name, param)
 
@@ -110,16 +110,14 @@ def _test(model, dst):
 
     accuracy_list.append(accuracyRate)
 
-
     randomNumber = random.randint(0, 5)
     color = colorlist[randomNumber]
     plt.plot(epoch_list, accuracy_list, c=color, ls='-', marker='o', mec='b', mfc='w')  ## 保存历史数据
     plt.ylim((0, 1))
     plt.pause(0.3)
-    if epoch_list.__len__() == 80:
+    if epoch_list.__len__() == 30:
         timen = time.strftime("%m%d%H%M%S")
-        from main import globalk
-        plt.savefig('../pic/cnn_nw' + timen + 'k' + globalk.__str__() + '.png')
+        plt.savefig('../pic/cnn_nw' + timen + 'k' + k.__str__() + '.png')
         epoch_list.clear()
         accuracy_list.clear()
         plt.close()

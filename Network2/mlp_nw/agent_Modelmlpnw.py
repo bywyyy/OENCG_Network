@@ -9,25 +9,16 @@ from xlutils.copy import copy
 timen = time.strftime("%m%d%H%M%S")
 dataPath = '../saveData/mlp_nw' + timen + '.xls'
 
-num = 0
-
-
-def setnum(int):
-    global num
-    num = int
-
-
 class LinearNet(nn.Module):
-    def __init__(self):
+    def __init__(self, k):
         super(LinearNet, self).__init__()
 
         w = xlwt.Workbook(encoding='utf-8')  # 新建工作簿
         ws = w.add_sheet('data')  # 新建sheet
         global timen
         timen = time.strftime("%m%d%H%M%S")
-        from main import globalk
         global dataPath
-        dataPath = '../saveData/mlp_nw' + timen + 'k' + globalk.__str__() + '.xls'
+        dataPath = '../saveData/mlp_nw' + timen + 'k' + k.__str__() + '.xls'
         w.save(dataPath)
         workbook = xlrd.open_workbook(dataPath)  # 打开工作簿
         sheets = workbook.sheet_names()  # 获取工作簿中的所有表格
@@ -37,11 +28,13 @@ class LinearNet(nn.Module):
         new_worksheet = new_workbook.get_sheet(0)  # 获取转化后工作簿中的第一个表格
         new_worksheet.write(rows_old, 0, 'LeakyReLU,α=0.002')
 
-        inputNum = num * 9 - 3
+        inputNum = k * 9 - 3
         fc_list = [inputNum, inputNum, int(inputNum / 2)]
         new_worksheet.write(rows_old, 1, format(fc_list))
 
         seq_list = []
+        seq_list.append(nn.BatchNorm1d(fc_list[0]))
+
         for i in range(len(fc_list) - 1):
             seq_list.append(nn.Linear(fc_list[i], fc_list[i + 1]))
             seq_list.append(nn.Dropout(0.4))
