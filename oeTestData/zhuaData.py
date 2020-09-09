@@ -16,7 +16,7 @@ for k in range(0, 4):
 
         weightArray = browser.find_elements_by_css_selector('.multi-scenarios')
 
-        # a = random.randint(5, 14)
+        # a = random.randint(10, 16)
         a = random.randint(0, 9)
         # a = 10
         time.sleep(0.3)
@@ -60,7 +60,7 @@ for k in range(0, 4):
         # if i == 1:
         #     b = 0
         # else:
-        b = random.randint(0, 11)
+        b = random.randint(9, 16)
         # b = 9
         agentChoose[b].click()
 

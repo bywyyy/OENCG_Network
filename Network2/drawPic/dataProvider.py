@@ -32,9 +32,9 @@ def agentData(data_dir, dataPath):
         dat = li[len(li) - 1]
         # 获取表格最后一列的数据
         d = data[dat]
-        num = len(d)
+        num = len(d)-15
         sum = 0
-        for l in range(0, len(d)):
+        for l in range(15, len(d)):
             pieceNum = float(d[l])
 
             if (math.isnan(pieceNum)):

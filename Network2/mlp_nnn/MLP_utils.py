@@ -87,7 +87,7 @@ def _test(model, dst, k):
 
         accuracyRate = accuracy / (i + 1)
 
-    print("payoff: {}, ground truth: {},  outputs : {}, accuracy : {:.4f}".format(payoff3, label, outputs2,
+        print("payoff: {}, ground truth: {},  outputs : {}, accuracy : {:.4f}".format(payoff3, label, outputs2,
                                                                                   accuracyRate))
     from agent_Modelmlpnnn import dataPath
     workbook = xlrd.open_workbook(dataPath)  # 打开工作簿
@@ -109,7 +109,7 @@ def _test(model, dst, k):
     plt.plot(epoch_list, accuracy_list, c=color, ls='-', marker='o', mec='b', mfc='w')  ## 保存历史数据
     plt.ylim((0, 1))
     plt.pause(0.3)
-    if epoch_list.__len__() == 15:
+    if epoch_list.__len__() == 30:
         timen = time.strftime("%m%d%H%M%S")
         plt.savefig('../pic/mlp_nnn' + timen + 'k' + k.__str__() + '.png')
         epoch_list.clear()

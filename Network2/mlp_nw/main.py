@@ -23,7 +23,7 @@ if __name__ == '__main__':
 
         jishu = 0
         accuracyRateMax = 0.0
-        for i in _train(linear_net, train_dl, 30, 1e-4):
+        for i in _train(linear_net, train_dl, 30, 3e-5):
             jishu += 1
             if jishu % 1 == 0:
                 accuracyRate = _test(linear_net, test_data, k)

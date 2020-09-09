@@ -2,672 +2,262 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4f4036e-09b2-49b9-b422-78a7150ec5ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../cnn_nnn/.idea/cnn_nnn.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../drawPic/.idea/drawPic.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/mlp_nnn.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rnn_nnn/.idea/rnn_nnn.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/080239289_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/080251405_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/080309792_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/080430920_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/080456758_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/080522603_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/080646235_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/080725880_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/080841408_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/080858704_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/080918535_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/080933143_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/080951970_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/081019732_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/081152498_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/081216510_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/081228908_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/081249487_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/081350237_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/081437867_Scene24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/081454261_Scene23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/081508341_Scene20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/081544494_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/081646254_Scene26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/083852188_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/083903627_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/084029988_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/084042972_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/084147730_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/084211065_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/084240629_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/084414747_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/084440535_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/084614617_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/084649597_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/084819820_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/084952252_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/085014309_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/085024561_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/085045478_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/085113452_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/085149460_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/085231580_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/085755071_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/085827724_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/085945025_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/090007267_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/090036657_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/090045057_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/090058727_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/090220328_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/090233947_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/090302886_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/090329874_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/090340155_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/090353125_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/090429051_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/090439644_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/090544193_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/090603689_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/090756973_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/090807591_Scene20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/090839329_Scene23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/091009056_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/092320536_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/092338711_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/092506501_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/092517399_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/092548931_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/092603584_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/092632713_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/092651465_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/092706410_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/092717629_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/092758910_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/092927784_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/092954824_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/093007577_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/093023631_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/093045851_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/093108230_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/093219427_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/093305798_Scene23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/093321635_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/093348227_Scene20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/093436864_Scene27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/093452111_Scene25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/093501593_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/093610782_Scene24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/093750941_Scene28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/094130691_Scene37.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/094722095_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/094843854_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/094857109_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/094901512_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/094919853_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/095045142_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/095102101_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/095242697_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/095416599_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/095544313_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/095630845_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/095748774_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/095758996_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/095813511_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/095823062_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/095834553_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/095844785_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/095901400_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/095914719_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/095927379_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/095935586_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/095942991_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100012990_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100022383_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100024279_Scene28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100032497_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100051620_Scene23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100055495_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100058989_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100115036_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100205060_Scene25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100233929_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100302439_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100318710_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100320964_Scene26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100327592_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100330545_Scene29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100359613_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100415575_Scene27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100419156_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100429988_Scene24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100442084_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100518397_Scene32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100627069_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100652224_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100816591_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/100841871_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101037019_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101203638_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101302316_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101312839_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101340790_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101403455_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101411796_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101424061_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101436939_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101454629_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101515559_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101539967_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101555864_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101610300_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101621719_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101647317_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101716767_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101840630_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101847949_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101901801_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/101937601_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/102052655_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/102100353_Scene24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/102131272_Scene20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/102157545_Scene23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/102231495_Scene29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/102331975_Scene26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/102457656_Scene25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/102516117_Scene27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/102742599_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/102809968_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/102933531_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/102943009_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/102955175_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/103032407_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/103056435_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/103229477_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/103249732_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/103337092_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/103352236_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/103406359_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/103427515_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/103444868_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/103618959_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/103759179_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/103814139_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/103847687_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/103932508_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/103954777_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104015850_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104023084_Scene29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104043498_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104053346_Scene23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104103286_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104106669_Scene25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104120534_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104132685_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104138878_Scene20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104228733_Scene28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104253763_Scene24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104254075_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104317057_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104339615_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104352729_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104422948_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104435362_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104452479_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104459951_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104522937_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104549665_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104615360_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104636401_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104655019_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104821174_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/104902010_Scene20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/105050962_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/105056126_Scene23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/105104197_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/105153354_Scene28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/105208319_Scene25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/105228945_Scene27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/105250952_Scene29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/105334982_Scene32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/105407981_Scene34.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/105424518_Scene33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/105738867_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/105749834_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/105759902_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/105828567_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/105836539_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/105858955_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/105926103_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/110050536_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/110100949_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/110113703_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/110142158_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/110301239_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/110310062_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/110323755_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/110339992_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/110404521_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/110441243_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/110615365_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/110637844_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/110713149_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/110742197_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/110756458_Scene20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/110843790_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/110959254_Scene23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/111039499_Scene25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/111102509_Scene26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/111121397_Scene28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/111156682_Scene27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/111303078_Scene30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/111328689_Scene33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/111346876_Scene32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/113353184_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/113526029_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/113655137_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/113729910_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/113744401_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/113800929_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/113812967_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/113823274_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/113835018_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/113929232_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/114044888_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/114053586_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/114104269_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/114123021_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/114131468_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/114147714_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/143337882_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/143411492_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/143424096_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/143446152_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/143504247_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/143536720_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/143659943_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/143718845_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/143725801_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/143745691_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/143915851_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/143959691_Scene24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/144123539_Scene28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/144132494_Scene26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/144200150_Scene27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/144240536_Scene20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/144319172_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/144408944_Scene25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/144539431_Scene23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/144739691_Scene37.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/144906101_Scene39.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/144918176_Scene30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/212427444_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/212448414_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/212513040_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/212527482_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/212600216_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/212649293_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/212704854_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/212723702_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/212806198_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/212817711_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/212838830_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/212848053_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/212855709_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/212920862_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/212935437_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/212951335_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/213007996_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/213012067_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/213043332_Scene20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/213112084_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/213122825_Scene23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/213140975_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/213157892_Scene24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/213223324_Scene25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/213240109_Scene28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/213246980_Scene26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/213256243_Scene27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/213302833_Scene29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/213322330_Scene33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/213337393_Scene34.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/213350389_Scene32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/213423952_Scene30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/220414103_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/220424443_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/220444984_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/220459213_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/220543681_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/220658114_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/220722237_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/220847722_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/221012562_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/221052657_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/221107110_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/221126475_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/221142810_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/221920953_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/221940217_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222106824_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222132400_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222208420_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222237705_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222345577_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222401788_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222513871_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222547499_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222609783_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222616873_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222624162_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222635735_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222703395_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222715391_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222733126_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222745506_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222817573_Scene23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222837205_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/222949595_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224055238_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224114563_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224123980_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224147938_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224211782_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224231497_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224346480_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224349897_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224358547_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224422390_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224431830_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224454297_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224605151_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224620426_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224653803_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224803041_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224820578_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224838258_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224851278_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224914792_Scene20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224924697_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224940997_Scene23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/224953878_Scene24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/225227937_Scene27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/225337832_Scene28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/225349417_Scene25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/225416933_Scene28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/225518088_Scene31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/225543057_Scene30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/225606853_Scene33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/230831663_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/230840446_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/230856082_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/230914646_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/230944552_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/231102930_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/231109592_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/231114726_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/231123844_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/231147847_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/231203188_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/231219669_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/231235662_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/231249654_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/231313010_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/data/231321530_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/104254075_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/104317057_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/104339615_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/104352729_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/104422948_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/104435362_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/104452479_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/104459951_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/104522937_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/104549665_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/104615360_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/104636401_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/104655019_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/104821174_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/104902010_Scene20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/105050962_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/105056126_Scene23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/dataTest/105104197_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/094625945_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/094633633_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/094821394_Scene29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/095121417_Scene41.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/095244517_Scene35.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/095811574_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/095847449_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/095920364_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/100158152_Scene28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/100546652_Scene43.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/101306129_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/101322928_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/101554920_Scene29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/101710431_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/110940672_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/111003239_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/111008443_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/111031517_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/111519831_Scene31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/111607804_Scene40.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/111650401_Scene38.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/112819967_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/112838998_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/113509389_Scene36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/121150306_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/121212249_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/121527023_Scene24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/121855827_Scene41.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/122053502_Scene31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/220055915_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/220232036_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/220442166_Scene28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/220710259_Scene33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/220727560_Scene34.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnnw/220735482_Scene32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/123135808_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/123259665_Scene25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/123412268_Scene24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/135553624_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/135706246_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/135755689_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/141544114_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/141617935_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/141617961_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/142459808_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/142629566_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/142645458_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/142721347_Scene25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/142828708_Scene26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/142831084_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/150645855_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/150653356_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/150928736_Scene43.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/151022811_Scene32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/151042748_Scene41.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/152132201_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/152218724_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/152900327_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/152937394_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/153120821_Scene26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/153250894_Scene23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/153313458_Scene28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/153443916_Scene40.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/153500782_Scene38.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/153519016_Scene42.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/222933494_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/223032613_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/223226503_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/223324699_Scene26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stacnnw/223343875_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/202819468_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/203039198_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/203103380_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/203136674_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/203222147_Scene23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/203223781_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/203228389_Scene20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/203347405_Scene24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/203422790_Scene27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/204047716_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/204237545_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/204248256_Scene25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/204431983_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/204708926_Scene43.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/204935214_Scene55.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/205011065_Scene59.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/205024332_Scene46.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/205050855_Scene49.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/205226752_Scene70.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/205240022_Scene65.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/211047429_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/211107771_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/211139848_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/211333498_Scene20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/211442292_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/211620076_Scene44.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/211958396_Scene53.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/212010704_Scene58.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/212324551_Scene61.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/213752427_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/214035932_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/214043108_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/214112444_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/214234553_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/214322553_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/214402050_Scene27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/214528887_Scene30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/214610408_Scene36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/214928778_Scene46.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/214936639_Scene50.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpnw/214958512_Scene47.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/084537742_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/084703407_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/084932011_Scene31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/085332457_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/085345847_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/085348047_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/085410759_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/085537398_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/085714870_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/085828658_Scene44.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/085842860_Scene38.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/085929598_Scene35.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/090852521_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/091056731_Scene26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/091136027_Scene28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/091316347_Scene42.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/091320929_Scene35.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/091343404_Scene41.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/091430275_Scene31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/091431007_Scene30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/091751740_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/092017567_Scene28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/092038806_Scene20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/092156205_Scene38.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/092503484_Scene32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/214211731_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/214215914_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/214234445_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/214942989_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/215028225_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/215154975_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/215241513_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/220821105_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/220912244_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/220922151_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/221113795_Scene20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/221240423_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/221531409_Scene38.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/222216656_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/222227517_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/222323005_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/222640017_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/222914699_Scene30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/223017749_Scene40.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/223330871_Scene59.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/223714034_Scene61.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/224741909_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/224757284_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/225034392_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/225050874_Scene28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/225105300_Scene23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/225124924_Scene26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/225419244_Scene37.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/225427211_Scene31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/stamlpw/225455211_Scene36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/114158297_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/114213201_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/114315950_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/114403220_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/114517647_Scene23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/114613857_Scene27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/114648411_Scene20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/114855917_Scene21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/133148612_Scene7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/133312992_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/133336110_Scene8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/133428513_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/133441767_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/133526907_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/133535188_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/133603185_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/133731254_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/133808988_Scene19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/133821274_Scene12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/133845017_Scene17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/133903557_Scene13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/133925615_Scene16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/133944564_Scene15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/133956135_Scene10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/134003466_Scene14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/134013001_Scene18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/134018743_Scene11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/134112768_Scene28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/134125977_Scene24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/134144111_Scene22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/134153393_Scene27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/134211039_Scene29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/134235522_Scene20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/134310861_Scene25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/134541718_Scene36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/134739840_Scene33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/143113884_Scene2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/143219812_Scene3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/143228679_Scene0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/143237854_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/143246743_Scene4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/143255606_Scene6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/143310865_Scene1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/143323854_Scene5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allData/test/212732642_Scene9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_nw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_nw/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/MLP_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_nw/agent_Modelcnnnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/agent_Modelcnnnw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_nw/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_nw/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_w/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_w/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_w/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_w/MLP_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_w/agent_Modelcnnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_w/agent_Modelcnnw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_w/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_w/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/095400630_Scene15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/095425410_Scene16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/095526940_Scene20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/095554087_Scene27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/095707472_Scene20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/095841906_Scene23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100129670_Scene2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100143805_Scene5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100201998_Scene1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100225270_Scene7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100255140_Scene3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100314510_Scene6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100436024_Scene8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100447495_Scene9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100511843_Scene4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100546070_Scene12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100616782_Scene16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100628985_Scene11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100642116_Scene10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100701713_Scene14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100723856_Scene18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100732325_Scene19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100742511_Scene17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100749984_Scene13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100802453_Scene15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100847175_Scene23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100907167_Scene25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100915724_Scene24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/100942767_Scene20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/101050466_Scene29.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/101104304_Scene26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/101113546_Scene28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/101138997_Scene21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/101143989_Scene27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/101152540_Scene22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/101300267_Scene30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/101403794_Scene36.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/101441676_Scene39.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/101518253_Scene32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/101539939_Scene37.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/101604880_Scene33.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/102309046_Scene4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/102323417_Scene9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/102348461_Scene6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/102407325_Scene3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/102506342_Scene0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/102531530_Scene5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/102550400_Scene2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/102614529_Scene7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/102634976_Scene1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/102639565_Scene8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/102715482_Scene17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/102736523_Scene13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/102810704_Scene16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/102821408_Scene19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/102841094_Scene15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/103022626_Scene10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/103150613_Scene18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/103159973_Scene11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/103215109_Scene12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/103341355_Scene14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/103433768_Scene24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/103613970_Scene26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/103636311_Scene27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/103706729_Scene28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/103721448_Scene22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/103759217_Scene25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/103855438_Scene21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/175439247_Scene2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/175459498_Scene7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/175509584_Scene3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/175526405_Scene8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/175640449_Scene1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/175646061_Scene5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/175704132_Scene0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/175718675_Scene9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/175820257_Scene6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/175833296_Scene4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/175903036_Scene19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/175938472_Scene12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/175952521_Scene17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/180007191_Scene10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/180024809_Scene11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/180028491_Scene15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/180039446_Scene13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/180101555_Scene14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/180233812_Scene16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/180246671_Scene18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/180326021_Scene27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/180338363_Scene24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/180354586_Scene26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/180600164_Scene20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/180736244_Scene23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/180751272_Scene22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/180821798_Scene25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/181023072_Scene29.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/181133384_Scene28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/181800222_Scene6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/181922658_Scene0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/181947571_Scene9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182005432_Scene2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182021143_Scene4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182037614_Scene8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182110327_Scene5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182133264_Scene3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182240335_Scene7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182519561_Scene3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182540176_Scene4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182548173_Scene7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182554813_Scene5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182616516_Scene8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182626146_Scene0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182636253_Scene6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182651555_Scene1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182710642_Scene9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182738878_Scene16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182807627_Scene18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182826365_Scene14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182922097_Scene13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182940168_Scene15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/182953997_Scene19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/183024192_Scene11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/183055269_Scene10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/183110733_Scene12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/183116109_Scene17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/183204364_Scene24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/183315486_Scene20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/183336035_Scene29.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/183351719_Scene21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/183506851_Scene28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/183525047_Scene26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/183548643_Scene23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/183602792_Scene25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/183612123_Scene27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/183729675_Scene32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/183812154_Scene31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/183938662_Scene31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/184227875_Scene31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/184429430_Scene31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/184629707_Scene7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/184703735_Scene0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/184827520_Scene5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/184857978_Scene2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/185018685_Scene1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/185037417_Scene3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/185056097_Scene6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/185116817_Scene8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/185142935_Scene9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/185151052_Scene4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/185249614_Scene17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/185350965_Scene18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/185414403_Scene19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/185600554_Scene13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/185609212_Scene10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/185625646_Scene14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/185657586_Scene12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/185702456_Scene11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/185716335_Scene15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/191712877_Scene13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/191740840_Scene14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/191911844_Scene10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/191931857_Scene19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/192058373_Scene16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/192108482_Scene12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/192117664_Scene18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/192124735_Scene17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/192135759_Scene15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/192148114_Scene11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/192223046_Scene26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/192247042_Scene28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/192310110_Scene20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/192329969_Scene22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/192419823_Scene27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/data/192605966_Scene21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/185746103_Scene16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/185837742_Scene26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/185954040_Scene21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/190018278_Scene22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/190053737_Scene23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/190136460_Scene29.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/190317937_Scene28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/190405110_Scene25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/190420661_Scene24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/191220821_Scene9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/191235124_Scene2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/191320180_Scene3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/191501312_Scene5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/191519820_Scene1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/191538997_Scene0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/191548587_Scene7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/191602936_Scene6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/191612154_Scene4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allData/test/191632586_Scene8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../drawPICdata.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826141841k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826142500k2.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826143119k4.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826143744k7.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826144422k11.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826145120k16.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826145845k21.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826152134k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826152643k5.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826153204k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826153725k8.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826154259k9.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826154834k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826155406k12.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826155945k13.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826160528k14.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826161122k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826161721k17.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826162315k18.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826162900k19.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_nnn0826163448k20.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826105719k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826105947k2.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826131452k3.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826131719k4.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826131949k5.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826132228k6.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826132505k7.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826132748k8.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826133032k9.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826133328k10.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826133628k11.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826133935k12.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826134240k13.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826134558k14.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826134913k15.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826135242k16.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826135631k17.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826140014k18.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826140402k19.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826140801k20.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPICdata/mlp_w0826141209k21.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../drawPic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawPic/dataProvider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../drawPic/dataProvider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLP_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mlp_nw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mlp_nw/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/MLP_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mlp_nw/agent_Modelmlpnw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/agent_Modelmlpnw.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mlp_nw/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mlp_nw/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_nw/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mlp_w/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_w/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mlp_w/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_w/MLP_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mlp_w/agent_Modelmlpw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_w/agent_Modelmlpw.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mlp_w/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mlp_w/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pic/cnn_w0808162344k2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rnn_nonWeight/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rnn_nonWeight/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rnn_nonWeight/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../rnn_nonWeight/MLP_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rnn_nonWeight/agent_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../rnn_nonWeight/agent_Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rnn_nonWeight/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../rnn_nonWeight/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rnn_nonWeight/save_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../rnn_nonWeight/save_Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rnn_w/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rnn_w/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rnn_w/MLP_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../rnn_w/MLP_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rnn_w/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../rnn_w/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../statistics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../statistics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nnn0826141841k1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nnn0826142500k2.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nnn0826143119k4.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nnn0826143744k7.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nnn0826144422k11.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nnn0826145120k16.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saveData/mlp_nnn0826145845k21.xls" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../oeTestData/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../oeTestData/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../oeTestData/zhuaData.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../oeTestData/zhuaData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zsnp/static/templates/start_playerNew1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../zsnp/static/templates/start_playerNew1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/java/AgentBanzhaf.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/java/AgentBanzhaf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/java/AgentDPIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/java/AgentDPIndex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/java/AgentEDP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../zsnp/zsnp-core/src/main/java/AgentEDP.java" afterDir="false" />
@@ -684,8 +274,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agent_Modelmlpnnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="57" column="43" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
+            <state relative-caret-position="585">
+              <caret line="39" column="57" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -696,7 +286,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agentDataSet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="705">
               <caret line="47" selection-start-line="46" selection-end-line="47" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -717,8 +307,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+            <state relative-caret-position="345">
+              <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -735,7 +325,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="330">
               <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -747,8 +337,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MLP_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
+            <state relative-caret-position="1335">
+              <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -776,8 +366,8 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/agentDataSet.py" />
         <option value="$PROJECT_DIR$/agent_Modelmlpnnn.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/MLP_utils.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -791,10 +381,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="683" />
-    <option name="y" value="53" />
-    <option name="width" value="938" />
-    <option name="height" value="850" />
+    <option name="x" value="570" />
+    <option name="y" value="23" />
+    <option name="width" value="1022" />
+    <option name="height" value="849" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -804,6 +394,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -815,10 +406,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -878,23 +469,26 @@
       <updated>1597657995370</updated>
       <workItem from="1597657996566" duration="3465000" />
       <workItem from="1597762822727" duration="1141000" />
-      <workItem from="1598410684383" duration="2875000" />
+      <workItem from="1598410684383" duration="3316000" />
+      <workItem from="1598497034342" duration="2576000" />
+      <workItem from="1598773364899" duration="1001000" />
+      <workItem from="1598836813697" duration="1158000" />
+      <workItem from="1598840868052" duration="2808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7481000" />
+    <option name="totallyTimeSpent" value="15465000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="683" y="53" width="938" height="850" extended-state="0" />
-    <editor active="true" />
+    <frame x="570" y="23" width="1022" height="849" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21875" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21632653" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.43931398" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45574635" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.44936708" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -920,16 +514,36 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>24</line>
+          <line>25</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/mlp_nnn$main.coverage" NAME="main Coverage Results" MODIFIED="1598426492834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mlp_nnn$main.coverage" NAME="main Coverage Results" MODIFIED="1598841090602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/agent_Modelmlpnnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="57" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agentDataSet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" selection-start-line="46" selection-end-line="47" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data_provider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1095">
@@ -946,7 +560,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="330">
           <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -954,30 +568,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/agentDataSet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="47" selection-start-line="46" selection-end-line="47" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agent_Modelmlpnnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="57" column="43" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MLP_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
+        <state relative-caret-position="1335">
+          <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -986,8 +580,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        <state relative-caret-position="345">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
         </state>
       </provider>
     </entry>

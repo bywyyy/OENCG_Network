@@ -31,9 +31,7 @@ def _train(model, dl, num_epochs, learning_rate):
         loss_sum = 0
         for (item_data, item_label) in dl:
             outputs = model(item_data)
-
             optimizer.zero_grad()
-
             loss = criterion(outputs, item_label.squeeze(1).long())
             loss_sum += loss
             loss.backward()
@@ -43,6 +41,7 @@ def _train(model, dl, num_epochs, learning_rate):
             i += 1
         if (epoch + 1) % 1 == 0:
             avgloss = loss_sum.item() / total_cnt
+            # avgloss = torch.div(loss_sum, total_cnt)
             print('Epoch [{}/{}], Setp [{}], LOSS: {:.4f}, Total Sample {}'
                   .format(epoch + 1, num_epochs, i, avgloss, total_cnt))
             from agent_Modelmlpw import dataPath
@@ -85,8 +84,8 @@ def _test(model, dst, k):
 
         accuracyRate = accuracy / (i + 1)
 
-    print("payoff: {}, ground truth: {},  outputs : {}, accuracy : {:.4f}".format(payoff3, label, outputs2,
-                                                                                  accuracyRate))
+        print("payoff: {}, ground truth: {},  outputs : {}, accuracy : {:.4f}".format(payoff3, label, outputs2,
+                                                                                      accuracyRate))
     from agent_Modelmlpw import dataPath
     workbook = xlrd.open_workbook(dataPath)  # 打开工作簿
     sheets = workbook.sheet_names()  # 获取工作簿中的所有表格
@@ -107,7 +106,7 @@ def _test(model, dst, k):
     plt.plot(epoch_list, accuracy_list, c=color, ls='-', marker='o', mec='b', mfc='w')  ## 保存历史数据
     plt.ylim((0, 1))
     plt.pause(0.3)
-    if epoch_list.__len__() == 20:
+    if epoch_list.__len__() == 30:
         timen = time.strftime("%m%d%H%M%S")
         plt.savefig('../pic/mlp_w' + timen + 'k' + k.__str__() + '.png')
         epoch_list.clear()
