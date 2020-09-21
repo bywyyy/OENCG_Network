@@ -118,8 +118,6 @@ public class AgentTS extends VotingAgent {
                 coalition = false;
         }
 
-//        if (coalition)
-//            round = 0;
     }
 
     /**
