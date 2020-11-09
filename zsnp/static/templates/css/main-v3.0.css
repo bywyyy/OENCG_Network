@@ -201,6 +201,7 @@ body{
 }
 .interaction-part{
     height: 331px;
+    /*height: 551px;*/
     padding: 0px 0px 0px 30px;
 }
 .select-sentence .btn-group,button{
@@ -529,7 +530,9 @@ input[type=range]::-webkit-slider-thumb {
 }
 .row-free-sentence{
     padding: 0 15px;
-    height: 210px;
+    /*height: 210px;*/
+    height: 80px;
+
 }
 /*selcet coalition struction*/
 #module img{
@@ -541,7 +544,8 @@ input[type=range]::-webkit-slider-thumb {
     vertical-align: middle;
 }
 .interaction-part {
-    height: 331px;
+    /*height: 331px;*/
+    height: 551px;
 }
 
 .average-payoff{

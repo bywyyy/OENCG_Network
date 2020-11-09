@@ -28,13 +28,12 @@ import java.util.concurrent.CopyOnWriteArrayList;
  */
 @ServerEndpoint(value = "/websocket")
 @Component
-public class MyWebSocket
-{
+public class MyWebSocket {
     private WebVotingArena webVotingArena;
 
     private static ConfigurableApplicationContext applicationContext;
 
-    public static void setApplicationContext(ConfigurableApplicationContext context){
+    public static void setApplicationContext(ConfigurableApplicationContext context) {
         applicationContext = context;
     }
 
@@ -60,7 +59,6 @@ public class MyWebSocket
     private static HashMap<String, SessionMap> roomOnlineSessions = new HashMap<>();
 
 
-
     private static List<MainMessage> mainMessageList = new ArrayList<MainMessage>();
 
     /**
@@ -69,8 +67,7 @@ public class MyWebSocket
      * @param session
      */
     @OnOpen
-    public void onOpen(Session session)
-    {
+    public void onOpen(Session session) {
         onlineNumber++;
         webSockets.add(this);
         this.session = session;
@@ -81,8 +78,7 @@ public class MyWebSocket
      * 连接关闭
      */
     @OnClose
-    public void onClose()
-    {
+    public void onClose() {
         onlineNumber--;
         webSockets.remove(this);
         System.out.println("有连接关闭！ 当前在线人数" + onlineNumber);
@@ -94,14 +90,13 @@ public class MyWebSocket
      * @param session 会话
      */
     @OnMessage
-    public void onMessage(Session session,String jsonStr) {
-        MainMessage mainMessage = JSON.parseObject(jsonStr,MainMessage.class);
-        if(mainMessage.getType().equals("PROPOSAL"))
-        {
-            webVotingArena.sendProposal(100,mainMessage.getMyId(),mainMessage.getName1(),mainMessage.getName1Value(),
-                    mainMessage.getName2(),mainMessage.getName2Value(),mainMessage.getName3(),mainMessage.getName3Value(),
-                    mainMessage.getName4(),mainMessage.getName4Value(),mainMessage.getName5(),mainMessage.getName5Value(),mainMessage.getRoomId());
-        }else if(mainMessage.getType().equals("Communicate")){
+    public void onMessage(Session session, String jsonStr) {
+        MainMessage mainMessage = JSON.parseObject(jsonStr, MainMessage.class);
+        if (mainMessage.getType().equals("PROPOSAL")) {
+            webVotingArena.sendProposal(100, mainMessage.getMyId(), mainMessage.getName1(), mainMessage.getName1Value(),
+                    mainMessage.getName2(), mainMessage.getName2Value(), mainMessage.getName3(), mainMessage.getName3Value(),
+                    mainMessage.getName4(), mainMessage.getName4Value(), mainMessage.getName5(), mainMessage.getName5Value(), mainMessage.getRoomId());
+        } else if (mainMessage.getType().equals("Communicate")) {
 //            mainMessageList.add(mainMessage);
 //            System.out.println(mainMessageList.size());
 //            if(mainMessageList.size() >=3){
@@ -112,12 +107,12 @@ public class MyWebSocket
 //                }
 //
 //            }
-            webVotingArena.sendCommunicate(mainMessage.getRoomId(),mainMessage.getName1(),
-                    mainMessage.getMyId(),mainMessage.getCommunicateFree(),
-                    mainMessage.getCommunicateType(),mainMessage.getEmotion());
+            webVotingArena.sendCommunicate(mainMessage.getRoomId(), mainMessage.getName1(),
+                    mainMessage.getMyId(), mainMessage.getCommunicateFree(),
+                    mainMessage.getCommunicateType(), mainMessage.getEmotion());
 
 
-        } else if(mainMessage.getType().equals("UPDATE")) {
+        } else if (mainMessage.getType().equals("UPDATE")) {
             /**
              * 展示收益结构的逻辑
              */
@@ -126,17 +121,17 @@ public class MyWebSocket
             webVotingArena = applicationContext.getBean(WebVotingArena.class);
             PlayerSet playerSet = webVotingArena.playerSet(mainMessage.getRoomId());
 
-            if(roomOnlineSessions.get(mainMessage.getRoomId())==null){
+            if (roomOnlineSessions.get(mainMessage.getRoomId()) == null) {
                 SessionMap sessionMap = new SessionMap();
-                Map<String,Session>  sessionHashMap= new HashMap<>();
-                sessionHashMap.put(mainMessage.getMyId(),session);
+                Map<String, Session> sessionHashMap = new HashMap<>();
+                sessionHashMap.put(mainMessage.getMyId(), session);
                 sessionMap.setSessionMap(sessionHashMap);
-                roomOnlineSessions.put(mainMessage.getRoomId(),sessionMap);
-            }else{
-                roomOnlineSessions.get(mainMessage.getRoomId()).getSessionMap().put(mainMessage.getMyId(),session);
+                roomOnlineSessions.put(mainMessage.getRoomId(), sessionMap);
+            } else {
+                roomOnlineSessions.get(mainMessage.getRoomId()).getSessionMap().put(mainMessage.getMyId(), session);
             }
 
-            webVotingArena.getWebSockets().put(mainMessage.getMyId(),this);
+            webVotingArena.getWebSockets().put(mainMessage.getMyId(), this);
 
 
 //            while(playerSet.get(mainMessage.getMyId()) == null)
@@ -148,26 +143,26 @@ public class MyWebSocket
             int num = 1;
             PartyInfo myPartyInfo = (PartyInfo) me.getRole().generateRoleInfo();
             roleName = myPartyInfo.getRoleName();
-            webVotingArena.setSocketMessageController(mainMessage.getRoomId(),mainMessage.getMyId(),roleName);
-            this.sendMessage(PlayerInfoMesssage.jsonStr(me.getName(), me.getDescription(),myPartyInfo.getRoleName(), myPartyInfo.getPartyNum(),
-                    myPartyInfo.getResource(), myPartyInfo.getTalent(),"PLAYER",num,playerSet.size()));
-            this.sendMessage(UpdateMessage.jsonStr(webVotingArena.getVotingDomain().getMajority(),"UPDATE"));
-            sendMessageToOther(PlayerInfoMesssage.jsonStr(me.getName(), me.getDescription(),myPartyInfo.getRoleName(), myPartyInfo.getPartyNum(),
-                    myPartyInfo.getResource(), myPartyInfo.getTalent(),"PLAYER",playerSet.size(),playerSet.size()),mainMessage.getRoomId());
+            webVotingArena.setSocketMessageController(mainMessage.getRoomId(), mainMessage.getMyId(), roleName);
+            this.sendMessage(PlayerInfoMesssage.jsonStr(me.getName(), me.getDescription(), myPartyInfo.getRoleName(), myPartyInfo.getPartyNum(),
+                    myPartyInfo.getResource(), myPartyInfo.getTalent(), myPartyInfo.getTalpublish(), "PLAYER", num, playerSet.size()));
+            this.sendMessage(UpdateMessage.jsonStr(webVotingArena.getVotingDomain().getMajority(), "UPDATE"));
+            sendMessageToOther(PlayerInfoMesssage.jsonStr(me.getName(), me.getDescription(), myPartyInfo.getRoleName(), myPartyInfo.getPartyNum(),
+                    myPartyInfo.getResource(), myPartyInfo.getTalent(), myPartyInfo.getTalpublish(), "PLAYER", playerSet.size(), playerSet.size()), mainMessage.getRoomId());
             num = num + 1;
             for (Player player : playerSet) {
                 if (!Objects.equals(player.getId(), mainMessage.getMyId())) {
                     PartyInfo playerPartyInfo = (PartyInfo) player.getRole().generateRoleInfo();
-                    this.sendMessage(PlayerInfoMesssage.jsonStr(player.getName(), player.getDescription(),playerPartyInfo.getRoleName(), playerPartyInfo.getPartyNum(),
-                            playerPartyInfo.getResource(), playerPartyInfo.getTalent(),"PLAYER",num,playerSet.size()));
+                    this.sendMessage(PlayerInfoMesssage.jsonStr(player.getName(), player.getDescription(), playerPartyInfo.getRoleName(), playerPartyInfo.getPartyNum(),
+                            playerPartyInfo.getResource(), playerPartyInfo.getTalent(), playerPartyInfo.getTalpublish(), "PLAYER", num, playerSet.size()));
                     num++;
                 }
             }
             webVotingArena.sendXMLToWeb(mainMessage.getMyId());
-        }else if(mainMessage.getType().equals("ACCEPT")){
-            webVotingArena.acceptProposal(mainMessage.getMyId(),mainMessage.getRoomId(),mainMessage.getName1());
-        }else if(mainMessage.getType().equals("REJECT")){
-            webVotingArena.rejectProposal(mainMessage.getMyId(),mainMessage.getRoomId(),mainMessage.getName1());
+        } else if (mainMessage.getType().equals("ACCEPT")) {
+            webVotingArena.acceptProposal(mainMessage.getMyId(), mainMessage.getRoomId(), mainMessage.getName1());
+        } else if (mainMessage.getType().equals("REJECT")) {
+            webVotingArena.rejectProposal(mainMessage.getMyId(), mainMessage.getRoomId(), mainMessage.getName1());
         }
     }
 
@@ -176,35 +171,31 @@ public class MyWebSocket
      *
      * @param message 消息
      */
-    public synchronized void sendMessage(String message)
-    {
-        try
-        {
+    public synchronized void sendMessage(String message) {
+        try {
             this.session.getBasicRemote().sendText(message);
-        }
-        catch (IOException e)
-        {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
 
-    private synchronized void sendMessageToOther(String msg,String roomId) {
+    private synchronized void sendMessageToOther(String msg, String roomId) {
         Map<String, Session> onlineOtherSessions = new ConcurrentHashMap<>();
-        for(Iterator it = roomOnlineSessions.get(roomId).getSessionMap().keySet().iterator(); it.hasNext();){
+        for (Iterator it = roomOnlineSessions.get(roomId).getSessionMap().keySet().iterator(); it.hasNext(); ) {
             String key = it.next().toString();
             onlineOtherSessions.put(key, roomOnlineSessions.get(roomId).getSessionMap().get(key));
         }
 
         onlineOtherSessions.forEach((id, otherSession) -> {
 
-                try {
-                    if(!otherSession.equals(session)) {
-                        otherSession.getBasicRemote().sendText(msg);
-                    }
-                } catch (IOException e) {
-                    e.printStackTrace();
+            try {
+                if (!otherSession.equals(session)) {
+                    otherSession.getBasicRemote().sendText(msg);
                 }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
         });
     }

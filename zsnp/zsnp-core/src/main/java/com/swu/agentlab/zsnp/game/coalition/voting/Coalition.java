@@ -29,13 +29,16 @@ public class Coalition implements Serializable {
      */
     private int rewards;
 
+    private int rewardPublish;
+
     public Coalition(){
         this.partyNums = new HashSet<>();
     }
 
-    public Coalition(Set<Integer> partyNums, int resources, int rewards) {
+    public Coalition(Set<Integer> partyNums, int resources, int rewards,int rewardPublish) {
         this.partyNums = partyNums;
         this.resources = resources;
         this.rewards = rewards;
+        this.rewardPublish = rewardPublish;
     }
 }

@@ -4,9 +4,9 @@
 	prototype：玩家的隐藏信息为该预设值；
 	random-base：生成0到预设值之间的一个随机数，玩家的隐藏信息为该随机数。
 	gen-mode属性为空或者不设置，则默认生成方式为prototype-->
-    <talent id="0" gen-mode="">0</talent>
-    <talent id="1" gen-mode="">0</talent>
-    <talent id="2" gen-mode="">0</talent>
+    <talent id="0" gen-mode="" talpublish = "10">5</talent>
+    <talent id="1" gen-mode="" talpublish = "0">10</talent>
+    <talent id="2" gen-mode="" talpublish = "0">10</talent>
     <talent id="3">0</talent>
     <talent id="4">0</talent>
 </talents>

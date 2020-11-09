@@ -1,5 +1,7 @@
+import xlrd
 import xlwt
-from pandas.tests.io.excel.test_xlrd import xlrd
+
+# from pandas.tests.io.excel.test_xlrd import xlrd
 from xlutils.copy import copy
 from agentDataSet import agentData
 from columnAverage import colAverage
@@ -94,7 +96,7 @@ if __name__ == '__main__':
             sheet = workbook.sheet_by_name(sheetName[shi])
             rows = sheet.nrows  # 获取表格中已存在的数据的行数
             # agent数据循环
-            for agi in range(0, len(agentArray)):
+            for agi in range(0, len(agentArray) - 1):
                 offeravg = str(sheet.cell_value(rows - 1, agi * 2 + 1))
                 accavg = str(sheet.cell_value(rows - 1, (agi + 1) * 2))
                 new_worksheet.write(shi * 4 + 1 + fi, (agi + 1) * 2, format(offeravg))

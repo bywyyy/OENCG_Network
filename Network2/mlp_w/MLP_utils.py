@@ -65,6 +65,11 @@ def _test(model, dst, k):
 
     accuracy = 0.0
     accuracyRate = 0.0
+    tp = 0  # true positive
+    fp = 0  # false positive
+    fn = 0  # false negative
+    tn = 0  # true negative
+
     for i in range(0, dst.__len__()):
 
         data, label = dst[i]
@@ -84,8 +89,27 @@ def _test(model, dst, k):
 
         accuracyRate = accuracy / (i + 1)
 
-        print("payoff: {}, ground truth: {},  outputs : {}, accuracy : {:.4f}".format(payoff3, label, outputs2,
-                                                                                      accuracyRate))
+        if (int(label[0]) == 0):
+            if (outputs2[0] >= 0.5):
+                tp += 1
+            else:
+                fn += 1
+
+        else:
+            if (outputs2[1] >= 0.5):
+                tn += 1
+            else:
+                fp += 1
+
+    tpRate = tp / (tp * 1.0 + fn)
+    fpRate = fp / (fp * 1.0 + tn)
+
+    auc = (tpRate * fpRate / 2) + (1 + tpRate) * (1 - fpRate) / 2
+
+    print("payoff: {}, ground truth: {},  outputs : {}, accuracy : {:.4f}".format(payoff3, label, outputs2,
+                                                                                  accuracyRate))
+    print("tpRate: {:.4f}, fpRate: {:.4f}, AUC: {:.4f}".format(tpRate, fpRate, auc))
+
     from agent_Modelmlpw import dataPath
     workbook = xlrd.open_workbook(dataPath)  # 打开工作簿
     sheets = workbook.sheet_names()  # 获取工作簿中的所有表格
@@ -97,6 +121,9 @@ def _test(model, dst, k):
     new_worksheet.write(rows_old - 1, 5, int(label[0]))
     new_worksheet.write(rows_old - 1, 6, format(outputs2))
     new_worksheet.write(rows_old - 1, 7, accuracyRate)
+    new_worksheet.write(rows_old - 1, 8, format(tpRate))
+    new_worksheet.write(rows_old - 1, 9, format(fpRate))
+    new_worksheet.write(rows_old - 1, 10, format(auc))
     new_workbook.save(dataPath)
 
     accuracy_list.append(accuracyRate)

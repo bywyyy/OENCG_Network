@@ -69,6 +69,8 @@ def colAverageSummary(path, name):
         sum = [0] * 4
         for l in range(0, len(d), 4):
             for ci in range(0, 4):
+                if (is_number(d[l + ci]) == False):
+                    continue
                 pieceNum = float(d[l + ci])
                 if (math.isnan(pieceNum) == False):
                     num[ci] += 1
@@ -80,3 +82,20 @@ def colAverageSummary(path, name):
                 new_worksheet.write(rows_old + avgi + 1, da, aveNumber)
 
     new_workbook.save(path)
+
+
+def is_number(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        pass
+
+    try:
+        import unicodedata
+        unicodedata.numeric(s)
+        return True
+    except (TypeError, ValueError):
+        pass
+
+    return False

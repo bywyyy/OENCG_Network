@@ -14,12 +14,13 @@ public class PlayerInfoMesssage {
     private int partyNum;
     private int resource;
     private double talent;
+    private double talpublish;
     private String type;
     private int num;
     private int size;
 
-    public static String jsonStr(String name,String description,String roleName,int partyNum,int resource,double talent,String type,int num,int size) {
-        return JSON.toJSONString(new PlayerInfoMesssage(name,description,roleName,partyNum,resource,talent,type,num,size));
+    public static String jsonStr(String name, String description, String roleName, int partyNum, int resource, double talent, double talpublish, String type, int num, int size) {
+        return JSON.toJSONString(new PlayerInfoMesssage(name, description, roleName, partyNum, resource, talent, talpublish, type, num, size));
     }
 
 }

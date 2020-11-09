@@ -363,6 +363,7 @@ public class WebVotingArena {
             coalitionXML.setCorporationsText(corporationsText);
             coalitionXML.setResources(coalition.getResources());
             coalitionXML.setRewards(coalition.getRewards());
+            coalitionXML.setRewardPublish(coalition.getRewardPublish());
             coalitionXMLS.add(coalitionXML);
         }
         playerWebSocket.sendMessage(XMLMessage.jsonStr(coalitionXMLS,parties,majority,"Coalition"));

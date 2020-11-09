@@ -14,8 +14,6 @@ def agentData(data_dir, dataPath):
 
         path = os.path.join(data_dir, file_name)  # 统计文件目录
 
-        # for filename in file_path:
-        #     path = '../../Network2/drawPICdata/' + filename
 
         workbook = xlrd.open_workbook(dataPath)  # 打开工作簿
         sheets = workbook.sheet_names()  # 获取工作簿中的所有表格
