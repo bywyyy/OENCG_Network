@@ -8,11 +8,17 @@ import java.util.Set;
 
 /**
  * 联盟结构
+ *
  * @author JJ.Wu
  */
 @Data
 public class Coalition implements Serializable {
 
+
+    /**
+     * 联盟中玩家的相关联盟 NTU
+     */
+    private int partyid;
     /**
      * 联盟中玩家的编号集合
      */
@@ -29,16 +35,14 @@ public class Coalition implements Serializable {
      */
     private int rewards;
 
-    private int rewardPublish;
-
-    public Coalition(){
+    public Coalition() {
         this.partyNums = new HashSet<>();
     }
 
-    public Coalition(Set<Integer> partyNums, int resources, int rewards,int rewardPublish) {
+    public Coalition(int partyid, Set<Integer> partyNums, int resources, int rewards) {
+        this.partyid = partyid;
         this.partyNums = partyNums;
         this.resources = resources;
         this.rewards = rewards;
-        this.rewardPublish = rewardPublish;
     }
 }

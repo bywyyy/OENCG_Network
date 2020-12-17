@@ -65,17 +65,15 @@ public class VotingDomain extends Domain implements Serializable, Cloneable {
             Document talentsDoc = reader.read(new InputStreamReader(talentsStream));
             for(Node item: partyNodes){
                 Element partyEle = (Element) item;
-                PartyInfo partyInfo = new PartyInfo(partyEle.attributeValue("name"), Integer.parseInt(partyEle.attributeValue("id")), Integer.parseInt(partyEle.attributeValue("resource")), 0.0,0.0);
+                PartyInfo partyInfo = new PartyInfo(partyEle.attributeValue("name"), Integer.parseInt(partyEle.attributeValue("id")), Integer.parseInt(partyEle.attributeValue("resource")), 0.0);
                 //加载每个party的Talent
                 Party party = new Party(partyInfo);
                 //party.loadTalent("domain-repository/talents.xml");
                 party.loadTalent(talentsDoc);
                 double tal = party.getTalent();
-                double talpublish = party.getTalpublish();
                 //int des = rand.nextInt(Math.abs((int)tal));
                 //partyInfo.setTalent(party.getTalent());
                 partyInfo.setTalent(tal);
-                partyInfo.setTalpublish(talpublish);
                 parties.add(partyInfo);
             }
             domain.setParties(parties);
@@ -128,7 +126,7 @@ public class VotingDomain extends Domain implements Serializable, Cloneable {
                 for(int i = 0; i<str_ids.length; i++){
                     ids.add(Integer.parseInt(str_ids[i].trim()));
                 }
-                Coalition coalition = new Coalition(ids, Integer.parseInt(coalitionEle.attributeValue("resources")), Integer.parseInt(coalitionEle.attributeValue("reward")),Integer.parseInt(coalitionEle.attributeValue("rewardPublish")));
+                Coalition coalition = new Coalition(Integer.parseInt(coalitionEle.attributeValue("partyid")),ids, Integer.parseInt(coalitionEle.attributeValue("resources")), Integer.parseInt(coalitionEle.attributeValue("reward")));
                 coalitions.add(coalition);
             }
             domain.setCoalitions(coalitions);

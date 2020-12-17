@@ -44,7 +44,18 @@ public class WebLaunchController {
         return "redirect:/main?playerId="+playerId+"&roomId="+roomId;
     }
 
-
+    @RequestMapping(value = "/login",method = RequestMethod.POST)
+    public void login1(@RequestParam("name")String name, @RequestParam("roomId") String roomId,
+                        @RequestParam("desc") String desc,@RequestParam("humanORagent") String humanORagent,@RequestParam("playerId") String playerId,
+                        @RequestParam("agentPath") String agentPath){
+        if(!agentPath.equals("0")) {
+//            String[] agentpath = agentPath.split("\\.");//分割出来的字符数组
+//            System.out.println(agentpath[0]);
+            launch.btn_ok(playerId, name, desc, roomId, agentPath, humanORagent);
+        }else{
+            launch.btn_ok(playerId, name, desc, roomId, null, humanORagent);
+        }
+    }
 
 
 

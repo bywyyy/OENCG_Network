@@ -26,7 +26,6 @@ public class RoomService extends BaseRoomService {
 
 
     /**
-     *
      * @param name
      * @param description
      * @param domain
@@ -35,41 +34,47 @@ public class RoomService extends BaseRoomService {
      */
 
 
-
-
     @Override
     public Room createRoom(String name, String description, Domain domain, Protocol protocol,
-                           BaseMessageManager messageManager,int maxStage,int maxRound,String stagePath){
+                           BaseMessageManager messageManager, int maxStage, int maxRound, String stagePath) {
         Room room = new Room();
         room.setId(IdUtil.generate16HexId());
         room.setName(name);
-        String des="";
+        String des = "";
 //        room.setDescription(des);
         PlayerSet players = new PlayerSet();
         room.setPlayers(players);
         room.setPlayerIds(new LinkedList<>());
         //r如果是VotingDomain这个domain
-        if(domain instanceof VotingDomain){
+        if (domain instanceof VotingDomain) {
             domain = VotingDomain.loadVotingDomain(stagePath);
             VotingDomain votingDomain = (VotingDomain) domain;
             Set<PartyInfo> partyInfos = votingDomain.getParties();
-            if(partyInfos.size() == 3){
-                des = "This is a three-players repeated coalitional negotiation game in which parties can form bidding coalitions. \neg. the parliamentary government system.";
-            }else{
-                des = "This is a five-players repeated coalitional negotiation game in which parties can form bidding coalitions. \neg. the parliamentary government system.";
-
+            String roomNameOne = stagePath.substring(0, 1);
+            if (partyInfos.size() == 3) {
+                if (roomNameOne.equals("n")) {
+                    des = "This is a three-players NTU repeated coalitional negotiation game in which parties can form bidding coalitions. \neg. the parliamentary government system.";
+                } else {
+                    des = "This is a three-players repeated coalitional negotiation game in which parties can form bidding coalitions. \neg. the parliamentary government system.";
+                }
+            } else {
+                if (roomNameOne.equals("n")) {
+                    des = "This is a five-players NTU repeated coalitional negotiation game in which parties can form bidding coalitions. \neg. the parliamentary government system.";
+                } else {
+                    des = "This is a five-players repeated coalitional negotiation game in which parties can form bidding coalitions. \neg. the parliamentary government system.";
+                }
             }
             VotingProtocol votingProtocol = (VotingProtocol) protocol;
             votingProtocol.setPlayerIds(room.getPlayerIds());
             votingProtocol.setDomain(votingDomain);
-            if(maxStage!=-1){
+            if (maxStage != -1) {
                 votingProtocol.setSessionAmounts(maxStage);
                 votingProtocol.setMaxRound(maxRound);
-            }else{
+            } else {
                 votingProtocol.setSessionAmounts(votingDomain.getMaxSession());
                 votingProtocol.setMaxRound(votingDomain.getMaxRound());
             }
-            ((MessageManager)messageManager).setProtocol(votingProtocol);
+            ((MessageManager) messageManager).setProtocol(votingProtocol);
         }
         room.setDescription(des);
         room.setDomain(domain);
@@ -81,25 +86,23 @@ public class RoomService extends BaseRoomService {
     }
 
     /**
-     *
      * @param room
      * @return
      */
     @Override
-    public RoomInfo generateRoomInfo(Room room){
-        return room == null?null:room.generateInfo();
+    public RoomInfo generateRoomInfo(Room room) {
+        return room == null ? null : room.generateInfo();
     }
 
     /**
-     *
      * @param room
      * @param player
      */
     @Override
     public Role addPlayer(Room room, Player player) {
-        synchronized (room){
+        synchronized (room) {
             Role role = null;
-            if(room.getDomain() instanceof VotingDomain){
+            if (room.getDomain() instanceof VotingDomain) {
                 PartyInfo partyInfo = null;
                 VotingDomain votingDomain = (VotingDomain) room.getDomain();
                 partyInfo = votingDomain.getPartyByNum(room.getAmountOfPlayers());
@@ -112,7 +115,7 @@ public class RoomService extends BaseRoomService {
                 role = p;
             }
             room.getPlayerIds().add(player.getId());
-            room.setAmountOfPlayers(room.getAmountOfPlayers()+1);
+            room.setAmountOfPlayers(room.getAmountOfPlayers() + 1);
             /**
              * 更新房间信息，通过房间内的人数还有其他信息来更新房间信息
              */
@@ -130,7 +133,7 @@ public class RoomService extends BaseRoomService {
             /**
              * 检查房间的状态,如果房间在游戏中，则调用notifyGameStart()向房间中各个agent提供游戏开始的信息
              */
-            if(room.getStatue() == Statue.ON_GAME){
+            if (room.getStatue() == Statue.ON_GAME) {
                 try {
                     Thread.sleep(500);
                 } catch (InterruptedException e) {
@@ -148,21 +151,21 @@ public class RoomService extends BaseRoomService {
     @Override
     public synchronized void updateRoomStatue(Room room) {
         int amountOfRoles = room.getDomain().getAmountRoles();
-        switch (room.getStatue()){
+        switch (room.getStatue()) {
             case PRE_GAME:
-                if(room.getAmountOfPlayers()>=amountOfRoles){
+                if (room.getAmountOfPlayers() >= amountOfRoles) {
                     room.setStatue(Statue.ON_GAME);
                 }
                 break;
             case ON_GAME:
-                if(room.getAmountOfPlayers()<amountOfRoles){
+                if (room.getAmountOfPlayers() < amountOfRoles) {
                     room.setStatue(Statue.GAME_PAUSE);
                 }
                 break;
             case GAME_PAUSE:
-                if(room.getAmountOfPlayers()>=amountOfRoles){
+                if (room.getAmountOfPlayers() >= amountOfRoles) {
                     room.setStatue(Statue.ON_GAME);
-                }else if(room.getAmountOfPlayers()<=0){
+                } else if (room.getAmountOfPlayers() <= 0) {
                     room.setStatue(Statue.GAME_PAUSE);
                 }
                 break;
@@ -177,7 +180,6 @@ public class RoomService extends BaseRoomService {
 
 
     /**
-     *
      * @param room
      * @param counterBody
      */
@@ -195,7 +197,7 @@ public class RoomService extends BaseRoomService {
     @Override
     public Set<String> getPlayerNames(Room room) {
         Set<String> names = new HashSet<>();
-        for(Player player: room.getPlayers()){
+        for (Player player : room.getPlayers()) {
             names.add(player.getName());
         }
         return names;
@@ -204,12 +206,12 @@ public class RoomService extends BaseRoomService {
     @Override
     public void playerExit(Room room, Player player) {
         Statue statue = room.getStatue();
-        if(statue == Statue.GAME_END){
+        if (statue == Statue.GAME_END) {
             //房间游戏已结束，玩家正常退出房间
             room.getPlayerIds().remove(player.getId());
             room.getPlayers().remove(player);
             room.getMessageManager().notifyLoginoutMessage(player);
-        }else{
+        } else {
             //房间游戏还未开始、或正在游戏、或游戏暂停，玩家退出了房间，玩家异常退出房间
             room.getPlayerIds().remove(player.getId());
             room.getPlayers().remove(player);

@@ -28,11 +28,6 @@ public class Game {
     private int maxRoundNum;
 
     /**
-     * 实时协商轮次
-     */
-//    private int round;
-
-    /**
      * 效益衰减因子
      */
     private double discount;
@@ -48,7 +43,6 @@ public class Game {
         this.maxRoundNum = maxRoundNum;
         this.discount = discount;
         this.coalitions = coalitions;
-//        this.round = 0;
     }
 
     public int getRewards(Set<Integer> nums){
@@ -61,10 +55,5 @@ public class Game {
         }
         return rewards;
     }
-
-//    public int addround(){
-//        round++;
-//        return round;
-//    }
 
 }

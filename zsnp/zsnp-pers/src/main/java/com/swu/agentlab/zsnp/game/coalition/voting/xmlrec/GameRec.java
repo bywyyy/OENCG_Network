@@ -29,8 +29,6 @@ public class GameRec {
 
     private Element proposalElement;
 
-    private String roundXMLName;
-
     public GameRec(){
         doc = new DOMDocument();
         this.addGame();
@@ -188,29 +186,6 @@ public class GameRec {
     }
 
     public void save(){
-        String name = doc.getRootElement().attributeValue("name");
-        String dir = "log/agentLearn";
-        File file = new File(dir);
-        if(!file.exists()){
-            file.mkdirs();
-        }
-        String appendex = TimeUtil.getHmsSSS();
-        try {
-            roundXMLName = appendex+"_"+name+".xml";
-            File out = new File(dir+"/"+roundXMLName);
-            FileWriter fileWriter = new FileWriter(out);
-            OutputFormat format = OutputFormat.createPrettyPrint();
-            format.setEncoding("UTF-8");
-            XMLWriter writer = new XMLWriter(System.out, format);
-            writer.setWriter(fileWriter);
-            writer.write(doc);
-            writer.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void save(int abc){
         String name = doc.getRootElement().attributeValue("name");
         String dir = "log/"+TimeUtil.getYmd();
         File file = new File(dir);

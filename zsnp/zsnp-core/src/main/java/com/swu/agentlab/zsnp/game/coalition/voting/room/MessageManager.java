@@ -276,12 +276,6 @@ public class MessageManager extends BaseMessageManager {
         }
         //sleep();
         if(protocol.isRoundEnd()){
-            /**
-             * 保存协商记录对象到文件------------------------------------------------
-             */
-            new Thread(()->{
-                gameRecController.save();
-            }).start();
             for(Response item: protocol.getRound().getResponses()){
                 CounterBody counterBody4 = new CounterBody(room.getId(), new HashSet<>(), item);
                 Message message = new Message(null, null, null, counterBody4, item.getTime());
@@ -343,7 +337,7 @@ public class MessageManager extends BaseMessageManager {
                          * 保存协商记录对象到文件
                          */
                         new Thread(()->{
-                            gameRecController.save(1);
+                            gameRecController.save();
                         }).start();
                     }
                     protocol.setSessionEnd(false);

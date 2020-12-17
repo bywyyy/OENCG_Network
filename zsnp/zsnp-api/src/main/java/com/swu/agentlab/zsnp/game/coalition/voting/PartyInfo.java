@@ -15,15 +15,11 @@ public class PartyInfo extends RoleInfo {
 
     private double talent;
 
-    private double talpublish;
-
-
-    public PartyInfo(String roleName, int partyNum, int resource, double talent,double talpublish) {
+    public PartyInfo(String roleName, int partyNum, int resource, double talent) {
         this.setRoleName(roleName);
         this.partyNum = partyNum;
         this.resource = resource;
         this.talent = talent;
-        this.talpublish = talpublish;
     }
 
 }

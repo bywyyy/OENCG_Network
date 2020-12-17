@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<form name="3 persons : 5-5-7 (10)">
+<form name = "NTU Game: 3 persons">
     <parties>
-        <!--这里定义玩家，id通常自增，name：玩家在游戏中的名称，resource：玩家持有的资源数(或者票数)-->
-        <party id='0' name="Google" resource='5'/>
-        <party id='1' name="Facebook" resource='5'/>
-        <party id='2' name="Amazon" resource='7'/>
+		<!--这里定义玩家，id通常自增，name：玩家在游戏中的名称，resource：玩家持有的资源数(或者票数)-->
+        <party id = '0' name="lucy" resource = '1' />
+        <party id = '1' name="lily" resource = '1' />
+        <party id = '2' name="albert" resource = '1' />
     </parties>
     <requirement>
-        <!--联盟形成的最少资源数（最少票数）-->
-        <majority resource='10'/>
+		<!--联盟形成的最少资源数（最少票数）-->
+        <majority resource = '2' />
     </requirement>
     <!--1.7 版本新增节点-->
     <game>
         <!--max-num：协商的总场数（非负整数）-->
-        <session max-num='50'/>
+        <session max-num = '50'/>
         <!--每场游戏最多进行多少个回合、轮数（非负整数）-->
-        <round max-num='15'>
+        <round max-num = '20'>
             <!--衰减因子(0.0 ~ 1.0之间)，效益值随回合数衰减，utility = 毛收益 * 衰减因子^(当前轮数/总轮数)。注意：玩家私有参数（cost）不参与衰减计算-->
             <discount>1</discount>
         </round>

@@ -78,6 +78,26 @@
         }
     }
 
+    // function setLastProposal(){
+    //         var size = $("#payoff1").children().length-1;
+    //         var payoff1 = $('#payoff1').find("td").eq(size).text();
+    //         var payoff2 = $('#payoff2').find("td").eq(size).text();
+    //         var payoff3 = $('#payoff3').find("td").eq(size).text();
+    //
+    //         setLastProposalPayoff(1, payoff1);
+    //         setLastProposalPayoff(2, payoff2);
+    //         setLastProposalPayoff(3, payoff3);
+    //
+    //     }
+    //
+    //     function setLastProposalPayoff(id, value){
+    //         if (value !== "-") {
+    //             $("#checkbox-value"+id).attr("checked","checked");
+    //             $("#range-value"+id).removeAttr("disabled", "disabled");
+    //             $("#range-value"+id).val(value);
+    //             $("#range-text"+id).val(value);
+    //         }
+    //     }
 
 </script>
 
@@ -124,8 +144,6 @@
                                     <thead>
                                     <tr class="success" id="stage">
                                         <th colspan="1">stage</th>
-                                        <!--                                        <th colspan="3">stage1</th>
-                                                                                <th colspan="3">stage2</th>-->
                                     </tr>
                                     <tr class="warning" id="round">
                                         <th>round</th>
@@ -133,10 +151,10 @@
                                     </tr>
                                     <tr class="danger" id="proposer">
                                         <th>proposer</th>
-
                                     </tr>
                                     </thead>
                                     <tbody id="partyPayoff">
+
                                     </tbody>
                                 </table>
                             </div>
@@ -202,13 +220,11 @@
                                         <th>Party</th>
                                         <th>Player</th>
                                         <th>Weight</th>
-                                        <th>Cost</th>
-                                        <th>Coalition</th>
+                                        <th>Ally</th>
                                         <th>Allocation</th>
                                     </tr>
                                     </thead>
                                     <tbody id="playerInfo">
-
 
                                     </tbody>
                                 </table>
@@ -221,9 +237,6 @@
                                        onclick="sendRejectMsgToServer()">
                                 <!--    <input type="button"  id="offer-coalition" onclick="sendMsgToServer()" value="offer"
                                            class="btn btn-warning">-->
-                                <!--send按钮移动-->
-                                <input type="button" name="" id="send" value="Send" disabled="disabled"
-                                       onclick="sendCommunicate();" class="btn btn-default">
                             </p>
 
                             <p id="resourceSum" style="display: none;"></p>
@@ -248,69 +261,68 @@
                     </div>
 
 
-                    <!--                    <div class="row free-sentence row-free-sentence">-->
-                    <!--                    下拉语言框屏蔽-->
-                    <!--                        <div class="col-sm-5 free-sentence user-sentence-group">-->
-                    <!--                            &lt;!&ndash; 添加的预定义语言按钮-模块 &ndash;&gt;-->
-                    <!--                            <div style=" overflow-y:auto; width:225px; height:170px;">-->
-                    <!--                                <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected"-->
-                    <!--                                        onclick="sentenceSelected(this)" class="user-sentenceNOTSelected">Let's play as-->
-                    <!--                                    follows-->
-                    <!--                                </button>-->
-                    <!--                                <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected"-->
-                    <!--                                        onclick="sentenceSelected(this)">Let's always play as follows-->
-                    <!--                                </button>-->
-                    <!--                                <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected"-->
-                    <!--                                        onclick="sentenceSelected(this)">Let’s form a coalition.-->
-                    <!--                                </button>-->
-                    <!--                                <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected"-->
-                    <!--                                        onclick="sentenceSelected(this)">Please accept my proposal.-->
-                    <!--                                </button>-->
-                    <!--                                <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected"-->
-                    <!--                                        onclick="sentenceSelected(this)">Let's keep our coalition.-->
-                    <!--                                </button>-->
-                    <!--                                <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected"-->
-                    <!--                                        onclick="sentenceSelected(this)">The coalition are the best way for us to work-->
-                    <!--                                    together.-->
-                    <!--                                </button>-->
-                    <!--                                <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected"-->
-                    <!--                                        onclick="sentenceSelected(this)">I like the last proposal-->
-                    <!--                                </button>-->
-                    <!--                                <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected"-->
-                    <!--                                        onclick="sentenceSelected(this)">I dislike the last proposal-->
-                    <!--                                </button>-->
-                    <!--                            </div>-->
-                    <!--                            <p id="predefined-text-show" style="display: none;"></p>-->
-                    <!--                        </div>-->
+                    <div class="row free-sentence row-free-sentence">
 
-                    <!--屏蔽输入对话和选择表情模块-->
-                    <!--                        <div class="col-sm-7 free-sentence">-->
-                    <!--                                                    <div class="row">-->
-                    <!--                                                        <img src="../templates/img/user3/2.png" id="CurrentEmoticon" class="img-head">-->
-                    <!--                                                        <textarea type="text" name="" placeholder="input here" id="free-text" rows="3"-->
-                    <!--                                                                  cols="10"></textarea>-->
-                    <!--                                                    </div>-->
-                    <!--                                                    <div class="row user-emoticon-group" id="emotionSelected">-->
-                    <!--                                                        &lt;!&ndash;<img src="../templates/img/user3/1.png" onclick="imgSelected(this)" class="user-emoticonNOTSelected">-->
-
-                    <!--                                                            <img src="../templates/img/user3/3.png" onclick="imgSelected(this)" class="user-emoticonSelected">-->
-
-                    <!--                                                            <img src="../templates/img/user3/5.png" onclick="imgSelected(this)" class="user-emoticonNOTSelected">&ndash;&gt;-->
-                    <!--                                                    </div>-->
-                    <!--                                                    <p id="img-emotionId" style="display: none;">3</p>-->
-                    <!--                            <p>-->
-                    <!--                                <input type="button" name="" id="send" value="Send" disabled="disabled"-->
-                    <!--                                       onclick="sendCommunicate();" class="btn btn-default">-->
-                    <!--                                屏蔽清除按钮-->
-                    <!--                                <input type="button" name="" value="Clear" onclick="clearFree()"-->
-                    <!--                                       class="btn btn-primary">-->
-                    <!--<input type="submit" name="" id = "silent" value="Silent" class="btn btn-danger" onclick="removeAttrLeft();renewYourActionValue()">-->
-                    <!--                            </p>-->
-
-                    <!--                        </div>-->
+                        <div class="col-sm-5 free-sentence user-sentence-group">
+                            <!-- 添加的预定义语言按钮-模块 -->
+                            <div style=" overflow-y:auto; width:225px; height:170px;">
+                                <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected"
+                                        onclick="sentenceSelected(this)" class="user-sentenceNOTSelected">Let's play as
+                                    follows
+                                </button>
+                                <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected"
+                                        onclick="sentenceSelected(this)">Let's always play as follows
+                                </button>
+                                <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected"
+                                        onclick="sentenceSelected(this)">Let’s form a coalition.
+                                </button>
+                                <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected"
+                                        onclick="sentenceSelected(this)">Please accept my proposal.
+                                </button>
+                                <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected"
+                                        onclick="sentenceSelected(this)">Let's keep our coalition.
+                                </button>
+                                <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected"
+                                        onclick="sentenceSelected(this)">The coalition are the best way for us to work
+                                    together.
+                                </button>
+                                <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected"
+                                        onclick="sentenceSelected(this)">I like the last proposal
+                                </button>
+                                <button class="button button-glow button-border button-rounded button-primary user-sentenceNOTSelected"
+                                        onclick="sentenceSelected(this)">I dislike the last proposal
+                                </button>
+                            </div>
+                            <p id="predefined-text-show" style="display: none;"></p>
+                        </div>
 
 
-                    <!--                    </div> &lt;!&ndash; div class="row free-sentence" 结束标签 &ndash;&gt;-->
+                        <div class="col-sm-7 free-sentence">
+                            <div class="row">
+                                <img src="../templates/img/user3/2.png" id="CurrentEmoticon" class="img-head">
+                                <textarea type="text" name="" placeholder="input here" id="free-text" rows="3"
+                                          cols="10"></textarea>
+                            </div>
+                            <div class="row user-emoticon-group" id="emotionSelected">
+                                <!--<img src="../templates/img/user3/1.png" onclick="imgSelected(this)" class="user-emoticonNOTSelected">
+
+                                    <img src="../templates/img/user3/3.png" onclick="imgSelected(this)" class="user-emoticonSelected">
+
+                                    <img src="../templates/img/user3/5.png" onclick="imgSelected(this)" class="user-emoticonNOTSelected">-->
+                            </div>
+                            <p id="img-emotionId" style="display: none;">3</p>
+                            <p>
+                                <input type="button" name="" id="send" value="Send" disabled="disabled"
+                                       onclick="sendCommunicate();" class="btn btn-default">
+                                <input type="button" name="" value="Clear" onclick="clearFree()"
+                                       class="btn btn-primary">
+                                <!--<input type="submit" name="" id = "silent" value="Silent" class="btn btn-danger" onclick="removeAttrLeft();renewYourActionValue()">-->
+                            </p>
+
+                        </div>
+
+
+                    </div> <!-- div class="row free-sentence" 结束标签 -->
 
                     <script type="text/javascript">
                         function clearFree() {
@@ -808,62 +820,16 @@
             //     document.getElementById("playerName1").innerHTML = message.name;
             //     document.getElementById("resource1").innerHTML = message.resource;
 // 修改完成
-            if (message.talpublish != 0) {
-                // if (message.MyId == MyId) {
-                    playerText = "<tr id=\"data" + message.num + "\">" +
-                        "<td id=\"name" + message.num + "\"><span><img src=\"../templates/img/user1/1.png\"></span>" + message.roleName + "</td>" +
-                        "<td id=\"playerName" + message.num + "\">" + message.name + "</td>" +
-                        "<td id=\"resource" + message.num + "\">" + message.resource + "</td>" +
-                        "<td id=\"talent" + message.num + "\">" + message.talpublish + "(" + message.talent + ")" + "</td>" +
-                        "<td><input id=\"checkbox-value" + message.num + "\" type=\"checkbox\"></td>" +
-                        "<td>" +
-                        "<input id=\"range-value" + message.num + "\" type=\"range\"  disabled=\"disabled\" class=\"range-bar\" value=\"0\">" +
-                        "<input id=\"range-text" + message.num + "\" type=\"text\" class=\"range-input form-control\" disabled=\"disabled\" id=\"pre" + message.num + "\" value=\"0\">" +
-                        "</td>" +
-                        "</tr>";
-                // }
-            } else {
-                playerText = "<tr id=\"data" + message.num + "\">" +
-                    "<td id=\"name" + message.num + "\"><span><img src=\"../templates/img/user1/1.png\"></span>" + message.roleName + "</td>" +
-                    "<td id=\"playerName" + message.num + "\">" + message.name + "</td>" +
-                    "<td id=\"resource" + message.num + "\">" + message.resource + "</td>" +
-                    "<td id=\"talent" + message.num + "\">" + message.talent + "</td>" +
-                    "<td><input id=\"checkbox-value" + message.num + "\" type=\"checkbox\"></td>" +
-                    "<td>" +
-                    "<input id=\"range-value" + message.num + "\" type=\"range\"  disabled=\"disabled\" class=\"range-bar\" value=\"0\">" +
-                    "<input id=\"range-text" + message.num + "\" type=\"text\" class=\"range-input form-control\" disabled=\"disabled\" id=\"pre" + message.num + "\" value=\"0\">" +
-                    "</td>" +
-                    "</tr>";
-            }
-
-
-            // if (message.talpublish == 0) {
-            //     playerText = "<tr id=\"data" + message.num + "\">" +
-            //         "<td id=\"name" + message.num + "\"><span><img src=\"../templates/img/user1/1.png\"></span>" + message.roleName + "</td>" +
-            //         "<td id=\"playerName" + message.num + "\">" + message.name + "</td>" +
-            //         "<td id=\"resource" + message.num + "\">" + message.resource + "</td>" +
-            //         "<td id=\"talent" + message.num + "\">" + message.talent + "</td>" +
-            //         "<td><input id=\"checkbox-value" + message.num + "\" type=\"checkbox\"></td>" +
-            //         "<td>" +
-            //         "<input id=\"range-value" + message.num + "\" type=\"range\"  disabled=\"disabled\" class=\"range-bar\" value=\"0\">" +
-            //         "<input id=\"range-text" + message.num + "\" type=\"text\" class=\"range-input form-control\" disabled=\"disabled\" id=\"pre" + message.num + "\" value=\"0\">" +
-            //         "</td>" +
-            //         "</tr>";
-            // } else {
-            //     playerText = "<tr id=\"data" + message.num + "\">" +
-            //         "<td id=\"name" + message.num + "\"><span><img src=\"../templates/img/user1/1.png\"></span>" + message.roleName + "</td>" +
-            //         "<td id=\"playerName" + message.num + "\">" + message.name + "</td>" +
-            //         "<td id=\"resource" + message.num + "\">" + message.resource + "</td>" +
-            //         "<td id=\"talent" + message.num + "\">" + message.talpublish + "(" + message.talent + ")" + "</td>" +
-            //         "<td><input id=\"checkbox-value" + message.num + "\" type=\"checkbox\"></td>" +
-            //         "<td>" +
-            //         "<input id=\"range-value" + message.num + "\" type=\"range\"  disabled=\"disabled\" class=\"range-bar\" value=\"0\">" +
-            //         "<input id=\"range-text" + message.num + "\" type=\"text\" class=\"range-input form-control\" disabled=\"disabled\" id=\"pre" + message.num + "\" value=\"0\">" +
-            //         "</td>" +
-            //         "</tr>";
-            // }
-
-
+            playerText = "<tr id=\"data" + message.num + "\">" +
+                "<td id=\"name" + message.num + "\"><span><img src=\"../templates/img/user1/1.png\"></span>" + message.roleName + "</td>" +
+                "<td id=\"playerName" + message.num + "\">" + message.name + "</td>" +
+                "<td id=\"resource" + message.num + "\">" + message.resource + "</td>" +
+                "<td><input id=\"checkbox-value" + message.num + "\" type=\"checkbox\"></td>" +
+                "<td>" +
+                "<input id=\"range-value" + message.num + "\" type=\"range\"  disabled=\"disabled\" class=\"range-bar\" value=\"0\">" +
+                "<input id=\"range-text" + message.num + "\" type=\"text\" class=\"range-input form-control\" disabled=\"disabled\" id=\"pre" + message.num + "\" value=\"0\">" +
+                "</td>" +
+                "</tr>";
             $('#playerInfo').append(playerText);
 
             // document.getElementById("talent1").innerHTML=message.talent;
@@ -887,9 +853,7 @@
                 }
 
                 var item = "<p class=\"dialog-server-mess\">" + "Hi," + message.name + ",you are the " + size + " player of this room." + "<p/>";
-
-                //对话信息屏蔽
-                // $('#communicateList').append(item);
+                $('#communicateList').append(item);
                 var emotion = "<img src=\"../templates/img/user" + playerNum + "/1.png\" onclick=\"imgSelected(this)\" class=\"user-emoticonNOTSelected\">\n" +
                     "\n" +
                     "                    <img src=\"../templates/img/user" + playerNum + "/3.png\" onclick=\"imgSelected(this)\" class=\"user-emoticonSelected\">\n" +
@@ -999,9 +963,7 @@
             //     "                    </div>";
             // $('#serverMessageAll').append(item);
             item = "<p class=\"dialog-server-mess\">" + message.serverMessage + "<p/>";
-
-            //====对话屏蔽====
-            // $('#communicateList').append(item);
+            $('#communicateList').append(item);
             $('.dialog-part')[0].scrollTop = $('.dialog-part')[0].scrollHeight;
         } else if (message.type === "OFFERMESSAGE") {
             // alert("4");
@@ -1012,8 +974,7 @@
             //     "                </div>";
             // $('#offerMessage').append(item);
             item = "<p class=\"dialog-server-mess\">" + message.offer.hint + "<p/>";
-            //对话屏蔽
-            // $('#communicateList').append(item);
+            $('#communicateList').append(item);
             $('.dialog-part')[0].scrollTop = $('.dialog-part')[0].scrollHeight;
         } else if (message.type === "PROPOSALMESSAGE") {
             $(".coalition").removeAttr("class", "ballon");
@@ -1207,7 +1168,6 @@
                 "</div>" +
                 "</div>" +
                 "</div>";
-            //对话屏蔽
             $('#communicateList').append(item);
             // var item;
             // item = "<div class=\"panel-body\">\n" + message.proposalName + "(" + message.proposalCompanyName + "):" + "<br/>";
@@ -1231,24 +1191,21 @@
                     // "<span class=\"user-img-name\">"+message.playerName+"</span>"+
                     "<p class=\"box u-tri\">" + message.communicateLanguage + "</p>" +
                     "</div>";
-                //对话屏蔽
-                // $('#communicateList').append(item);
+                $('#communicateList').append(item);
             } else if (message.playerName === $("#playerName2").text()) {
                 item = " <div class=\"dialog-user" + playerNum + "\">" +
                     "<img src=\"../templates/img/user" + playerNum + "/" + message.emotion + ".png\">" +
                     "<span class=\"user-img-name\">" + message.playerName + "(" + message.roleName + ")</span>" +
                     "<p class=\"box u-tri\">" + message.communicateLanguage + "</p>" +
                     "</div>";
-                //对话屏蔽
-                // $('#communicateList').append(item);
+                $('#communicateList').append(item);
             } else if (message.playerName === $("#playerName3").text()) {
                 item = " <div class=\"dialog-user" + playerNum + "\">" +
                     "<img src=\"../templates/img/user" + playerNum + "/" + message.emotion + ".png\">" +
                     "<span class=\"user-img-name\">" + message.playerName + "(" + message.roleName + ")</span>" +
                     "<p class=\"box u-tri\">" + message.communicateLanguage + "</p>" +
                     "</div>";
-                //对话屏蔽
-                // $('#communicateList').append(item);
+                $('#communicateList').append(item);
             }
 
 
@@ -1479,25 +1436,11 @@
                     partyNumsCoalition = partyNumsCoalition + partyNums[n].toString();
                 }
 
-                if (coalitionXMLS[p].rewardPublish == 0) {
-                    item = "<tr id = " + partyNumsCoalition + " class = \"coalitionShow\">" +
-                        "<td>" + coalitionXMLS[p].corporationsText + "</td>" +
-                        "<td>" + coalitionXMLS[p].resources + "</td>" +
-                        "<td>" + coalitionXMLS[p].rewards + "</td>" +
-                        "</tr>";
-                } else {
-                    item = "<tr id = " + partyNumsCoalition + " class = \"coalitionShow\">" +
-                        "<td>" + coalitionXMLS[p].corporationsText + "</td>" +
-                        "<td>" + coalitionXMLS[p].resources + "</td>" +
-                        "<td>" + coalitionXMLS[p].rewardPublish + "(" + coalitionXMLS[p].rewards + ")" + "</td>" +
-                        "</tr>";
-                }
-
-                // item = "<tr id = " + partyNumsCoalition + " class = \"coalitionShow\">" +
-                //     "<td>" + coalitionXMLS[p].corporationsText + "</td>" +
-                //     "<td>" + coalitionXMLS[p].resources + "</td>" +
-                //     "<td>" + coalitionXMLS[p].rewards + "</td>" +
-                //     "</tr>";
+                item = "<tr id = " + partyNumsCoalition + " class = \"coalitionShow\">" +
+                    "<td>" + coalitionXMLS[p].corporationsText + "</td>" +
+                    "<td>" + coalitionXMLS[p].resources + "</td>" +
+                    "<td>" + coalitionXMLS[p].rewards + "</td>" +
+                    "</tr>";
                 $('#coalition').append(item);
             }
             $('#resourceSum').text(message.majority);

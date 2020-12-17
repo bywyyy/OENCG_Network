@@ -2,19 +2,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>negotiation game platform</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link href="./templates//css/bootstrap.min.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>negotiation game platform</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link href="./templates//css/bootstrap.min.css" rel="stylesheet">
+	 
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="./templates/js/jquery.min.js"></script>
+	 
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="./templates/js/bootstrap.min.js"></script>
 
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="./templates/js/jquery.min.js"></script>
-
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="./templates/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="./templates/css/create_room.css">
+	<link rel="stylesheet" type="text/css" href="./templates/css/create_room.css">
 </head>
 <body>
 
@@ -32,33 +32,23 @@
                 </h4>
             </div>
             <div class="modal-body">
-                <div class="scenarios" id="scenarios">
-                    <!--<button class="btn btn-default multi-scenarios">3 Players/ weight 1-1-1</button>-->
-                    <!--<button class="btn btn-default multi-scenarios">3 Players_weight 1-2-2</button>-->
-                    <button class="btn btn-default multi-scenarios">3Players_weight1-1-1</button>
-                    <button class="btn btn-default multi-scenarios">3Players_weight1-1-2</button>
-                    <button class="btn btn-default multi-scenarios">3Players_weight1-2-2</button>
-                    <button class="btn btn-default multi-scenarios">3Players_weight2-2-3</button>
-                    <button class="btn btn-default multi-scenarios">3Players_weight3-3-5</button>
-                    <button class="btn btn-default multi-scenarios">3Players_weight2-3-3</button>
-                    <button class="btn btn-default multi-scenarios">3Players_weight2-3-4</button>
-                    <button class="btn btn-default multi-scenarios">3Players_weight3-3-4</button>
-                    <button class="btn btn-default multi-scenarios">3Players_weight4-4-5</button>
-                    <button class="btn btn-default multi-scenarios">3Players_weight4-4-6</button>
-                    <button class="btn btn-default multi-scenarios">3Players_weight4-5-6</button>
-                    <button class="btn btn-default multi-scenarios">3Players_weight4-5-7</button>
-                    <button class="btn btn-default multi-scenarios">3Players_weight5-5-7</button>
-                    <button class="btn btn-default multi-scenarios">3Players_weight4-7-7</button>
-                    <button class="btn btn-default multi-scenarios">3Players_weight5-7-9</button>
-                    <button class="btn btn-default multi-scenarios">5players_weights30-25-25-40-10</button>
-                </div>
-                <p style="text-align: center; margin-top: 20px;"> Scenario chosen is : <span
-                        id="Scenario-chosen"></span></p>
+                <div class="scenarios" id ="scenarios">
+                        <!--<button class="btn btn-default multi-scenarios">3 Players/ weight 1-1-1</button>-->
+                        <!--<button class="btn btn-default multi-scenarios">3 Players_weight 1-2-2</button>-->
+					    <button class="btn btn-default multi-scenarios">3Players_weight1-1-1</button>
+<!--						<button class="btn btn-default multi-scenarios">ntu_game1</button>-->
+						<button class="btn btn-default multi-scenarios">3Players_weight1-1-2</button>
+						<button class="btn btn-default multi-scenarios">3Players_weight1-2-2</button>
+						<button class="btn btn-default multi-scenarios">3Players_weight2-2-3</button>
+						<button class="btn btn-default multi-scenarios">3Players_weight3-3-5</button>
+                        <button class="btn btn-default multi-scenarios">5players_weights30-25-25-40-10</button>
+				</div>
+                <p style="text-align: center; margin-top: 20px;"> Scenario chosen is : <span id="Scenario-chosen"></span></p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close
                 </button>
-                <button type="button" class="btn btn-primary" id="createChoose" data-dismiss="modal">
+                <button type="button" class="btn btn-primary" id = "createChoose" data-dismiss="modal">
                     Submit
                 </button>
             </div>
@@ -67,311 +57,310 @@
 </div>
 
 
-<div class="container">
-    <div class="row">
-        <div class='col-sm-9'>
-            <div class="room_list" id="room_list">
-                <legend>Scene</legend>
-                <div class="room_all" id="room_all">
 
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="room_op">
-                <legend>operation</legend>
-                <div class="op_content">
-                    <div class="btn-group-vertical">
-                        <div class="btn-group-vertical">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
-                                    style="width: 150px;">
-                                <span class="now_room_status">ALL STATE</span>
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" id="statueList">
-                                <li><a class="choose_room_status">ALL STATE</a></li>
-                                <li><a class="choose_room_status">PRE_GAME</a></li>
-                                <li><a class="choose_room_status">ON_GAME</a></li>
-                                <li><a class="choose_room_status">GAME_PAUSE</a></li>
-                                <li><a class="choose_room_status">GAME_END</a></li>
-                            </ul>
-                            <p style="display: none;">The room chosen is ：<span name="roomId" id="roomId"></span></p>
-
-                        </div>
-                        <button type="button" class="btn btn-primary" id="create_room" data-toggle="modal"
-                                data-target="#myModal">Create Scene
-                        </button>
-                        <button type="button" class="btn btn-success" id="delete_room">Delete Scene</button>
-                        <button type="button" class="btn btn-danger" id="delete_data">Delete Data</button>
-                        <button type="button" class="btn btn-warning" id="start_player">Start Player</button>
-                        <button type="button" class="btn btn-info-new" id="design_configure">Design Configure</button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<script>
-    $(".multi-scenarios").click(function () {
-        var Scenario = $(this).text();
-        $("#Scenario-chosen").text(Scenario);
-    });
-
-    $('#create_room').click(function () {
-        $.ajax({
-            type: 'post',
-            url: '/stagePath',
-            dataType: 'json',
-            success: function (data) {
-                // $('#scenarios').html("");
-                // for(var p in data){
-                //     $('#scenarios').append("<button class=\"btn btn-default multi-scenarios\">"+data[p]+"</button>")
-                // }
-                // $(".multi-scenarios").click(function(){
-                //     var Scenario = $(this).text();
-                //     $("#Scenario-chosen").text(Scenario);
-                // });
-            },
-        });
-    });
-    $('#design_configure').click(function () {
-        $('#scenarios').append("<button class=\"btn btn-default multi-scenarios\">3Players_weight- - -</button>");
-        $(".multi-scenarios").click(function () {
+	<div class="container">
+		<div class="row">
+			<div class='col-sm-9'>
+				<div class="room_list" id="room_list">
+					<legend>Scene</legend>
+					<div class="room_all" id="room_all">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="room_op">
+					<legend>operation</legend>
+					<div class="op_content">
+						<div class="btn-group-vertical">
+							<div class="btn-group-vertical">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"  style="width: 150px;">
+									<span class="now_room_status">ALL STATE</span>
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" id = "statueList">
+									<li><a class="choose_room_status">ALL STATE</a></li>
+									<li><a class="choose_room_status">PRE_GAME</a></li>
+									<li><a class="choose_room_status">ON_GAME</a></li>
+									<li><a class="choose_room_status">GAME_PAUSE</a></li>
+									<li><a class="choose_room_status">GAME_END</a></li>
+								</ul>
+								<p style="display: none;">The room chosen is ：<span name="roomId" id="roomId"></span></p>
+						    </div>
+						    <button type="button" class="btn btn-primary" id="create_room" data-toggle="modal" data-target="#myModal">Create Scene</button>
+							<button type="button" class="btn btn-success" id="delete_room">Delete Scene</button>
+							<button type="button" class="btn btn-danger" id="delete_data">Delete Data</button>
+						    <button type="button" class="btn btn-warning" id="start_player">Start Player</button>
+							<button type="button" class="btn btn-info-new" id="design_configure">Design Configure</button>
+						    
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<script>
+        $(".multi-scenarios").click(function(){
             var Scenario = $(this).text();
             $("#Scenario-chosen").text(Scenario);
         });
-        window.open("/design_configure", "_blank");
-    });
+
+		$('#create_room').click(function(){
+            $.ajax({
+                type: 'post',
+                url: '/stagePath',
+                dataType: 'json',
+                success: function (data) {
+                    // $('#scenarios').html("");
+                    // for(var p in data){
+                    //     $('#scenarios').append("<button class=\"btn btn-default multi-scenarios\">"+data[p]+"</button>")
+					// }
+                    // $(".multi-scenarios").click(function(){
+                    //     var Scenario = $(this).text();
+                    //     $("#Scenario-chosen").text(Scenario);
+                    // });
+                },
+            });
+		});
+		$('#design_configure').click(function () {
+            $('#scenarios').append("<button class=\"btn btn-default multi-scenarios\">3Players_weight- - -</button>");
+            $(".multi-scenarios").click(function(){
+                var Scenario = $(this).text();
+                $("#Scenario-chosen").text(Scenario);
+            });
+            window.open("/design_configure", "_blank");
+        });
 
 
-    $('#createChoose').click(function () {
-        var configuration = $('#Scenario-chosen').text();
+
+        $('#createChoose').click(function () {
+            var configuration = $('#Scenario-chosen').text();
+            $.ajax({
+                type: 'post',
+                url: '/createRoom',
+				data:{stagePath:configuration},
+                dataType: 'json',
+                success: function (data) {
+
+                },
+            });
+        });
+        $('#delete_room').click(function () {
+            var roomId = $("#roomId").text();
+            $.ajax({
+                url: '/deleteRoom',
+                type: "POST",
+                data: {roomId: roomId},
+                dataType: "json",
+                success: function (aaa) {
+                }
+            });
+        });
+
+
+        $('#start_player').click(function () {
+            window.location.href = '/start_player'
+        });
+        $(".choose_room_status").click(function () {
+            var status = $(this).text();
+            $(".now_room_status").text(status);
+        });
+
+	</script>
+	<script>
         $.ajax({
             type: 'post',
-            url: '/createRoom',
-            data: {stagePath: configuration},
+            url: '/getRoomInfos',
             dataType: 'json',
-            success: function (data) {
-
-            },
-        });
-    });
-    $('#delete_room').click(function () {
-        var roomId = $("#roomId").text();
-        $.ajax({
-            url: '/deleteRoom',
-            type: "POST",
-            data: {roomId: roomId},
-            dataType: "json",
-            success: function (aaa) {
-            }
-        });
-    });
-
-
-    $('#start_player').click(function () {
-        window.location.href = '/start_player'
-    });
-    $(".choose_room_status").click(function () {
-        var status = $(this).text();
-        $(".now_room_status").text(status);
-    });
-
-</script>
-<script>
-    $.ajax({
-        type: 'post',
-        url: '/getRoomInfos',
-        dataType: 'json',
-        success: function (data) {
-            var item;
-            $.each(data, function (i, result) {
-                item =
-                    "<div class=\"room_block\" id=" + result['id'] + ">" +
-                    "<table class=\"table\">" +
-                    "<tbody>" +
-                    "<tr class=\"active\">" +
-                    "<td><p><span class=\"info_left\">Name</span><span class=\"info_right room_id\">" + result['name'] + "</span></p></td>" +
-                    "</tr>" +
-                    "<tr class=\"success\">" +
-                    "<td><p><span class=\"info_left\">Players</span><span class=\"info_right\">" + result['amountOfPlayers'] + "/" + result['amountOfRoles'] + "</span></p></td>" +
-                    "</tr>" +
-                    "<tr  class=\"warning\">" +
-                    "<td><p><span class=\"info_left\">Domain</span><span class=\"info_right\">" + result["domainName"] + "</span></p></td>" +
-                    "</tr>" +
-                    "<tr  class=\"danger\">" +
-                    "<td><p><span class=\"info_left\">Desc</span><span class=\"info_right\">" + result["description"] + "</span></p></td>" +
-                    "</tr>" +
-                    "<tr class=\"success\">" +
-                    "<td><p><span class=\"info_left\">Status</span><span class=\"info_right\">" + result["statue"] + "</span></p></td>" +
-                    "</tr>" +
-                    "</tbody>" +
-                    "</table>" +
-                    "</div>";
-                $('#room_all').append(item);
-            });
-            $(".room_block").click(function () {
-                $(".room_block").css("border-color", "transparent");
-                $(this).css("border-color", "#a94442");
-                var which_room = $(this).attr('id');
-                $("#roomId").text(which_room);
-            });
-        },
-
-    });
-
-
-</script>
-<script type="text/javascript">
-
-    $(document).ready(function () {
-        var itemli = document.getElementsByTagName("li");
-
-        for (var i = 0; i < itemli.length; i++) {
-
-            itemli[i].index = i; //给每个li定义一个属性索引值，赋
-            // var queryStatue= this.children().text();
-            itemli[i].onclick = function () {
-                var queryStatue = $(this).children("a").html();
-                // alert("下标索引值为："+this.index+"\n"+"文本内容是："+queryStatue);
-                websocket.send(JSON.stringify({
-                    Statue: queryStatue
-                }));
-            }
-        }
-
-        /*   function deleteRoom(){
-               $.ajax({
-                   type: 'post',//提交方式，，post get...
-                   dataType : "json",//数据传输格式
-                   url: "account/user!addUser",//访问服务器后台的url
-                   data: {roomId:},//数据可以写{'age':10,'name':'aaa'}方式
-                   success: function(result) {//返回成功后执行的函数，result是返回的数据
-                       alert("添加成功！");
-                   }
-               });
-           }*/
-
-        var websocket = null;
-
-        //判断当前浏览器是否支持WebSocket
-        if ('WebSocket' in window) {
-            websocket = new WebSocket("ws://localhost:8181/room");
-        } else {
-            alert('Not support websocket');
-        }
-
-
-        //连接发生错误的回调方法
-        websocket.onerror = function () {
-        };
-
-        //连接成功建立的回调方法
-        websocket.onopen = function (event) {
-        };
-
-        if (sessionRoundNumHistory !== "undefined") {
-
-        } else {
-            var sessionRoundNumHistory;
-        }
-        var playerNum = 0;
-        //接收到消息的回调方法
-        websocket.onmessage = function (event) {
-            var message = JSON.parse(event.data) || {};
-            if (message.type === "AddRoom") {
-                var roomInfo = message.roomInfo;
-                item = "<div class=\"room_block\" id= " + roomInfo.id + ">" +
-                    "<table class=\"table\">" +
-                    "<tbody>" +
-                    "<tr class=\"active\">" +
-                    "<td><p><span class=\"info_left\">Name</span><span class=\"info_right room_id\">" + roomInfo.name + "</span></p></td>" +
-                    "</tr>" +
-                    "<tr class=\"success\">" +
-                    "<td><p><span class=\"info_left\">Players</span><span class=\"info_right\">" + roomInfo.amountOfPlayers + "/" + roomInfo.amountOfRoles + "</span></p></td>" +
-                    "</tr>" +
-                    "<tr  class=\"warning\">" +
-                    "<td><p><span class=\"info_left\">Domain</span><span class=\"info_right\">" + roomInfo.domainName + "</span></p></td>" +
-                    "</tr>" +
-                    "<tr  class=\"danger\">" +
-                    "<td><p><span class=\"info_left\">Desc</span><span class=\"info_right\">" + roomInfo.description + "</span></p></td>" +
-                    "</tr>" +
-                    "<tr class=\"success\">" +
-                    "<td><p><span class=\"info_left\">Status</span><span class=\"info_right\">" + roomInfo.statue + "</span></p></td>" +
-                    "</tr>" +
-                    "</tbody>" +
-                    "</table>" +
-                    "</div>";
-                $('#room_all').append(item);
-                $(".room_block").click(function () {
-                    $(".room_block").css("border-color", "transparent");
-                    $(this).css("border-color", "#a94442");
-                    var which_room = $(this).attr('id');
-                    $("#roomId").text(which_room);
-                });
-            } else if (message.type === "UpdateRoom") {
-                var roomInfos = message.roomInfos;
-                $('#room_all').html("");
-                for (var p in roomInfos) {
-                    item = "<div class=\"room_block\" id= " + roomInfos[p].id + ">" +
+            success:function(data){
+                var item;
+                $.each(data,function(i,result){
+                    item=
+                        "<div class=\"room_block\" id=" + result['id'] + ">" +
                         "<table class=\"table\">" +
                         "<tbody>" +
                         "<tr class=\"active\">" +
-                        "<td><p><span class=\"info_left\">Name</span><span class=\"info_right room_id\">" + roomInfos[p].name + "</span></p></td>" +
+                        "<td><p><span class=\"info_left\">Name</span><span class=\"info_right room_id\">"+ result['name'] +"</span></p></td>" +
                         "</tr>" +
                         "<tr class=\"success\">" +
-                        "<td><p><span class=\"info_left\">Players</span><span class=\"info_right\">" + roomInfos[p].amountOfPlayers + "/" + roomInfos[p].amountOfRoles + "</span></p></td>" +
+                        "<td><p><span class=\"info_left\">Players</span><span class=\"info_right\">"+result['amountOfPlayers']+"/"+result['amountOfRoles']+"</span></p></td>" +
                         "</tr>" +
                         "<tr  class=\"warning\">" +
-                        "<td><p><span class=\"info_left\">Domain</span><span class=\"info_right\">" + roomInfos[p].domainName + "</span></p></td>" +
+                        "<td><p><span class=\"info_left\">Domain</span><span class=\"info_right\">"+ result["domainName"]+"</span></p></td>" +
                         "</tr>" +
                         "<tr  class=\"danger\">" +
-                        "<td><p><span class=\"info_left\">Desc</span><span class=\"info_right\">" + roomInfos[p].description + "</span></p></td>" +
+                        "<td><p><span class=\"info_left\">Desc</span><span class=\"info_right\">"+ result["description"]+"</span></p></td>" +
                         "</tr>" +
                         "<tr class=\"success\">" +
-                        "<td><p><span class=\"info_left\">Status</span><span class=\"info_right\">" + roomInfos[p].statue + "</span></p></td>" +
+                        "<td><p><span class=\"info_left\">Status</span><span class=\"info_right\">" + result["statue"]+"</span></p></td>" +
                         "</tr>" +
                         "</tbody>" +
                         "</table>" +
                         "</div>";
                     $('#room_all').append(item);
-                    $(".room_block").click(function () {
-                        $(".room_block").css("border-color", "transparent");
-                        $(this).css("border-color", "#a94442");
-                        var which_room = $(this).attr('id');
-                        $("#roomId").text(which_room);
-                    });
+                });
+                $(".room_block").click(function(){
+                    $(".room_block").css("border-color","transparent");
+                    $(this).css("border-color","#a94442");
+                    var which_room = $(this).attr('id');
+                    $("#roomId").text(which_room);
+                });
+            },
+
+        });
+
+
+
+
+	</script>
+	<script type="text/javascript">
+
+        $(document).ready(function(){
+            var itemli = document.getElementsByTagName("li");
+
+            for(var i = 0; i<itemli.length; i++){
+
+                itemli[i].index = i; //给每个li定义一个属性索引值，赋
+				// var queryStatue= this.children().text();
+                itemli[i].onclick = function(){
+                    var queryStatue = $(this).children("a").html();
+                    // alert("下标索引值为："+this.index+"\n"+"文本内容是："+queryStatue);
+                    websocket.send(JSON.stringify({
+						Statue: queryStatue
+                    }));
                 }
             }
 
-        };
+         /*   function deleteRoom(){
+                $.ajax({
+                    type: 'post',//提交方式，，post get...
+                    dataType : "json",//数据传输格式
+                    url: "account/user!addUser",//访问服务器后台的url
+                    data: {roomId:},//数据可以写{'age':10,'name':'aaa'}方式
+                    success: function(result) {//返回成功后执行的函数，result是返回的数据
+                        alert("添加成功！");
+                    }
+                });
+            }*/
 
-        //连接关闭的回调方法
-        websocket.onclose = function () {
-        };
+            var websocket = null;
 
-        //监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
-        window.onbeforeunload = function () {
-            websocket.close();
-        };
+            //判断当前浏览器是否支持WebSocket
+            if ('WebSocket' in window) {
+                websocket = new WebSocket("ws://localhost:8181/room");
+            } else {
+                alert('Not support websocket');
+            }
 
-        //将消息显示在网页上
-        function setMessageInnerHTML(innerHTML) {
-        }
 
-        //关闭连接
-        function closeWebSocket() {
-            websocket.close();
-        }
+            //连接发生错误的回调方法
+            websocket.onerror = function () {
+            };
 
-        //发送消息
-        function send() {
-            var message = document.getElementById('text').value;
-            websocket.send(message);
-        }
+            //连接成功建立的回调方法
+            websocket.onopen = function (event) {
+            };
 
-    });
-</script>
+            if(sessionRoundNumHistory !== "undefined"){
+
+            }else{
+                var sessionRoundNumHistory;
+            }
+            var playerNum = 0;
+            //接收到消息的回调方法
+            websocket.onmessage = function (event) {
+                var message = JSON.parse(event.data) || {};
+                if(message.type === "AddRoom"){
+                    var roomInfo = message.roomInfo;
+                    item = "<div class=\"room_block\" id= " + roomInfo.id + ">" +
+                        "<table class=\"table\">" +
+                        "<tbody>" +
+                        "<tr class=\"active\">" +
+                        "<td><p><span class=\"info_left\">Name</span><span class=\"info_right room_id\">"+roomInfo.name+"</span></p></td>" +
+                        "</tr>" +
+                        "<tr class=\"success\">" +
+                        "<td><p><span class=\"info_left\">Players</span><span class=\"info_right\">"+ roomInfo.amountOfPlayers+"/"+roomInfo.amountOfRoles+"</span></p></td>" +
+                        "</tr>" +
+                        "<tr  class=\"warning\">" +
+                        "<td><p><span class=\"info_left\">Domain</span><span class=\"info_right\">"+ roomInfo.domainName+"</span></p></td>" +
+                        "</tr>" +
+                        "<tr  class=\"danger\">" +
+                        "<td><p><span class=\"info_left\">Desc</span><span class=\"info_right\">" + roomInfo.description+"</span></p></td>" +
+                        "</tr>" +
+                        "<tr class=\"success\">" +
+                        "<td><p><span class=\"info_left\">Status</span><span class=\"info_right\">" + roomInfo.statue+"</span></p></td>" +
+                        "</tr>" +
+                        "</tbody>" +
+                        "</table>" +
+                        "</div>";
+                    $('#room_all').append(item);
+                    $(".room_block").click(function(){
+                        $(".room_block").css("border-color","transparent");
+                        $(this).css("border-color","#a94442");
+                        var which_room = $(this).attr('id');
+                        $("#roomId").text(which_room);
+                    });
+                }else if(message.type === "UpdateRoom"){
+                    var roomInfos = message.roomInfos;
+                    $('#room_all').html("");
+                    for(var p in roomInfos){
+                        item = "<div class=\"room_block\" id= " + roomInfos[p].id + ">" +
+                            "<table class=\"table\">" +
+                            "<tbody>" +
+                            "<tr class=\"active\">" +
+                            "<td><p><span class=\"info_left\">Name</span><span class=\"info_right room_id\">"+roomInfos[p].name+"</span></p></td>" +
+                            "</tr>" +
+                            "<tr class=\"success\">" +
+                            "<td><p><span class=\"info_left\">Players</span><span class=\"info_right\">"+ roomInfos[p].amountOfPlayers+"/"+roomInfos[p].amountOfRoles+"</span></p></td>" +
+                            "</tr>" +
+                            "<tr  class=\"warning\">" +
+                            "<td><p><span class=\"info_left\">Domain</span><span class=\"info_right\">"+ roomInfos[p].domainName+"</span></p></td>" +
+                            "</tr>" +
+                            "<tr  class=\"danger\">" +
+                            "<td><p><span class=\"info_left\">Desc</span><span class=\"info_right\">" + roomInfos[p].description+"</span></p></td>" +
+                            "</tr>" +
+                            "<tr class=\"success\">" +
+                            "<td><p><span class=\"info_left\">Status</span><span class=\"info_right\">" + roomInfos[p].statue+"</span></p></td>" +
+                            "</tr>" +
+                            "</tbody>" +
+                            "</table>" +
+                            "</div>";
+                        $('#room_all').append(item);
+                        $(".room_block").click(function(){
+                            $(".room_block").css("border-color","transparent");
+                            $(this).css("border-color","#a94442");
+                            var which_room = $(this).attr('id');
+                            $("#roomId").text(which_room);
+                        });
+                    }
+                }
+
+            };
+
+            //连接关闭的回调方法
+            websocket.onclose = function () {
+            };
+
+            //监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
+            window.onbeforeunload = function () {
+                websocket.close();
+            };
+
+            //将消息显示在网页上
+            function setMessageInnerHTML(innerHTML) {
+            }
+
+            //关闭连接
+            function closeWebSocket() {
+                websocket.close();
+            }
+
+            //发送消息
+            function send() {
+                var message = document.getElementById('text').value;
+                websocket.send(message);
+            }
+
+        });
+	</script>
 </body>
 </html>

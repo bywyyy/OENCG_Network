@@ -13,6 +13,4 @@ public class CoalitionXML {
 
     int rewards;
 
-    int rewardPublish;
-
 }

@@ -16,8 +16,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.*;
-
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 @Controller
 @RequestMapping(value = "")
 public class WebAdminController {
@@ -27,9 +28,6 @@ public class WebAdminController {
 
     @Autowired
     WebVotingArena webVotingArena;
-
-    public WebAdminController() {
-    }
 
     @RequestMapping(value = "/")
     public String index() {
@@ -41,7 +39,12 @@ public class WebAdminController {
         return "test2";
     }
 
-
+    @ResponseBody
+    @RequestMapping(value = "/startPlayer")
+    public String start_player1(){
+        String playerId = webBridgeToClient.start_player();
+        return playerId;
+    }
 
     @RequestMapping(value = "/start_player")
     public String start_player(){
@@ -86,6 +89,17 @@ public class WebAdminController {
 
     }
 
+//    @ResponseBody
+//    @RequestMapping(value = "/createRoom")
+//    public Set<RoomInfo> createRoom(HttpServletRequest request) {
+//        String gameType = request.getParameter("gameType");  //区分游戏类型，tu&ntu
+//        String stagePath= request.getParameter("stagePath");
+//        webBridgeToClient.createRoom(stagePath);
+//        Set<RoomInfo> roominfos = webBridgeToClient.getRoomInfos();
+//        return roominfos;
+//
+//    }
+
     @ResponseBody
     @RequestMapping(value = "/stagePath")
     public List<String> stagePath() throws IOException {
@@ -120,16 +134,6 @@ public class WebAdminController {
     public Set<RoomInfo> getRoomInfos(){
 
         Set<RoomInfo> roominfos = webBridgeToClient.getAllRoomInfos();
-
-//        Iterator<RoomInfo> it = roominfos.iterator();
-//        for(int i=0; i<roominfos.size(); i++){
-//            RoomInfo roominfo = it.next();
-//            String statue = roominfo.statue.toString();
-//            if("GAME_END".equals(statue)){
-//                it.remove();
-//                i--;
-//            }
-//        }
 
         return roominfos;
     }

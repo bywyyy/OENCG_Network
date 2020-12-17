@@ -14,7 +14,7 @@ public class DomainStreamLoader {
 
     private boolean externalResourceExist;
 
-    private String stagePath = "";
+    private String stagePath="";
     private String[] requiredFiles = {
             "form",
             "talents",
@@ -24,10 +24,10 @@ public class DomainStreamLoader {
 
     public DomainStreamLoader(String stagePath) {
         externalResourceExist = true;
-        this.stagePath = stagePath;
-        for (int i = 0; i < requiredFiles.length; i++) {
-            File file = new File(basePath + "/" + stagePath + "/" + requiredFiles[i] + ".xml");
-            if (!file.exists()) {
+        this.stagePath=stagePath;
+        for(int i = 0; i < requiredFiles.length; i++){
+            File file = new File(basePath+"/" +stagePath+"/"+ requiredFiles[i] + ".xml");
+            if(!file.exists()){
                 externalResourceExist = false;
                 System.out.println("exist");
                 break;
@@ -35,33 +35,33 @@ public class DomainStreamLoader {
         }
     }
 
-    public InputStream getForm() {
+    public InputStream getForm(){
         return this.getInputStream("form");
     }
 
-    public InputStream getCoalitions() {
+    public InputStream getCoalitions(){
         return this.getInputStream("coalitions");
     }
 
-    public InputStream getKnowledge() {
+    public InputStream getKnowledge(){
         return this.getInputStream("knowledge");
     }
 
-    public InputStream getTalents() {
+    public InputStream getTalents(){
         return this.getInputStream("talents");
     }
 
-    private InputStream getInputStream(String fileName) {
+    private InputStream getInputStream(String fileName){
         InputStream is = null;
-        if (externalResourceExist) {
-            File file = new File(basePath + "/" + fileName + ".xml");
+        if(externalResourceExist){
+            File file = new File(basePath+"/"+fileName + ".xml");
             try {
                 is = ResourceLoader.getFileAsStream(file);
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
-        } else {
-            is = DomainStreamLoader.class.getResourceAsStream(internalPath + "/" + stagePath + "/" + fileName + ".xml");
+        }else{
+            is = DomainStreamLoader.class.getResourceAsStream(internalPath + "/"+ stagePath+"/"  + fileName+".xml");
         }
         return is;
     }
